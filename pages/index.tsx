@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home(props) {
+  console.log('props', props)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,4 +16,13 @@ export default function Home() {
       <footer className={styles.footer}></footer>
     </div>
   )
+}
+
+export const getServerSideProps = ({ locale, locales }) => {
+  return {
+    props: {
+      locale,
+      locales,
+    },
+  }
 }
