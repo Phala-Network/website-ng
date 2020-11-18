@@ -1,0 +1,16 @@
+.iconClose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 36px;
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: black;
+  }
+
+  &:active {
+    border-color: transparent;
+  }
+}

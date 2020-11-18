@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Button from '../../components/Button'
+import Button from '../components/Button'
+import Newsletter from '../components/Newsletter'
 
 export default function Home(props) {
   const { locale } = props
@@ -10,6 +11,8 @@ export default function Home(props) {
         <title>Phala Network</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+
+      <Newsletter></Newsletter>
 
       <main className={'main'}>Phala Network {locale}</main>
 
