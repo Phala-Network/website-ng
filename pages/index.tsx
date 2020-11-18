@@ -6,7 +6,7 @@ export default function Home(props) {
   const { locale } = props
 
   return (
-    <div className={'container'}>
+    <div>
       <Head>
         <title>Phala Network</title>
         <link rel='icon' href='/favicon.ico' />
@@ -16,7 +16,15 @@ export default function Home(props) {
 
       <main className={'main'}>Phala Network {locale}</main>
 
-      <Button style={{ width: 370 }}>{'CHECK OUR GITHUB'}</Button>
+      <Button hasArrowIcon style={{ width: 370 }}>
+        {'CHECK OUR GITHUB'}
+      </Button>
+      <br />
+      <Button hasArrowIcon>Link to xxxx</Button>
+      <br />
+      <Button color='primary' hasArrowIcon>
+        Link to xxxx
+      </Button>
 
       <footer className={'footer'}></footer>
     </div>
