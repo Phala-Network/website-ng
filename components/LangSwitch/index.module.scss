@@ -1,0 +1,10 @@
+.langSwitch {
+  display: flex;
+  align-items: center;
+
+  .item {
+    opacity: 0.4;
+    border: 1px solid #d9d9d9;
+    text-transform: uppercase;
+  }
+}
