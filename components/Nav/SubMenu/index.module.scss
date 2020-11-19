@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+$sub-menu-width: 200px;
+$sub-menu-border-color: rgba(209, 255, 82, 0.5);
+
+.subMenu {
+  position: absolute;
+  left: 50%;
+  margin-left: -($sub-menu-width / 2);
+  top: 20px;
+  padding: 20px 0;
+  box-sizing: border-box;
+
+  .content {
+    position: relative;
+    width: $sub-menu-width;
+    border-radius: 0;
+    border: solid 1px $sub-menu-border-color;
+    background-color: $color-black;
+    padding: 20px 15px;
+
+    .item a {
+      display: block;
+      color: $color-gray;
+      padding: 12px 0;
+
+      &:hover {
+        color: rgba($color-gray, 0.7);
+      }
+    }
+  }
+
+  .arrow {
+    border-top: 1px solid $sub-menu-border-color;
+    border-left: 1px solid $sub-menu-border-color;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+    margin-left: -6px;
+    left: 50%;
+    background-color: $color-black;
+  }
+}

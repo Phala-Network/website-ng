@@ -17,7 +17,7 @@ const LangSwitch: React.FC<Props> = () => {
             key={lang}
             href={route === '/' ? `/${lang}` : route}
             locale={route === '/' ? false : lang}>
-            <div
+            <a
               className={classnames([
                 styles.item,
                 {
@@ -25,7 +25,7 @@ const LangSwitch: React.FC<Props> = () => {
                 },
               ])}>
               {lang}
-            </div>
+            </a>
           </Link>
         )
       })}

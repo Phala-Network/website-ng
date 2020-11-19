@@ -4,55 +4,32 @@ import React from 'react'
 import I18n from '../I18n'
 import LangSwitch from '../LangSwitch'
 import Logo from '../Logo'
+import { menuData } from './data'
 import styles from './index.module.scss'
+import SubMenu from './SubMenu'
 
 type Props = {}
 
 const Nav: React.FC<Props> = (props) => {
   const { locale, route } = useRouter()
 
-  const menus = [
-    {
-      name: {
-        en: 'Learn About PHA',
-        zh: '了解 PHA',
-      },
-    },
-    {
-      name: {
-        en: 'Technology',
-        zh: '技术',
-      },
-    },
-    {
-      name: {
-        en: 'Ecosystem',
-        zh: '生态',
-      },
-    },
-    {
-      name: {
-        en: 'Resources',
-        zh: '资源',
-      },
-    },
-  ]
-
   return (
     <div className='container'>
       <nav className={styles.nav}>
-        <Link
-          href={route === '/' ? `/${locale}` : route}
-          locale={route === '/' ? false : locale}>
-          <Logo></Logo>
+        <Link passHref href={`/${locale}`} locale={false}>
+          <a>
+            <Logo></Logo>
+          </a>
         </Link>
         <ul>
-          {menus.map((menu) => {
+          {menuData.map((menu) => {
             return (
               <li key={menu.name.en}>
-                <a href='#'>
+                <a className={styles.link} target='_blank' href={menu.href}>
                   <I18n {...menu.name}></I18n>
                 </a>
+
+                {menu.subMenu && <SubMenu data={menu.subMenu}></SubMenu>}
               </li>
             )
           })}
