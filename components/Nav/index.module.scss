@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  li {
+    list-style: none;
+    color: $color-gray;
+    cursor: pointer;
+    padding: 0 25px;
+
+    &:hover {
+      color: rgba($color-gray, 0.7);
+    }
+  }
+}

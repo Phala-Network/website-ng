@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './index.module.scss'
 import Marquee from 'react-fast-marquee'
 import IconClose from './IconClose'
+import I18n from '../I18n'
 
 type Props = {}
 
@@ -14,7 +15,9 @@ const Newsletter: React.FC<Props> = () => {
 
   const news = (
     <div className={styles.news}>
-      Phala Network Value Tops $10+ Million on New Fundraising 🎉
+      <I18n
+        en='Phala Network Value Tops $10+ Million on New Fundraising 🎉'
+        zh='Phala Network 新募集资金超过1000万美元 🎉'></I18n>
     </div>
   )
 

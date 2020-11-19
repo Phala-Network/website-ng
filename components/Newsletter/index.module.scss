@@ -1,15 +1,16 @@
 @import '../../styles/variables.scss';
 
 .newsletter {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  background: $color-primary;
-  height: 32px;
-  display: flex;
   align-items: center;
+  background: $color-primary;
+  display: flex;
+  height: 32px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  z-index: $index-newsletter;
 
   .line {
-    background-color: #000000;
+    background-color: $color-black;
     width: 1px;
     height: 24px;
   }

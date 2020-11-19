@@ -1,18 +1,22 @@
-import React from 'react'
 import BackTop from '../BackTop'
 import Button from '../Button'
-import LangSwitch from '../LangSwitch'
-import Newsletter from '../Newsletter'
 import FirstScreen from './FirstScreen'
+import LangSwitch from '../LangSwitch'
+import Nav from '../Nav'
+import Newsletter from '../Newsletter'
+import React from 'react'
+import Header from '../Header'
 
 type Props = {}
 
 const PageIndex: React.FC<Props> = (props) => {
   return (
     <div>
-      <Newsletter></Newsletter>
+      <Header>
+        <Newsletter></Newsletter>
+        <Nav></Nav>
+      </Header>
       <FirstScreen></FirstScreen>
-      <LangSwitch></LangSwitch>
       <Button hasArrowIcon style={{ width: 370 }}>
         {'CHECK OUR GITHUB'}
       </Button>
