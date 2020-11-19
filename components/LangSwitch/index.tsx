@@ -12,12 +12,15 @@ const LangSwitch: React.FC<Props> = () => {
   return (
     <div className={styles.langSwitch}>
       {locales.map((lang) => {
+        const isHomePage = route === '/'
+
         return (
           <Link
+            prefetch
             scroll={false}
             key={lang}
-            href={route === '/' ? `/${lang}` : route}
-            locale={route === '/' ? false : lang}>
+            href={isHomePage ? `/${lang}` : route}
+            locale={isHomePage ? false : lang}>
             <a
               className={classnames([
                 styles.item,
