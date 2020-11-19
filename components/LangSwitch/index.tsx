@@ -14,6 +14,7 @@ const LangSwitch: React.FC<Props> = () => {
       {locales.map((lang) => {
         return (
           <Link
+            scroll={false}
             key={lang}
             href={route === '/' ? `/${lang}` : route}
             locale={route === '/' ? false : lang}>
