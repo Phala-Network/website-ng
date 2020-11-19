@@ -7,8 +7,7 @@ import Link from 'next/link'
 type Props = {}
 
 const LangSwitch: React.FC<Props> = () => {
-  const router = useRouter()
-  const { locales, locale, route } = router
+  const { locales, locale, route } = useRouter()
 
   return (
     <div className={styles.langSwitch}>
