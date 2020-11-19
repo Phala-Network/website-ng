@@ -6,6 +6,7 @@ import Nav from '../Nav'
 import Newsletter from '../Newsletter'
 import React from 'react'
 import Header from '../Header'
+import { isClient } from '../../utils/isClient'
 
 type Props = {}
 
@@ -28,7 +29,8 @@ const PageIndex: React.FC<Props> = (props) => {
       </Button>
       <div style={{ height: 2999 }}></div>
       <footer className={'footer'}></footer>
-      <BackTop></BackTop>
+
+      {isClient() && <BackTop visibilityHeight={window?.innerHeight}></BackTop>}
     </div>
   )
 }
