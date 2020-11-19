@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+import '../styles/latoFonts.scss'
+import '../styles/globals.scss'
 import '../styles/layout.scss'
 
 function MyApp({ Component, pageProps }) {
