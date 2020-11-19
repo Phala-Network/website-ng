@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.backTop {
+  background-color: rgba(103, 103, 103, 0.75);
+  bottom: 50px;
+  cursor: pointer;
+  height: 50px;
+  position: fixed;
+  right: 100px;
+  width: 50px;
+  z-index: $index-backTop;
+}

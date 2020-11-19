@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Button from '../components/Button'
 import Newsletter from '../components/Newsletter'
+import BackTop from '../components/BackTop'
 
 export default function Home(props) {
   const { locale } = props
@@ -26,7 +27,11 @@ export default function Home(props) {
         Link to xxxx
       </Button>
 
+      <div style={{ height: 2999 }}></div>
+
       <footer className={'footer'}></footer>
+
+      <BackTop></BackTop>
     </div>
   )
 }
