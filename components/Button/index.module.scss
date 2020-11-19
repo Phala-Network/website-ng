@@ -30,6 +30,25 @@
     }
   }
 
+  &.gray {
+    border: 2px solid $color-gray;
+    color: $color-gray;
+
+    .iconArrow {
+      stroke: $color-gray;
+    }
+
+    &:active,
+    &:hover {
+      background-color: $color-gray;
+      color: $color-black;
+
+      .iconArrow {
+        stroke: $color-black;
+      }
+    }
+  }
+
   &.primary {
     background: $color-primary;
     border: 2px solid $color-primary;
@@ -46,7 +65,7 @@
 
   &:hover {
     .iconArrow {
-      transform: translate3d(5px, 0, 0);
+      transform: translate3d(2px, 0, 0);
     }
   }
 

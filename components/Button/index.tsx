@@ -4,7 +4,7 @@ import React from 'react'
 import styles from './index.module.scss'
 
 type Props = {
-  color?: 'white' | 'black' | 'primary'
+  color?: 'white' | 'black' | 'gray' | 'primary'
   hasArrowIcon?: boolean
   style?: React.CSSProperties
   type?: 'button' | 'link'
