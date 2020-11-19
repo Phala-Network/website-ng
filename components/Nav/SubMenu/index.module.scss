@@ -10,6 +10,7 @@ $sub-menu-border-color: rgba(209, 255, 82, 0.5);
   top: 20px;
   padding: 20px 0;
   box-sizing: border-box;
+  z-index: $index-nav-sub-menu;
 
   .content {
     position: relative;
@@ -17,15 +18,23 @@ $sub-menu-border-color: rgba(209, 255, 82, 0.5);
     border-radius: 0;
     border: solid 1px $sub-menu-border-color;
     background-color: $color-black;
-    padding: 20px 15px;
+    padding: 20px;
 
-    .item a {
-      display: block;
-      color: $color-gray;
-      padding: 12px 0;
+    .item:last-child {
+      margin-bottom: 0 !important;
+    }
 
-      &:hover {
-        color: rgba($color-gray, 0.7);
+    .item {
+      margin-bottom: 15px;
+
+      a {
+        display: block;
+        color: rgba($color-gray, 0.6);
+        font-size: 16px;
+
+        &:hover {
+          color: $color-gray;
+        }
       }
     }
   }

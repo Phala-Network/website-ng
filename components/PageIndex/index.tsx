@@ -14,8 +14,8 @@ const PageIndex: React.FC<Props> = (props) => {
   return (
     <div>
       <Header>
-        <Newsletter></Newsletter>
         <Nav></Nav>
+        <Newsletter></Newsletter>
       </Header>
       <FirstScreen></FirstScreen>
       <Button hasArrowIcon style={{ width: 370 }}>

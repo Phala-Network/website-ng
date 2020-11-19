@@ -1,7 +1,7 @@
 export const menuData = [
   {
     name: {
-      en: 'Learn About PHA',
+      en: 'What is PHA',
       zh: '了解 PHA',
     },
     href: '//google.com',
@@ -15,7 +15,7 @@ export const menuData = [
   },
   {
     name: {
-      en: 'Ecosystem',
+      en: 'Maintain',
       zh: '生态',
     },
     subMenu: [
@@ -57,7 +57,14 @@ export const menuData = [
     subMenu: [
       {
         name: {
-          en: 'Economic White Paper',
+          en: 'Tech Whitepaper',
+          zh: '技术白皮书',
+        },
+        href: 'https://files.phala.network/phala-paper.pdf',
+      },
+      {
+        name: {
+          en: 'Economy Whitepaper',
           zh: '经济白皮书',
         },
         href: {
@@ -67,29 +74,8 @@ export const menuData = [
       },
       {
         name: {
-          en: 'Technical White Papers',
-          zh: '技术白皮书',
-        },
-        href: 'https://files.phala.network/phala-paper.pdf',
-      },
-      {
-        name: {
-          en: 'Test Network',
-          zh: '测试网',
-        },
-        href: 'https://poc3.phala.network',
-      },
-      {
-        name: {
-          en: 'Dark Wallet',
+          en: 'DarkWallet',
           zh: '暗钱包',
-        },
-        href: 'https://poc3.phala.network',
-      },
-      {
-        name: {
-          en: 'Subscan',
-          zh: 'Subscan',
         },
         href: 'https://poc3.phala.network',
       },
@@ -106,6 +92,20 @@ export const menuData = [
           zh: 'Github',
         },
         href: 'https://github.com/Phala-Network',
+      },
+      {
+        name: {
+          en: 'Testnet',
+          zh: '测试网',
+        },
+        href: 'https://poc3.phala.network',
+      },
+      {
+        name: {
+          en: 'Claim',
+          zh: '领奖',
+        },
+        href: 'https://stakedrop-claim.phala.network/',
       },
     ],
   },

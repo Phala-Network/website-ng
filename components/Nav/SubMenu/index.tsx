@@ -25,6 +25,8 @@ const SubMenu: React.FC<Props> = (props) => {
   return (
     <div className={styles.subMenu}>
       <div className={styles.content}>
+        <div className={styles.arrow}></div>
+
         {data.map((item) => {
           return (
             <div className={styles.item} key={item.name.en}>
@@ -38,7 +40,6 @@ const SubMenu: React.FC<Props> = (props) => {
             </div>
           )
         })}
-        <div className={styles.arrow}></div>
       </div>
     </div>
   )

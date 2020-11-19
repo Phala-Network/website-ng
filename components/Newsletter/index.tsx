@@ -15,9 +15,11 @@ const Newsletter: React.FC<Props> = () => {
 
   const news = (
     <div className={styles.news}>
-      <I18n
-        en='Phala Network Value Tops $10+ Million on New Fundraising 🎉'
-        zh='Phala Network 新募集资金超过1000万美元 🎉'></I18n>
+      <a href='//google.com' target='_blank'>
+        <I18n
+          en='Phala Network Value Tops $10+ Million on New Fundraising 🎉'
+          zh='Phala Network 新募集资金超过1000万美元 🎉'></I18n>
+      </a>
     </div>
   )
 
