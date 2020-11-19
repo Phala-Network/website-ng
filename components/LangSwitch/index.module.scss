@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .langSwitch {
   display: flex;
   align-items: center;
@@ -5,6 +7,29 @@
   .item {
     opacity: 0.4;
     border: 1px solid #d9d9d9;
+    color: rgba(217, 217, 217, 0.49847);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 21px;
+    width: 21px;
+    border-radius: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: Lato;
+    font-size: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active,
+    &:hover {
+      opacity: 1;
+      color: $color-black;
+      background: #d9d9d9;
+      border-color: #d9d9d9;
+    }
   }
 }
