@@ -11,5 +11,39 @@
     background-position: bottom center;
     background-size: 100% auto;
     width: 100%;
+    padding-top: 105px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .title {
+      max-width: 480px;
+      height: 180px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 60px;
+      color: $color-gray;
+    }
+
+    .description {
+      max-width: 480px;
+      margin-top: 30px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-gray;
+    }
+
+    .buttons > button:last-child {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      width: 400px;
+    }
   }
 }

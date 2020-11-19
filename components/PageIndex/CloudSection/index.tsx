@@ -10,13 +10,26 @@ const CloudSection: React.FC<Props> = (props) => {
     <div className={styles.cloudSection}>
       <div className='container'>
         <div className={styles.content}>
-          <Button color='gray' hasArrowIcon>
-            <I18n en='Tech Whitepaper' zh='技术白皮书'></I18n>
-          </Button>
+          <div>
+            <div className={styles.title}>
+              Decentralized Privacy Computing Cloud
+            </div>
 
-          <Button color='gray' hasArrowIcon>
-            <I18n en='Economic Whitepaper' zh='经济白皮书'></I18n>
-          </Button>
+            <div className={styles.description}>
+              Raw-data-protected Data processing Confidential Smart Contract for
+              DApps and DeFi
+            </div>
+          </div>
+
+          <div className={styles.buttons}>
+            <Button color='gray' hasArrowIcon>
+              <I18n en='Economic Whitepaper' zh='经济白皮书'></I18n>
+            </Button>
+
+            <Button color='gray' hasArrowIcon>
+              <I18n en='Tech Whitepaper' zh='技术白皮书'></I18n>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
