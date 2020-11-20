@@ -1,3 +1,5 @@
+import { GithubConfig } from './GithubConfig'
+
 export const TechWhitepaperConfig = {
   name: {
     en: 'Tech Whitepaper',
@@ -99,12 +101,12 @@ export const ResourcesMenuConfig = {
     },
     {
       name: {
-        en: 'Github',
-        zh: 'Github',
+        en: GithubConfig.name,
+        zh: GithubConfig.name,
       },
       href: {
-        en: 'https://github.com/Phala-Network',
-        zh: 'https://github.com/Phala-Network',
+        en: GithubConfig.url,
+        zh: GithubConfig.url,
       },
     },
     {
