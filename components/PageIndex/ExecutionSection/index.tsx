@@ -2,6 +2,7 @@ import React from 'react'
 import { ExecutionSectionConfig } from '../../../config/indexPage/ExecutionSectionConfig'
 import Button from '../../Button'
 import I18n from '../../I18n'
+import SectionHeader from '../SectionHeader'
 import styles from './index.module.scss'
 import List from './List'
 
@@ -14,12 +15,10 @@ const ExecutionSection: React.FC<Props> = () => {
         <div className={styles.content}>
           <div className='row'>
             <div className='col-lg-6'>
-              <div className={styles.title}>
-                <I18n {...ExecutionSectionConfig.titleText}></I18n>
-              </div>
-              <div className={styles.description}>
-                <I18n {...ExecutionSectionConfig.descriptionText}></I18n>
-              </div>
+              <SectionHeader
+                title={ExecutionSectionConfig.titleText}
+                description={ExecutionSectionConfig.descriptionText}
+              />
             </div>
             <div className='col-lg-6'>
               <Button

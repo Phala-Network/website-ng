@@ -3,38 +3,4 @@
 .list {
   width: 100%;
   margin-top: 57px;
-
-  .image {
-    height: 130px;
-    width: 130px;
-    height: auto;
-  }
-
-  .line {
-    margin-top: 32px;
-    width: 100%;
-    height: 1px;
-    background-color: $color-black;
-  }
-
-  .name {
-    margin-top: 20px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    color: $color-black;
-  }
-
-  .description {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: $color-black;
-  }
 }

@@ -8,6 +8,7 @@ import { isClient } from '../../utils/isClient'
 import CloudSection from './CloudSection'
 import Footer from '../Footer'
 import ExecutionSection from './ExecutionSection'
+import ContractSection from './ContractSection'
 
 type Props = {}
 
@@ -21,6 +22,7 @@ const PageIndex: React.FC<Props> = (props) => {
       <FirstScreen></FirstScreen>
       <CloudSection></CloudSection>
       <ExecutionSection></ExecutionSection>
+      <ContractSection></ContractSection>
 
       <Footer></Footer>
 

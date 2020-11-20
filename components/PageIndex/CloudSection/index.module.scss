@@ -17,27 +17,6 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    .title {
-      max-width: 480px;
-      font-family: Lato;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 60px;
-      line-height: 60px;
-      color: $color-gray;
-    }
-
-    .description {
-      max-width: 480px;
-      margin-top: 30px;
-      font-family: Lato;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px;
-      color: $color-gray;
-    }
-
     .buttons > a:last-child {
       margin-top: 30px;
     }
