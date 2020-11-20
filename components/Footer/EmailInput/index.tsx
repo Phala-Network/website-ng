@@ -32,6 +32,12 @@ const EmailInput: React.FC<Props> = () => {
     return isOk
   }
 
+  function onKeyPress(e) {
+    if (e.key === 'Enter') {
+      sendEmail()
+    }
+  }
+
   async function sendEmail() {
     if (checkEmail()) {
       try {
@@ -46,6 +52,7 @@ const EmailInput: React.FC<Props> = () => {
     <div>
       <div className={classnames([styles.emailInput, styles[status]])}>
         <input
+          onKeyPress={onKeyPress}
           onChange={onChange}
           value={textValue}
           placeholder='ABC@Phala.network'
