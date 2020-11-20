@@ -1,4 +1,5 @@
 import React from 'react'
+import EmailInput from './EmailInput'
 import styles from './index.module.scss'
 
 type Props = {}
@@ -6,7 +7,9 @@ type Props = {}
 const Footer: React.FC<Props> = () => {
   return (
     <footer className={styles.footer}>
-      <div className='container'></div>
+      <div className='container'>
+        <EmailInput></EmailInput>
+      </div>
     </footer>
   )
 }
