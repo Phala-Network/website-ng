@@ -25,7 +25,8 @@ export const ExecutionSectionConfig = {
       description: {
         en:
           'Your raw data and execution will be processed in an enclave isolated in CPUs which is unattackable through softwares or systems.',
-        zh: 'TODO',
+        zh:
+          'Your raw data and execution will be processed in an enclave isolated in CPUs which is unattackable through softwares or systems.',
       },
     },
     {
