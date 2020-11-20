@@ -1,6 +1,9 @@
+@import '../../styles/variables.scss';
+
 .header {
   right: 0;
   top: 0;
   left: 0;
   position: fixed;
+  z-index: $index-fixed-header;
 }

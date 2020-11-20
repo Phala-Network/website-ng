@@ -7,6 +7,7 @@ import Header from '../Header'
 import { isClient } from '../../utils/isClient'
 import CloudSection from './CloudSection'
 import Footer from '../Footer'
+import ExecutionSection from './ExecutionSection'
 
 type Props = {}
 
@@ -19,6 +20,7 @@ const PageIndex: React.FC<Props> = (props) => {
       </Header>
       <FirstScreen></FirstScreen>
       <CloudSection></CloudSection>
+      <ExecutionSection></ExecutionSection>
 
       <Footer></Footer>
 

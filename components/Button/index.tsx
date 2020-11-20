@@ -14,12 +14,14 @@ type Props = {
   uppercase?: boolean
   href?: string | { [key: string]: string }
   text?: string | { [key: string]: string }
+  className?: string
 }
 
 const Button: React.FC<Props> = (props) => {
   const { locale } = useRouter()
 
   const {
+    className,
     uppercase = true,
     hasArrowIcon = false,
     color = 'black',
@@ -37,6 +39,7 @@ const Button: React.FC<Props> = (props) => {
     onClick,
     style,
     className: classnames([
+      className,
       styles.button,
       styles[color],
       { [styles.uppercase]: uppercase },
