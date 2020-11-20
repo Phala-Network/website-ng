@@ -16,7 +16,6 @@ const LangSwitch: React.FC<Props> = () => {
 
         return (
           <Link
-            prefetch
             scroll={false}
             key={lang}
             href={isHomePage ? `/${lang}` : route}
