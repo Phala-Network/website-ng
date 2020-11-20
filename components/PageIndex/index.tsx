@@ -6,6 +6,7 @@ import React from 'react'
 import Header from '../Header'
 import { isClient } from '../../utils/isClient'
 import CloudSection from './CloudSection'
+import Footer from '../Footer'
 
 type Props = {}
 
@@ -19,7 +20,7 @@ const PageIndex: React.FC<Props> = (props) => {
       <FirstScreen></FirstScreen>
       <CloudSection></CloudSection>
 
-      <footer className={'footer'}></footer>
+      <Footer></Footer>
 
       {isClient() && <BackTop visibilityHeight={window?.innerHeight}></BackTop>}
     </div>
