@@ -5,7 +5,8 @@
   background-color: #191919;
 
   .content {
-    min-height: calc(100vh - #{$nav-height});
+    height: calc(100vh - #{$nav-height});
+    min-height: 894px;
     background-image: url(./bg.svg);
     background-repeat: no-repeat;
     background-position: bottom center;
