@@ -14,6 +14,7 @@ import { BBSConfig } from '../../../config/BBSConfig'
 import { MediumConfig } from '../../../config/MediumConfig'
 import { WeiboConfig } from '../../../config/WeiboConfig'
 import { TwitterConfig } from '../../../config/TwitterConfig'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -25,7 +26,7 @@ const MediaList: React.FC<Props> = () => {
         <IconWechat></IconWechat>
 
         <div className={styles.qrcode}>
-          <img src='/images/qrcode.png' alt='' />
+          <Image layout='fill' src='/images/qrcode.png' alt='qrcode' />
         </div>
       </div>
 
