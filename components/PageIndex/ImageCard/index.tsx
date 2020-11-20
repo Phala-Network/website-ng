@@ -16,7 +16,7 @@ const ImageCard: React.FC<Props> = (props) => {
   const { image, name, description } = props
 
   return (
-    <div>
+    <div className={styles.imageCard}>
       <div className={styles.image}>
         <img src={image}></img>
       </div>

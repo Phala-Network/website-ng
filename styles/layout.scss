@@ -39,9 +39,9 @@ html {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1240px;
+    max-width: 1200px;
   }
 }
 
@@ -51,6 +51,8 @@ html {
 .container-lg,
 .container-xl {
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -79,13 +81,13 @@ html {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .container,
   .container-sm,
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1240px;
+    max-width: 1200px;
   }
 }
 
@@ -94,6 +96,8 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .no-gutters {
@@ -179,6 +183,8 @@ html {
 .col-xl-auto {
   position: relative;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {
@@ -1033,7 +1039,7 @@ html {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1370,7 +1376,7 @@ html {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .d-xl-none {
     display: none !important;
   }
@@ -2021,7 +2027,7 @@ html {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -3627,7 +3633,7 @@ html {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1200px) {
   .m-xl-0 {
     margin: 0 !important;
   }

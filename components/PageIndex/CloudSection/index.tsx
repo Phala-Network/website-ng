@@ -23,28 +23,31 @@ const CloudSection: React.FC<Props> = () => {
     <div className={styles.cloudSection}>
       <div className='container'>
         <div className={styles.content}>
-          <div>
-            <SectionHeader
-              color='gray'
-              title={titleText}
-              description={descriptionText}
-            />
-          </div>
+          <div className='row'>
+            <div className='col-lg-6'>
+              <SectionHeader
+                color='gray'
+                title={titleText}
+                description={descriptionText}
+              />
+            </div>
+            <div className='col-lg-6'>
+              <div className={styles.buttons}>
+                <Button
+                  href={EconomyWhitepaperConfig.href}
+                  text={EconomyWhitepaperConfig.name}
+                  type='link'
+                  color='gray'
+                  hasArrowIcon></Button>
 
-          <div className={styles.buttons}>
-            <Button
-              href={EconomyWhitepaperConfig.href}
-              text={EconomyWhitepaperConfig.name}
-              type='link'
-              color='gray'
-              hasArrowIcon></Button>
-
-            <Button
-              href={TechWhitepaperConfig.href}
-              text={TechWhitepaperConfig.name}
-              type='link'
-              color='gray'
-              hasArrowIcon></Button>
+                <Button
+                  href={TechWhitepaperConfig.href}
+                  text={TechWhitepaperConfig.name}
+                  type='link'
+                  color='gray'
+                  hasArrowIcon></Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
