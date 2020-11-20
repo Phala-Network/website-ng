@@ -19,7 +19,7 @@ const CloudSection: React.FC<Props> = () => {
             <div className={styles.description}>
               <I18n
                 en='Raw-data-protected Data processing Confidential Smart Contract for DApps and DeFi'
-                zh='原始数据保护数据处理 DApps和DeFi的保密智能合约'></I18n>
+                zh='原始数据保护数据处理 DApps 和 DeFi 的保密智能合约'></I18n>
             </div>
           </div>
 

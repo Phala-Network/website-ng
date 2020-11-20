@@ -11,7 +11,7 @@ import SubMenu from './SubMenu'
 type Props = {}
 
 const Nav: React.FC<Props> = () => {
-  const { locale, route } = useRouter()
+  const { locale } = useRouter()
 
   return (
     <div className={styles.bg}>
