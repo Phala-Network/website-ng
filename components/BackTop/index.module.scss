@@ -9,4 +9,11 @@
   right: 100px;
   width: 50px;
   z-index: $index-backTop;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $color-gray;
+  }
 }

@@ -39,6 +39,7 @@ const BackTop: React.FC<Props> = (props) => {
       {showScroll && (
         <div style={style} className={styles.backTop} onClick={scrollTop}>
           {/* TODO: icon */}
+          TOP
         </div>
       )}
     </>
