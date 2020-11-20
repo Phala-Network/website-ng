@@ -131,10 +131,7 @@ export const ResourcesMenuConfig = {
 }
 
 export const MenuConfig: {
-  name: {
-    en: string
-    zh: string
-  }
+  name: { [key: string]: string }
   subMenu?: {
     name: { [key: string]: string }
     href: { [key: string]: string }
