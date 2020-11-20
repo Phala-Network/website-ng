@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
+import { menuConfig } from '../../config'
 import I18n from '../I18n'
 import LangSwitch from '../LangSwitch'
 import Logo from '../Logo'
-import { menuData } from './data'
 import styles from './index.module.scss'
 import SubMenu from './SubMenu'
 
@@ -23,7 +23,7 @@ const Nav: React.FC<Props> = () => {
             </a>
           </Link>
           <ul>
-            {menuData.map((menu) => {
+            {menuConfig.map((menu) => {
               return (
                 <li key={menu.name.en}>
                   <a className={styles.link} target='_blank' href={menu.href}>

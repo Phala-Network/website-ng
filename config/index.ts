@@ -1,4 +1,26 @@
-export const menuData = [
+export const TechWhitepaperConfig = {
+  name: {
+    en: 'Tech Whitepaper',
+    zh: '技术白皮书',
+  },
+  href: {
+    en: 'https://files.phala.network/phala-paper.pdf',
+    zh: 'https://files.phala.network/phala-paper.pdf',
+  },
+}
+
+export const EconomyWhitepaperConfig = {
+  name: {
+    en: 'Economy Whitepaper',
+    zh: '经济白皮书',
+  },
+  href: {
+    en: 'https://files.phala.network/phala-token-economics-zh.pdf',
+    zh: 'https://files.phala.network/phala-token-economics-cn.pdf',
+  },
+}
+
+export const menuConfig = [
   {
     name: {
       en: 'What is PHA',
@@ -55,23 +77,8 @@ export const menuData = [
       zh: '资源',
     },
     subMenu: [
-      {
-        name: {
-          en: 'Tech Whitepaper',
-          zh: '技术白皮书',
-        },
-        href: 'https://files.phala.network/phala-paper.pdf',
-      },
-      {
-        name: {
-          en: 'Economy Whitepaper',
-          zh: '经济白皮书',
-        },
-        href: {
-          en: 'https://files.phala.network/phala-token-economics-zh.pdf',
-          zh: 'https://files.phala.network/phala-token-economics-cn.pdf',
-        },
-      },
+      TechWhitepaperConfig,
+      EconomyWhitepaperConfig,
       {
         name: {
           en: 'DarkWallet',
@@ -110,3 +117,7 @@ export const menuData = [
     ],
   },
 ]
+
+const config = {}
+
+export default config

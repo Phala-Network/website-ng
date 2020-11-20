@@ -39,11 +39,11 @@
       color: $color-gray;
     }
 
-    .buttons > button:last-child {
+    .buttons > a:last-child {
       margin-top: 30px;
     }
 
-    .buttons button {
+    .buttons a {
       width: 400px;
     }
   }
