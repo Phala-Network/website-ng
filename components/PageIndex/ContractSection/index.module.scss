@@ -1,0 +1,22 @@
+.contractSection {
+  background-image: url('./bg.jpg');
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+
+  .content {
+    min-height: 875px;
+
+    .introduce {
+      height: 100%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .button {
+        max-width: 370px;
+      }
+    }
+  }
+}

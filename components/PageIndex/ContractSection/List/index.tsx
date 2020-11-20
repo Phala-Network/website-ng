@@ -1,0 +1,23 @@
+import React from 'react'
+import { ContractSectionConfig } from '../../../../config/indexPage/ContractSectionConfig'
+import ImageCard from '../../ImageCard'
+import styles from './index.module.scss'
+import classnames from 'classnames'
+
+type Props = {}
+
+const List: React.FC<Props> = () => {
+  return (
+    <div className={classnames([styles.list, 'row'])}>
+      {ContractSectionConfig.list.map((item) => {
+        return (
+          <div className='col-sm-6'>
+            <ImageCard {...item}></ImageCard>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+export default List
