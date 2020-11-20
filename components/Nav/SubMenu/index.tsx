@@ -5,16 +5,8 @@ import styles from './index.module.scss'
 
 type Props = {
   data: {
-    name: {
-      en: string
-      zh: string
-    }
-    href:
-      | string
-      | {
-          en: string
-          zh: string
-        }
+    name: { [key: string]: string }
+    href: { [key: string]: string }
   }[]
 }
 

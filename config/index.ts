@@ -20,102 +20,149 @@ export const EconomyWhitepaperConfig = {
   },
 }
 
-export const menuConfig = [
+export const MaintainMenuConfig = {
+  name: {
+    en: 'Maintain',
+    zh: '生态',
+  },
+  subMenu: [
+    {
+      name: {
+        en: 'Node',
+        zh: '节点',
+      },
+      href: {
+        en: '//google.com',
+        zh: '//google.com',
+      },
+    },
+    {
+      name: {
+        en: 'Miner',
+        zh: '矿工',
+      },
+      href: {
+        en: '//google.com',
+        zh: '//google.com',
+      },
+    },
+    {
+      name: {
+        en: 'Community',
+        zh: '社区',
+      },
+      href: {
+        en: '//google.com',
+        zh: '//google.com',
+      },
+    },
+    {
+      name: {
+        en: 'About Us',
+        zh: '关于我们',
+      },
+      href: {
+        en: '//google.com',
+        zh: '//google.com',
+      },
+    },
+  ],
+}
+
+export const ResourcesMenuConfig = {
+  name: {
+    en: 'Resources',
+    zh: '资源',
+  },
+  subMenu: [
+    TechWhitepaperConfig,
+    EconomyWhitepaperConfig,
+    {
+      name: {
+        en: 'DarkWallet',
+        zh: '暗钱包',
+      },
+      href: {
+        en: 'https://poc3.phala.network',
+        zh: 'https://poc3.phala.network',
+      },
+    },
+    {
+      name: {
+        en: 'Wiki',
+        zh: 'Wiki',
+      },
+      href: {
+        en: 'https://wiki.phala.network',
+        zh: 'https://wiki.phala.network',
+      },
+    },
+    {
+      name: {
+        en: 'Github',
+        zh: 'Github',
+      },
+      href: {
+        en: 'https://github.com/Phala-Network',
+        zh: 'https://github.com/Phala-Network',
+      },
+    },
+    {
+      name: {
+        en: 'Testnet',
+        zh: '测试网',
+      },
+      href: {
+        en: 'https://poc3.phala.network',
+        zh: 'https://poc3.phala.network',
+      },
+    },
+    {
+      name: {
+        en: 'Claim',
+        zh: '领奖',
+      },
+      href: {
+        en: 'https://stakedrop-claim.phala.network/',
+        zh: 'https://stakedrop-claim.phala.network/',
+      },
+    },
+  ],
+}
+
+export const MenuConfig: {
+  name: {
+    en: string
+    zh: string
+  }
+  subMenu?: {
+    name: { [key: string]: string }
+    href: { [key: string]: string }
+  }[]
+  href?: { [key: string]: string }
+}[] = [
   {
     name: {
       en: 'What is PHA',
       zh: '了解 PHA',
     },
-    href: '//google.com',
+    href: {
+      en: '//google.com',
+      zh: '//google.com',
+    },
   },
   {
     name: {
       en: 'Technology',
       zh: '技术',
     },
-    href: '//google.com',
-  },
-  {
-    name: {
-      en: 'Maintain',
-      zh: '生态',
+    href: {
+      en: '//google.com',
+      zh: '//google.com',
     },
-    subMenu: [
-      {
-        name: {
-          en: 'Node',
-          zh: '节点',
-        },
-        href: '//google.com',
-      },
-      {
-        name: {
-          en: 'Miner',
-          zh: '矿工',
-        },
-        href: '//google.com',
-      },
-      {
-        name: {
-          en: 'Community',
-          zh: '社区',
-        },
-        href: '//google.com',
-      },
-      {
-        name: {
-          en: 'About Us',
-          zh: '关于我们',
-        },
-        href: '//google.com',
-      },
-    ],
   },
-  {
-    name: {
-      en: 'Resources',
-      zh: '资源',
-    },
-    subMenu: [
-      TechWhitepaperConfig,
-      EconomyWhitepaperConfig,
-      {
-        name: {
-          en: 'DarkWallet',
-          zh: '暗钱包',
-        },
-        href: 'https://poc3.phala.network',
-      },
-      {
-        name: {
-          en: 'Wiki',
-          zh: 'Wiki',
-        },
-        href: 'https://wiki.phala.network',
-      },
-      {
-        name: {
-          en: 'Github',
-          zh: 'Github',
-        },
-        href: 'https://github.com/Phala-Network',
-      },
-      {
-        name: {
-          en: 'Testnet',
-          zh: '测试网',
-        },
-        href: 'https://poc3.phala.network',
-      },
-      {
-        name: {
-          en: 'Claim',
-          zh: '领奖',
-        },
-        href: 'https://stakedrop-claim.phala.network/',
-      },
-    ],
-  },
+  MaintainMenuConfig,
+  ResourcesMenuConfig,
 ]
 
 const config = {}

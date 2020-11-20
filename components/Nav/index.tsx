@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
-import { menuConfig } from '../../config'
+import { MenuConfig } from '../../config'
 import I18n from '../I18n'
 import LangSwitch from '../LangSwitch'
 import Logo from '../Logo'
@@ -23,10 +23,13 @@ const Nav: React.FC<Props> = () => {
             </a>
           </Link>
           <ul>
-            {menuConfig.map((menu) => {
+            {MenuConfig.map((menu) => {
               return (
                 <li key={menu.name.en}>
-                  <a className={styles.link} target='_blank' href={menu.href}>
+                  <a
+                    className={styles.link}
+                    target='_blank'
+                    href={menu?.href?.[locale] ?? ''}>
                     <I18n {...menu.name}></I18n>
                   </a>
 
