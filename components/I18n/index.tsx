@@ -8,10 +8,9 @@ type Props = {
 }
 
 const I18n: React.FC<Props> = (props) => {
-  const { zh = '', en = '' } = props
   const { locale } = useRouter()
 
-  return <>{locale === 'en' ? en : zh}</>
+  return <>{props[locale]}</>
 }
 
 export default I18n
