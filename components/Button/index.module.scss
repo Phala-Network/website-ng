@@ -14,6 +14,14 @@
   padding: 10px 14px;
   border-radius: 0;
 
+  @media (max-width: $md) {
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    padding: 5px 10px;
+    border-width: 1px !important;
+  }
+
   &.uppercase {
     text-transform: uppercase;
   }
@@ -70,6 +78,11 @@
   }
 
   .iconArrow {
+    @media (max-width: $md) {
+      width: 15px;
+      height: 15px;
+    }
+
     margin-left: 14px;
     transition: transform 0.1s ease;
   }

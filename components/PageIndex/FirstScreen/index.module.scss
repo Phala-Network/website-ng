@@ -20,6 +20,11 @@
     color: $color-gray;
     font-size: 80px;
     line-height: 80px;
+
+    @media (max-width: $md) {
+      font-size: 30px;
+      line-height: 1;
+    }
   }
 
   .description {
