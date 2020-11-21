@@ -10,6 +10,7 @@ import Footer from '../Footer'
 import ExecutionSection from './ExecutionSection'
 import ContractSection from './ContractSection'
 import ProductSection from './ProductSection'
+import PartnersSection from './PartnersSection'
 
 type Props = {}
 
@@ -25,6 +26,7 @@ const PageIndex: React.FC<Props> = (props) => {
       <ExecutionSection></ExecutionSection>
       <ContractSection></ContractSection>
       <ProductSection></ProductSection>
+      <PartnersSection></PartnersSection>
 
       <Footer></Footer>
 

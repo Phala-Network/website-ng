@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+
+.partnersSection {
+  background-image: url('/images/indexPage/partnersSection/bg.jpg');
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+
+  .content {
+    .partners {
+      flex: 1;
+      padding-top: 110px;
+      background: $color-bg-gray;
+    }
+
+    .header {
+      padding-top: 100px;
+      padding-left: 40px;
+      width: 470px;
+    }
+  }
+}
