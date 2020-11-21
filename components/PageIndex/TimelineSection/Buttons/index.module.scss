@@ -1,0 +1,20 @@
+.buttons {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .button {
+    position: relative;
+    cursor: pointer;
+
+    &:active {
+      &.left {
+        opacity: 0.5;
+      }
+      &.right {
+        opacity: 0.5;
+      }
+    }
+  }
+}

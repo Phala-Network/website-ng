@@ -11,7 +11,7 @@ export const TimelineSectionConfig = {
         quarter: 4,
         content: {
           en: ['Phala Team was founded'],
-          zh: ['Phala Team was founded'],
+          zh: ['Phala 团队成立'],
         },
       },
       {
@@ -19,7 +19,7 @@ export const TimelineSectionConfig = {
         quarter: 2,
         content: {
           en: ['Built a strong community in China'],
-          zh: ['Built a strong community in China'],
+          zh: ['建立了强大的中国社区'],
         },
       },
       {
