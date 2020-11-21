@@ -22,7 +22,8 @@ const Nav: React.FC<Props> = () => {
               <Logo></Logo>
             </a>
           </Link>
-          <ul>
+
+          <ul className={styles.pcMenu}>
             {MenuConfig.map((menu) => {
               return (
                 <li key={menu.name.en}>
@@ -38,6 +39,7 @@ const Nav: React.FC<Props> = () => {
               )
             })}
           </ul>
+
           <LangSwitch></LangSwitch>
         </nav>
       </div>
