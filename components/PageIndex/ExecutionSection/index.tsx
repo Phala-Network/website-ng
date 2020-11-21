@@ -14,13 +14,13 @@ const ExecutionSection: React.FC<Props> = () => {
       <div className='container'>
         <div className={styles.content}>
           <div className='row'>
-            <div className='col-lg-6'>
+            <div className='col-xl-6'>
               <SectionHeader
                 title={ExecutionSectionConfig.titleText}
                 description={ExecutionSectionConfig.descriptionText}
               />
             </div>
-            <div className='col-lg-6'>
+            <div className='col-xl-6'>
               <Button
                 className={styles.button}
                 text={ExecutionSectionConfig.buttonText}

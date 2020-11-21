@@ -14,20 +14,20 @@ const Footer: React.FC<Props> = () => {
     <footer className={styles.footer}>
       <div className='container'>
         <div className='row'>
-          <div className='col-6'>
+          <div className='col-md-6'>
             <div className={styles.left}>
               <Subscribe></Subscribe>
               <EmailInput></EmailInput>
               <MediaList></MediaList>
             </div>
           </div>
-          <div className='col-6'>
+          <div className='col-md-6'>
             <div className={styles.right}>
               <div className='row'>
-                <div className='col-4'>
+                <div className='col-sm-4'>
                   <Menu data={MaintainMenuConfig}></Menu>
                 </div>
-                <div className='col-8'>
+                <div className='col-sm-8'>
                   <Menu data={ResourcesMenuConfig}></Menu>
                 </div>
               </div>
