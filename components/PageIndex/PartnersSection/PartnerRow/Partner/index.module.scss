@@ -1,8 +1,18 @@
+@import '../../../../../styles/variables.scss';
+
 .partner {
   margin-bottom: 60px;
+
+  @media (max-width: $sm) {
+    margin-bottom: 15px;
+  }
 
   img {
     display: block;
     width: 170px;
+
+    @media (max-width: $sm) {
+      width: 89px;
+    }
   }
 }

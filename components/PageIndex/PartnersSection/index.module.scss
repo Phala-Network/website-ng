@@ -5,17 +5,58 @@
   background-size: 50% 100%;
   background-repeat: no-repeat;
 
+  @media (max-width: $md) {
+    background: transparent;
+  }
+
   .content {
+    @media (max-width: $md) {
+      flex-direction: column-reverse;
+    }
+
     .partners {
       flex: 1;
       padding-top: 110px;
       background: $color-bg-gray;
+
+      @media (max-width: $md) {
+        padding-top: 50px;
+      }
+
+      &.xlShow {
+        display: none;
+
+        @media (max-width: $xl) {
+          display: block;
+        }
+      }
+
+      &.xlHide {
+        display: block;
+
+        @media (max-width: $xl) {
+          display: none;
+        }
+      }
+    }
+
+    .mobileHeader {
+      display: none;
+      margin-left: 20px;
+
+      @media (max-width: $md) {
+        display: block;
+      }
     }
 
     .header {
       padding-top: 100px;
       padding-left: 40px;
-      width: 360px;
+      max-width: 360px;
+
+      @media (max-width: $md) {
+        display: none;
+      }
     }
   }
 }
