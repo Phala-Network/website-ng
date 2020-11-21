@@ -2,7 +2,11 @@
 
 .list {
   background-color: $color-primary;
-  min-height: 875px;
   padding-top: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
+
+  @media (max-width: $md) {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
 }

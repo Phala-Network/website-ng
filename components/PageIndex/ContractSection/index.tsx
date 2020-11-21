@@ -10,9 +10,9 @@ type Props = {}
 const ContractSection: React.FC<Props> = () => {
   return (
     <div className={styles.contractSection}>
-      <div className='container'>
+      <div className='container-lg'>
         <div className={styles.content}>
-          <div className='row'>
+          <div className='row flex-column-reverse flex-lg-row '>
             <div className='col-lg-6'>
               <List></List>
             </div>

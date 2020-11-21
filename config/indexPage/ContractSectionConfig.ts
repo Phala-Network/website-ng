@@ -5,8 +5,8 @@ export const ContractSectionConfig = {
   },
 
   title: {
-    en: 'Privacy-preserving Smart Contract',
-    zh: 'Privacy-preserving Smart Contract',
+    en: ['Privacy-preserving', 'Smart Contract'],
+    zh: ['Privacy-preserving', 'Smart Contract'],
   },
 
   description: {
