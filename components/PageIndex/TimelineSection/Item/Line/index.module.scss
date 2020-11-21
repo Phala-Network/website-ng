@@ -1,0 +1,19 @@
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+
+  .o {
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+    background-color: #ffffff;
+  }
+
+  .l {
+    width: 2px;
+    height: 210px;
+    background-color: #ffffff;
+  }
+}
