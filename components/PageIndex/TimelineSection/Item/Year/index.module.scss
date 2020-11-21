@@ -1,0 +1,25 @@
+.year {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 229px;
+  height: 77px;
+
+  &.y2018 {
+    background-image: url(./images/2018.svg);
+  }
+  &.y2019 {
+    background-image: url(./images/2019.svg);
+  }
+  &.y2020 {
+    background-image: url(./images/2020.svg);
+  }
+  &.y2021 {
+    background-image: url(./images/2021.svg);
+  }
+  &.y2022 {
+    background-image: url(./images/2022.svg);
+  }
+  &.y2023 {
+    background-image: url(./images/2023.svg);
+  }
+}
