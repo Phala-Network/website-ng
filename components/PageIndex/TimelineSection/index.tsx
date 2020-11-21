@@ -16,8 +16,12 @@ const TimelineSection: React.FC<Props> = () => {
   const [index, setIndex] = useState(0)
   const [bgColor, setBgColor] = useState<'primary' | 'gray'>('primary')
 
+  function isLast() {
+    return index >= maxIndex
+  }
+
   function onRightButtonClick() {
-    if (index >= maxIndex) return
+    if (isLast()) return
 
     setIndex(index + slideNumber)
   }
@@ -29,7 +33,7 @@ const TimelineSection: React.FC<Props> = () => {
   }
 
   useEffect(() => {
-    if (index >= maxIndex) {
+    if (isLast()) {
       setBgColor('gray')
     } else {
       setBgColor('primary')
@@ -40,7 +44,7 @@ const TimelineSection: React.FC<Props> = () => {
     <div className={classnames([styles.timelineSection, styles[bgColor]])}>
       <div className='container'>
         <div className={styles.header}>
-          <SectionHeader title={index >= maxIndex ? doingTitle : doneTitle} />
+          <SectionHeader title={isLast() ? doingTitle : doneTitle} />
 
           <Buttons
             onLeftButtonClick={onLeftButtonClick}
