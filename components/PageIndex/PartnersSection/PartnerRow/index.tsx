@@ -6,7 +6,7 @@ const PartnerRow = (props) => {
   const { from, to } = props
   const doms = []
 
-  for (let i = from; i < to; i++) {
+  for (let i = from; i <= to; i++) {
     doms.push(<Partner key={i} index={i}></Partner>)
   }
 
