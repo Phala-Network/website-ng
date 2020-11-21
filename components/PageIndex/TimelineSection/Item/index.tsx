@@ -46,7 +46,7 @@ const Item: React.FC<Props> = (props) => {
                   <div>{item.title}</div>
                   <div className={styles.newestContent}>
                     {item.text.map((t) => {
-                      return <div>{t}</div>
+                      return <div key={t}>{t}</div>
                     })}
                   </div>
                 </div>
