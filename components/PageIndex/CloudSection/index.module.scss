@@ -13,19 +13,41 @@
     background-size: 100% auto;
     width: 100%;
     padding-top: 105px;
+    padding-bottom: 280px;
+
+    @media (max-width: $md) {
+      height: auto;
+      min-height: auto;
+      padding-top: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     .buttons > a:last-child {
       margin-top: 30px;
+
+      @media (max-width: $md) {
+        margin-top: 15px;
+      }
     }
 
     .buttons {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+
+      @media (max-width: $lg) {
+        margin-top: 30px;
+        align-items: flex-start;
+      }
     }
 
     .buttons a {
       width: 400px;
+
+      @media (max-width: $md) {
+        width: 195px;
+      }
     }
   }
 }

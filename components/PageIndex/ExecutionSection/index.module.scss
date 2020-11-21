@@ -10,9 +10,29 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
+    @media (max-width: $md) {
+      height: auto;
+      min-height: auto;
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 50px;
+    }
+
     .button {
       margin-left: auto;
       max-width: 500px;
+
+      @media (max-width: $xl) {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+
+      @media (max-width: $md) {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 252px;
+      }
     }
   }
 }

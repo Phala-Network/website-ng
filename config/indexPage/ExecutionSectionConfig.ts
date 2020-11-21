@@ -5,8 +5,8 @@ export const ExecutionSectionConfig = {
   },
 
   titleText: {
-    en: 'Temperproofing, unattackable execution',
-    zh: 'Temperproofing, unattackable execution',
+    en: ['Temperproofing, ', 'unattackable', 'execution'],
+    zh: ['Temperproofing, ', 'unattackable', 'execution'],
   },
 
   descriptionText: {

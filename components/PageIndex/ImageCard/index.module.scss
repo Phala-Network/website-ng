@@ -1,12 +1,13 @@
 @import '../../../styles/variables.scss';
 
-.imageCard {
-}
-
-.image {
+.image img {
   height: 130px;
   width: 130px;
-  height: auto;
+
+  @media (max-width: $md) {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .line {
@@ -14,6 +15,10 @@
   width: 100%;
   height: 1px;
   background-color: $color-black;
+
+  @media (max-width: $md) {
+    margin-top: 8px;
+  }
 }
 
 .name {
@@ -24,6 +29,11 @@
   font-size: 24px;
   line-height: 29px;
   color: $color-black;
+
+  @media (max-width: $md) {
+    font-size: 18px;
+    margin-top: 8px;
+  }
 }
 
 .description {
@@ -35,4 +45,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-black;
+
+  @media (max-width: $md) {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
