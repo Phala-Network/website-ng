@@ -11,7 +11,7 @@ const List: React.FC<Props> = () => {
       <div className='row'>
         {ExecutionSectionConfig.list.map((item) => {
           return (
-            <div className='col-md-3 col-sm-6'>
+            <div key={item.name.en} className='col-md-3 col-sm-6'>
               <ImageCard {...item}></ImageCard>
             </div>
           )

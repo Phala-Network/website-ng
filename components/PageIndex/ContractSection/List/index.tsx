@@ -11,7 +11,7 @@ const List: React.FC<Props> = () => {
     <div className={classnames([styles.list, 'row'])}>
       {ContractSectionConfig.list.map((item) => {
         return (
-          <div className='col-sm-6'>
+          <div key={item.name.en} className='col-sm-6'>
             <ImageCard {...item}></ImageCard>
           </div>
         )
