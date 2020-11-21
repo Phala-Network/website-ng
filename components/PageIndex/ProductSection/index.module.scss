@@ -1,0 +1,56 @@
+@import '../../../styles/variables.scss';
+
+.productSection {
+  width: 100%;
+  background-color: $color-bg-black;
+
+  .content {
+    min-height: 661px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .productIcons {
+      margin-top: 120px;
+
+      .productIcon {
+        margin-bottom: 25px;
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    .link {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 23px;
+      text-align: right;
+      letter-spacing: -1px;
+      color: $color-primary;
+    }
+
+    .line {
+      margin-top: 30px;
+      width: 100%;
+      background-color: white;
+      height: 1px;
+    }
+
+    .code img {
+      margin-top: 30px;
+      width: 100%;
+      display: block;
+      max-width: 565px;
+    }
+
+    .description {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: $color-gray;
+    }
+  }
+}

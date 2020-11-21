@@ -9,6 +9,7 @@ import CloudSection from './CloudSection'
 import Footer from '../Footer'
 import ExecutionSection from './ExecutionSection'
 import ContractSection from './ContractSection'
+import ProductSection from './ProductSection'
 
 type Props = {}
 
@@ -23,6 +24,7 @@ const PageIndex: React.FC<Props> = (props) => {
       <CloudSection></CloudSection>
       <ExecutionSection></ExecutionSection>
       <ContractSection></ContractSection>
+      <ProductSection></ProductSection>
 
       <Footer></Footer>
 
