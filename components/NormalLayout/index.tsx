@@ -20,7 +20,7 @@ const NormalLayout: React.FC<Props> = (props) => {
 
       <Footer></Footer>
 
-      {isClient() && <BackTop></BackTop>}
+      <>{isClient() && <BackTop></BackTop>}</>
     </>
   )
 }
