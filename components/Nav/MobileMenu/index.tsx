@@ -11,9 +11,16 @@ type Props = {
 
 const MobileMenu: React.FC<Props> = (props) => {
   const { onClose } = props
+  const prevent = (e) => {
+    e.preventDefault()
+    e.stopPropagation()
+  }
 
   return ReactDom.createPortal(
-    <div className={styles.mobileMenu}>
+    <div
+      onTouchMove={prevent}
+      onTouchStart={prevent}
+      className={styles.mobileMenu}>
       <div onClick={() => onClose?.()} className={styles.x}>
         <IconClose></IconClose>
       </div>
