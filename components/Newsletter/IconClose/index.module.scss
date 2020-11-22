@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .iconClose {
   display: flex;
   align-items: center;
@@ -6,8 +8,20 @@
   cursor: pointer;
   border: 1px solid transparent;
 
+  @media (max-width: $sm) {
+    margin: 0 12px;
+  }
+
+  @media (min-width: $sm) and (max-width: $md) {
+    margin: 0 18px;
+  }
+
+  @media (min-width: $md) and (max-width: $lg) {
+    margin: 0 28px;
+  }
+
   &:hover {
-    border-color: black;
+    border-color: $color-black;
   }
 
   &:active {
