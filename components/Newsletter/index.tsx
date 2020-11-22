@@ -3,6 +3,7 @@ import styles from './index.module.scss'
 import Marquee from 'react-fast-marquee'
 import IconClose from './IconClose'
 import I18n from '../I18n'
+import { newsletterConfig } from '../../config/newsletterConfig'
 
 type Props = {}
 
@@ -15,10 +16,8 @@ const Newsletter: React.FC<Props> = () => {
 
   const news = (
     <div className={styles.news}>
-      <a href='//google.com' target='_blank'>
-        <I18n
-          en='Phala Network Value Tops $10+ Million on New Fundraising 🎉'
-          zh='Phala Network 新募集资金超过1000万美元 🎉'></I18n>
+      <a href={newsletterConfig.link} target='_blank'>
+        <I18n {...newsletterConfig.news}></I18n>
       </a>
     </div>
   )
