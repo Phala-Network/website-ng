@@ -14,12 +14,12 @@ const IconClose: React.FC<Props> = () => {
         <path
           d='M0.987023 0.987098L16.013 16.0131'
           stroke='#D9D9D9'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <path
           d='M0.986958 16.0131L16.013 0.987098'
           stroke='#D9D9D9'
-          stroke-width='2'
+          strokeWidth='2'
         />
       </svg>
     </div>
