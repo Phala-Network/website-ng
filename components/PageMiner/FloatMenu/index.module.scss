@@ -1,0 +1,29 @@
+.floatMenu {
+  position: absolute;
+  width: 347px;
+  height: 262px;
+  padding: 35px 28px 21px 20px;
+  background-color: #d1ff52;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  top: 150px;
+  z-index: 20;
+
+  &.fixed {
+    position: fixed;
+    top: auto;
+    bottom: 40px;
+  }
+
+  &.bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+  }
+
+  &:hover {
+    z-index: 80;
+  }
+}

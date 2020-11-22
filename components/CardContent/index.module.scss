@@ -1,0 +1,33 @@
+.cardContent {
+  background-color: #f0efee;
+  background-repeat: no-repeat;
+  padding: 60px 30px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #070707;
+  flex: 1;
+
+  .content::first-letter {
+    font-family: Minecraft;
+    font-size: 60px;
+    line-height: 0.6;
+  }
+
+  &.bg1 {
+    background-image: url(./bg/1.svg);
+    background-position: right top;
+  }
+  &.bg2 {
+    background-image: url(./bg/2.svg);
+    background-position: right top;
+  }
+  &.bg3 {
+    background-image: url(./bg/3.svg);
+    background-position: right top;
+  }
+}

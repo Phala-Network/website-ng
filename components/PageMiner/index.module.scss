@@ -2,7 +2,6 @@
 
 .pageMiner {
   width: 100%;
-  min-height: 200vh;
   background-color: $color-bg-black;
   background-image: url(./bg2.png);
   background-size: cover;
@@ -10,6 +9,8 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding-top: 250px;
+  padding-bottom: 200px;
+  position: relative;
 
   @media (max-width: $sm) {
     padding: 200px 20px;
@@ -47,5 +48,12 @@
     .btn3 {
       width: 180px;
     }
+  }
+
+  .content {
+    position: relative;
+  }
+
+  .floatMenu {
   }
 }

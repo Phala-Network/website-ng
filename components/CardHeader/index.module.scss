@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.cardHeader {
+  width: 400px;
+  padding: 30px 18px 20px 30px;
+  background-color: #000000;
+  color: $color-primary;
+  font-family: Minecraft;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 39px;
+  text-transform: uppercase;
+  position: relative;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+}

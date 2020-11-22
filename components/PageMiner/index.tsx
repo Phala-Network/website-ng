@@ -5,6 +5,8 @@ import { WikiConfig } from '../../config/WikiConfig'
 import DetailPageButton from '../DetailPageButton'
 import NormalLayout from '../NormalLayout'
 import SectionHeader from '../SectionHeader'
+import Card from './Card'
+import FloatMenu from './FloatMenu'
 import styles from './index.module.scss'
 
 type Props = {}
@@ -43,6 +45,16 @@ const PageMiner: React.FC<Props> = () => {
               href={WikiConfig.href}
               text={WikiConfig.name}
             />
+          </div>
+
+          <div id='content' className={styles.content}>
+            {PageMinerConfig.content.map((item, index) => {
+              return (
+                <Card {...item} index={index + 1} bgIndex={index + 1}></Card>
+              )
+            })}
+
+            <FloatMenu></FloatMenu>
           </div>
         </div>
       </div>
