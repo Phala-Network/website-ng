@@ -1,19 +1,34 @@
+@import '../../../../../styles/variables.scss';
+
 .line {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
 
+  @media (max-width: $md) {
+    margin: 1px 15px;
+  }
+
   .o {
     width: 22px;
     height: 22px;
     border-radius: 22px;
     background-color: #ffffff;
+
+    @media (max-width: $md) {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   .l {
     width: 2px;
     height: 100%;
     background-color: #ffffff;
+
+    @media (max-width: $md) {
+      width: 1.5px;
+    }
   }
 }
