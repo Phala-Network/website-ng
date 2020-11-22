@@ -29,7 +29,7 @@ const Item: React.FC<Props> = (props) => {
           [styles.newestText]: newest,
         },
       ])}>
-      <div>
+      <div className={styles.content}>
         <div className={styles.date}>
           <Year year={year}></Year>
           {quarter && <span className={styles.q}>Q{quarter}</span>}
@@ -43,7 +43,7 @@ const Item: React.FC<Props> = (props) => {
               // for the newest (2021)
               return (
                 <div key={item.title} className={styles.newest}>
-                  <div>{item.title}</div>
+                  <div className={styles.title}>{item.title}</div>
                   <div className={styles.newestContent}>
                     {item.text.map((t) => {
                       return <div key={t}>{t}</div>

@@ -4,10 +4,23 @@
   display: flex;
   min-height: 210px;
 
+  @media (max-width: $md) {
+    width: 100%;
+    min-height: 120px;
+  }
+
+  .content {
+    flex: 1;
+  }
+
   .date {
     display: flex;
     align-items: flex-end;
     margin-top: 25px;
+
+    @media (max-width: $md) {
+      margin-top: 30px;
+    }
   }
 
   .q {
@@ -17,14 +30,19 @@
     line-height: 1;
     color: $color-black;
     margin-bottom: -4px;
+
+    @media (max-width: $md) {
+      font-size: 36px;
+      margin-left: 42px;
+    }
   }
 
   &.newestText {
-    .text {
-      display: flex;
-    }
+    @media (min-width: $md) {
+      .text {
+        display: flex;
+      }
 
-    @media (min-width: 630px) {
       .line {
         display: none;
       }
@@ -35,16 +53,23 @@
     margin: 30px 0 0;
     font-family: Lato;
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.25;
-    letter-spacing: normal;
     color: $color-black;
+
+    @media (max-width: $md) {
+      margin-top: 20px;
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 
   .newest {
     width: 310px;
+    @media (max-width: $md) {
+      &:nth-child(2) > div:nth-child(1) {
+        margin-top: 10px;
+      }
+    }
 
     .newestContent {
       margin: 10px 0 0 20px;
@@ -56,6 +81,12 @@
       line-height: 1.25;
       letter-spacing: normal;
       color: rgba(10, 10, 10, 0.6);
+
+      @media (max-width: $md) {
+        margin: 5px 40px 0 10px;
+        font-size: 12px;
+        line-height: 1.17;
+      }
     }
   }
 }

@@ -1,8 +1,14 @@
+@import '../../../../styles/variables.scss';
+
 .buttons {
   width: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $md) {
+    display: none;
+  }
 
   .button {
     position: relative;
