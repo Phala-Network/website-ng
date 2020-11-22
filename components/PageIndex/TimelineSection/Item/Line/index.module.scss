@@ -1,5 +1,8 @@
 @import '../../../../../styles/variables.scss';
 
+$oSize: 22px;
+$oMdSize: 17px;
+
 .line {
   display: flex;
   flex-direction: column;
@@ -11,15 +14,15 @@
   }
 
   .o {
-    width: 22px;
-    height: 22px;
-    border-radius: 22px;
+    width: $oSize;
+    height: $oSize;
+    border-radius: $oSize;
     background-color: #ffffff;
 
     @media (max-width: $md) {
-      width: 17px;
-      height: 17px;
-      border-radius: 17px;
+      width: $oMdSize;
+      height: $oMdSize;
+      border-radius: $oMdSize;
     }
   }
 
