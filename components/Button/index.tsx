@@ -15,12 +15,14 @@ type Props = {
   href?: string | { [key: string]: string }
   text?: string | { [key: string]: string }
   className?: string
+  size?: 'default' | 'middle'
 }
 
 const Button: React.FC<Props> = (props) => {
   const { locale } = useRouter()
 
   const {
+    size,
     className,
     uppercase = true,
     hasArrowIcon = false,
@@ -42,6 +44,7 @@ const Button: React.FC<Props> = (props) => {
       className,
       styles.button,
       styles[color],
+      styles[size],
       { [styles.uppercase]: uppercase },
     ]),
   }

@@ -1,5 +1,6 @@
 import React from 'react'
-import { EconomyWhitepaperConfig, TechWhitepaperConfig } from '../../../config'
+import { TechWhitepaperConfig } from '../../../config'
+import { EconomyWhitepaperConfig } from '../../../config/EconomyWhitepaperConfig'
 import Button from '../../Button'
 import I18n from '../../I18n'
 import SectionHeader from '../../SectionHeader'

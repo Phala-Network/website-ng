@@ -1,4 +1,6 @@
+import { EconomyWhitepaperConfig } from './EconomyWhitepaperConfig'
 import { GithubConfig } from './GithubConfig'
+import { WikiConfig } from './WikiConfig'
 
 export const TechWhitepaperConfig = {
   name: {
@@ -8,17 +10,6 @@ export const TechWhitepaperConfig = {
   href: {
     en: 'https://files.phala.network/phala-paper.pdf',
     zh: 'https://files.phala.network/phala-paper.pdf',
-  },
-}
-
-export const EconomyWhitepaperConfig = {
-  name: {
-    en: 'Economy Whitepaper',
-    zh: '经济白皮书',
-  },
-  href: {
-    en: 'https://files.phala.network/phala-token-economics-zh.pdf',
-    zh: 'https://files.phala.network/phala-token-economics-cn.pdf',
   },
 }
 
@@ -89,16 +80,7 @@ export const ResourcesMenuConfig = {
         zh: 'https://poc3.phala.network',
       },
     },
-    {
-      name: {
-        en: 'Wiki',
-        zh: 'Wiki',
-      },
-      href: {
-        en: 'https://wiki.phala.network',
-        zh: 'https://wiki.phala.network',
-      },
-    },
+    WikiConfig,
     {
       name: {
         en: GithubConfig.name,

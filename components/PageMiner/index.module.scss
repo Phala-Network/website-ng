@@ -24,4 +24,25 @@
       max-width: 602px;
     }
   }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    max-width: 402px;
+
+    & > * {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn1 {
+      max-width: 360px;
+    }
+
+    .btn2,
+    .btn3 {
+      max-width: 240px;
+    }
+  }
 }
