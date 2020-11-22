@@ -2,6 +2,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import I18n from '../I18n'
 import styles from './index.module.scss'
+import Link from 'next/link'
 
 type Props = {
   data: any
@@ -14,7 +15,11 @@ const ListMenu: React.FC<Props> = (props) => {
   return (
     <div className={styles.listMenu}>
       <div className={styles.title}>
-        <I18n {...data.name}></I18n>
+        <Link href={data?.href?.[locale] ?? ''}>
+          <a target='_blank'>
+            <I18n {...data.name}></I18n>
+          </a>
+        </Link>
       </div>
 
       {data.subMenu && (
@@ -22,15 +27,16 @@ const ListMenu: React.FC<Props> = (props) => {
           {data.subMenu.map((item) => {
             return (
               <div className={styles.item} key={item.name.en}>
-                <a
-                  target='_blank'
+                <Link
                   href={
                     typeof item.href === 'string'
                       ? item.href
                       : item.href[locale]
                   }>
-                  <I18n {...item.name}></I18n>
-                </a>
+                  <a target='_blank'>
+                    <I18n {...item.name}></I18n>
+                  </a>
+                </Link>
               </div>
             )
           })}

@@ -44,8 +44,8 @@ export const MaintainMenuConfig = {
         zh: '矿工',
       },
       href: {
-        en: '//google.com',
-        zh: '//google.com',
+        en: '/miner',
+        zh: '/miner',
       },
     },
     {

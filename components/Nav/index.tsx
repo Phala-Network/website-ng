@@ -30,12 +30,11 @@ const Nav: React.FC<Props> = () => {
             {MenuConfig.map((menu) => {
               return (
                 <li key={menu.name.en}>
-                  <a
-                    className={styles.link}
-                    target='_blank'
-                    href={menu?.href?.[locale] ?? ''}>
-                    <I18n {...menu.name}></I18n>
-                  </a>
+                  <Link href={menu?.href?.[locale] ?? ''}>
+                    <a className={styles.link} target='_blank'>
+                      <I18n {...menu.name}></I18n>
+                    </a>
+                  </Link>
 
                   {menu.subMenu && <SubMenu data={menu.subMenu}></SubMenu>}
                 </li>
