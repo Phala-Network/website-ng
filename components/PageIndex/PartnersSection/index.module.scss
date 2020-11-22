@@ -6,12 +6,13 @@
   background-repeat: no-repeat;
 
   @media (max-width: $md) {
-    background: transparent;
+    background-size: 100% 100%;
   }
 
   .content {
     @media (max-width: $md) {
       flex-direction: column-reverse;
+      margin: 0;
     }
 
     .partners {
@@ -21,22 +22,7 @@
 
       @media (max-width: $md) {
         padding-top: 50px;
-      }
-
-      &.xlShow {
-        display: none;
-
-        @media (max-width: $xl) {
-          display: block;
-        }
-      }
-
-      &.xlHide {
-        display: block;
-
-        @media (max-width: $xl) {
-          display: none;
-        }
+        padding-bottom: 40px;
       }
     }
 
@@ -56,6 +42,7 @@
 
       @media (max-width: $md) {
         display: none;
+        padding-left: 20px;
       }
     }
   }
