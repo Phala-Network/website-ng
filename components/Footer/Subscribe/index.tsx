@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionHeader from '../../PageIndex/SectionHeader'
+import SectionHeader from '../../SectionHeader'
 
 type Props = {}
 

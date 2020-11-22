@@ -1,6 +1,6 @@
 import React from 'react'
 import I18n from '../../I18n'
-import SectionHeader from '../SectionHeader'
+import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'
 
 type Props = {}

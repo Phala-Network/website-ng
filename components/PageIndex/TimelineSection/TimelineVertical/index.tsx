@@ -2,7 +2,7 @@ import React from 'react'
 import Item from '../Item'
 import styles from './index.module.scss'
 import classnames from 'classnames'
-import SectionHeader from '../../SectionHeader'
+import SectionHeader from '../../../SectionHeader'
 
 type Props = {
   data: any

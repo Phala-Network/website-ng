@@ -1,6 +1,6 @@
 import React from 'react'
 import { PartnersSectionConfig } from '../../../config/indexPage/PartnersSectionConfig'
-import SectionHeader from '../SectionHeader'
+import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'
 import PartnerRow from './PartnerRow'
 import classnames from 'classnames'

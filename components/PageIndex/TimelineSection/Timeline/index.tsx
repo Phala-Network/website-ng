@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import SectionHeader from '../../SectionHeader'
+import SectionHeader from '../../../SectionHeader'
 import styles from './index.module.scss'
 import Item from '../Item'
 import { TimelineSectionConfig } from '../../../../config/indexPage/TimelineSectionConfig'

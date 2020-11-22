@@ -2,7 +2,7 @@ import React from 'react'
 import { ExecutionSectionConfig } from '../../../config/indexPage/ExecutionSectionConfig'
 import Button from '../../Button'
 import I18n from '../../I18n'
-import SectionHeader from '../SectionHeader'
+import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'
 import List from './List'
 

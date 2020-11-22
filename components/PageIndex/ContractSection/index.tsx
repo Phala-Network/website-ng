@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContractSectionConfig } from '../../../config/indexPage/ContractSectionConfig'
 import Button from '../../Button'
-import SectionHeader from '../SectionHeader'
+import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'
 import List from './List'
 import classnames from 'classnames'
