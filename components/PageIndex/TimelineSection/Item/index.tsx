@@ -7,7 +7,7 @@ import Year from './Year'
 import classnames from 'classnames'
 
 type Props = {
-  newest: boolean
+  newest?: boolean
   year: number
   quarter?: number
   content: {

@@ -74,6 +74,7 @@ export const TimelineSectionConfig = {
       },
       {
         year: 2021,
+        newest: true,
         content: {
           en: [
             {

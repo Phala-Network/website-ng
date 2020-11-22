@@ -12,24 +12,36 @@ const { timeline, doneTitle, doingTitle } = TimelineSectionConfig
 
 const TimelineSection: React.FC<Props> = () => {
   const slideNumber = 3
-  const maxIndex = 6
   const [index, setIndex] = useState(0)
   const [bgColor, setBgColor] = useState<'primary' | 'gray'>('primary')
+  const allTimelineData = [...timeline.done, ...timeline.doing]
+  const allTimelineDataLength = allTimelineData.length
+  const maxIndex = allTimelineData.length - slideNumber
+
+  console.log('maxIndex', maxIndex)
 
   function isLast() {
     return index >= maxIndex
   }
 
   function onRightButtonClick() {
-    if (isLast()) return
+    if (index === allTimelineDataLength - 1) return
 
-    setIndex(index + slideNumber)
+    if (isLast()) {
+      setIndex(index + 2)
+    } else {
+      setIndex(index + slideNumber)
+    }
   }
 
   function onLeftButtonClick() {
     if (index === 0) return
 
-    setIndex(index - slideNumber)
+    if (index === allTimelineDataLength - 1) {
+      setIndex(index - 2)
+    } else {
+      setIndex(index - slideNumber)
+    }
   }
 
   useEffect(() => {
@@ -58,14 +70,8 @@ const TimelineSection: React.FC<Props> = () => {
               transform: `translate3d(${index * -367}px, 0, 0)`,
             }}
             className={styles.timelineInner}>
-            {[...timeline.done, ...timeline.doing].map((item, index, array) => {
-              return (
-                <Item
-                  newest={index === array.length - 1}
-                  key={JSON.stringify(item.content)}
-                  {...item}
-                />
-              )
+            {allTimelineData.map((item) => {
+              return <Item key={JSON.stringify(item.content)} {...item} />
             })}
           </div>
         </div>
