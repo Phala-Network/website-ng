@@ -19,12 +19,13 @@
     @media (max-width: $md) {
       width: 17px;
       height: 17px;
+      border-radius: 17px;
     }
   }
 
   .l {
+    flex: 1;
     width: 2px;
-    height: 100%;
     background-color: #ffffff;
 
     @media (max-width: $md) {
