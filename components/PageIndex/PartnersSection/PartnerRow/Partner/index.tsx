@@ -1,5 +1,5 @@
 import React from 'react'
-import { PartnersSectionConfig } from '../../../../../config/indexPage/PartnersSectionConfig'
+import { PartnersSectionConfig } from '../../../../../config/PageIndex/PartnersSectionConfig'
 import styles from './index.module.scss'
 
 const Partner = (props) => {

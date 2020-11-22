@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExecutionSectionConfig } from '../../../config/indexPage/ExecutionSectionConfig'
+import { ExecutionSectionConfig } from '../../../config/PageIndex/ExecutionSectionConfig'
 import Button from '../../Button'
 import I18n from '../../I18n'
 import SectionHeader from '../../SectionHeader'

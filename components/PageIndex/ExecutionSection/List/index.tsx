@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExecutionSectionConfig } from '../../../../config/indexPage/ExecutionSectionConfig'
+import { ExecutionSectionConfig } from '../../../../config/PageIndex/ExecutionSectionConfig'
 import ImageCard from '../../ImageCard'
 import styles from './index.module.scss'
 

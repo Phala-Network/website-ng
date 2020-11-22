@@ -1,5 +1,5 @@
 import React from 'react'
-import { TimelineSectionConfig } from '../../../config/indexPage/TimelineSectionConfig'
+import { TimelineSectionConfig } from '../../../config/PageIndex/TimelineSectionConfig'
 import Timeline from './Timeline'
 import { useBreakpoint } from '../../../hooks/useBreakpoint'
 import TimelineVertical from './TimelineVertical'
