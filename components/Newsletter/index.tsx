@@ -28,7 +28,7 @@ const Newsletter: React.FC<Props> = () => {
       <Marquee
         pauseOnHover={true}
         gradient={false as any}
-        speed={12}
+        speed={20}
         direction='left'>
         {news}
         {news}
