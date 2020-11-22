@@ -20,7 +20,7 @@ const MobileMenu: React.FC<Props> = (props) => {
 
       <div className={styles.content}>
         {MenuConfig.map((menu) => {
-          return <ListMenu data={menu}></ListMenu>
+          return <ListMenu key={JSON.stringify(menu)} data={menu}></ListMenu>
         })}
 
         <div className={styles.line}></div>
