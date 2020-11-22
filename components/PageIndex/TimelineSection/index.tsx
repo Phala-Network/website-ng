@@ -5,20 +5,24 @@ import Item from './Item'
 import { TimelineSectionConfig } from '../../../config/indexPage/TimelineSectionConfig'
 import Buttons from './Buttons'
 import classnames from 'classnames'
+import useBreakpoint from 'use-breakpoint'
+
+const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 }
 
 type Props = {}
 
 const { timeline, doneTitle, doingTitle } = TimelineSectionConfig
 
 const TimelineSection: React.FC<Props> = () => {
-  const slideNumber = 3
+  const [slideNumber, setSlideNumber] = useState(3)
   const [index, setIndex] = useState(0)
   const [bgColor, setBgColor] = useState<'primary' | 'gray'>('primary')
   const allTimelineData = [...timeline.done, ...timeline.doing]
   const allTimelineDataLength = allTimelineData.length
   const maxIndex = allTimelineData.length - slideNumber
+  const { breakpoint } = useBreakpoint(BREAKPOINTS, 'desktop')
 
-  console.log('maxIndex', maxIndex)
+  console.log('breakpoint', breakpoint)
 
   function isLast() {
     return index >= maxIndex
@@ -51,6 +55,17 @@ const TimelineSection: React.FC<Props> = () => {
       setBgColor('primary')
     }
   }, [index])
+
+  useEffect(() => {
+    if (breakpoint === 'mobile') {
+      setBgColor('primary')
+      setIndex(0)
+    } else if (breakpoint === 'tablet') {
+      setSlideNumber(2)
+    } else {
+      setSlideNumber(3)
+    }
+  }, [breakpoint])
 
   return (
     <div className={classnames([styles.timelineSection, styles[bgColor]])}>
