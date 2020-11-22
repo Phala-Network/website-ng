@@ -9,7 +9,11 @@ type Props = {
 }
 
 const BackTop: React.FC<Props> = (props) => {
-  const { onClick, style, visibilityHeight = 450 } = props
+  const {
+    onClick,
+    style,
+    visibilityHeight = window?.innerHeight * (2 / 3),
+  } = props
   const [showScroll, setShowScroll] = useState(false)
 
   const scrollTop = (e) => {

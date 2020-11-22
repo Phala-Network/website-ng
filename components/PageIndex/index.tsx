@@ -32,7 +32,7 @@ const PageIndex: React.FC<Props> = (props) => {
 
       {/* <Footer></Footer> */}
 
-      {isClient() && <BackTop visibilityHeight={window?.innerHeight}></BackTop>}
+      {isClient() && <BackTop></BackTop>}
     </div>
   )
 }

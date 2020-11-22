@@ -13,6 +13,22 @@
   align-items: center;
   justify-content: center;
 
+  @media (max-width: $sm) {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $sm) and (max-width: $md) {
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+
+  @media (min-width: $md) and (max-width: $lg) {
+    right: 30px;
+  }
+
   &:hover {
     color: $color-gray;
   }
