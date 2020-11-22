@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import React from 'react'
-import I18n from '../../I18n'
+import I18n from '../I18n'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 
@@ -13,10 +13,17 @@ type Props = {
   }
   color?: 'black' | 'gray'
   className?: string
+  descriptionMargin?: number
 }
 
 const SectionHeader: React.FC<Props> = (props) => {
-  const { title, description, color = 'black', className } = props
+  const {
+    descriptionMargin = 30,
+    title,
+    description,
+    color = 'black',
+    className,
+  } = props
   const { locale } = useRouter()
   const localeTitle = title[locale]
 
@@ -30,7 +37,11 @@ const SectionHeader: React.FC<Props> = (props) => {
             })
           : localeTitle}
       </div>
-      <div className={styles.description}>
+      <div
+        style={{
+          marginTop: descriptionMargin,
+        }}
+        className={styles.description}>
         <I18n {...description}></I18n>
       </div>
     </div>
