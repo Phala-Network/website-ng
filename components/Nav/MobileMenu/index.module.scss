@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+
+.mobileMenu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: $color-bg-black;
+  z-index: $index-mobile-nav;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+
+  @media (max-width: $md) {
+    display: flex;
+  }
+
+  .content {
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+
+  .x {
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 40px;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba($color-gray, 0.6);
+  }
+}

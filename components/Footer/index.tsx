@@ -3,7 +3,7 @@ import EmailInput from './EmailInput'
 import MediaList from './MediaList'
 import styles from './index.module.scss'
 import Subscribe from './Subscribe'
-import Menu from './Menu'
+import ListMenu from '../ListMenu'
 import { MaintainMenuConfig, ResourcesMenuConfig } from '../../config'
 import Copyright from './Copyright'
 
@@ -26,10 +26,10 @@ const Footer: React.FC<Props> = () => {
               <div className={styles.right}>
                 <div className='row'>
                   <div className='col-sm-4'>
-                    <Menu data={MaintainMenuConfig}></Menu>
+                    <ListMenu data={MaintainMenuConfig}></ListMenu>
                   </div>
                   <div className='col-sm-8'>
-                    <Menu data={ResourcesMenuConfig}></Menu>
+                    <ListMenu data={ResourcesMenuConfig}></ListMenu>
                   </div>
                 </div>
 

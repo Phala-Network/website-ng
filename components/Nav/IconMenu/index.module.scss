@@ -8,6 +8,12 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  margin-left: 20px;
+  display: none;
+
+  @media (max-width: $md) {
+    display: flex;
+  }
 
   .line {
     height: 2px;
