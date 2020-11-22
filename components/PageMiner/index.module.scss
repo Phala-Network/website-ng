@@ -1,6 +1,12 @@
 @import '../../styles/variables.scss';
 
 .pageMiner {
-  background-color: $color-bg-black;
   width: 100%;
+  min-height: 200vh;
+  background-color: $color-bg-black;
+  background-image: url(./bg2.png);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }

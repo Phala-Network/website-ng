@@ -1,6 +1,5 @@
 import React from 'react'
 import NormalLayout from '../NormalLayout'
-
 import styles from './index.module.scss'
 
 type Props = {}
