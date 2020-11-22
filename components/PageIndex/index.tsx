@@ -1,27 +1,18 @@
-import BackTop from '../BackTop'
 import FirstScreen from './FirstScreen'
-import Nav from '../Nav'
-import Newsletter from '../Newsletter'
 import React from 'react'
-import Header from '../Header'
-import { isClient } from '../../utils/isClient'
 import CloudSection from './CloudSection'
-import Footer from '../Footer'
 import ExecutionSection from './ExecutionSection'
 import ContractSection from './ContractSection'
 import ProductSection from './ProductSection'
 import PartnersSection from './PartnersSection'
 import TimelineSection from './TimelineSection'
+import NormalLayout from '../NormalLayout'
 
 type Props = {}
 
-const PageIndex: React.FC<Props> = (props) => {
+const PageIndex: React.FC<Props> = () => {
   return (
-    <div>
-      <Header>
-        <Nav></Nav>
-        <Newsletter></Newsletter>
-      </Header>
+    <NormalLayout>
       <FirstScreen></FirstScreen>
       <CloudSection></CloudSection>
       <ExecutionSection></ExecutionSection>
@@ -29,11 +20,7 @@ const PageIndex: React.FC<Props> = (props) => {
       <ProductSection></ProductSection>
       <PartnersSection></PartnersSection>
       <TimelineSection></TimelineSection>
-
-      <Footer></Footer>
-
-      {isClient() && <BackTop></BackTop>}
-    </div>
+    </NormalLayout>
   )
 }
 
