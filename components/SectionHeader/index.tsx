@@ -13,12 +13,14 @@ type Props = {
   }
   color?: 'black' | 'gray'
   className?: string
-  descriptionMargin?: number
+  descriptionClassName?: string
+  titleClassName?: string
 }
 
 const SectionHeader: React.FC<Props> = (props) => {
   const {
-    descriptionMargin = 30,
+    descriptionClassName,
+    titleClassName,
     title,
     description,
     color = 'black',
@@ -30,20 +32,18 @@ const SectionHeader: React.FC<Props> = (props) => {
   return (
     <div
       className={classnames([styles.sectionHeader, styles[color], className])}>
-      <div className={styles.title}>
+      <div className={classnames([styles.title, titleClassName])}>
         {Array.isArray(localeTitle)
           ? localeTitle.map((str) => {
               return <div key={str}>{str}</div>
             })
           : localeTitle}
       </div>
-      <div
-        style={{
-          marginTop: descriptionMargin,
-        }}
-        className={styles.description}>
-        <I18n {...description}></I18n>
-      </div>
+      {description && (
+        <div className={classnames([styles.description, descriptionClassName])}>
+          <I18n {...description}></I18n>
+        </div>
+      )}
     </div>
   )
 }

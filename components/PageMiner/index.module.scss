@@ -10,5 +10,17 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 
-  padding-top: 500px;
+  padding-top: 250px;
+
+  .header {
+    max-width: 900px;
+
+    .title {
+      max-width: 900px;
+    }
+
+    .description {
+      max-width: 602px;
+    }
+  }
 }
