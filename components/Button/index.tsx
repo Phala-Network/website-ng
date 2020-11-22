@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 import { useRouter } from 'next/router'
 import { isString } from '../../utils/isString'
 
-type Props = {
+export type ButtonProps = {
   color?: 'white' | 'black' | 'gray' | 'primary'
   hasArrowIcon?: boolean
   style?: React.CSSProperties
@@ -18,7 +18,7 @@ type Props = {
   size?: 'default' | 'middle'
 }
 
-const Button: React.FC<Props> = (props) => {
+const Button: React.FC<ButtonProps> = (props) => {
   const { locale } = useRouter()
 
   const {

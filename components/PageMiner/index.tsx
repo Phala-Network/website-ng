@@ -2,7 +2,7 @@ import React from 'react'
 import { EconomyWhitepaperConfig } from '../../config/EconomyWhitepaperConfig'
 import { PageMinerConfig } from '../../config/PageMiner'
 import { WikiConfig } from '../../config/WikiConfig'
-import Button from '../Button'
+import DetailPageButton from '../DetailPageButton'
 import NormalLayout from '../NormalLayout'
 import SectionHeader from '../SectionHeader'
 import styles from './index.module.scss'
@@ -22,36 +22,27 @@ const PageMiner: React.FC<Props> = () => {
               descriptionClassName={styles.description}></SectionHeader>
           </div>
           <div className={styles.buttons}>
-            <Button
-              size='middle'
-              uppercase={false}
-              className={styles.btn1}
+            <DetailPageButton
               type='link'
-              color='gray'
+              className={styles.btn1}
               href={EconomyWhitepaperConfig.href}
               text={EconomyWhitepaperConfig.name}
-              hasArrowIcon></Button>
+            />
 
-            <Button
-              size='middle'
-              uppercase={false}
-              className={styles.btn2}
-              type='link'
-              color='gray'
-              href={WikiConfig.href}
-              text={WikiConfig.name}
-              hasArrowIcon></Button>
-
-            <Button
-              size='middle'
-              uppercase={false}
+            <DetailPageButton
               className={styles.btn3}
-              color='gray'
               text={{
                 en: 'Wechat Group',
                 zh: '微信群',
               }}
-              hasArrowIcon></Button>
+            />
+
+            <DetailPageButton
+              type='link'
+              className={styles.btn2}
+              href={WikiConfig.href}
+              text={WikiConfig.name}
+            />
           </div>
         </div>
       </div>
