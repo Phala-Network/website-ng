@@ -30,7 +30,7 @@ const PageIndex: React.FC<Props> = (props) => {
       <PartnersSection></PartnersSection>
       <TimelineSection></TimelineSection>
 
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
 
       {isClient() && <BackTop></BackTop>}
     </div>

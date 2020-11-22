@@ -1,21 +1,25 @@
 import React from 'react'
-import I18n from '../../I18n'
-import styles from './index.module.scss'
+import SectionHeader from '../../PageIndex/SectionHeader'
 
 type Props = {}
 
 const Subscribe: React.FC<Props> = () => {
+  const title = {
+    en: 'Subscribe',
+    zh: '订阅',
+  }
+
+  const description = {
+    en:
+      'Subscribe to the newsletter to hear about Phala Network updates and events.',
+    zh: '订阅消息，了解Phala网络的最新动态和活动。',
+  }
+
   return (
-    <div className={styles.subscribe}>
-      <div className={styles.title}>
-        <I18n en='Subscribe' zh='订阅'></I18n>
-      </div>
-      <div className={styles.description}>
-        <I18n
-          en='Subscribe to the newsletter to hear about Phala Network updates and events.'
-          zh='订阅消息，了解Phala网络的最新动态和活动。'></I18n>
-      </div>
-    </div>
+    <SectionHeader
+      color='gray'
+      title={title}
+      description={description}></SectionHeader>
   )
 }
 

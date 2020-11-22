@@ -1,12 +1,25 @@
 @import '../../styles/variables.scss';
 
 .footer {
-  width: 100%;
   background-color: $color-bg-black;
   padding-top: 100px;
   padding-bottom: 100px;
 
+  @media (max-width: $sm) {
+    padding-top: 10px;
+  }
+
   .left {
     max-width: 363px;
+
+    @media (max-width: $sm) {
+      max-width: 6666px;
+    }
+  }
+
+  .content {
+    @media (max-width: $lg) {
+      padding: 20px;
+    }
   }
 }

@@ -6,6 +6,11 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: $md) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
   .item {
     position: relative;
 
