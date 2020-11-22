@@ -5,9 +5,7 @@ import Item from './Item'
 import { TimelineSectionConfig } from '../../../config/indexPage/TimelineSectionConfig'
 import Buttons from './Buttons'
 import classnames from 'classnames'
-import useBreakpoint from 'use-breakpoint'
-
-const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 1280 }
+import { useBreakpoint } from '../../../hooks/useBreakpoint'
 
 type Props = {}
 
@@ -20,9 +18,7 @@ const TimelineSection: React.FC<Props> = () => {
   const allTimelineData = [...timeline.done, ...timeline.doing]
   const allTimelineDataLength = allTimelineData.length
   const maxIndex = allTimelineData.length - slideNumber
-  const { breakpoint } = useBreakpoint(BREAKPOINTS, 'desktop')
-
-  console.log('breakpoint', breakpoint)
+  const { breakpoint } = useBreakpoint()
 
   function isLast() {
     return index >= maxIndex
