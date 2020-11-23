@@ -71,7 +71,10 @@ const FloatMenu: React.FC<Props> = (props) => {
     window.addEventListener('scroll', checkPosition)
     window.addEventListener('resize', checkPosition)
 
-    checkPosition()
+    // wait page render finished
+    setTimeout(() => {
+      checkPosition()
+    }, 500)
 
     return () => {
       window.removeEventListener('scroll', checkPosition)
