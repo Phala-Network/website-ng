@@ -1,7 +1,7 @@
 export const ContractSectionConfig = {
   button: {
     en: 'Check our Github',
-    zh: 'Check our Github',
+    zh: '来看看我们的 Github',
   },
 
   title: {
