@@ -1,0 +1,11 @@
+.detailPageHeaderButtons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  max-width: 502px;
+
+  & > * {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}

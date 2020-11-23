@@ -4,6 +4,7 @@ import { PageNodeConfig } from '../../config/PageNode'
 import { WikiConfig } from '../../config/WikiConfig'
 import DetailPageButton from '../DetailPageButton'
 import DetailPageHeader from '../DetailPageHeader'
+import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
 import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
@@ -20,8 +21,7 @@ const PageNode: React.FC<Props> = () => {
       <NormalLayout className={styles.pageNode}>
         <div className='container'>
           <DetailPageHeader {...PageNodeConfig}></DetailPageHeader>
-
-          <div className={styles.buttons}>
+          <DetailPageHeaderButtons>
             <DetailPageButton
               type='link'
               className={styles.btn1}
@@ -43,7 +43,7 @@ const PageNode: React.FC<Props> = () => {
               href={WikiConfig.href}
               text={WikiConfig.name}
             />
-          </div>
+          </DetailPageHeaderButtons>
 
           <div id='content' className={styles.content}>
             {PageNodeConfig.content.map((item, index) => {
