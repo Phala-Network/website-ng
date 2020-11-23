@@ -8,59 +8,64 @@ import Card from './Card'
 import FloatMenu from '../FloatMenu'
 import styles from './index.module.scss'
 import DetailPageHeader from '../DetailPageHeader'
+import PageTitle from '../PageTitle'
 
 type Props = {}
 
 const PageMiner: React.FC<Props> = () => {
   return (
-    <NormalLayout>
-      <div className={styles.pageMiner}>
-        <div className='container'>
-          <DetailPageHeader {...PageMinerConfig}></DetailPageHeader>
+    <>
+      <PageTitle zh='矿工' en='Miner'></PageTitle>
 
-          <div className={styles.buttons}>
-            <DetailPageButton
-              type='link'
-              className={styles.btn1}
-              href={EconomyWhitepaperConfig.href}
-              text={EconomyWhitepaperConfig.name}
-            />
+      <NormalLayout>
+        <div className={styles.pageMiner}>
+          <div className='container'>
+            <DetailPageHeader {...PageMinerConfig}></DetailPageHeader>
 
-            <DetailPageButton
-              className={styles.btn3}
-              text={{
-                en: 'Wechat Group',
-                zh: '微信群',
-              }}
-            />
+            <div className={styles.buttons}>
+              <DetailPageButton
+                type='link'
+                className={styles.btn1}
+                href={EconomyWhitepaperConfig.href}
+                text={EconomyWhitepaperConfig.name}
+              />
 
-            <DetailPageButton
-              type='link'
-              className={styles.btn2}
-              href={WikiConfig.href}
-              text={WikiConfig.name}
-            />
-          </div>
+              <DetailPageButton
+                className={styles.btn3}
+                text={{
+                  en: 'Wechat Group',
+                  zh: '微信群',
+                }}
+              />
 
-          <div id='content' className={styles.content}>
-            {PageMinerConfig.content.map((item, index) => {
-              return (
-                <Card
-                  key={JSON.stringify(item.name)}
-                  {...item}
-                  content={item.content}
-                  index={index + 1}
-                  bgIndex={index + 1}></Card>
-              )
-            })}
+              <DetailPageButton
+                type='link'
+                className={styles.btn2}
+                href={WikiConfig.href}
+                text={WikiConfig.name}
+              />
+            </div>
 
-            <FloatMenu
-              menuTitle={PageMinerConfig.menuTitle}
-              menu={PageMinerConfig.content}></FloatMenu>
+            <div id='content' className={styles.content}>
+              {PageMinerConfig.content.map((item, index) => {
+                return (
+                  <Card
+                    key={JSON.stringify(item.name)}
+                    {...item}
+                    content={item.content}
+                    index={index + 1}
+                    bgIndex={index + 1}></Card>
+                )
+              })}
+
+              <FloatMenu
+                menuTitle={PageMinerConfig.menuTitle}
+                menu={PageMinerConfig.content}></FloatMenu>
+            </div>
           </div>
         </div>
-      </div>
-    </NormalLayout>
+      </NormalLayout>
+    </>
   )
 }
 
