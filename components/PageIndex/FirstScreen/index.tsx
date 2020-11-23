@@ -3,6 +3,7 @@ import Button from '../../Button'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 import I18n from '../../I18n'
+import { PHAConfig } from '../../../config'
 
 type Props = {}
 
@@ -23,7 +24,7 @@ const FirstScreen: React.FC<Props> = () => {
             zh='通过隐私计算帮助区块链保护秘密'></I18n>
         </div>
         <div className={styles.button}>
-          <Button color='primary'>
+          <Button href={PHAConfig.href} type='link' color='primary'>
             <I18n en='Learn about PHA' zh='了解 PHA'></I18n>
           </Button>
         </div>

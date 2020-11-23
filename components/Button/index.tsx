@@ -4,6 +4,7 @@ import React from 'react'
 import styles from './index.module.scss'
 import { useRouter } from 'next/router'
 import { isString } from '../../utils/isString'
+import Link from 'next/link'
 
 export type ButtonProps = {
   color?: 'white' | 'black' | 'gray' | 'primary'
@@ -49,21 +50,23 @@ const Button: React.FC<ButtonProps> = (props) => {
     ]),
   }
 
-  if (isLink) {
-    Object.assign(buttonProps, {
-      // maybe not need it ...
-      // target: '_blank',
-      href: isString(href) ? href : href[locale],
-    })
-  }
-
-  return React.createElement(
+  const el = React.createElement(
     elementType,
     buttonProps,
     children,
     <>{text && (isString(text) ? text : text[locale])}</>,
     hasArrowIcon && <IconArrow className={styles.iconArrow} />
   )
+
+  if (isLink) {
+    return (
+      <Link passHref href={isString(href) ? href : href[locale]}>
+        {el}
+      </Link>
+    )
+  } else {
+    return el
+  }
 }
 
 export default Button

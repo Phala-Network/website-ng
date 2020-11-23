@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React from 'react'
 import { TechnologyConfig } from '../../../config'
 import { ExecutionSectionConfig } from '../../../config/PageIndex/ExecutionSectionConfig'
@@ -11,8 +9,6 @@ import List from './List'
 type Props = {}
 
 const ExecutionSection: React.FC<Props> = () => {
-  const { locale } = useRouter()
-
   return (
     <div className={styles.executionSection}>
       <div className='container'>
@@ -25,13 +21,13 @@ const ExecutionSection: React.FC<Props> = () => {
               />
             </div>
             <div className='col-xl-6'>
-              <Link href={TechnologyConfig.href?.[locale]}>
-                <Button
-                  className={styles.button}
-                  text={ExecutionSectionConfig.buttonText}
-                  color='black'
-                  hasArrowIcon></Button>
-              </Link>
+              <Button
+                href={TechnologyConfig.href}
+                className={styles.button}
+                text={ExecutionSectionConfig.buttonText}
+                color='black'
+                type='link'
+                hasArrowIcon></Button>
             </div>
           </div>
 
