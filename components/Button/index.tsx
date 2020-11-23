@@ -58,7 +58,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     hasArrowIcon && <IconArrow className={styles.iconArrow} />
   )
 
-  if (isLink) {
+  if (isLink && href) {
     return (
       <Link passHref href={isString(href) ? href : href[locale]}>
         {el}

@@ -22,6 +22,17 @@ const PageMiner: React.FC<Props> = () => {
 
           <DetailPageHeaderButtons>
             <DetailPageButton
+              className={styles.btn1}
+              type='link'
+              href={'https://wiki.phala.network/en-us/docs/poc3/'}
+              text={{
+                en: 'Mining Pool Protocol',
+                zh: '矿池协议',
+              }}
+            />
+
+            <DetailPageButton
+              className={styles.btn2}
               type='link'
               href={'https://wiki.phala.network/en-us/docs/poc3/'}
               text={{
@@ -31,15 +42,15 @@ const PageMiner: React.FC<Props> = () => {
             />
 
             <DetailPageButton
+              className={styles.btn3}
               type='link'
-              href={WikiConfig.href}
-              text={WikiConfig.name}
+              {...WikiConfig}
             />
 
             <DetailPageButton
+              className={styles.btn4}
               type='link'
-              href={EconomyWhitepaperConfig.href}
-              text={EconomyWhitepaperConfig.name}
+              {...EconomyWhitepaperConfig}
             />
           </DetailPageHeaderButtons>
         </div>

@@ -16,25 +16,20 @@
     padding: 200px 20px;
   }
 
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    max-width: 502px;
+  .btn1 {
+    width: 278px;
+  }
 
-    & > * {
-      margin-right: 20px;
-      margin-bottom: 20px;
-    }
+  .btn2 {
+    width: 208px;
+  }
 
-    .btn1 {
-      width: 260px;
-    }
+  .btn3 {
+    width: 178px;
+  }
 
-    .btn2,
-    .btn3 {
-      width: 180px;
-    }
+  .btn4 {
+    width: 278px;
   }
 
   .content {
