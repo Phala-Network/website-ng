@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.scss'
 import classnames from 'classnames'
-import I18n from '../../I18n'
+import I18n from '../I18n'
 import { useRouter } from 'next/router'
 
 type Props = {
@@ -9,6 +9,7 @@ type Props = {
   menu: {
     name: { [key: string]: string[] }
   }[]
+  offsetBottom?: number
 }
 
 function offset(el) {
@@ -19,7 +20,7 @@ function offset(el) {
 }
 
 const FloatMenu: React.FC<Props> = (props) => {
-  const { menuTitle, menu } = props
+  const { menuTitle, menu, offsetBottom = 40 } = props
   const { locale } = useRouter()
   const [fixed, setFixed] = useState(false)
   const [bottom, setBottom] = useState(false)
@@ -43,12 +44,12 @@ const FloatMenu: React.FC<Props> = (props) => {
       }
 
       // move move move
-      if (elRect.bottom < winHeight - 40) {
+      if (elRect.bottom < winHeight - offsetBottom) {
         setFixed(true)
       }
 
       // check bottom, stop it
-      if (contentElRect.bottom < winHeight - 40) {
+      if (contentElRect.bottom < winHeight - offsetBottom) {
         setBottom(true)
       } else {
         setBottom(false)

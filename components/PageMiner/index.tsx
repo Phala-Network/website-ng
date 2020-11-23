@@ -6,7 +6,7 @@ import DetailPageButton from '../DetailPageButton'
 import NormalLayout from '../NormalLayout'
 import SectionHeader from '../SectionHeader'
 import Card from './Card'
-import FloatMenu from './FloatMenu'
+import FloatMenu from '../FloatMenu'
 import styles from './index.module.scss'
 
 type Props = {}

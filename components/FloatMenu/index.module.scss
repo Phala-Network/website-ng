@@ -1,4 +1,4 @@
-@import '../../../styles/variables.scss';
+@import '../../styles/variables.scss';
 
 .floatMenu {
   position: absolute;
@@ -15,6 +15,7 @@
   &.fixed {
     position: fixed;
     top: auto;
+    // have no idea
     bottom: 40px;
   }
 
