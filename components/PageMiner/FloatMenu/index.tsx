@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 type Props = {
   menuTitle?: { [key: string]: string }
   menu: {
-    name: { [key: string]: string }
+    name: { [key: string]: string[] }
   }[]
 }
 
