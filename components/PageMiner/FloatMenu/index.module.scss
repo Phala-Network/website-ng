@@ -44,6 +44,10 @@
       display: flex;
       margin-top: 5px;
 
+      &.done {
+        text-decoration: line-through;
+      }
+
       .index {
         margin-right: 30px;
       }

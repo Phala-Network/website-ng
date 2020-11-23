@@ -23,11 +23,13 @@ const FloatMenu: React.FC<Props> = (props) => {
   const { locale } = useRouter()
   const [fixed, setFixed] = useState(false)
   const [bottom, setBottom] = useState(false)
+  const [done, setDone] = useState([])
 
   useEffect(() => {
     function checkPosition() {
       const el = document.getElementById('floatMenu')
       const contentEl = document.getElementById('content')
+      const winHeight = window.innerHeight
 
       if (!el || !contentEl) return
 
@@ -41,16 +43,28 @@ const FloatMenu: React.FC<Props> = (props) => {
       }
 
       // move move move
-      if (elRect.bottom < window.innerHeight - 40) {
+      if (elRect.bottom < winHeight - 40) {
         setFixed(true)
       }
 
       // check bottom, stop it
-      if (contentElRect.bottom < window.innerHeight - 40) {
+      if (contentElRect.bottom < winHeight - 40) {
         setBottom(true)
       } else {
         setBottom(false)
       }
+
+      setDone(
+        menu.map((item) => {
+          const el = document.getElementById(item.name[locale].join('_'))
+
+          if (!el) return false
+
+          const rect = el.getBoundingClientRect()
+
+          return rect.bottom < winHeight
+        })
+      )
     }
 
     window.addEventListener('scroll', checkPosition)
@@ -62,7 +76,7 @@ const FloatMenu: React.FC<Props> = (props) => {
       window.removeEventListener('scroll', checkPosition)
       window.removeEventListener('resize', checkPosition)
     }
-  }, [])
+  }, [locale])
 
   return (
     <div
@@ -84,8 +98,13 @@ const FloatMenu: React.FC<Props> = (props) => {
           return (
             <a
               key={JSON.stringify(item.name)}
-              href={`#${item.name[locale]}`}
-              className={styles.item}>
+              href={`#title_${item.name[locale].join('_')}`}
+              className={classnames([
+                styles.item,
+                {
+                  [styles.done]: done[index],
+                },
+              ])}>
               <div className={styles.index}>0{index + 1}</div>
               <div>
                 <I18n {...item.name}></I18n>
