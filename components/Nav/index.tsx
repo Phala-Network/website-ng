@@ -31,7 +31,7 @@ const Nav: React.FC<Props> = () => {
               return (
                 <li key={menu.name.en}>
                   <Link href={menu?.href?.[locale] ?? ''}>
-                    <a className={styles.link} target='_blank'>
+                    <a className={styles.link}>
                       <I18n {...menu.name}></I18n>
                     </a>
                   </Link>

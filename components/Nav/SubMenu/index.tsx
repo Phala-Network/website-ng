@@ -27,7 +27,7 @@ const SubMenu: React.FC<Props> = (props) => {
                 href={
                   typeof item.href === 'string' ? item.href : item.href[locale]
                 }>
-                <a target='_blank'>
+                <a>
                   <I18n {...item.name}></I18n>
                 </a>
               </Link>

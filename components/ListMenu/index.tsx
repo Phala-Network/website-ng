@@ -16,7 +16,7 @@ const ListMenu: React.FC<Props> = (props) => {
     <div className={styles.listMenu}>
       <div className={styles.title}>
         <Link href={data?.href?.[locale] ?? ''}>
-          <a target='_blank'>
+          <a>
             <I18n {...data.name}></I18n>
           </a>
         </Link>
@@ -33,7 +33,7 @@ const ListMenu: React.FC<Props> = (props) => {
                       ? item.href
                       : item.href[locale]
                   }>
-                  <a target='_blank'>
+                  <a>
                     <I18n {...item.name}></I18n>
                   </a>
                 </Link>

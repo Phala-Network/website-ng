@@ -138,8 +138,8 @@ export const MenuConfig: {
       zh: '技术',
     },
     href: {
-      en: '//google.com',
-      zh: '//google.com',
+      en: '/technology',
+      zh: '/technology',
     },
   },
   MaintainMenuConfig,
