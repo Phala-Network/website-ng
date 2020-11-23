@@ -16,8 +16,10 @@ const CardHeader: React.FC<CardHeaderProps> = (props) => {
     <div className={styles.cardHeader}>
       <div
         className={styles.target}
+        // id for link jump
         id={'title_' + name[locale].join('_')}></div>
       <div className={styles.top}>
+        {/* 01_ */}
         <div>0{index}_</div>
         <div className={styles.randomBlock}>
           <RandomBlock></RandomBlock>
