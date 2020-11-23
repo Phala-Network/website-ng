@@ -82,7 +82,10 @@ const FloatMenu: React.FC<Props> = (props) => {
       <div className={styles.menu}>
         {menu.map((item, index) => {
           return (
-            <a href={`#${item.name[locale]}`} className={styles.item}>
+            <a
+              key={JSON.stringify(item.name)}
+              href={`#${item.name[locale]}`}
+              className={styles.item}>
               <div className={styles.index}>0{index + 1}</div>
               <div>
                 <I18n {...item.name}></I18n>

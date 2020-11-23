@@ -50,7 +50,11 @@ const PageMiner: React.FC<Props> = () => {
           <div id='content' className={styles.content}>
             {PageMinerConfig.content.map((item, index) => {
               return (
-                <Card {...item} index={index + 1} bgIndex={index + 1}></Card>
+                <Card
+                  key={JSON.stringify(item.name)}
+                  {...item}
+                  index={index + 1}
+                  bgIndex={index + 1}></Card>
               )
             })}
 
