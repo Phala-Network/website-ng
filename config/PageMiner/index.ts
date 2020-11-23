@@ -21,7 +21,7 @@ export const PageMinerConfig = {
     {
       name: {
         en: ['Gatekeeper'],
-        zh: ['Gatekeeper'],
+        zh: ['看门人'],
       },
       content: {
         en: [
@@ -39,7 +39,7 @@ export const PageMinerConfig = {
     {
       name: {
         en: ['Nominator'],
-        zh: ['Nominator'],
+        zh: ['提名者'],
       },
       content: {
         en: '',
@@ -49,7 +49,7 @@ export const PageMinerConfig = {
     {
       name: {
         en: ['Consensus', 'mechanism'],
-        zh: ['Consensus', 'mechanism'],
+        zh: ['共识', '机制'],
       },
       content: {
         en: '',
