@@ -1,13 +1,16 @@
-<svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="-428" y="-465" width="720" height="875" fill="#D1FF52"/>
-<rect x="3" y="3" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
-<rect x="105" y="3" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
-<rect x="3" y="105" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
-<rect x="105" y="105" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
-<path d="M13.5 26V103" stroke="black" stroke-width="4"/>
-<path d="M26 13.5H103" stroke="black" stroke-width="4"/>
-<path d="M115.5 26V103" stroke="black" stroke-width="4"/>
-<path d="M26 115.5H103" stroke="black" stroke-width="4"/>
-<path d="M23 23L105 105" stroke="black" stroke-width="4"/>
-<path d="M23 105L105 23" stroke="black" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill="#FFF" d="M0 0H1440V5735H0z" transform="translate(-429 -3069)"/>
+            <g>
+                <path fill="#D1FF52" d="M0 0H720V875H0z" transform="translate(-429 -3069) translate(0 2609)"/>
+                <g stroke="#000" stroke-width="4">
+                    <g>
+                        <path fill="#FFF" d="M2 2H23V23H2zM104 2H125V23H104zM2 104H23V125H2zM104 104H125V125H104z" transform="translate(-429 -3069) translate(0 2609) translate(429 460) translate(6 7)"/>
+                        <path d="M12.5 25L12.5 102M25 12.5L102 12.5M114.5 25L114.5 102M25 114.5L102 114.5M22 22L104 104M22 104L104 22" transform="translate(-429 -3069) translate(0 2609) translate(429 460) translate(6 7)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

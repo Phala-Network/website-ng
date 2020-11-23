@@ -1,9 +1,19 @@
-<svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="-95" y="-469" width="720" height="875" fill="#D1FF52"/>
-<rect x="17" y="15" width="62" height="62.6667" stroke="black" stroke-width="4"/>
-<rect x="51" y="51" width="62" height="62.6667" stroke="black" stroke-width="4"/>
-<rect x="7" y="101" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
-<rect x="101" y="7" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
-<rect x="83" y="83" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
-<rect x="25" y="23" width="21" height="21" fill="white" stroke="black" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill="#FFF" d="M0 0H1440V5735H0z" transform="translate(-100 -3069)"/>
+            <g>
+                <path fill="#D1FF52" d="M0 0H720V875H0z" transform="translate(-100 -3069) translate(0 2609)"/>
+                <g stroke="#000" stroke-width="4">
+                    <g>
+                        <g>
+                            <path d="M2 2H64V64.667H2z" transform="translate(-100 -3069) translate(0 2609) translate(100 460) translate(10 11) translate(10 8)"/>
+                            <path d="M36 38H98V100.667H36z" transform="translate(-100 -3069) translate(0 2609) translate(100 460) translate(10 11) translate(10 8)"/>
+                        </g>
+                        <path fill="#FFF" d="M2 96H23V117H2zM96 2H117V23H96zM78 78H99V99H78zM20 18H41V39H20z" transform="translate(-100 -3069) translate(0 2609) translate(100 460) translate(10 11)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
