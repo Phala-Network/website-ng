@@ -19,7 +19,7 @@ const CardHeader: React.FC<CardHeaderProps> = (props) => {
         id={'title_' + name[locale].join('_')}></div>
       <div className={styles.top}>
         <div>0{index}_</div>
-        <div>
+        <div className={styles.randomBlock}>
           <RandomBlock></RandomBlock>
         </div>
       </div>

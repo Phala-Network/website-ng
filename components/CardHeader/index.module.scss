@@ -16,7 +16,14 @@
   flex-direction: column;
   justify-content: space-between;
 
+  .randomBlock {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   .top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
