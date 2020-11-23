@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .floatMenu {
   position: absolute;
   width: 347px;
@@ -8,7 +10,7 @@
   font-weight: bold;
 
   top: 150px;
-  z-index: 20;
+  z-index: $index-card - 10;
 
   &.fixed {
     position: fixed;
@@ -23,7 +25,7 @@
   }
 
   &:hover {
-    z-index: 80;
+    z-index: $index-card + 10;
   }
 
   .title {

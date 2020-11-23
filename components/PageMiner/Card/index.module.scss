@@ -1,7 +1,9 @@
+@import '../../../styles/variables.scss';
+
 .card {
   display: flex;
   margin-top: 60px;
   margin-left: 220px;
-  z-index: 50;
+  z-index: $index-card;
   position: relative;
 }

@@ -53,6 +53,7 @@ const PageMiner: React.FC<Props> = () => {
                 <Card
                   key={JSON.stringify(item.name)}
                   {...item}
+                  content={item.content}
                   index={index + 1}
                   bgIndex={index + 1}></Card>
               )
