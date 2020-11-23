@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import I18n from '../I18n'
 import styles from './index.module.scss'
 import classnames from 'classnames'
@@ -9,7 +9,7 @@ export type SectionHeaderProps = {
     [key: string]: string | string[]
   }
   description?: {
-    [key: string]: string
+    [key: string]: string | string[]
   }
   color?: 'black' | 'gray'
   className?: string
@@ -26,8 +26,20 @@ const SectionHeader: React.FC<SectionHeaderProps> = (props) => {
     color = 'black',
     className,
   } = props
+
   const { locale } = useRouter()
-  const localeTitle = title[locale]
+  const [localeTitle, setLocalTitle] = useState<string | string[]>('')
+  const [localeDescription, setLocalDescription] = useState<string | string[]>(
+    ''
+  )
+
+  useEffect(() => {
+    setLocalTitle(title[locale])
+
+    if (description) {
+      setLocalDescription(description[locale])
+    }
+  }, [locale])
 
   return (
     <div
@@ -41,7 +53,11 @@ const SectionHeader: React.FC<SectionHeaderProps> = (props) => {
       </div>
       {description && (
         <div className={classnames([styles.description, descriptionClassName])}>
-          <I18n {...description}></I18n>
+          {Array.isArray(localeDescription)
+            ? localeDescription.map((str) => {
+                return <div key={str}>{str}</div>
+              })
+            : localeDescription}
         </div>
       )}
     </div>

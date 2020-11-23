@@ -11,4 +11,33 @@
   padding-top: 250px;
   padding-bottom: 200px;
   position: relative;
+
+  @media (max-width: $sm) {
+    padding: 200px 20px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    max-width: 502px;
+
+    & > * {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn1 {
+      width: 260px;
+    }
+
+    .btn2,
+    .btn3 {
+      width: 180px;
+    }
+  }
+
+  .content {
+    position: relative;
+  }
 }
