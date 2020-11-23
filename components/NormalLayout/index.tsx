@@ -6,7 +6,9 @@ import Header from '../Header'
 import Nav from '../Nav'
 import Newsletter from '../Newsletter'
 
-type Props = {}
+type Props = {
+  className?: string
+}
 
 const NormalLayout: React.FC<Props> = (props) => {
   return (
@@ -16,7 +18,7 @@ const NormalLayout: React.FC<Props> = (props) => {
         <Newsletter></Newsletter>
       </Header>
 
-      {props.children}
+      <div {...props}>{props.children}</div>
 
       <Footer></Footer>
 

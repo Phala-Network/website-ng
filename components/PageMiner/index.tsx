@@ -17,51 +17,49 @@ const PageMiner: React.FC<Props> = () => {
     <>
       <PageTitle zh='矿工' en='Miner'></PageTitle>
 
-      <NormalLayout>
-        <div className={styles.pageMiner}>
-          <div className='container'>
-            <DetailPageHeader {...PageMinerConfig}></DetailPageHeader>
+      <NormalLayout className={styles.pageMiner}>
+        <div className='container'>
+          <DetailPageHeader {...PageMinerConfig}></DetailPageHeader>
 
-            <div className={styles.buttons}>
-              <DetailPageButton
-                type='link'
-                className={styles.btn1}
-                href={EconomyWhitepaperConfig.href}
-                text={EconomyWhitepaperConfig.name}
-              />
+          <div className={styles.buttons}>
+            <DetailPageButton
+              type='link'
+              className={styles.btn1}
+              href={EconomyWhitepaperConfig.href}
+              text={EconomyWhitepaperConfig.name}
+            />
 
-              <DetailPageButton
-                className={styles.btn3}
-                text={{
-                  en: 'Wechat Group',
-                  zh: '微信群',
-                }}
-              />
+            <DetailPageButton
+              className={styles.btn3}
+              text={{
+                en: 'Wechat Group',
+                zh: '微信群',
+              }}
+            />
 
-              <DetailPageButton
-                type='link'
-                className={styles.btn2}
-                href={WikiConfig.href}
-                text={WikiConfig.name}
-              />
-            </div>
+            <DetailPageButton
+              type='link'
+              className={styles.btn2}
+              href={WikiConfig.href}
+              text={WikiConfig.name}
+            />
+          </div>
 
-            <div id='content' className={styles.content}>
-              {PageMinerConfig.content.map((item, index) => {
-                return (
-                  <Card
-                    key={JSON.stringify(item.name)}
-                    {...item}
-                    content={item.content}
-                    index={index + 1}
-                    bgIndex={index + 1}></Card>
-                )
-              })}
+          <div id='content' className={styles.content}>
+            {PageMinerConfig.content.map((item, index) => {
+              return (
+                <Card
+                  key={JSON.stringify(item.name)}
+                  {...item}
+                  content={item.content}
+                  index={index + 1}
+                  bgIndex={index + 1}></Card>
+              )
+            })}
 
-              <FloatMenu
-                menuTitle={PageMinerConfig.menuTitle}
-                menu={PageMinerConfig.content}></FloatMenu>
-            </div>
+            <FloatMenu
+              menuTitle={PageMinerConfig.menuTitle}
+              menu={PageMinerConfig.content}></FloatMenu>
           </div>
         </div>
       </NormalLayout>

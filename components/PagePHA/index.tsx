@@ -11,11 +11,9 @@ const PagePHA: React.FC<Props> = () => {
   return (
     <>
       <PageTitle zh='PHA' en='PHA'></PageTitle>
-      <NormalLayout>
-        <div className={styles.pagePHA}>
-          <div className='container'>
-            <DetailPageHeader {...PagePHAConfig}></DetailPageHeader>
-          </div>
+      <NormalLayout className={styles.pagePHA}>
+        <div className='container'>
+          <DetailPageHeader {...PagePHAConfig}></DetailPageHeader>
         </div>
       </NormalLayout>
     </>

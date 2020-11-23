@@ -11,11 +11,9 @@ const PageTechnology: React.FC<Props> = () => {
   return (
     <>
       <PageTitle zh='技术' en='Technology'></PageTitle>
-      <NormalLayout>
-        <div className={styles.pageTechnology}>
-          <div className='container'>
-            <DetailPageHeader {...PageTechnologyConfig}></DetailPageHeader>
-          </div>
+      <NormalLayout className={styles.pageTechnology}>
+        <div className='container'>
+          <DetailPageHeader {...PageTechnologyConfig}></DetailPageHeader>
         </div>
       </NormalLayout>
     </>
