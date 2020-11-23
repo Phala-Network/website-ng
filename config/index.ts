@@ -55,8 +55,8 @@ export const MaintainMenuConfig = {
         zh: '关于我们',
       },
       href: {
-        en: '/about',
-        zh: '/about',
+        en: '/aboutUs',
+        zh: '/aboutUs',
       },
     },
   ],
