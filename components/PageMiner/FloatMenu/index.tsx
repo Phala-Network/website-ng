@@ -28,6 +28,9 @@ const FloatMenu: React.FC<Props> = (props) => {
     function checkPosition() {
       const el = document.getElementById('floatMenu')
       const contentEl = document.getElementById('content')
+
+      if (!el || !contentEl) return
+
       const elRect = el.getBoundingClientRect()
       const contentElRect = contentEl.getBoundingClientRect()
 
