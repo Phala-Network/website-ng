@@ -20,7 +20,7 @@ const Nav: React.FC<Props> = () => {
     <div className={styles.bg}>
       <div className='container'>
         <nav className={styles.nav}>
-          <Link passHref href={`/${locale}`} locale={false}>
+          <Link passHref href={`/`}>
             <a>
               <Logo></Logo>
             </a>
@@ -44,11 +44,7 @@ const Nav: React.FC<Props> = () => {
 
           <LangSwitch></LangSwitch>
 
-          <IconMenu
-            onClick={() => {
-              setMobileMenuVisible(true)
-            }}
-          />
+          <IconMenu onClick={() => setMobileMenuVisible(true)} />
         </nav>
       </div>
 
