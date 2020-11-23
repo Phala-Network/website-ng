@@ -18,7 +18,7 @@ const Card: React.FC<Props> = (props) => {
       <CardHeader name={name} index={index}></CardHeader>
       <CardContent bgIndex={bgIndex}>
         {content?.[locale]?.map((text) => {
-          return <p>{text}</p>
+          return <p key={text}>{text}</p>
         })}
       </CardContent>
     </div>
