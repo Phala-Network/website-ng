@@ -1,38 +1,33 @@
-<svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="&#231;&#188;&#150;&#231;&#187;&#132;">
-<g id="isolated">
-<g id="Icon-isolated">
-<rect id="&#231;&#159;&#169;&#229;&#189;&#162;" x="15" y="18" width="96" height="96" stroke="black" stroke-width="4"/>
-<g id="&#231;&#188;&#150;&#231;&#187;&#132; 5">
-<rect id="&#231;&#159;&#169;&#229;&#189;&#162;_2" x="74.9" y="34" width="21" height="21" fill="#D1FF52" stroke="black" stroke-width="4"/>
-<rect id="&#231;&#159;&#169;&#229;&#189;&#162;_3" x="74.9" y="76" width="21" height="21" fill="#D1FF52" stroke="black" stroke-width="4"/>
-<rect id="&#231;&#159;&#169;&#229;&#189;&#162;_4" x="30.5" y="34" width="29.6" height="63.2" stroke="black" stroke-width="4"/>
-</g>
-<g id="&#231;&#188;&#150;&#231;&#187;&#132; 6">
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3" d="M32.5 17.1609V3.09845" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_2" d="M52.5 17.0625V3" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_3" d="M92.5 17.0625V3" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_4" d="M72.5 17.0625V3" stroke="#0A0A0A" stroke-width="4"/>
-</g>
-<g id="&#231;&#188;&#150;&#231;&#187;&#132; 6_2">
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_5" d="M32.5 128.161V114.098" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_6" d="M52.5 128.062V114" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_7" d="M92.5 128.062V114" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_8" d="M72.5 128.062V114" stroke="#0A0A0A" stroke-width="4"/>
-</g>
-<g id="&#231;&#188;&#150;&#231;&#187;&#132; 6_3">
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_9" d="M111.839 36H125.902" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_10" d="M111.938 56H126" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_11" d="M111.938 96H126" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_12" d="M111.938 76H126" stroke="#0A0A0A" stroke-width="4"/>
-</g>
-<g id="&#231;&#188;&#150;&#231;&#187;&#132; 6_4">
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_13" d="M0.83905 36H14.9016" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_14" d="M0.9375 56H15" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_15" d="M0.9375 96H15" stroke="#0A0A0A" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 3_16" d="M0.9375 76H15" stroke="#0A0A0A" stroke-width="4"/>
-</g>
-</g>
-</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill="#FFF" d="M0 0H1440V5735H0z" transform="translate(-100 -2199)"/>
+            <g>
+                <path fill="#A9ADB1" d="M0 0H1440V815H0z" transform="translate(-100 -2199) translate(0 1794)"/>
+                <g stroke-width="4">
+                    <g>
+                        <g>
+                            <path stroke="#000" d="M15 15H111V111H15z" transform="translate(-100 -2199) translate(0 1794) translate(100 384) translate(0 17) translate(7 7)"/>
+                            <g stroke="#000">
+                                <path fill="#D1FF52" d="M46.4 2H67.4V23H46.4zM46.4 44H67.4V65H46.4z" transform="translate(-100 -2199) translate(0 1794) translate(100 384) translate(0 17) translate(7 7) translate(28.5 29)"/>
+                                <path d="M2 2H31.6V65.2H2z" transform="translate(-100 -2199) translate(0 1794) translate(100 384) translate(0 17) translate(7 7) translate(28.5 29)"/>
+                            </g>
+                            <g stroke="#0A0A0A">
+                                <path d="M.5 14.161L.5.098M20.5 14.063L20.5 0M60.5 14.063L60.5 0M40.5 14.063L40.5 0" transform="translate(-100 -2199) translate(0 1794) translate(100 384) translate(0 17) translate(7 7) translate(32)"/>
+                            </g>
+                            <g stroke="#0A0A0A">
+                                <path d="M.5 14.161L.5.098M20.5 14.063L20.5 0M60.5 14.063L60.5 0M40.5 14.063L40.5 0" transform="translate(-100 -2199) translate(0 1794) translate(100 384) translate(0 17) translate(7 7) translate(32 111)"/>
+                            </g>
+                            <g stroke="#0A0A0A">
+                                <path d="M.5 14.161L.5.098M20.5 14.063L20.5 0M60.5 14.063L60.5 0M40.5 14.063L40.5 0" transform="translate(-100 -2199) translate(0 1794) translate(100 384) translate(0 17) translate(7 7) rotate(90 46.75 79.25)"/>
+                            </g>
+                            <g stroke="#0A0A0A">
+                                <path d="M.5 14.161L.5.098M20.5 14.063L20.5 0M60.5 14.063L60.5 0M40.5 14.063L40.5 0" transform="translate(-100 -2199) translate(0 1794) translate(100 384) translate(0 17) translate(7 7) rotate(90 -8.75 23.75)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

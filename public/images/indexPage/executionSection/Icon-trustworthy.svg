@@ -1,21 +1,22 @@
-<svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="&#231;&#188;&#150;&#231;&#187;&#132;">
-<g id="trustworthy" clip-path="url(#clip0)">
-<g id="Icon-trustworthy">
-<path id="&#231;&#159;&#169;&#229;&#189;&#162;" d="M12.7792 99H2L2 3L85 3L85 13.2128" stroke="black" stroke-width="4"/>
-<path id="&#231;&#159;&#169;&#229;&#189;&#162;_2" d="M27.7792 114H17L17 18L100 18L100 28.2128" stroke="black" stroke-width="4"/>
-<path id="&#231;&#159;&#169;&#229;&#189;&#162;_3" d="M79.0774 128L33 128L33 32L116 32L116 83.8104" stroke="black" stroke-width="4"/>
-<rect id="&#231;&#159;&#169;&#229;&#189;&#162;_4" x="47" y="44" width="21" height="21" fill="#D1FF52" stroke="black" stroke-width="4"/>
-<rect id="&#231;&#159;&#169;&#229;&#189;&#162;_5" x="79" y="44" width="21" height="21" fill="#D1FF52" stroke="black" stroke-width="4"/>
-<rect id="&#231;&#159;&#169;&#229;&#189;&#162;_6" x="47" y="76" width="21" height="21" fill="#D1FF52" stroke="black" stroke-width="4"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 2" d="M80 103.571H118L105.287 91" stroke="#070707" stroke-width="4" stroke-linejoin="round"/>
-<path id="&#232;&#183;&#175;&#229;&#190;&#132; 2_2" d="M120 112.714H82L94.6827 125.286" stroke="#070707" stroke-width="4" stroke-linejoin="round"/>
-</g>
-</g>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="264" height="287" fill="white" transform="translate(0 3)"/>
-</clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill="#FFF" d="M0 0H1440V5735H0z" transform="translate(-429 -2199)"/>
+            <g>
+                <path fill="#A9ADB1" d="M0 0H1440V815H0z" transform="translate(-429 -2199) translate(0 1794)"/>
+                <g stroke-width="4">
+                    <g>
+                        <g>
+                            <path stroke="#000" d="M72.221 0L83 0 83 96 0 96 0 85.787" transform="translate(-429 -2199) translate(0 1794) translate(100 384) translate(329 17) translate(5 7) rotate(-180 41.5 48)"/>
+                            <path stroke="#000" d="M87.221 15L98 15 98 111 15 111 15 100.787" transform="translate(-429 -2199) translate(0 1794) translate(100 384) translate(329 17) translate(5 7) rotate(-180 56.5 63)"/>
+                            <path stroke="#000" d="M67.923 29L114 29 114 125 31 125 31 73.19" transform="translate(-429 -2199) translate(0 1794) translate(100 384) translate(329 17) translate(5 7) rotate(-180 72.5 77)"/>
+                            <path fill="#D1FF52" stroke="#000" d="M45 41H66V62H45zM77 41H98V62H77zM45 73H66V94H45z" transform="translate(-429 -2199) translate(0 1794) translate(100 384) translate(329 17) translate(5 7)"/>
+                            <path stroke="#070707" stroke-linejoin="round" d="M78 100.571L116 100.571 103.287 88" transform="translate(-429 -2199) translate(0 1794) translate(100 384) translate(329 17) translate(5 7)"/>
+                            <path stroke="#070707" stroke-linejoin="round" d="M80 122.286L118 122.286 105.317 109.714" transform="translate(-429 -2199) translate(0 1794) translate(100 384) translate(329 17) translate(5 7) rotate(180 99 116)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
