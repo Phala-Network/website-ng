@@ -51,7 +51,8 @@ const Button: React.FC<ButtonProps> = (props) => {
 
   if (isLink) {
     Object.assign(buttonProps, {
-      target: '_blank',
+      // maybe not need it ...
+      // target: '_blank',
       href: isString(href) ? href : href[locale],
     })
   }

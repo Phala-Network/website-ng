@@ -114,6 +114,17 @@ export const ResourcesMenuConfig = {
   ],
 }
 
+export const TechnologyConfig = {
+  name: {
+    en: 'Technology',
+    zh: '技术',
+  },
+  href: {
+    en: '/technology',
+    zh: '/technology',
+  },
+}
+
 export const MenuConfig: {
   name: { [key: string]: string }
   subMenu?: {
@@ -132,16 +143,7 @@ export const MenuConfig: {
       zh: '//google.com',
     },
   },
-  {
-    name: {
-      en: 'Technology',
-      zh: '技术',
-    },
-    href: {
-      en: '/technology',
-      zh: '/technology',
-    },
-  },
+  TechnologyConfig,
   MaintainMenuConfig,
   ResourcesMenuConfig,
 ]
