@@ -4,7 +4,7 @@ import I18n from '../I18n'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 
-type Props = {
+export type SectionHeaderProps = {
   title: {
     [key: string]: string | string[]
   }
@@ -17,7 +17,7 @@ type Props = {
   titleClassName?: string
 }
 
-const SectionHeader: React.FC<Props> = (props) => {
+const SectionHeader: React.FC<SectionHeaderProps> = (props) => {
   const {
     descriptionClassName,
     titleClassName,

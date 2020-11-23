@@ -1,13 +1,12 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 
-type Props = {
+export type I18nProps = {
   en?: string
   zh?: string
-  name?: string
 }
 
-const I18n: React.FC<Props> = (props) => {
+const I18n: React.FC<I18nProps> = (props) => {
   const { locale } = useRouter()
   let text = props[locale]
 

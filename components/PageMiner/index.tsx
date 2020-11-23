@@ -4,10 +4,10 @@ import { PageMinerConfig } from '../../config/PageMiner'
 import { WikiConfig } from '../../config/WikiConfig'
 import DetailPageButton from '../DetailPageButton'
 import NormalLayout from '../NormalLayout'
-import SectionHeader from '../SectionHeader'
 import Card from './Card'
 import FloatMenu from '../FloatMenu'
 import styles from './index.module.scss'
+import DetailPageHeader from '../DetailPageHeader'
 
 type Props = {}
 
@@ -16,13 +16,8 @@ const PageMiner: React.FC<Props> = () => {
     <NormalLayout>
       <div className={styles.pageMiner}>
         <div className='container'>
-          <div className={styles.header}>
-            <SectionHeader
-              {...PageMinerConfig}
-              color='gray'
-              titleClassName={styles.title}
-              descriptionClassName={styles.description}></SectionHeader>
-          </div>
+          <DetailPageHeader {...PageMinerConfig}></DetailPageHeader>
+
           <div className={styles.buttons}>
             <DetailPageButton
               type='link'
