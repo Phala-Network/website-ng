@@ -25,8 +25,8 @@ export const MaintainMenuConfig = {
         zh: '节点',
       },
       href: {
-        en: '//google.com',
-        zh: '//google.com',
+        en: '/node',
+        zh: '/node',
       },
     },
     {
@@ -45,8 +45,8 @@ export const MaintainMenuConfig = {
         zh: '社区',
       },
       href: {
-        en: '//google.com',
-        zh: '//google.com',
+        en: '/community',
+        zh: '/community',
       },
     },
     {
@@ -55,8 +55,8 @@ export const MaintainMenuConfig = {
         zh: '关于我们',
       },
       href: {
-        en: '//google.com',
-        zh: '//google.com',
+        en: '/about',
+        zh: '/about',
       },
     },
   ],
