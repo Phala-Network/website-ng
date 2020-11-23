@@ -62,7 +62,7 @@ const FloatMenu: React.FC<Props> = (props) => {
 
           const rect = el.getBoundingClientRect()
 
-          return rect.bottom < winHeight
+          return rect.top < winHeight
         })
       )
     }
