@@ -18,9 +18,9 @@
   }
 
   &.bottom {
-    position: absolute;
+    position: absolute !important;
     top: auto;
-    bottom: 0px;
+    bottom: 0px !important;
   }
 
   &:hover {

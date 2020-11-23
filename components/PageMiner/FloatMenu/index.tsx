@@ -24,21 +24,17 @@ const FloatMenu: React.FC<Props> = () => {
 
       if (offset(el).top - 150 < offset(contentEl).top) {
         setFixed(false)
-        setBottom(false)
         return
       }
 
       if (elRect.bottom < window.innerHeight - 40) {
         setFixed(true)
-        setBottom(false)
       }
 
-      if (
-        contentElRect.height + offset(contentEl).top <=
-        elRect.height + offset(el).top
-      ) {
-        setFixed(false)
+      if (contentElRect.bottom < window.innerHeight - 40) {
         setBottom(true)
+      } else {
+        setBottom(false)
       }
     }
 
