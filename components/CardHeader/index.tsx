@@ -13,7 +13,7 @@ const CardHeader: React.FC<CardHeaderProps> = (props) => {
   const { locale } = useRouter()
 
   return (
-    <div id={name[locale].join('_')} className={styles.cardHeader}>
+    <div className={styles.cardHeader}>
       <div
         className={styles.target}
         id={'title_' + name[locale].join('_')}></div>

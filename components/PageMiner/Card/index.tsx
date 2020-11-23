@@ -14,7 +14,7 @@ const Card: React.FC<Props> = (props) => {
   const { locale } = useRouter()
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} id={name[locale].join('_')}>
       <CardHeader name={name} index={index}></CardHeader>
       <CardContent bgIndex={bgIndex}>
         {content?.[locale]?.map((text) => {
