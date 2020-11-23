@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.scss'
 import classnames from 'classnames'
+import I18n from '../../I18n'
+import { useRouter } from 'next/router'
 
-type Props = {}
+type Props = {
+  menuTitle?: { [key: string]: string }
+  menu: {
+    name: { [key: string]: string }
+  }[]
+}
 
 function offset(el) {
   var rect = el.getBoundingClientRect(),
@@ -11,7 +18,9 @@ function offset(el) {
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }
 
-const FloatMenu: React.FC<Props> = () => {
+const FloatMenu: React.FC<Props> = (props) => {
+  const { menuTitle, menu } = props
+  const { locale } = useRouter()
   const [fixed, setFixed] = useState(false)
   const [bottom, setBottom] = useState(false)
 
@@ -64,8 +73,21 @@ const FloatMenu: React.FC<Props> = () => {
           [styles.bottom]: bottom,
         },
       ])}>
-      index
-      {fixed}
+      <div className={styles.title}>
+        <I18n {...menuTitle}></I18n>
+      </div>
+      <div className={styles.menu}>
+        {menu.map((item, index) => {
+          return (
+            <a href={`#${item.name[locale]}`} className={styles.item}>
+              <div className={styles.index}>0{index + 1}</div>
+              <div>
+                <I18n {...item.name}></I18n>
+              </div>
+            </a>
+          )
+        })}
+      </div>
     </div>
   )
 }

@@ -1,8 +1,7 @@
 .floatMenu {
   position: absolute;
   width: 347px;
-  height: 262px;
-  padding: 35px 28px 21px 20px;
+  padding: 35px 20px;
   background-color: #d1ff52;
 
   font-size: 24px;
@@ -25,5 +24,29 @@
 
   &:hover {
     z-index: 80;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #070707;
+    margin-right: 110px;
+  }
+
+  .menu {
+    margin-top: 20px;
+
+    .item {
+      display: flex;
+      margin-top: 5px;
+
+      .index {
+        margin-right: 30px;
+      }
+    }
   }
 }

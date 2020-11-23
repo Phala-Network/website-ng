@@ -14,6 +14,7 @@ const CardHeader: React.FC<CardHeaderProps> = (props) => {
 
   return (
     <div className={styles.cardHeader}>
+      <div className={styles.target} id={name[locale].join(',')}></div>
       <div className={styles.top}>
         <div>0{index}_</div>
         <div>

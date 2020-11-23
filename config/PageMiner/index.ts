@@ -14,7 +14,7 @@ export const PageMinerConfig = {
 
   menuTitle: {
     en: 'Gatekeeper node and Nominator',
-    zh: 'Gatekeeper node and Nominator',
+    zh: '守门人节点和提名人',
   },
 
   content: [

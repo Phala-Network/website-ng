@@ -54,7 +54,9 @@ const PageMiner: React.FC<Props> = () => {
               )
             })}
 
-            <FloatMenu></FloatMenu>
+            <FloatMenu
+              menuTitle={PageMinerConfig.menuTitle}
+              menu={PageMinerConfig.content}></FloatMenu>
           </div>
         </div>
       </div>

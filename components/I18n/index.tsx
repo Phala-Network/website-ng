@@ -9,8 +9,13 @@ type Props = {
 
 const I18n: React.FC<Props> = (props) => {
   const { locale } = useRouter()
+  let text = props[locale]
 
-  return <>{props[locale]}</>
+  if (Array.isArray(text)) {
+    text = text.join(' ')
+  }
+
+  return <>{text}</>
 }
 
 export default I18n
