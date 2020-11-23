@@ -23,8 +23,6 @@ const RandomBlock: React.FC<Props> = (props) => {
       }}
       className={styles.randomBlock}>
       {data.map((item) => {
-        console.log('item', item > 0.5)
-
         return (
           <div
             style={{
