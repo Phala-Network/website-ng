@@ -16,21 +16,24 @@ const FloatMenu: React.FC<Props> = () => {
   const [bottom, setBottom] = useState(false)
 
   useEffect(() => {
-    function onScroll() {
+    function checkPosition() {
       const el = document.getElementById('floatMenu')
       const contentEl = document.getElementById('content')
       const elRect = el.getBoundingClientRect()
       const contentElRect = contentEl.getBoundingClientRect()
 
+      // check top, stop it
       if (offset(el).top - 150 < offset(contentEl).top) {
         setFixed(false)
         return
       }
 
+      // move move move
       if (elRect.bottom < window.innerHeight - 40) {
         setFixed(true)
       }
 
+      // check bottom, stop it
       if (contentElRect.bottom < window.innerHeight - 40) {
         setBottom(true)
       } else {
@@ -38,10 +41,14 @@ const FloatMenu: React.FC<Props> = () => {
       }
     }
 
-    window.addEventListener('scroll', onScroll)
+    window.addEventListener('scroll', checkPosition)
+    window.addEventListener('resize', checkPosition)
+
+    checkPosition()
 
     return () => {
-      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('scroll', checkPosition)
+      window.removeEventListener('resize', checkPosition)
     }
   }, [])
 
