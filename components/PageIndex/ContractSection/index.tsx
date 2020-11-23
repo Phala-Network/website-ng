@@ -5,6 +5,7 @@ import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'
 import List from './List'
 import classnames from 'classnames'
+import { GithubConfig } from '../../../config/GithubConfig'
 
 type Props = {}
 
@@ -26,6 +27,8 @@ const ContractSection: React.FC<Props> = () => {
               <Button
                 className={styles.button}
                 text={ContractSectionConfig.button}
+                type='link'
+                href={GithubConfig.url}
                 hasArrowIcon></Button>
             </div>
           </div>
