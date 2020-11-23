@@ -125,6 +125,17 @@ export const TechnologyConfig = {
   },
 }
 
+export const PHAConfig = {
+  name: {
+    en: 'What is PHA',
+    zh: '了解 PHA',
+  },
+  href: {
+    en: '/pha',
+    zh: '/pha',
+  },
+}
+
 export const MenuConfig: {
   name: { [key: string]: string }
   subMenu?: {
@@ -132,21 +143,7 @@ export const MenuConfig: {
     href: { [key: string]: string }
   }[]
   href?: { [key: string]: string }
-}[] = [
-  {
-    name: {
-      en: 'What is PHA',
-      zh: '了解 PHA',
-    },
-    href: {
-      en: '//google.com',
-      zh: '//google.com',
-    },
-  },
-  TechnologyConfig,
-  MaintainMenuConfig,
-  ResourcesMenuConfig,
-]
+}[] = [PHAConfig, TechnologyConfig, MaintainMenuConfig, ResourcesMenuConfig]
 
 const config = {}
 
