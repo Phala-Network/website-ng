@@ -17,7 +17,7 @@ export const ExecutionSectionConfig = {
 
   list: [
     {
-      image: '/images/indexPage/executionSection/Icon-isolated.svg',
+      image: '/images/indexPage/executionSection/icon-isolated.svg',
       name: {
         en: 'Isolated',
         zh: 'Isolated',
@@ -30,7 +30,7 @@ export const ExecutionSectionConfig = {
       },
     },
     {
-      image: '/images/indexPage/executionSection/Icon-trustworthy.svg',
+      image: '/images/indexPage/executionSection/icon-trustworthy.svg',
       name: {
         en: 'Trustworthy',
         zh: 'Trustworthy',
@@ -43,7 +43,7 @@ export const ExecutionSectionConfig = {
       },
     },
     {
-      image: '/images/indexPage/executionSection/Icon-compatible.svg',
+      image: '/images/indexPage/executionSection/icon-compatible.svg',
       name: {
         en: 'Compatible',
         zh: 'Compatible',
@@ -56,7 +56,7 @@ export const ExecutionSectionConfig = {
       },
     },
     {
-      image: '/images/indexPage/executionSection/Icon-decentralized.svg',
+      image: '/images/indexPage/executionSection/icon-decentralized.svg',
       name: {
         en: 'Decentralized',
         zh: 'Decentralized',
