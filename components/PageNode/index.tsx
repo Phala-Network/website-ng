@@ -8,8 +8,10 @@ import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
 import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
-import Card from './Card'
 import styles from './index.module.scss'
+import Gatekeeper from './Gatekeeper'
+import Nominator from './Nominator'
+import ConsensusMechanism from './ConsensusMechanism'
 
 type Props = {}
 
@@ -47,13 +49,17 @@ const PageNode: React.FC<Props> = () => {
 
           <div id='content' className={styles.content}>
             {PageNodeConfig.content.map((item, index) => {
+              const Component = {
+                Gatekeeper,
+                Nominator,
+                ConsensusMechanism,
+              }[item.id]
+
               return (
-                <Card
-                  key={JSON.stringify(item.name)}
+                <Component
                   {...item}
-                  content={item.content}
                   index={index + 1}
-                  bgIndex={index + 1}></Card>
+                  key={JSON.stringify(item.name)}></Component>
               )
             })}
 
