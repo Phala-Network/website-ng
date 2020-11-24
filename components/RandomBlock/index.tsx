@@ -18,9 +18,9 @@ const RandomBlock: React.FC<Props> = (props) => {
     if (breakpoint === 'mobile') {
       setSize(10)
     } else if (breakpoint === 'tablet') {
-      setSize(20)
+      setSize(15)
     } else {
-      setSize(30)
+      setSize(20)
     }
   }, [breakpoint])
 
