@@ -13,6 +13,7 @@ const ProductSection: React.FC<Props> = () => {
           <div className='row'>
             <div className='col-lg-6'>
               <SectionHeader
+                titleClassName={styles.title}
                 color='gray'
                 title={{
                   en: 'Products on Phala',

@@ -4,6 +4,14 @@
   width: 100%;
   background-color: $color-bg-black;
 
+  .title {
+    @media (min-width: $xl) {
+      &:lang(zh) {
+        font-size: 50px;
+      }
+    }
+  }
+
   .content {
     min-height: 661px;
     padding-top: 100px;
