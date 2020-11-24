@@ -16,7 +16,7 @@ export const TechWhitepaperConfig = {
 export const MaintainMenuConfig = {
   name: {
     en: 'Maintain',
-    zh: '生态',
+    zh: '参与',
   },
   subMenu: [
     {
