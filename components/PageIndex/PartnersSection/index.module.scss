@@ -29,6 +29,7 @@
     .mobileHeader {
       display: none;
       margin-left: 20px;
+      margin-bottom: 40px;
 
       @media (max-width: $md) {
         display: block;
