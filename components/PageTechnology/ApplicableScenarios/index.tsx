@@ -48,7 +48,9 @@ const ApplicableScenarios: React.FC<Props> = (props) => {
       <div className={classnames([styles.applicableScenarios, 'row'])}>
         {config.map((item, index) => {
           return (
-            <div className={classnames([styles.item, 'col-md-4'])}>
+            <div
+              key={JSON.stringify(item.text)}
+              className={classnames([styles.item, 'col-md-4'])}>
               <IconTextCard bgIndex={index + 1} {...item}></IconTextCard>
             </div>
           )
