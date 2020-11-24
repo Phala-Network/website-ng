@@ -1,19 +1,21 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 import RandomBlock from '../RandomBlock'
+import classnames from 'classnames'
 import styles from './index.module.scss'
 
 export type CardHeaderProps = {
   index?: number
   name?: { [key: string]: string[] }
+  className?: string
 }
 
 const CardHeader: React.FC<CardHeaderProps> = (props) => {
-  const { index, name } = props
+  const { index, name, className } = props
   const { locale } = useRouter()
 
   return (
-    <div className={styles.cardHeader}>
+    <div className={classnames([styles.cardHeader, className])}>
       <div
         className={styles.target}
         // id for link jump

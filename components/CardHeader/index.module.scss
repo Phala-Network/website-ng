@@ -9,12 +9,12 @@
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 39px;
   text-transform: uppercase;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: $index-card-header;
 
   .randomBlock {
     position: absolute;

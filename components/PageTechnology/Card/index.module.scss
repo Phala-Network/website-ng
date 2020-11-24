@@ -1,0 +1,18 @@
+@import '../../../styles/variables.scss';
+
+.card {
+  margin-top: 60px;
+  margin-left: 114px;
+  z-index: $index-card;
+  position: relative;
+
+  .cardHeader {
+    width: 560px;
+    min-height: 240px;
+  }
+
+  .cardContent {
+    margin-left: 106px;
+    margin-top: -20px;
+  }
+}
