@@ -27,6 +27,10 @@
     font-family: Minecraft, mplus_hzk_12;
     font-size: 60px;
     line-height: 0.6;
+
+    @media (max-width: $md) {
+      font-size: 30px;
+    }
   }
 
   &.bg1 {
