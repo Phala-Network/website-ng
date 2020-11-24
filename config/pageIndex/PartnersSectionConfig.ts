@@ -6,7 +6,7 @@ export const PartnersSectionConfig = {
   description: {
     en:
       'With thriving partners and projects, Phala Network is rapidly growing and developing',
-    zh: '随着合作伙伴和项目的蓬勃发展，Phala Network 正在迅速成长和发展。',
+    zh: '在众多合作伙伴与项目的不断努力下，Phala Network 正在快速发展壮大',
   },
   partners: [
     {
