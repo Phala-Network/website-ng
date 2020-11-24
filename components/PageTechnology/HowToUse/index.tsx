@@ -21,24 +21,24 @@ const HowToUse: React.FC<Props> = (props) => {
           connect the Web UI to the blockchain. At the end of this tutorial, you
           will be able to:
         </div>
-        <ul>
-          <li>Send a confidential transaction</li>
-          <li>
-            Get the ready version of Phala Network to build your own
-            confidential Dapp
-          </li>
-        </ul>
+        <br />
+        <div>- Send a confidential transaction</div>
+        <div>
+          - Get the ready version of Phala Network to build your own
+          confidential Dapp
+        </div>
       </div>
     ),
     zh: (
       <div>
-        在本教程中，我们将帮助您建立一个“ Hello World”开发环境。
-        您将部署完整的核心区块链堆栈，并将Web UI连接到区块链。
-        在本教程结束时，您将能够：
-        <ul>
-          <li> 发送保密交易</li>
-          <li> 获取准备就绪的Phala Network版本，以构建自己保密Dapp</li>
-        </ul>
+        <div>
+          在本教程中，我们将帮助您建立一个“ Hello World”开发环境。
+          您将部署完整的核心区块链堆栈，并将Web UI连接到区块链。
+          在本教程结束时，您将能够：
+        </div>
+        <br />
+        <div>- 发送保密交易</div>
+        <div>- 获取准备就绪的Phala Network版本，以构建自己保密Dapp</div>
       </div>
     ),
   }
