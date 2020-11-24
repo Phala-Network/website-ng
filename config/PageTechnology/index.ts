@@ -33,15 +33,15 @@ export const PageTechnologyConfig = {
     },
     {
       name: {
-        en: ['Separation of', 'consensus and', 'computing layer'],
-        zh: ['Separation of', 'consensus and', 'computing layer'],
+        en: ['Separation', 'of consensus and', 'computing layer'],
+        zh: ['Separation', 'of consensus and', 'computing layer'],
       },
       content: {},
     },
     {
       name: {
-        en: ['The composability of cross-chain and secret contracts'],
-        zh: ['The composability of cross-chain and secret contracts'],
+        en: ['The composability', 'of cross-chain and', 'secret contracts'],
+        zh: ['The composability', 'of cross-chain and', 'secret contracts'],
       },
       content: {},
     },
