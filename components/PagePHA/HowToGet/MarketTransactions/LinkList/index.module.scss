@@ -1,0 +1,35 @@
+@import '../../../../../styles/variables.scss';
+
+.linkList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .item {
+    width: 262px;
+    padding: 4px 16px 3px 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #ececec;
+    background-color: #ffffff;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $md) {
+      width: 100%;
+    }
+
+    .name {
+      margin-left: 6px;
+      flex: 1;
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      color: #070707;
+    }
+  }
+}

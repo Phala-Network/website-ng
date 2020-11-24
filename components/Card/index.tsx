@@ -12,7 +12,14 @@ export type CardProps = CardHeaderProps &
   }
 
 const Card: React.FC<CardProps> = (props) => {
-  const { name, index, children, cardContentClassName, type } = props
+  const {
+    name,
+    index,
+    children,
+    cardContentClassName,
+    type,
+    firstLetter,
+  } = props
   const { locale } = useRouter()
 
   return (
@@ -24,6 +31,7 @@ const Card: React.FC<CardProps> = (props) => {
         name={name}
         index={index}></CardHeader>
       <CardContent
+        firstLetter={firstLetter}
         className={classnames([styles.cardContent, cardContentClassName])}>
         {children}
       </CardContent>

@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+.cardContent {
+  background-image: url(./images/bg.svg);
+  background-position: left top;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: $md) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      line-height: 1.17;
+      font-size: 12px;
+      margin-top: 33px;
+      text-align: center;
+      flex: 1;
+    }
+  }
+}
+
+.pieImage {
+  img {
+    width: 100%;
+  }
+}

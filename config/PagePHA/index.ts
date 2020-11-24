@@ -17,27 +17,31 @@ export const PagePHAConfig = {
 
   content: [
     {
+      id: 'TokenUtibility',
       name: {
-        en: 'Token Utibility',
-        zh: '代币功能',
+        en: ['Token Utibility'],
+        zh: ['代币功能'],
       },
     },
     {
+      id: 'Distribution',
       name: {
-        en: 'Distribution',
-        zh: '分发',
+        en: ['Distribution'],
+        zh: ['分发'],
       },
     },
     {
+      id: 'Mining',
       name: {
-        en: 'Mining',
-        zh: '挖矿',
+        en: ['Mining'],
+        zh: ['挖矿'],
       },
     },
     {
+      id: 'HowToGet',
       name: {
         en: ['How to ', 'get PHA?'],
-        zh: '怎样获得PHA？',
+        zh: ['怎样获得PHA？'],
       },
     },
   ],

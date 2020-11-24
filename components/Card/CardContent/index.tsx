@@ -21,7 +21,7 @@ const CardContent: React.FC<CardContentProps> = (props) => {
         },
         className,
       ])}>
-      <div className={styles.content}>{props.children}</div>
+      {props.children}
     </div>
   )
 }

@@ -1,0 +1,9 @@
+.card {
+  border: solid 1px #ececec;
+  background-color: #ffffff;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border: solid 1px #c1c1c1;
+  }
+}

@@ -8,9 +8,19 @@ import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
 import styles from './index.module.scss'
+import TokenUtibility from './TokenUtibility'
+import Distribution from './Distribution'
+import Mining from './Mining'
+import HowToGet from './HowToGet'
 
 type Props = {}
 
+/*
+'Token Utibility',
+'Distribution',
+'Mining',
+'How to ', 'get PHA?'
+*/
 const PagePHA: React.FC<Props> = () => {
   return (
     <>
@@ -27,6 +37,23 @@ const PagePHA: React.FC<Props> = () => {
           </DetailPageHeaderButtons>
 
           <div id='content' className={styles.content}>
+            {PagePHAConfig.content.map((item, index) => {
+              const Component =
+                {
+                  TokenUtibility,
+                  Distribution,
+                  Mining,
+                  HowToGet,
+                }[item.id] ?? TokenUtibility
+
+              return (
+                <Component
+                  {...item}
+                  index={index + 1}
+                  key={JSON.stringify(item.name)}></Component>
+              )
+            })}
+
             <FloatMenu
               menuTitle={PagePHAConfig.menuTitle}
               menu={PagePHAConfig.content}></FloatMenu>

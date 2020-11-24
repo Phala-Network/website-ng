@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/card.scss';
+
+.textCard {
+  @extend .card;
+  min-height: 230px;
+  padding: 62px 20px 0 20px;
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    padding: 30px 15px;
+    min-height: 160px;
+    margin-bottom: 15px;
+  }
+
+  .title {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 1;
+    color: #070707;
+
+    @media (max-width: $md) {
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+
+  .content {
+    margin: 16px 0 0;
+    opacity: 0.75;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: rgba(7, 7, 7, 0.75);
+
+    @media (max-width: $md) {
+      opacity: 0.75;
+      font-size: 12px;
+      line-height: 1.17;
+    }
+  }
+}
