@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 type Props = {
   menuTitle?: { [key: string]: string }
   menu: {
-    name: { [key: string]: string[] }
+    name: { [key: string]: string[] | string }
   }[]
   offsetBottom?: number
 }
@@ -25,6 +25,11 @@ const FloatMenu: React.FC<Props> = (props) => {
   const [fixed, setFixed] = useState(false)
   const [bottom, setBottom] = useState(false)
   const [done, setDone] = useState([])
+
+  function checkName(name) {
+    const localName = name[locale]
+    return Array.isArray(localName) ? localName.join('_') : localName
+  }
 
   useEffect(() => {
     function checkPosition() {
@@ -57,7 +62,7 @@ const FloatMenu: React.FC<Props> = (props) => {
 
       setDone(
         menu.map((item) => {
-          const el = document.getElementById(item.name[locale].join('_'))
+          const el = document.getElementById(checkName(item.name))
 
           if (!el) return false
 
@@ -102,7 +107,7 @@ const FloatMenu: React.FC<Props> = (props) => {
           return (
             <a
               key={JSON.stringify(item.name)}
-              href={`#title_${item.name[locale].join('_')}`}
+              href={`#title_${checkName(item.name)}`}
               className={classnames([
                 styles.item,
                 {

@@ -4,6 +4,7 @@ import { PagePHAConfig } from '../../config/PagePHA'
 import DetailPageButton from '../DetailPageButton'
 import DetailPageHeader from '../DetailPageHeader'
 import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
+import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
 import styles from './index.module.scss'
@@ -24,6 +25,12 @@ const PagePHA: React.FC<Props> = () => {
               {...EconomyWhitepaperConfig}
             />
           </DetailPageHeaderButtons>
+
+          <div id='content' className={styles.content}>
+            <FloatMenu
+              menuTitle={PagePHAConfig.menuTitle}
+              menu={PagePHAConfig.content}></FloatMenu>
+          </div>
         </div>
       </NormalLayout>
     </>

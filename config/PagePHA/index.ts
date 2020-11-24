@@ -9,4 +9,36 @@ export const PagePHAConfig = {
       'PHA is the functional token of Phala Network Pha is the currency of Phala.',
     zh: 'PHA是Phala Network的功能性代币',
   },
+
+  menuTitle: {
+    en: 'PHA',
+    zh: 'PHA',
+  },
+
+  content: [
+    {
+      name: {
+        en: 'Token Utibility',
+        zh: '代币功能',
+      },
+    },
+    {
+      name: {
+        en: 'Distribution',
+        zh: '分发',
+      },
+    },
+    {
+      name: {
+        en: 'Mining',
+        zh: '挖矿',
+      },
+    },
+    {
+      name: {
+        en: ['How to ', 'get PHA?'],
+        zh: '怎样获得PHA？',
+      },
+    },
+  ],
 }
