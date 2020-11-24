@@ -15,52 +15,7 @@ import styles from './index.module.scss'
 
 type Props = {}
 
-const config = {
-  content: [
-    {
-      name: {
-        en: ['TEE Computing', 'Environment'],
-        zh: ['TEE Computing', 'Environment'],
-      },
-      content: {},
-    },
-    {
-      name: {
-        en: ['Three-party', 'trusted', 'communication'],
-        zh: ['Three-party', 'trusted', 'communication'],
-      },
-      content: {},
-    },
-    {
-      name: {
-        en: ['Separation of', 'consensus and', 'computing layer'],
-        zh: ['Separation of', 'consensus and', 'computing layer'],
-      },
-      content: {},
-    },
-    {
-      name: {
-        en: ['The composability of cross-chain and secret contracts'],
-        zh: ['The composability of cross-chain and secret contracts'],
-      },
-      content: {},
-    },
-    {
-      name: {
-        en: ['Applicable', 'scenarios'],
-        zh: ['Applicable', 'scenarios'],
-      },
-      content: {},
-    },
-    {
-      name: {
-        en: ['How to use'],
-        zh: ['How to use'],
-      },
-      content: {},
-    },
-  ],
-}
+const config = {}
 
 const PageTechnology: React.FC<Props> = () => {
   return (
@@ -81,7 +36,7 @@ const PageTechnology: React.FC<Props> = () => {
           </DetailPageHeaderButtons>
 
           <div id='content' className={styles.content}>
-            {config.content.map((item, index) => {
+            {PageTechnologyConfig.content.map((item, index) => {
               return (
                 <Card
                   key={JSON.stringify(item.name)}
@@ -93,11 +48,8 @@ const PageTechnology: React.FC<Props> = () => {
             })}
 
             <FloatMenu
-              menuTitle={{
-                en: 'PHA',
-                zh: 'PHA',
-              }}
-              menu={config.content}
+              menuTitle={PageTechnologyConfig.menuTitle}
+              menu={PageTechnologyConfig.content}
             />
           </div>
         </div>
