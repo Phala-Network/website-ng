@@ -16,7 +16,7 @@ const ProductSection: React.FC<Props> = () => {
                 color='gray'
                 title={{
                   en: 'Products on Phala',
-                  zh: 'Phala 出品',
+                  zh: '基于秘密智能合约的产品',
                 }}
               />
 

@@ -12,12 +12,12 @@ const CloudSection: React.FC<Props> = () => {
   const descriptionText = {
     en:
       'Raw-data-protected Data processing Confidential Smart Contract for DApps and DeFi',
-    zh: '原始数据保护数据处理 DApps 和 DeFi 的保密智能合约',
+    zh: '安全、不暴露隐私的数据处理，为Defi和Dapp提供秘密智能合约服务',
   }
 
   const titleText = {
     en: ['Decentralized', 'Privacy', 'Computing Cloud'],
-    zh: ['Decentralized', 'Privacy', 'Computing Cloud'],
+    zh: ['分布式隐私计算云'],
   }
 
   return (
