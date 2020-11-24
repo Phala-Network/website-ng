@@ -6,4 +6,18 @@
   margin-left: 220px;
   z-index: $index-card;
   position: relative;
+
+  @media (max-width: $lg) {
+    margin-top: 30px;
+    display: block;
+    margin-left: 0;
+  }
+
+  .cardHeader {
+    @media (max-width: $lg) {
+      width: 100%;
+      min-height: 120px;
+      font-size: 18px;
+    }
+  }
 }

@@ -12,8 +12,13 @@
   padding-bottom: 200px;
   position: relative;
 
-  @media (max-width: $sm) {
-    padding: 200px 20px;
+  @media (max-width: $md) {
+    padding-bottom: 20px;
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: auto 700px;
+    background-attachment: inherit;
   }
 
   .btn1 {
