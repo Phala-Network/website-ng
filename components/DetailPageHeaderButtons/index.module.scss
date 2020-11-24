@@ -1,11 +1,23 @@
+@import '../../styles/variables.scss';
+
 .detailPageHeaderButtons {
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
   max-width: 530px;
 
+  @media (max-width: $md) {
+    margin-top: 30px;
+    width: 220px;
+  }
+
   & > * {
     margin-right: 20px;
     margin-bottom: 20px;
+
+    @media (max-width: $md) {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
   }
 }

@@ -16,6 +16,11 @@
   justify-content: space-between;
   z-index: $index-card-header;
 
+  @media (max-width: $md) {
+    font-size: 18px;
+    padding: 11px 15px;
+  }
+
   .randomBlock {
     position: absolute;
     top: 0;
@@ -24,10 +29,11 @@
 
   .top {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 30px;
+
+    @media (max-width: $md) {
+      margin-bottom: 15px;
+    }
   }
 
   .target {

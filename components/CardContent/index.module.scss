@@ -16,6 +16,13 @@
   z-index: $index-card-content;
   position: relative;
 
+  @media (max-width: $md) {
+    line-height: 1.17;
+    font-size: 12px;
+    padding: 30px 10px;
+    background-image: none !important;
+  }
+
   .content::first-letter {
     font-family: Minecraft, mplus_hzk_12;
     font-size: 60px;

@@ -20,16 +20,18 @@
     border-width: 1px !important;
   }
 
-  &.middle {
-    font-size: 18px;
-    height: 38px;
-    line-height: 38px;
-    padding: 5px 10px;
-    border-width: 1.5px !important;
+  @media (min-width: $md) {
+    &.middle {
+      font-size: 18px;
+      height: 38px;
+      line-height: 38px;
+      padding: 5px 10px;
+      border-width: 1.5px !important;
 
-    .iconArrow {
-      width: 22px;
-      height: 22px;
+      .iconArrow {
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 

@@ -45,7 +45,7 @@ const HowToUse: React.FC<Props> = (props) => {
 
   return (
     <Card firstLetter {...props}>
-      <div className='row'>
+      <div className='row flex-column-reverse flex-md-row'>
         <div className={classnames(['col-md-8', styles.textAndButton])}>
           <I18nRender {...content}></I18nRender>
           <DetailPageButton
@@ -57,12 +57,14 @@ const HowToUse: React.FC<Props> = (props) => {
             hasArrowIcon></DetailPageButton>
         </div>
         <div className='col-md-4'>
-          <IconTextCard
-            bgIndex={3}
-            text={{
-              en: 'code here',
-              zh: '查看教程',
-            }}></IconTextCard>
+          <div className={styles.iconCard}>
+            <IconTextCard
+              bgIndex={3}
+              text={{
+                en: 'code here',
+                zh: '查看教程',
+              }}></IconTextCard>
+          </div>
         </div>
       </div>
     </Card>

@@ -1,9 +1,17 @@
+@import '../../styles/variables.scss';
+
 .header {
   max-width: 900px;
 
   .title {
     line-height: 1;
     max-width: 900px;
+
+    @media (max-width: $md) {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+    }
   }
 
   .description {
@@ -11,5 +19,11 @@
     line-height: 1;
     max-width: 602px;
     font-weight: 500;
+
+    @media (max-width: $md) {
+      font-size: 14px;
+      line-height: 1.29;
+      max-width: 80%;
+    }
   }
 }

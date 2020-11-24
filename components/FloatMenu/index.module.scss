@@ -11,6 +11,10 @@
   top: 150px;
   z-index: $index-card - 10;
 
+  @media (max-width: $lg) {
+    display: none;
+  }
+
   &.fixed {
     position: fixed;
     top: auto;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.scss'
 import classnames from 'classnames'
+import { useBreakpoint } from '../../hooks/useBreakpoint'
 
 type Props = {
   row?: number
@@ -9,8 +10,19 @@ type Props = {
 
 const RandomBlock: React.FC<Props> = (props) => {
   const { row = 8, column = 4 } = props
-  const size = 20
+  const [size, setSize] = useState(20)
+  const { breakpoint } = useBreakpoint()
   const [data, setData] = useState(new Array(row * column).fill(0))
+
+  useEffect(() => {
+    if (breakpoint === 'mobile') {
+      setSize(10)
+    } else if (breakpoint === 'tablet') {
+      setSize(20)
+    } else {
+      setSize(30)
+    }
+  }, [breakpoint])
 
   useEffect(() => {
     setData(
