@@ -1,10 +1,10 @@
 import React from 'react'
 import { EconomyWhitepaperConfig } from '../../../config/EconomyWhitepaperConfig'
-import { CardContentProps } from '../../CardContent'
-import { CardHeaderProps } from '../../CardHeader'
+import { CardContentProps } from '../../Card/CardContent'
+import { CardHeaderProps } from '../../Card/CardHeader'
 import DetailPageButton from '../../DetailPageButton'
 import I18nRender from '../../I18nRender'
-import Card from '../Card'
+import Card from '../../Card'
 import IconTextCard from '../IconTextCard'
 import styles from './index.module.scss'
 import classnames from 'classnames'
@@ -44,7 +44,7 @@ const HowToUse: React.FC<Props> = (props) => {
   }
 
   return (
-    <Card firstLetter {...props}>
+    <Card type='vertical' firstLetter {...props}>
       <div className='row flex-column-reverse flex-md-row'>
         <div className={classnames(['col-md-8', styles.textAndButton])}>
           <I18nRender {...content}></I18nRender>

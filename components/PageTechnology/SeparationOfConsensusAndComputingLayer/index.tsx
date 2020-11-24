@@ -1,15 +1,19 @@
 import React from 'react'
-import { CardContentProps } from '../../CardContent'
-import { CardHeaderProps } from '../../CardHeader'
+import { CardContentProps } from '../../Card/CardContent'
+import { CardHeaderProps } from '../../Card/CardHeader'
 import I18nRender from '../../I18nRender'
-import Card from '../Card'
+import Card from '../../Card'
 import styles from './index.module.scss'
 
 type Props = CardHeaderProps & CardContentProps
 
 const SeparationOfConsensusAndComputingLayer: React.FC<Props> = (props) => {
   return (
-    <Card cardContentClassName={styles.cardContent} firstLetter {...props}>
+    <Card
+      type='vertical'
+      cardContentClassName={styles.cardContent}
+      firstLetter
+      {...props}>
       <I18nRender
         en={
           <div>

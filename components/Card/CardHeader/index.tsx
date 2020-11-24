@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import React from 'react'
-import RandomBlock from '../RandomBlock'
+import RandomBlock from '../../RandomBlock'
 import classnames from 'classnames'
 import styles from './index.module.scss'
 

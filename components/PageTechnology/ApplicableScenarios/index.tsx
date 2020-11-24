@@ -1,9 +1,9 @@
 import React from 'react'
-import { CardContentProps } from '../../CardContent'
-import { CardHeaderProps } from '../../CardHeader'
+import { CardContentProps } from '../../Card/CardContent'
+import { CardHeaderProps } from '../../Card/CardHeader'
 import classnames from 'classnames'
 import IconTextCard from '../IconTextCard'
-import Card from '../Card'
+import Card from '../../Card'
 import styles from './index.module.scss'
 
 type Props = CardHeaderProps & CardContentProps
@@ -44,7 +44,11 @@ const ApplicableScenarios: React.FC<Props> = (props) => {
   ]
 
   return (
-    <Card cardContentClassName={styles.cardContent} firstLetter {...props}>
+    <Card
+      type='vertical'
+      cardContentClassName={styles.cardContent}
+      firstLetter
+      {...props}>
       <div className={classnames([styles.applicableScenarios, 'row'])}>
         {config.map((item, index) => {
           return (
