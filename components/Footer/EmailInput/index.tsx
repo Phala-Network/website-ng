@@ -5,6 +5,7 @@ import IconSuccessCircle from '../../IconSuccessCircle'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 import I18n from '../../I18n'
+import { useRouter } from 'next/router'
 
 type Props = {}
 
@@ -17,6 +18,11 @@ enum STATUS {
 const EmailInput: React.FC<Props> = () => {
   const [textValue, setTextValue] = useState<string>('')
   const [status, setStatus] = useState<STATUS>(STATUS.default)
+  const { locale } = useRouter()
+  const placeholderText = {
+    en: 'Please input your email',
+    zh: '输入您的邮箱',
+  }
 
   function onChange(e) {
     setTextValue(e.target.value)
@@ -55,7 +61,7 @@ const EmailInput: React.FC<Props> = () => {
           onKeyPress={onKeyPress}
           onChange={onChange}
           value={textValue}
-          placeholder='ABC@Phala.network'
+          placeholder={placeholderText[locale]}
           type='text'
         />
 
@@ -73,7 +79,7 @@ const EmailInput: React.FC<Props> = () => {
         <div className={classnames([styles.infoText, styles.warning])}>
           <I18n
             en='Please enter the right email address'
-            zh='请输入正确的Email格式'></I18n>
+            zh='请输入正确的邮箱地址'></I18n>
         </div>
       )}
 

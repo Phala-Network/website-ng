@@ -104,7 +104,7 @@ export const ResourcesMenuConfig = {
     {
       name: {
         en: 'Claim',
-        zh: '领奖',
+        zh: '抵押领奖',
       },
       href: {
         en: 'https://stakedrop-claim.phala.network/',

@@ -12,7 +12,7 @@ const Subscribe: React.FC<Props> = () => {
   const description = {
     en:
       'Subscribe to the newsletter to hear about Phala Network updates and events.',
-    zh: '订阅消息，了解Phala网络的最新动态和活动。',
+    zh: '订阅我们的电子报，接收Phala Network最新消息和活动',
   }
 
   return (
