@@ -1,0 +1,9 @@
+.textAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .button {
+    max-width: 278px;
+  }
+}

@@ -10,7 +10,12 @@ import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
 import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
-import Card from './Card'
+import ThreePartyTrustedCommunication from './ThreePartyTrustedCommunication'
+import ComputingEnvironment from './ComputingEnvironment'
+import SeparationOfConsensusAndComputingLayer from './SeparationOfConsensusAndComputingLayer'
+import Composability from './Composability'
+import ApplicableScenarios from './ApplicableScenarios'
+import HowToUse from './HowToUse'
 import styles from './index.module.scss'
 
 type Props = {}
@@ -37,13 +42,21 @@ const PageTechnology: React.FC<Props> = () => {
 
           <div id='content' className={styles.content}>
             {PageTechnologyConfig.content.map((item, index) => {
+              const Component =
+                {
+                  ComputingEnvironment,
+                  ThreePartyTrustedCommunication,
+                  SeparationOfConsensusAndComputingLayer,
+                  Composability,
+                  ApplicableScenarios,
+                  HowToUse,
+                }[item.id] ?? ComputingEnvironment
+
               return (
-                <Card
-                  key={JSON.stringify(item.name)}
+                <Component
                   {...item}
-                  content={item.content}
                   index={index + 1}
-                  bgIndex={index + 1}></Card>
+                  key={JSON.stringify(item.name)}></Component>
               )
             })}
 
