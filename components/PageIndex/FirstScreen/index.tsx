@@ -8,15 +8,16 @@ import { PHAConfig } from '../../../config'
 type Props = {}
 
 const FirstScreen: React.FC<Props> = () => {
-  const title = ['Phala Network', 'the pixalizer of', 'blockchain.']
+  const title = {
+    en: ['Phala Network', 'the pixalizer of', 'blockchain.'],
+    zh: ['Phala Network', '给区块链打上马赛克'],
+  }
 
   return (
     <section className={classnames([styles.firstScreen])}>
       <div className={classnames(['container', styles.content])}>
         <div className={styles.title}>
-          {title.map((str) => {
-            return <div key={str}>{str}</div>
-          })}
+          <I18n render={(str) => <div key={str}>{str}</div>} {...title}></I18n>
         </div>
         <div className={styles.description}>
           <I18n
