@@ -20,7 +20,7 @@ export const config = [
     avatar: 'people8',
     name: {
       en: 'Goldenfiredo',
-      zh: '',
+      zh: 'Goldenfiredo',
     },
     position: {
       en: 'Core Developer',
