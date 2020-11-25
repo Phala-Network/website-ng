@@ -1,0 +1,34 @@
+@import '../../../styles/variables.scss';
+
+.cardContent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0 40px 0;
+
+  .item {
+    text-align: center;
+    width: 33.33333333%;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #070707;
+
+    .inner {
+      position: relative;
+      display: inline-block;
+      margin: auto;
+
+      &:hover .icon svg {
+        path,
+        rect {
+          fill: #75a91f;
+        }
+      }
+    }
+  }
+}
