@@ -10,6 +10,7 @@ import WhyNeed from './WhyNeed'
 import Environment from './Environment'
 import LoanAgreement from './LoanAgreement'
 import Cooperative from './Cooperative'
+import Rewards from './Rewards'
 
 type Props = {}
 
@@ -32,6 +33,7 @@ const PageMiner: React.FC<Props> = () => {
                   Environment,
                   LoanAgreement,
                   Cooperative,
+                  Rewards,
                 }[item.id] ?? Cooperative
 
               return (
