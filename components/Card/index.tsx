@@ -8,6 +8,7 @@ import styles from './index.module.scss'
 export type CardProps = CardHeaderProps &
   CardContentProps & {
     cardContentClassName?: string
+    cardHeaderClassName?: string
     type: 'normal' | 'small' | 'vertical'
   }
 
@@ -17,6 +18,7 @@ const Card: React.FC<CardProps> = (props) => {
     index,
     children,
     cardContentClassName,
+    cardHeaderClassName,
     type,
     firstLetter,
   } = props
@@ -28,7 +30,7 @@ const Card: React.FC<CardProps> = (props) => {
       id={name[locale].join('_')}>
       <CardHeader
         type={type}
-        className={styles.cardHeader}
+        className={classnames([styles.cardHeader, cardHeaderClassName])}
         name={name}
         index={index}></CardHeader>
       <CardContent

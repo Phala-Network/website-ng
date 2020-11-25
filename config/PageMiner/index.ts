@@ -1,7 +1,7 @@
 export const PageMinerConfig = {
   title: {
     en: 'Any CPU device that supports TEE can become a privacy computing node',
-    zh: '任何支持的设备都可以成为隐私计算节点',
+    zh: '任何支持TEE的CPU设备，都可以成为隐私计算节点',
   },
 
   description: {
@@ -10,33 +10,51 @@ export const PageMinerConfig = {
       'PHA has a clear total mining output, reward release speed, fair distribution rules, and small amount of calculation on the chain.',
     ],
     zh: [
-      'Distributed computing cloud, Phala’s incentives to computing nodes account for 70% of the PHA!',
-      'PHA has a clear total mining output, reward release speed, fair distribution rules, and small amount of calculation on the chain.',
+      '分布式计算云，Phala对计算节点的激励占有70%的PHA！',
+      'PHA拥有明确的挖矿产出总量、奖励释放速度、分发规则公平、链上计算量较小',
     ],
   },
 
   menuTitle: {
-    en: 'Gatekeeper node and Nominator',
-    zh: '守门人节点和提名人',
+    en: 'Miner',
+    zh: '矿工',
   },
 
   content: [
     {
+      id: 'WhyNeed',
       name: {
-        en: ['Gatekeeper'],
-        zh: ['看门人'],
+        en: ['Why do we need', 'miners?'],
+        zh: ['为什么需要', '矿工？'],
       },
-      content: {
-        en: [
-          'In the confidentiality contract, all data is encrypted and stored. In order to ensure that the miners can use the data at any time, we need the role of Gatekeeper to be online at all times and hold the key securely.',
-          'Gatekeeper packs new blocks in the Phala network and manages the key distribution in the system, so it needs to be online at all times.',
-          'A Gatekeeper must run the Gatekeeper client on a trusted device with high availability and high bandwidth. On each block, the node must be prepared to receive a new block on the submitted parachain. This process involves accepting, verifying, and republishing candidate blocks.',
-        ],
-        zh: [
-          '在保密合同中，所有的数据都是加密存储的。为了保证矿工可以随时使用数据，我们需要Gatekeeper这个角色随时在线，并安全地持有密钥。',
-          'Gatekeeper在Phala网络中打包新的区块，并管理系统中的密钥分配，所以它需要一直在线。',
-          'Gatekeeper必须在高可用性和高带宽的可信设备上运行Gatekeeper客户端。在每个区块上，节点必须准备好接收提交的parachain上的新区块。这个过程包括接受、验证和重新发布候选区块。',
-        ],
+    },
+    {
+      id: 'Rewards',
+      name: {
+        en: ['Mining rewards'],
+        zh: ['挖矿奖励'],
+      },
+    },
+
+    {
+      id: 'Environment',
+      name: {
+        en: ['Miner node', 'environment'],
+        zh: ['矿工节点', '环境'],
+      },
+    },
+    {
+      id: 'LoanAgreement',
+      name: {
+        en: ['Loan', 'agreement '],
+        zh: ['借贷', '协议'],
+      },
+    },
+    {
+      id: 'Cooperative',
+      name: {
+        en: ['Cooperative', 'mining pool'],
+        zh: ['合作', '矿池'],
       },
     },
   ],

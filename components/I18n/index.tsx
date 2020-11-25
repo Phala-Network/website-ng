@@ -18,7 +18,7 @@ const I18n: React.FC<I18nProps> = (props) => {
         return render(item)
       })
     } else {
-      text = text.join(' ')
+      text = text.join('')
     }
   }
 

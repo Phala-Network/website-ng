@@ -4,10 +4,11 @@ import NormalLayout from '../NormalLayout'
 import styles from './index.module.scss'
 import DetailPageHeader from '../DetailPageHeader'
 import PageTitle from '../PageTitle'
-import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
-import DetailPageButton from '../DetailPageButton'
-import { WikiConfig } from '../../config/WikiConfig'
-import { EconomyWhitepaperConfig } from '../../config/EconomyWhitepaperConfig'
+import HeaderButtons from './HeaderButtons'
+import FloatMenu from '../FloatMenu'
+import WhyNeed from './WhyNeed'
+import LoanAgreement from './LoanAgreement'
+import Cooperative from './Cooperative'
 
 type Props = {}
 
@@ -20,39 +21,30 @@ const PageMiner: React.FC<Props> = () => {
         <div className='container'>
           <DetailPageHeader {...PageMinerConfig}></DetailPageHeader>
 
-          <DetailPageHeaderButtons>
-            <DetailPageButton
-              className={styles.btn1}
-              type='link'
-              href={'https://wiki.phala.network/en-us/docs/poc3/'}
-              text={{
-                en: 'Mining Pool Protocol',
-                zh: '矿池协议',
-              }}
-            />
+          <HeaderButtons></HeaderButtons>
 
-            <DetailPageButton
-              className={styles.btn2}
-              type='link'
-              href={'https://wiki.phala.network/en-us/docs/poc3/'}
-              text={{
-                en: 'Mining Tutorial',
-                zh: '挖坑教程',
-              }}
-            />
+          <div id='content' className={styles.content}>
+            {PageMinerConfig.content.map((item, index) => {
+              const Component =
+                {
+                  WhyNeed,
+                  LoanAgreement,
+                  Cooperative,
+                }[item.id] ?? Cooperative
 
-            <DetailPageButton
-              className={styles.btn3}
-              type='link'
-              {...WikiConfig}
-            />
+              return (
+                <Component
+                  {...item}
+                  index={index + 1}
+                  key={JSON.stringify(item.name)}></Component>
+              )
+            })}
 
-            <DetailPageButton
-              className={styles.btn4}
-              type='link'
-              {...EconomyWhitepaperConfig}
+            <FloatMenu
+              menuTitle={PageMinerConfig.menuTitle}
+              menu={PageMinerConfig.content}
             />
-          </DetailPageHeaderButtons>
+          </div>
         </div>
       </NormalLayout>
     </>
