@@ -7,6 +7,7 @@ import PageTitle from '../PageTitle'
 import HeaderButtons from './HeaderButtons'
 import FloatMenu from '../FloatMenu'
 import WhyNeed from './WhyNeed'
+import Environment from './Environment'
 import LoanAgreement from './LoanAgreement'
 import Cooperative from './Cooperative'
 
@@ -28,6 +29,7 @@ const PageMiner: React.FC<Props> = () => {
               const Component =
                 {
                   WhyNeed,
+                  Environment,
                   LoanAgreement,
                   Cooperative,
                 }[item.id] ?? Cooperative
