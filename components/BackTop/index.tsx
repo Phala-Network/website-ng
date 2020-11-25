@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from './index.module.scss'
+import smoothscroll from 'smoothscroll-polyfill'
 
 type Props = {
   visibilityHeight?: number
@@ -31,6 +32,8 @@ const BackTop: React.FC<Props> = (props) => {
   }
 
   useEffect(() => {
+    smoothscroll.polyfill()
+
     window.addEventListener('scroll', checkScrollTop)
 
     return () => {
