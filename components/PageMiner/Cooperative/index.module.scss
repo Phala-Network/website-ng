@@ -1,9 +1,16 @@
+@import '../../../styles/variables.scss';
+
 .cardContent {
   background-color: #a9adb1;
   height: 250px;
   display: flex;
   padding: 30px;
   align-items: flex-end;
+
+  @media (max-width: $md) {
+    height: 74px;
+    align-items: center;
+  }
 }
 
 .cardHeader {

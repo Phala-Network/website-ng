@@ -1,5 +1,15 @@
+@import '../../../styles/variables.scss';
+
 .cardContent {
   padding: 20px 30px;
+
+  @media (max-width: $md) {
+    padding: 15px 10px 30px 10px;
+
+    img {
+      width: 30px;
+    }
+  }
 }
 
 .cardHeader {
@@ -14,6 +24,10 @@
 
   .icon {
     margin-right: 23px;
+
+    @media (max-width: $md) {
+      margin-right: 11px;
+    }
   }
 
   &:last-child {

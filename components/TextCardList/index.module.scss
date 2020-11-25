@@ -3,6 +3,10 @@
 
 .cardList {
   display: flex;
+
+  @media (max-width: $md) {
+    display: block;
+  }
 }
 
 .item {
@@ -12,10 +16,23 @@
 
   &:last-child {
     margin-left: 30px;
+
+    @media (max-width: $md) {
+      margin-left: 0;
+      margin-top: 15px;
+    }
   }
 
   a {
     display: block;
+  }
+
+  @media (max-width: $md) {
+    padding: 15px;
+
+    img {
+      width: 26px;
+    }
   }
 
   .title {
@@ -24,6 +41,13 @@
     font-size: 24px;
     line-height: 1;
     color: #070707;
+
+    @media (max-width: $md) {
+      margin: 20px 0 0;
+      font-family: Lato;
+      font-size: 18px;
+      line-height: 1;
+    }
   }
 
   .description {
@@ -33,5 +57,13 @@
     font-size: 14px;
     line-height: 1.29;
     color: rgba(7, 7, 7, 0.75);
+
+    @media (max-width: $md) {
+      margin: 10px 0 0;
+      opacity: 0.75;
+      font-family: Lato;
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
