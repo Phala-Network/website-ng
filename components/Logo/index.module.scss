@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.logo {
+  &:hover {
+    svg path,
+    svg rect {
+      fill: $color-primary;
+    }
+  }
+}
