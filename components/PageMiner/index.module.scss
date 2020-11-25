@@ -1,20 +1,10 @@
 @import '../../styles/variables.scss';
+@import '../../styles/detailPage.scss';
 
 .pageMiner {
-  width: 100%;
-  background-color: $color-bg-black;
   background-image: url('/images/PageMiner/bg2.png');
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  padding-top: 250px;
-  padding-bottom: 200px;
-  position: relative;
 
-  @media (max-width: $sm) {
-    padding: 200px 20px;
-  }
+  @extend .detailPage;
 
   .btn1 {
     width: 278px;

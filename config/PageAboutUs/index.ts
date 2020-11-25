@@ -11,4 +11,37 @@ export const PageAboutUsConfig = {
     zh:
       '我们相信人性化的产品和开发者友好的协议会吸引忠实的用户，给我们带来真正的成长。',
   },
+
+  content: [
+    {
+      name: {
+        en: 'Phala Core',
+        zh: '核心团队',
+      },
+    },
+    {
+      name: {
+        en: 'Consultant',
+        zh: '顾问',
+      },
+    },
+    {
+      name: {
+        en: 'Contributor',
+        zh: '建设者',
+      },
+    },
+    {
+      name: {
+        en: 'Community Builder',
+        zh: '社区志愿者',
+      },
+    },
+    {
+      name: {
+        en: 'Partners',
+        zh: '合作伙伴',
+      },
+    },
+  ],
 }

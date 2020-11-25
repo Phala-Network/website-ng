@@ -1,25 +1,10 @@
 @import '../../styles/variables.scss';
+@import '../../styles/detailPage.scss';
 
 .pageNode {
-  width: 100%;
-  background-color: $color-bg-black;
   background-image: url('/images/PageNode/bg.png');
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  padding-top: 250px;
-  padding-bottom: 200px;
-  position: relative;
 
-  @media (max-width: $md) {
-    padding-bottom: 20px;
-    padding-top: 120px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-size: auto 700px;
-    background-attachment: inherit;
-  }
+  @extend .detailPage;
 
   .btn1 {
     width: 260px;
