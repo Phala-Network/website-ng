@@ -9,7 +9,7 @@ export type CardProps = CardHeaderProps &
   CardContentProps & {
     cardContentClassName?: string
     cardHeaderClassName?: string
-    type: 'normal' | 'small' | 'vertical'
+    type: 'normal' | 'small' | 'vertical' | 'wideNormal'
   }
 
 const Card: React.FC<CardProps> = (props) => {

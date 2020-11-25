@@ -10,6 +10,25 @@
     font-size: 36px;
   }
 
+  &.wideNormal {
+    display: flex;
+    margin-left: 114px;
+
+    @media (max-width: $lg) {
+      margin-top: 30px;
+      display: block;
+      margin-left: 0;
+    }
+
+    .cardHeader {
+      @media (max-width: $lg) {
+        width: 100%;
+        min-height: 120px;
+        font-size: 18px;
+      }
+    }
+  }
+
   &.normal {
     display: flex;
     margin-left: 220px;

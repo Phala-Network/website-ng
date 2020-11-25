@@ -31,7 +31,7 @@ const text = {
 const WhyNeed: React.FC<Props> = (props) => {
   return (
     <Card
-      type='normal'
+      type='wideNormal'
       cardHeaderClassName={styles.cardHeader}
       cardContentClassName={styles.cardContent}
       {...props}>
