@@ -1,0 +1,8 @@
+@import '../../../styles/variables.scss';
+
+.cardContent {
+  display: flex;
+  justify-content: center;
+  background-color: $color-bg-gray;
+  padding-bottom: 0;
+}

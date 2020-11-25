@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss';
+
+.peopleInfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .inner {
+    max-width: 180px;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .name {
+    margin: 20px 0;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    color: #070707;
+  }
+
+  .position {
+    margin: 20px 0 10px;
+    font-family: Lato;
+    font-size: 16px;
+    color: #070707;
+  }
+
+  .description {
+    margin: 10px 0 0;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(7, 7, 7, 0.5);
+  }
+}

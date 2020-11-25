@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.cardContent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0 30px 30px;
+
+  .item {
+    margin-right: 27px;
+    margin-bottom: 27px;
+    position: relative;
+
+    &:hover img {
+      opacity: 0.6;
+    }
+
+    &:hover .label {
+      display: block;
+    }
+
+    .label {
+      display: none;
+      white-space: nowrap;
+      position: absolute;
+      width: auto;
+      top: -32px;
+      left: 0;
+      background: $color-black;
+      color: $color-gray;
+      padding: 5px;
+    }
+  }
+}

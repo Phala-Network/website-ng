@@ -6,9 +6,12 @@ import PartnerRow from './PartnerRow'
 import classnames from 'classnames'
 import { useBreakpoint } from '../../../hooks/useBreakpoint'
 
-type Props = {}
+type Props = {
+  noHeader?: boolean
+}
 
-const PartnersSection: React.FC<Props> = () => {
+const PartnersSection: React.FC<Props> = (props) => {
+  const { noHeader = false } = props
   const { breakpoint } = useBreakpoint()
 
   return (
@@ -36,10 +39,12 @@ const PartnersSection: React.FC<Props> = () => {
 
           {breakpoint === 'mobile' && (
             <div className={styles.partners}>
-              <SectionHeader
-                className={classnames([styles.mobileHeader])}
-                title={PartnersSectionConfig.title}
-              />
+              {!noHeader && (
+                <SectionHeader
+                  className={classnames([styles.mobileHeader])}
+                  title={PartnersSectionConfig.title}
+                />
+              )}
 
               <PartnerRow from={0} to={1}></PartnerRow>
               <PartnerRow from={2} to={3}></PartnerRow>
@@ -50,11 +55,13 @@ const PartnersSection: React.FC<Props> = () => {
             </div>
           )}
 
-          <SectionHeader
-            className={classnames([styles.header])}
-            title={PartnersSectionConfig.title}
-            description={PartnersSectionConfig.description}
-          />
+          {!noHeader && (
+            <SectionHeader
+              className={classnames([styles.header])}
+              title={PartnersSectionConfig.title}
+              description={PartnersSectionConfig.description}
+            />
+          )}
         </div>
       </div>
     </div>
