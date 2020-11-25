@@ -21,6 +21,12 @@
     padding: 11px 15px;
   }
 
+  &.small {
+    flex-direction: row;
+    height: 80px;
+    width: 453px;
+  }
+
   .randomBlock {
     position: absolute;
     top: 0;

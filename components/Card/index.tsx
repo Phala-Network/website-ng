@@ -27,6 +27,7 @@ const Card: React.FC<CardProps> = (props) => {
       className={classnames([styles.card, styles[type]])}
       id={name[locale].join('_')}>
       <CardHeader
+        type={type}
         className={styles.cardHeader}
         name={name}
         index={index}></CardHeader>

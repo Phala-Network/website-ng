@@ -5,6 +5,11 @@
   z-index: $index-card;
   position: relative;
 
+  &.small {
+    margin-left: 220px;
+    font-size: 36px;
+  }
+
   &.normal {
     display: flex;
     margin-left: 220px;

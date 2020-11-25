@@ -8,14 +8,15 @@ export type CardHeaderProps = {
   index?: number
   name?: { [key: string]: string[] }
   className?: string
+  type?: 'normal' | 'small'
 }
 
 const CardHeader: React.FC<CardHeaderProps> = (props) => {
-  const { index, name, className } = props
+  const { index, name, className, type = 'normal' } = props
   const { locale } = useRouter()
 
   return (
-    <div className={classnames([styles.cardHeader, className])}>
+    <div className={classnames([styles.cardHeader, styles[type], className])}>
       <div
         className={styles.target}
         // id for link jump
@@ -23,9 +24,11 @@ const CardHeader: React.FC<CardHeaderProps> = (props) => {
       <div className={styles.top}>
         {/* 01_ */}
         <div>0{index}_</div>
-        <div className={styles.randomBlock}>
-          <RandomBlock></RandomBlock>
-        </div>
+        {type !== 'small' && (
+          <div className={styles.randomBlock}>
+            <RandomBlock></RandomBlock>
+          </div>
+        )}
       </div>
       <div className={styles.name}>
         {name[locale].map((str) => {
