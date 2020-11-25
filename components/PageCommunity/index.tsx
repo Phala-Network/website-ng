@@ -6,6 +6,7 @@ import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
 import styles from './index.module.scss'
 import Join from './Join'
+import Maintain from './Maintain'
 
 type Props = {}
 
@@ -24,6 +25,7 @@ const PageCommunity: React.FC<Props> = () => {
               const Component =
                 {
                   Join,
+                  Maintain,
                 }[item.id] ?? Join
 
               return (

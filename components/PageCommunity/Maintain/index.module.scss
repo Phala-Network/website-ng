@@ -1,0 +1,24 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/card.scss';
+
+.cardContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 30px;
+
+  .item {
+    @extend .card;
+    min-width: 300px;
+    text-align: center;
+    padding: 20px 0;
+
+    .name {
+      margin: 12px 0 0;
+      font-family: Lato;
+      font-size: 24px;
+      line-height: 1;
+      color: #070707;
+    }
+  }
+}
