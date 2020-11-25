@@ -1,0 +1,40 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/card.scss';
+
+.cardContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 30px;
+
+  & .item:last-child {
+    margin-left: 30px;
+  }
+
+  .item {
+    @extend .card;
+    padding: 30px 20px;
+    flex: 1;
+
+    a {
+      display: block;
+    }
+
+    .title {
+      margin: 20px 0;
+      font-family: Lato;
+      font-size: 24px;
+      line-height: 1;
+      color: #070707;
+    }
+
+    .description {
+      margin: 20px 0 0;
+      opacity: 0.75;
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 1.29;
+      color: rgba(7, 7, 7, 0.75);
+    }
+  }
+}

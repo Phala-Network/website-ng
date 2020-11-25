@@ -7,6 +7,7 @@ import PageTitle from '../PageTitle'
 import styles from './index.module.scss'
 import Join from './Join'
 import Maintain from './Maintain'
+import Build from './Build'
 
 type Props = {}
 
@@ -26,6 +27,7 @@ const PageCommunity: React.FC<Props> = () => {
                 {
                   Join,
                   Maintain,
+                  Build,
                 }[item.id] ?? Join
 
               return (
