@@ -38,7 +38,7 @@ const PageAboutUs: React.FC<Props> = () => {
                 <Component
                   {...item}
                   index={index + 1}
-                  key={JSON.stringify(item.name)}></Component>
+                  key={JSON.stringify(item)}></Component>
               )
             })}
 

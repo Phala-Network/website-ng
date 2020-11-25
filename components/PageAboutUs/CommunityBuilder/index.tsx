@@ -15,14 +15,14 @@ function getPath(name, base = 1) {
   }
 }
 
-const Consultant: React.FC<CardProps> = (props) => {
+const CommunityBuilder: React.FC<CardProps> = (props) => {
   return (
     <Card type='small' cardContentClassName={styles.cardContent} {...props}>
       {config.map((item, index) => {
         index += 1
 
         return (
-          <div className={styles.item}>
+          <div key={item.name} className={styles.item}>
             <img
               alt={item.name}
               src={getPath(index)}
@@ -39,4 +39,4 @@ const Consultant: React.FC<CardProps> = (props) => {
   )
 }
 
-export default Consultant
+export default CommunityBuilder
