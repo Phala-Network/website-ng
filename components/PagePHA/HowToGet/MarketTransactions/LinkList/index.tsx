@@ -32,7 +32,7 @@ const LinkList: React.FC<Props> = (props) => {
     <div className={styles.linkList}>
       {data.map((item, index) => {
         return (
-          <Link href={item.href}>
+          <Link key={item.href} href={item.href}>
             <a target='_blank' className={styles.item}>
               <img src={`/images/PagePHA/icon${index}.png`} alt={item.name} />
               <div className={styles.name}>{item.name}</div>
