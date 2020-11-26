@@ -33,6 +33,7 @@
     @media (max-width: $lg) {
       flex-direction: column;
       height: 120px;
+      width: 100%;
 
       .randomBlock {
         display: block;
