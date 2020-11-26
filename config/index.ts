@@ -76,8 +76,8 @@ export const ResourcesMenuConfig = {
         zh: '暗钱包',
       },
       href: {
-        en: 'https://poc3.phala.network',
-        zh: 'https://poc3.phala.network',
+        en: 'https://app.phala.network',
+        zh: 'https://app.phala.network',
       },
     },
     WikiConfig,
