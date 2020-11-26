@@ -12,6 +12,10 @@ const TagA: React.FC<Props> = (props) => {
   const { locale } = useRouter()
   let { className, children, href, justLink = false } = props
 
+  if (!href) {
+    return <>{children}</>
+  }
+
   if (!isString(href)) {
     href = href[locale]
   }
@@ -29,15 +33,11 @@ const TagA: React.FC<Props> = (props) => {
     )
   }
 
-  if (!href) {
-    return <>{children}</>
-  } else {
-    return (
-      <Link passHref href={href}>
-        {children}
-      </Link>
-    )
-  }
+  return (
+    <Link passHref href={href}>
+      {children}
+    </Link>
+  )
 }
 
 export default TagA
