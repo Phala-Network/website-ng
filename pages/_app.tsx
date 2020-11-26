@@ -4,6 +4,7 @@ import '../styles/latoFonts.scss'
 import '../styles/globals.scss'
 import '../styles/layout.scss'
 import '../styles/fonts.scss'
+import '../styles/hljs.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {
   console.log(process.env.NODE_ENV)

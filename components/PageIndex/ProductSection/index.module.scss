@@ -72,11 +72,10 @@
       }
     }
 
-    .code img {
+    .code {
       margin-top: 30px;
-      width: 100%;
-      display: block;
-      max-width: 565px;
+      max-height: 300px;
+      position: relative;
 
       @media (max-width: $md) {
         margin-top: 15px;
