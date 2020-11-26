@@ -21,7 +21,6 @@ const config = [
         'TEE devices can get rewards when they stay online, and all online devices are equally divided',
       zh: 'TEE设备保持在线即可获得奖励，由所有在线设备平分',
     },
-    url: 'https://google.com',
   },
   {
     title: {
@@ -33,7 +32,6 @@ const config = [
         'Phala randomly distributes private computing tasks, which are obtained after online miners complete computing tasks',
       zh: 'Phala随机性分发隐私计算任务，在线矿工完成计算任务后获得',
     },
-    url: 'https://google.com',
   },
 ]
 

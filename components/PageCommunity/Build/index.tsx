@@ -37,7 +37,7 @@ const imgPath = '/images/PageCommunity/icon-build-'
 const Build: React.FC<CardProps> = (props) => {
   return (
     <Card type='small' cardContentClassName={styles.cardContent} {...props}>
-      <CardList imgPath={imgPath} config={config}></CardList>
+      <CardList hoverEffect={true} imgPath={imgPath} config={config}></CardList>
     </Card>
   )
 }

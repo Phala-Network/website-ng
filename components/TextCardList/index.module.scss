@@ -11,6 +11,11 @@
 
 .item {
   @extend .card;
+
+  &.hover {
+    @extend .cardHover;
+  }
+
   padding: 30px 20px;
   flex: 1;
 

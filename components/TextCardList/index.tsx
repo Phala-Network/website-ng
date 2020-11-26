@@ -2,15 +2,22 @@ import React from 'react'
 import I18n from '../I18n'
 import TagA from '../TagA'
 import styles from './index.module.scss'
+import classnames from 'classnames'
 
 const CardList: React.FC<any> = (props) => {
-  const { config = [], imgPath } = props
+  const { config = [], imgPath, hoverEffect = false } = props
 
   return (
     <div className={styles.cardList}>
       {config.map((item, index) => {
         return (
-          <div className={styles.item}>
+          <div
+            className={classnames([
+              styles.item,
+              {
+                [styles.hover]: hoverEffect,
+              },
+            ])}>
             <TagA href={item.url}>
               <img src={`${imgPath}${index}.svg`} alt={item.url} />
               <div className={styles.title}>
