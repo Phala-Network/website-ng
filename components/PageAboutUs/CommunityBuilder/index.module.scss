@@ -3,12 +3,24 @@
 .cardContent {
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 0 30px 30px;
+  justify-content: space-around;
+  padding: 60px 30px;
+
+  @media (max-width: $md) {
+    padding: 15px;
+  }
 
   .item {
-    margin-right: 27px;
-    margin-bottom: 27px;
+    margin: 12px;
     position: relative;
+
+    @media (max-width: $md) {
+      margin: 10px;
+    }
+
+    @media (max-width: $sm) {
+      margin: 10px 0;
+    }
 
     &:hover img {
       opacity: 0.6;
