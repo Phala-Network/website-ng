@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Card, { CardProps } from '../../Card'
 import I18n from '../../I18n'
+import TagA from '../../TagA'
 import styles from './index.module.scss'
 
 const config = [
@@ -28,17 +29,12 @@ const Maintain: React.FC<CardProps> = (props) => {
       {config.map((item, index) => {
         return (
           <div className={styles.item}>
-            <Link passHref href={item.url}>
-              <a target='_blank'>
-                <img
-                  src={`/images/PageCommunity/icon${index + 1}.svg`}
-                  alt=''
-                />
-                <div className={styles.name}>
-                  <I18n {...item}></I18n>
-                </div>
-              </a>
-            </Link>
+            <TagA href={item.url}>
+              <img src={`/images/PageCommunity/icon${index + 1}.svg`} alt='' />
+              <div className={styles.name}>
+                <I18n {...item}></I18n>
+              </div>
+            </TagA>
           </div>
         )
       })}

@@ -4,6 +4,7 @@ import Marquee from 'react-fast-marquee'
 import IconClose from './IconClose'
 import I18n from '../I18n'
 import { newsletterConfig } from '../../config/newsletterConfig'
+import TagA from '../TagA'
 
 type Props = {}
 
@@ -16,9 +17,9 @@ const Newsletter: React.FC<Props> = () => {
 
   const news = (
     <div className={styles.news}>
-      <a href={newsletterConfig.link} target='_blank'>
+      <TagA href={newsletterConfig.link}>
         <I18n {...newsletterConfig.news}></I18n>
-      </a>
+      </TagA>
     </div>
   )
 

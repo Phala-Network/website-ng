@@ -3,6 +3,7 @@ import React from 'react'
 import I18n from '../I18n'
 import styles from './index.module.scss'
 import Link from 'next/link'
+import TagA from '../TagA'
 
 type Props = {
   data: any
@@ -16,11 +17,9 @@ const ListMenu: React.FC<Props> = (props) => {
     <div className={styles.listMenu}>
       <div className={styles.title}>
         {data?.href?.[locale] && (
-          <Link passHref href={data?.href?.[locale]}>
-            <a>
-              <I18n {...data.name}></I18n>
-            </a>
-          </Link>
+          <TagA href={data?.href}>
+            <I18n {...data.name}></I18n>
+          </TagA>
         )}
         {!data?.href?.[locale] && <I18n {...data.name}></I18n>}
       </div>
@@ -30,16 +29,9 @@ const ListMenu: React.FC<Props> = (props) => {
           {data.subMenu.map((item) => {
             return (
               <div className={styles.item} key={item.name.en}>
-                <Link
-                  href={
-                    typeof item.href === 'string'
-                      ? item.href
-                      : item.href[locale]
-                  }>
-                  <a>
-                    <I18n {...item.name}></I18n>
-                  </a>
-                </Link>
+                <TagA href={item?.href}>
+                  <I18n {...item.name}></I18n>
+                </TagA>
               </div>
             )
           })}

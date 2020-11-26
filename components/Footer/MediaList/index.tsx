@@ -15,6 +15,7 @@ import { MediumConfig } from '../../../config/MediumConfig'
 import { WeiboConfig } from '../../../config/WeiboConfig'
 import { TwitterConfig } from '../../../config/TwitterConfig'
 import Image from 'next/image'
+import TagA from '../../TagA'
 
 type Props = {}
 
@@ -32,44 +33,44 @@ const MediaList: React.FC<Props> = () => {
 
       {/* telegram */}
       <div className={styles.item}>
-        <a href={TelegramConfig.url} target='_blank'>
+        <TagA href={TelegramConfig.url}>
           <IconTelegram></IconTelegram>
-        </a>
+        </TagA>
       </div>
 
       {/* BBS(forum) */}
       <div className={styles.item}>
-        <a href={BBSConfig.url} target='_blank'>
+        <TagA href={BBSConfig.url}>
           <IconBBS></IconBBS>
-        </a>
+        </TagA>
       </div>
 
       {/* medium */}
       <div className={styles.item}>
-        <a href={MediumConfig.url} target='_blank'>
+        <TagA href={MediumConfig.url}>
           <IconMedium></IconMedium>
-        </a>
+        </TagA>
       </div>
 
       {/* Twitter */}
       <div className={styles.item}>
-        <a href={TwitterConfig.url} target='_blank'>
+        <TagA href={TwitterConfig.url}>
           <IconTwitter></IconTwitter>
-        </a>
+        </TagA>
       </div>
 
       {/* Github */}
       <div className={styles.item}>
-        <a href={GithubConfig.url} target='_blank'>
+        <TagA href={GithubConfig.url}>
           <IconGithub></IconGithub>
-        </a>
+        </TagA>
       </div>
 
       {/* Weibo */}
       <div className={styles.item}>
-        <a href={WeiboConfig.url} target='_blank'>
+        <TagA href={WeiboConfig.url}>
           <IconWeibo></IconWeibo>
-        </a>
+        </TagA>
       </div>
     </div>
   )

@@ -6,6 +6,7 @@ import { isClient } from '../../utils/isClient'
 import I18n from '../I18n'
 import LangSwitch from '../LangSwitch'
 import Logo from '../Logo'
+import TagA from '../TagA'
 import IconMenu from './IconMenu'
 import styles from './index.module.scss'
 import MobileMenu from './MobileMenu'
@@ -21,21 +22,17 @@ const Nav: React.FC<Props> = () => {
     <div className={styles.bg}>
       <div className='container'>
         <nav className={styles.nav}>
-          <Link passHref href={`/`}>
-            <a>
-              <Logo></Logo>
-            </a>
-          </Link>
+          <TagA href={`/`}>
+            <Logo></Logo>
+          </TagA>
 
           <ul className={styles.pcMenu}>
             {MenuConfig.map((menu) => {
               return (
                 <li key={menu.name.en}>
-                  <Link href={menu?.href?.[locale] ?? ''}>
-                    <a className={styles.link}>
-                      <I18n {...menu.name}></I18n>
-                    </a>
-                  </Link>
+                  <TagA href={menu?.href} className={styles.link}>
+                    <I18n {...menu.name}></I18n>
+                  </TagA>
 
                   {menu.subMenu && <SubMenu data={menu.subMenu}></SubMenu>}
                 </li>

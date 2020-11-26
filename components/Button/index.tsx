@@ -5,6 +5,8 @@ import styles from './index.module.scss'
 import { useRouter } from 'next/router'
 import { isString } from '../../utils/isString'
 import Link from 'next/link'
+import TagA from '../TagA'
+import I18n from '../I18n'
 
 export type ButtonProps = {
   color?: 'white' | 'black' | 'gray' | 'primary'
@@ -22,7 +24,7 @@ export type ButtonProps = {
 const Button: React.FC<ButtonProps> = (props) => {
   const { locale } = useRouter()
 
-  const {
+  let {
     size,
     className,
     uppercase = true,
@@ -50,6 +52,18 @@ const Button: React.FC<ButtonProps> = (props) => {
     ]),
   }
 
+  if (!isString(href)) {
+    href = href[locale]
+  }
+
+  const JumpOut = href?.toString()?.indexOf?.('http') !== -1
+
+  if (JumpOut) {
+    Object.assign(buttonProps, {
+      target: '_blank',
+    })
+  }
+
   const el = React.createElement(
     elementType,
     buttonProps,
@@ -60,7 +74,7 @@ const Button: React.FC<ButtonProps> = (props) => {
 
   if (isLink && href) {
     return (
-      <Link passHref href={isString(href) ? href : href[locale]}>
+      <Link passHref href={href}>
         {el}
       </Link>
     )

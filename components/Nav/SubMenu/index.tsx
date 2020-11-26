@@ -1,8 +1,7 @@
-import { useRouter } from 'next/router'
 import React from 'react'
 import I18n from '../../I18n'
 import styles from './index.module.scss'
-import Link from 'next/link'
+import TagA from '../../TagA'
 
 type Props = {
   data: {
@@ -13,7 +12,6 @@ type Props = {
 
 const SubMenu: React.FC<Props> = (props) => {
   const { data } = props
-  const { locale } = useRouter()
 
   return (
     <div className={styles.subMenu}>
@@ -23,14 +21,9 @@ const SubMenu: React.FC<Props> = (props) => {
         {data.map((item) => {
           return (
             <div className={styles.item} key={item.name.en}>
-              <Link
-                href={
-                  typeof item.href === 'string' ? item.href : item.href[locale]
-                }>
-                <a>
-                  <I18n {...item.name}></I18n>
-                </a>
-              </Link>
+              <TagA href={item.href}>
+                <I18n {...item.name}></I18n>
+              </TagA>
             </div>
           )
         })}

@@ -4,8 +4,7 @@ import { CardHeaderProps } from '../../Card/CardHeader'
 import I18nRender from '../../I18nRender'
 import Card from '../../Card'
 import styles from './index.module.scss'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
+import TagA from '../../TagA'
 
 type Props = CardHeaderProps & CardContentProps
 
@@ -15,11 +14,9 @@ const Mining: React.FC<Props> = (props) => {
       <div>
         <div>
           Any TEE device can be registered as a
-          <Link href='/miner'>
-            <a>
-              <b>Phala miner</b>
-            </a>
-          </Link>
+          <TagA href='/miner'>
+            <b> Phala miner</b>
+          </TagA>
         </div>
         <br />
         <div>Rewards decay by 25% every 6 months</div>
@@ -33,11 +30,9 @@ const Mining: React.FC<Props> = (props) => {
       <div>
         <div>
           任何TEE设备均可注册成为
-          <Link href='/miner'>
-            <a>
-              <b>Phala矿工</b>
-            </a>
-          </Link>
+          <TagA href='/miner'>
+            <b>Phala矿工</b>
+          </TagA>
         </div>
         <br />
         <div>每6个月奖励衰减25%</div>

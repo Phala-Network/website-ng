@@ -17,6 +17,7 @@ import { BBSConfig } from '../../../config/BBSConfig'
 import { WikiConfig } from '../../../config/WikiConfig'
 import { WechatConfig } from '../../../config/WechatConfig'
 import { useRouter } from 'next/router'
+import TagA from '../../TagA'
 
 const Join: React.FC<CardProps> = (props) => {
   const { locale } = useRouter()
@@ -25,96 +26,87 @@ const Join: React.FC<CardProps> = (props) => {
     <Card type='small' cardContentClassName={styles.cardContent} {...props}>
       {/* GitHub */}
       <div className={styles.item}>
-        <a target='_blank' href={GithubConfig.href} className={styles.inner}>
+        <TagA href={GithubConfig.href} className={styles.inner}>
           <div className={styles.icon}>
             <IconGithub></IconGithub>
           </div>
           <div className={styles.name}>GitHub</div>
-        </a>
+        </TagA>
       </div>
 
       {/* Twitter */}
       <div className={styles.item}>
-        <a target='_blank' href={TwitterConfig.url} className={styles.inner}>
+        <TagA href={TwitterConfig.url} className={styles.inner}>
           <div className={styles.icon}>
             <IconTwitter></IconTwitter>
           </div>
           <div className={styles.name}></div>
           <I18n en='Twitter' zh='推特'></I18n>
-        </a>
+        </TagA>
       </div>
 
       {/* Telegram */}
       <div className={styles.item}>
-        <a target='_blank' href={TelegramConfig.url} className={styles.inner}>
+        <TagA href={TelegramConfig.url} className={styles.inner}>
           <div className={styles.icon}>
             <IconTelegram></IconTelegram>
           </div>
           <div className={styles.name}>Telegram</div>
-        </a>
+        </TagA>
       </div>
 
       {/* Discord */}
       <div className={styles.item}>
-        <a
-          target='_blank'
-          href={DiscordDevChannel.href}
-          className={styles.inner}>
+        <TagA href={DiscordDevChannel.href} className={styles.inner}>
           <div className={styles.icon}>
             <IconDiscord></IconDiscord>
           </div>
           <div className={styles.name}></div>
           <I18n {...DiscordDevChannel.name}></I18n>
-        </a>
+        </TagA>
       </div>
 
       {/* Forum */}
       <div className={styles.item}>
-        <a target='_blank' href={BBSConfig.url} className={styles.inner}>
+        <TagA href={BBSConfig.url} className={styles.inner}>
           <div className={styles.icon}>
             <IconForum></IconForum>
           </div>
           <div className={styles.name}></div>
           <I18n en='Forum' zh='论坛'></I18n>
-        </a>
+        </TagA>
       </div>
 
       {/* Wiki */}
       <div className={styles.item}>
-        <a
-          target='_blank'
-          href={WikiConfig.href[locale]}
-          className={styles.inner}>
+        <TagA href={WikiConfig.href[locale]} className={styles.inner}>
           <div className={styles.icon}>
             <IconWiki></IconWiki>
           </div>
           <div className={styles.name}>Wiki</div>
-        </a>
+        </TagA>
       </div>
 
       {/* Discord General */}
       <div className={styles.item}>
-        <a
-          target='_blank'
-          href={DiscordConfig.href.en}
-          className={styles.inner}>
+        <TagA href={DiscordConfig.href.en} className={styles.inner}>
           <div className={styles.icon}>
             <IconDiscord></IconDiscord>
           </div>
           <div className={styles.name}></div>
           <I18n en='Discord General' zh='Discord 频道'></I18n>
-        </a>
+        </TagA>
       </div>
 
       {/* Wechat */}
       <div className={styles.item}>
-        <a target='_blank' href={WechatConfig.url} className={styles.inner}>
+        <TagA href={WechatConfig.url} className={styles.inner}>
           <div className={styles.icon}>
             <IconWechat></IconWechat>
           </div>
           <div className={styles.name}></div>
           <I18n en='Wechat' zh='微信'></I18n>
-        </a>
+        </TagA>
       </div>
     </Card>
   )
