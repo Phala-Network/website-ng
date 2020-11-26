@@ -13,7 +13,7 @@ const TagA: React.FC<Props> = (props) => {
   let { className, children, href, justLink = false } = props
 
   if (!href) {
-    return <>{children}</>
+    return <a className={className}>{children}</a>
   }
 
   if (!isString(href)) {
