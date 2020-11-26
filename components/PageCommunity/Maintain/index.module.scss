@@ -7,11 +7,35 @@
   justify-content: space-between;
   padding: 60px 30px;
 
+  @media (max-width: $md) {
+    padding: 20px 10px;
+  }
+
   .item {
     @extend .card;
-    min-width: 300px;
+    flex: 1;
     text-align: center;
     padding: 20px 0;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0;
+      flex: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      img {
+        width: 100px;
+      }
+    }
 
     .name {
       margin: 12px 0 0;
@@ -19,6 +43,10 @@
       font-size: 24px;
       line-height: 1;
       color: #070707;
+
+      @media (max-width: $md) {
+        font-size: 18px;
+      }
     }
   }
 }
