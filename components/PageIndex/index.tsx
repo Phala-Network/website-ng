@@ -12,7 +12,7 @@ type Props = {}
 
 const PageIndex: React.FC<Props> = () => {
   return (
-    <NormalLayout>
+    <NormalLayout newsletter={true}>
       <FirstScreen></FirstScreen>
       <CloudSection></CloudSection>
       <ExecutionSection></ExecutionSection>

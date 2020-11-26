@@ -8,14 +8,17 @@ import Newsletter from '../Newsletter'
 
 type Props = {
   className?: string
+  newsletter?: boolean
 }
 
 const NormalLayout: React.FC<Props> = (props) => {
+  const { newsletter = false } = props
+
   return (
     <>
       <Header>
         <Nav></Nav>
-        <Newsletter></Newsletter>
+        {newsletter && <Newsletter></Newsletter>}
       </Header>
 
       <div {...props}>{props.children}</div>
