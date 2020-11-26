@@ -52,16 +52,18 @@ const Button: React.FC<ButtonProps> = (props) => {
     ]),
   }
 
-  if (!isString(href)) {
-    href = href[locale]
-  }
+  if (isLink && href) {
+    if (!isString(href)) {
+      href = href[locale]
+    }
 
-  const JumpOut = href?.toString()?.indexOf?.('http') !== -1
+    const JumpOut = href?.toString()?.indexOf?.('http') !== -1
 
-  if (JumpOut) {
-    Object.assign(buttonProps, {
-      target: '_blank',
-    })
+    if (JumpOut) {
+      Object.assign(buttonProps, {
+        target: '_blank',
+      })
+    }
   }
 
   const el = React.createElement(
