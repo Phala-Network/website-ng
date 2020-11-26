@@ -8,6 +8,12 @@
   &.small {
     margin-left: 220px;
     font-size: 36px;
+
+    @media (max-width: $lg) {
+      margin-top: 30px;
+      display: block;
+      margin-left: 0;
+    }
   }
 
   &.wideNormal {

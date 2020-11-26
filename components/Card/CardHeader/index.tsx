@@ -24,11 +24,9 @@ const CardHeader: React.FC<CardHeaderProps> = (props) => {
       <div className={styles.top}>
         {/* 01_ */}
         <div>0{index}_</div>
-        {type !== 'small' && (
-          <div className={styles.randomBlock}>
-            <RandomBlock></RandomBlock>
-          </div>
-        )}
+        <div className={styles.randomBlock}>
+          <RandomBlock></RandomBlock>
+        </div>
       </div>
       <div className={styles.name}>
         {name[locale].map((str) => {

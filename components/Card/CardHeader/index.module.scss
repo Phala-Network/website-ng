@@ -18,13 +18,26 @@
 
   @media (max-width: $md) {
     font-size: 18px;
-    padding: 11px 15px;
+    padding: 15px;
   }
 
   &.small {
     flex-direction: row;
     height: 80px;
     width: 453px;
+
+    .randomBlock {
+      display: none;
+    }
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+      height: 120px;
+
+      .randomBlock {
+        display: block;
+      }
+    }
   }
 
   .randomBlock {
