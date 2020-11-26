@@ -4,13 +4,15 @@ import ReactDom from 'react-dom'
 import ListMenu from '../../ListMenu'
 import { MenuConfig } from '../../../config'
 import IconClose from './IconClose'
+import classnames from 'classnames'
 
 type Props = {
   onClose: Function
+  visible: boolean
 }
 
 const MobileMenu: React.FC<Props> = (props) => {
-  const { onClose } = props
+  const { onClose, visible } = props
   const prevent = (e) => {
     e.preventDefault()
     e.stopPropagation()
@@ -20,7 +22,12 @@ const MobileMenu: React.FC<Props> = (props) => {
     <div
       onTouchMove={prevent}
       onTouchStart={prevent}
-      className={styles.mobileMenu}>
+      className={classnames([
+        styles.mobileMenu,
+        {
+          [styles.visible]: visible,
+        },
+      ])}>
       <div onClick={() => onClose?.()} className={styles.x}>
         <IconClose></IconClose>
       </div>

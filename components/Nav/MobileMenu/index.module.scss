@@ -4,16 +4,22 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
+  height: 100vh;
   background-color: $color-bg-black;
   z-index: $index-mobile-nav;
   padding: 20px;
   display: none;
   flex-direction: column;
+  transform: translate3d(0, -100vh, 0);
+  transition: transform 0.4s ease;
 
   @media (max-width: $md) {
     display: flex;
+  }
+
+  &.visible {
+    transform: translate3d(0, 0, 0);
   }
 
   .content {

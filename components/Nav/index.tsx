@@ -48,9 +48,9 @@ const Nav: React.FC<Props> = () => {
         </nav>
       </div>
 
-      {mobileMenuVisible && (
-        <MobileMenu onClose={() => setMobileMenuVisible(false)}></MobileMenu>
-      )}
+      <MobileMenu
+        visible={mobileMenuVisible}
+        onClose={() => setMobileMenuVisible(false)}></MobileMenu>
     </div>
   )
 }
