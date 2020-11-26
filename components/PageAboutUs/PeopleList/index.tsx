@@ -15,10 +15,12 @@ type Props = {
 const PeopleList: React.FC<Props> = (props) => {
   return (
     <div className={styles.peopleList}>
-      {props.config.map((item) => {
+      {props.config.map((item, index) => {
         return (
           <div key={JSON.stringify(item)} className='col-md-3'>
-            <PeopleInfo {...item}></PeopleInfo>
+            <PeopleInfo
+              last={index === props.config.length - 1}
+              {...item}></PeopleInfo>
           </div>
         )
       })}

@@ -1,12 +1,14 @@
 import React from 'react'
 import I18n, { I18nProps } from '../../I18n'
 import styles from './index.module.scss'
+import classnames from 'classnames'
 
 type Props = {
   name: I18nProps
   position: I18nProps
   description: I18nProps
   avatar: string
+  last?: boolean
 }
 
 function getPath(name, base = 1) {
@@ -20,10 +22,16 @@ function getPath(name, base = 1) {
 }
 
 const PeopleInfo: React.FC<Props> = (props) => {
-  const { name, position, description, avatar } = props
+  const { name, position, description, avatar, last } = props
 
   return (
-    <div className={styles.peopleInfo}>
+    <div
+      className={classnames([
+        styles.peopleInfo,
+        {
+          [styles.last]: last,
+        },
+      ])}>
       <div className={styles.inner}>
         <div className={styles.avatar}>
           <img

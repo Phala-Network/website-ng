@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { MenuConfig } from '../../config'
+import { isClient } from '../../utils/isClient'
 import I18n from '../I18n'
 import LangSwitch from '../LangSwitch'
 import Logo from '../Logo'
@@ -48,9 +49,11 @@ const Nav: React.FC<Props> = () => {
         </nav>
       </div>
 
-      <MobileMenu
-        visible={mobileMenuVisible}
-        onClose={() => setMobileMenuVisible(false)}></MobileMenu>
+      {isClient() && (
+        <MobileMenu
+          visible={mobileMenuVisible}
+          onClose={() => setMobileMenuVisible(false)}></MobileMenu>
+      )}
     </div>
   )
 }
