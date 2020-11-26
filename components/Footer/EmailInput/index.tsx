@@ -20,7 +20,7 @@ const EmailInput: React.FC<Props> = () => {
   const [status, setStatus] = useState<STATUS>(STATUS.default)
   const { locale } = useRouter()
   const placeholderText = {
-    en: 'Please input your email',
+    en: 'Enter your email address',
     zh: '输入您的邮箱',
   }
 
