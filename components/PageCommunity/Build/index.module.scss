@@ -3,4 +3,8 @@
 
 .cardContent {
   padding: 60px 30px;
+
+  @media (max-width: $md) {
+    padding: 20px 10px;
+  }
 }

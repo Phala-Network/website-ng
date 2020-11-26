@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import React from 'react'
 import Card, { CardProps } from '../../Card'
-import I18n from '../../I18n'
 import CardList from '../../TextCardList'
 import styles from './index.module.scss'
 
