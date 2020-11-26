@@ -54,6 +54,7 @@
   &.gray {
     border: 2px solid $color-gray;
     color: $color-gray;
+    background-color: $color-bg-black;
 
     .iconArrow {
       stroke: $color-gray;

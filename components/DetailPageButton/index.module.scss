@@ -1,8 +1,6 @@
 @import '../../styles/variables.scss';
 
 .button {
-  background-color: #191919;
-
   @media (max-width: $md) {
     width: 180px !important;
     // font-size: 12px !important;
