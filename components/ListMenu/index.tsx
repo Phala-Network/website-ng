@@ -15,11 +15,14 @@ const ListMenu: React.FC<Props> = (props) => {
   return (
     <div className={styles.listMenu}>
       <div className={styles.title}>
-        <Link href={data?.href?.[locale] ?? ''}>
-          <a>
-            <I18n {...data.name}></I18n>
-          </a>
-        </Link>
+        {data?.href?.[locale] && (
+          <Link passHref href={data?.href?.[locale]}>
+            <a>
+              <I18n {...data.name}></I18n>
+            </a>
+          </Link>
+        )}
+        {!data?.href?.[locale] && <I18n {...data.name}></I18n>}
       </div>
 
       {data.subMenu && (
