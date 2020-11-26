@@ -24,11 +24,15 @@ const Timeline: React.FC<Props> = () => {
     return index >= maxIndex
   }
 
+  function lastIndex() {
+    return index === allTimelineDataLength - 2
+  }
+
   function onRightButtonClick() {
-    if (index === allTimelineDataLength - 1) return
+    if (lastIndex()) return
 
     if (isLast()) {
-      setIndex(index + 2)
+      setIndex(index + 1)
     } else {
       setIndex(index + slideNumber)
     }
@@ -37,15 +41,15 @@ const Timeline: React.FC<Props> = () => {
   function onLeftButtonClick() {
     if (index === 0) return
 
-    if (index === allTimelineDataLength - 1) {
-      setIndex(index - 2)
+    if (lastIndex()) {
+      setIndex(index - 1)
     } else {
       setIndex(index - slideNumber)
     }
   }
 
   useEffect(() => {
-    if (isLast()) {
+    if (lastIndex()) {
       setBgColor('gray')
     } else {
       setBgColor('primary')
@@ -67,7 +71,7 @@ const Timeline: React.FC<Props> = () => {
     <div className={classnames([styles.timelineWrap, styles[bgColor]])}>
       <div className='container'>
         <div className={styles.header}>
-          <SectionHeader title={isLast() ? doingTitle : doneTitle} />
+          <SectionHeader title={lastIndex() ? doingTitle : doneTitle} />
 
           <Buttons
             onLeftButtonClick={onLeftButtonClick}

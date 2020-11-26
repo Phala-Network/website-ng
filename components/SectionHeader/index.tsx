@@ -39,7 +39,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = (props) => {
     if (description) {
       setLocalDescription(description[locale])
     }
-  }, [locale])
+  }, [locale, title, description])
 
   return (
     <div
