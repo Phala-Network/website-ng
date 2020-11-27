@@ -17,7 +17,7 @@ export const ExecutionSectionConfig = {
 
   list: [
     {
-      image: '/images/indexPage/executionSection/icon-isolated.svg',
+      image: '/images/indexPage/executionSection/Icon-isolated.svg',
       name: {
         en: 'Isolated',
         zh: '硬件级安全隔离',
@@ -29,7 +29,7 @@ export const ExecutionSectionConfig = {
       },
     },
     {
-      image: '/images/indexPage/executionSection/icon-trustworthy.svg',
+      image: '/images/indexPage/executionSection/Icon-trustworthy.svg',
       name: {
         en: 'Trustworthy',
         zh: '去信任化',
@@ -41,7 +41,7 @@ export const ExecutionSectionConfig = {
       },
     },
     {
-      image: '/images/indexPage/executionSection/icon-compatible.svg',
+      image: '/images/indexPage/executionSection/Icon-compatible.svg',
       name: {
         en: 'Compatible',
         zh: '支持多种TEE标准',
@@ -53,7 +53,7 @@ export const ExecutionSectionConfig = {
       },
     },
     {
-      image: '/images/indexPage/executionSection/icon-decentralized.svg',
+      image: '/images/indexPage/executionSection/Icon-decentralized.svg',
       name: {
         en: 'Decentralized',
         zh: '分布式隐私计算云',
