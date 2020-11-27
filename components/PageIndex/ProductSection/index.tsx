@@ -78,7 +78,7 @@ const ProductSection: React.FC<Props> = () => {
               <div className={styles.link}>
                 <a
                   target='_blank'
-                  href={`https://github.com`}
+                  href={config[selectedProduct].link}
                   className={styles.link}>
                   <I18n en='Check on Github' zh='访问 Github 查看'></I18n>
                 </a>
