@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import I18n from '../../I18n'
 import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'
@@ -6,16 +6,28 @@ import hljs from 'highlight.js/lib/core'
 import rust from 'highlight.js/lib/languages/rust'
 import PerfectScrollbar from 'perfect-scrollbar'
 import 'perfect-scrollbar/css/perfect-scrollbar.css'
+import Web3AnalyticsImage from './Web3AnalyticsImage'
+import PLibraImage from './PLibraImage'
+import DarkpoolAndDarkwalletImage from './DarkpoolAndDarkwalletImage'
+import classnames from 'classnames'
+import { config } from './config'
+hljs.registerLanguage('rust', rust)
 
 type Props = {}
 
 const ProductSection: React.FC<Props> = () => {
+  const [selectedProduct, setSelectedProduct] = useState('Web3Analytics')
+
   useEffect(() => {
-    hljs.registerLanguage('rust', rust)
+    hljs.initHighlighting.called = false
     hljs.initHighlighting()
 
-    new PerfectScrollbar('#codeDiv')
-  }, [])
+    const perfectScrollbar = new PerfectScrollbar('#codeDiv')
+
+    return () => {
+      perfectScrollbar.destroy()
+    }
+  }, [selectedProduct])
 
   return (
     <div className={styles.productSection}>
@@ -33,29 +45,33 @@ const ProductSection: React.FC<Props> = () => {
               />
 
               <div className={styles.productIcons}>
-                <div>
-                  <img
-                    className={styles.productIcon}
-                    src='/images/indexPage/productSection/icon-product-1.svg'
-                    alt='web3 Analytics'
-                  />
-                </div>
+                <Web3AnalyticsImage
+                  onClick={() => setSelectedProduct('Web3Analytics')}
+                  className={classnames([
+                    styles.productIcon,
+                    {
+                      [styles.active]: selectedProduct === 'Web3Analytics',
+                    },
+                  ])}></Web3AnalyticsImage>
 
-                <div>
-                  <img
-                    className={styles.productIcon}
-                    src='/images/indexPage/productSection/icon-product-2.svg'
-                    alt='pLibra'
-                  />
-                </div>
+                <PLibraImage
+                  onClick={() => setSelectedProduct('pLibra')}
+                  className={classnames([
+                    styles.productIcon,
+                    {
+                      [styles.active]: selectedProduct === 'pLibra',
+                    },
+                  ])}></PLibraImage>
 
-                <div>
-                  <img
-                    className={styles.productIcon}
-                    src='/images/indexPage/productSection/icon-product-3.svg'
-                    alt='Darkpool&Darkwallet'
-                  />
-                </div>
+                <DarkpoolAndDarkwalletImage
+                  onClick={() => setSelectedProduct('DarkpoolAndDarkwallet')}
+                  className={classnames([
+                    styles.productIcon,
+                    {
+                      [styles.active]:
+                        selectedProduct === 'DarkpoolAndDarkwallet',
+                    },
+                  ])}></DarkpoolAndDarkwalletImage>
               </div>
             </div>
             <div className='col-lg-6'>
@@ -73,58 +89,13 @@ const ProductSection: React.FC<Props> = () => {
               <div id='codeDiv' className={styles.code}>
                 <pre>
                   <code className='language-rust'>
-                    {`pub fn verify_transactions(
-    &mut self,
-) -> Result<()> {
-    let transactions= self.transactions.as_ref().unwrap().clone();
-    for transaction in transactions {
-        //println!("{:#?}", transaction);
-        let mut batch = JsonRpcBatch::new();
-        let mut account = self.account.as_ref().unwrap().address.clone();
-        batch.add_get_account_state_with_proof_request(account, Some(transaction.version), Some(self.trusted_state.as_ref().unwrap().latest_version()));
-        let responses = self.rpc_client.execute(batch).unwrap();
-        let resp = get_response_from_batch(0, &responses).unwrap().as_ref().unwrap();
-        let account_state_proof =
-            AccountStateWithProofView::from_response(resp.clone()).unwrap();
-
-        let ledger_info_to_transaction_info_proof: TransactionAccumulatorProof =
-            lcs::from_bytes(&account_state_proof.proof.ledger_info_to_transaction_info_proof.into_bytes().unwrap()).unwrap();
-        let transaction_info: TransactionInfo =
-            lcs::from_bytes(&account_state_proof.proof.transaction_info.into_bytes().unwrap()).unwrap();
-        let transaction_info_to_account_proof: SparseMerkleProof =
-            lcs::from_bytes(&account_state_proof.proof.transaction_info_to_account_proof.into_bytes().unwrap()).unwrap();
-        let account_state_blob: AccountStateBlob =
-            lcs::from_bytes(&account_state_proof.blob.unwrap().into_bytes().unwrap()).unwrap();
-        //println!("{:#?}", account_state_blob);
-
-
-        let transaction_info_with_proof = TransactionInfoWithProof::new(
-            ledger_info_to_transaction_info_proof,
-            transaction_info
-        );
-
-        let account_transaction_state_proof = AccountStateProof::new(
-            transaction_info_with_proof,
-            transaction_info_to_account_proof,
-        );
-        account_transaction_state_proof.verify(
-            self.latest_li.as_ref().unwrap().ledger_info(),
-            transaction.version,
-            self.account.as_ref().unwrap().address.hash(),
-            Some(&account_state_blob),
-        );
-        println!("{:#?}", transaction.version);
-    }
-    Ok(())
-}
-                    `}
+                    {config[selectedProduct].code.content}
                   </code>
                 </pre>
               </div>
 
               <p className={styles.description}>
-                A bridge connecting Libra and Polkadot that is built for asset
-                privacy protection and the largest user community communication.
+                <I18n {...config[selectedProduct].text}></I18n>
               </p>
             </div>
           </div>
