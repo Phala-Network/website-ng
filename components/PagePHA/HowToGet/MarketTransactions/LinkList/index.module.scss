@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 
   .item {
-    width: 262px;
+    width: 190px;
     padding: 4px 16px 3px 10px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px #ececec;
@@ -14,6 +14,11 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
 
     @media (max-width: $md) {
       width: 100%;

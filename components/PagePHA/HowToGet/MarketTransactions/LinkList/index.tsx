@@ -11,20 +11,37 @@ const data = [
     href: 'https://www.huobi.com/zh-cn/exchange/pha_usdt',
   },
   {
-    name: 'Bione',
-    href: 'https://www.bione.me/en_US/trade/PHA_USDT',
+    name: 'Gate',
+    href: 'https://www.gate.io/trade/PHA_USDT',
   },
   {
-    name: 'Hotbit',
-    href: 'https://www.hotbit.io/exchange?symbol=PHA_USDT',
+    name: 'Biki',
+    href: 'https://www.biki.com/zh_CN/trade/PHA_USDT',
   },
   {
     name: 'Bibox',
     href: 'https://www.bibox.com/v2/exchange?pair=PHA_USDT',
   },
   {
+    name: 'Hotbit',
+    href: 'https://www.hotbit.io/exchange?symbol=PHA_USDT',
+  },
+  {
+    name: 'Uniswap',
+    href:
+      'https://app.uniswap.org/#/swap?outputCurrency=0x6c5ba91642f10282b576d91922ae6448c9d52f4e',
+  },
+  {
     name: 'MXC',
     href: 'https://www.mxc.ai/trade/easy#PHA_USDT',
+  },
+  {
+    name: 'HBTC',
+    href: 'https://www.bhex.com/exchange/PHA/USDT',
+  },
+  {
+    name: 'Bkex',
+    href: 'https://www.bkex.com/#/trade/PHA_USDT ',
   },
 ]
 
@@ -34,7 +51,10 @@ const LinkList: React.FC<Props> = (props) => {
       {data.map((item, index) => {
         return (
           <TagA key={item.href} href={item.href} className={styles.item}>
-            <img src={`/images/PagePHA/icon${index}.png`} alt={item.name} />
+            <img
+              src={`/images/PagePHA/${index + 1}-${item.name}.png`}
+              alt={item.name}
+            />
             <div className={styles.name}>{item.name}</div>
             <svg
               width='9'
