@@ -103,12 +103,12 @@ export const ResourcesMenuConfig = {
     },
     {
       name: {
-        en: 'Claim',
-        zh: '抵押领奖',
+        en: 'Medium',
+        zh: 'Medium',
       },
       href: {
-        en: 'https://stakedrop-claim.phala.network/',
-        zh: 'https://stakedrop-claim.phala.network/',
+        en: 'https://medium.com/phala-network',
+        zh: 'https://medium.com/phala-network',
       },
     },
   ],
