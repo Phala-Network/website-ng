@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 import Card, { CardProps } from '../../Card'
 import I18n from '../../I18n'
@@ -9,17 +8,26 @@ const config = [
   {
     en: 'Miner',
     zh: '矿工',
-    url: 'https://wiki.phala.network/en-us/docs/poc3/',
+    url: {
+      en: 'https://wiki.phala.network/en-us/docs/poc3/',
+      zh: 'https://wiki.phala.network/en-us/docs/poc3/',
+    },
   },
   {
     en: 'Gatekeeper',
     zh: '守门人',
-    url: 'https://wiki.phala.network/en-us/docs/poc2/',
+    url: {
+      en: 'https://wiki.phala.network/en-us/docs/poc2/run-a-gatekeeper/',
+      zh: 'https://wiki.phala.network/zh-cn/docs/poc2/run-a-gatekeeper/ ',
+    },
   },
   {
     en: 'Nominator',
     zh: '提名人',
-    url: 'https://wiki.phala.network/en-us/docs/poc2/',
+    url: {
+      en: 'https://wiki.phala.network/en-us/docs/poc2/',
+      zh: 'https://wiki.phala.network/en-us/docs/poc2/',
+    },
   },
 ]
 

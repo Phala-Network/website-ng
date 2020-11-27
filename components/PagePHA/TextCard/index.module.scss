@@ -7,6 +7,10 @@
   padding: 62px 20px 0 20px;
   margin-bottom: 30px;
 
+  &.link {
+    @extend .cardHover;
+  }
+
   @media (max-width: $md) {
     padding: 30px 15px;
     min-height: 160px;

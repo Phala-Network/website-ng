@@ -1,11 +1,12 @@
-import Link, { LinkProps } from 'next/link'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { isString } from '../../utils/isString'
 
-type Props = React.PropsWithChildren<LinkProps> & {
+type Props = {
   justLink?: boolean
   className?: string
+  href?: string | { [key: string]: string }
 }
 
 const TagA: React.FC<Props> = (props) => {

@@ -1,5 +1,9 @@
 export const cardData = [
   {
+    link: {
+      en: '/miner',
+      zh: '/miner',
+    },
     title: {
       en: (
         <div>
@@ -30,6 +34,10 @@ export const cardData = [
     },
   },
   {
+    link: {
+      en: 'https://wiki.phala.network/en-us/docs/poc2/run-a-gatekeeper/',
+      zh: 'https://wiki.phala.network/zh-cn/docs/poc2/run-a-gatekeeper/',
+    },
     title: {
       en: (
         <div>
@@ -58,6 +66,10 @@ export const cardData = [
     },
   },
   {
+    link: {
+      en: '/node',
+      zh: '/node',
+    },
     title: {
       en: (
         <div>
@@ -76,6 +88,13 @@ export const cardData = [
     },
   },
   {
+    link: {
+      en:
+        'https://forum.phala.network/t/phala-ipo-strategy-on-polkadot-parachain-slots-auction/1083',
+      zh:
+        'https://forum.phala.network/t/phala-ipo-strategy-on-polkadot-parachain-slots-auction/1083',
+    },
+
     title: {
       en: <div>Support Phala Network </div>,
       zh: <div>通过DOT或KSM支持Phala Network</div>,

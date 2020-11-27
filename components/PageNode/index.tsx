@@ -43,7 +43,10 @@ const PageNode: React.FC<Props> = () => {
             <DetailPageButton
               type='link'
               className={styles.btn2}
-              href={WikiConfig.href}
+              href={{
+                en: 'https://wiki.phala.network/en-us/docs/poc2/',
+                zh: 'https://wiki.phala.network/zh-cn/docs/poc2/ ',
+              }}
               text={WikiConfig.name}
             />
           </DetailPageHeaderButtons>
