@@ -5,7 +5,6 @@
   background-color: $color-bg-black;
 
   .content {
-    height: calc(100vh - #{$nav-height});
     min-height: 894px;
     background-image: url(./bg.svg);
     background-repeat: no-repeat;
