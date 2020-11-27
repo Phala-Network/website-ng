@@ -2,8 +2,6 @@
 @import '../../styles/detailPage.scss';
 
 .pageAboutUs {
-  background-image: url('/images/PageAboutUs/bg.png');
-
   @extend .detailPage;
 
   .header {

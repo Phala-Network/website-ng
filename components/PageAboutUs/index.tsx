@@ -10,12 +10,13 @@ import Consultant from './Consultant'
 import Contributor from './Contributor'
 import CommunityBuilder from './CommunityBuilder'
 import Partners from './Partners'
+import BgLayer from '../BgLayer'
 
 type Props = {}
 
 const PageAboutUs: React.FC<Props> = () => {
   return (
-    <>
+    <BgLayer backgroundUrl='/images/PageAboutUs/bg.png'>
       <PageTitle zh='社区' en='AboutUs'></PageTitle>
       <NormalLayout className={styles.pageAboutUs}>
         <div className='container'>
@@ -48,7 +49,7 @@ const PageAboutUs: React.FC<Props> = () => {
           </div>
         </div>
       </NormalLayout>
-    </>
+    </BgLayer>
   )
 }
 

@@ -2,8 +2,6 @@
 @import '../../styles/detailPage.scss';
 
 .pageMiner {
-  background-image: url('/images/PageMiner/bg2.png');
-
   @extend .detailPage;
 
   .content {

@@ -11,12 +11,13 @@ import Environment from './Environment'
 import LoanAgreement from './LoanAgreement'
 import Cooperative from './Cooperative'
 import Rewards from './Rewards'
+import BgLayer from '../BgLayer'
 
 type Props = {}
 
 const PageMiner: React.FC<Props> = () => {
   return (
-    <>
+    <BgLayer backgroundUrl='/images/PageMiner/bg2.png'>
       <PageTitle zh='矿工' en='Miner'></PageTitle>
 
       <NormalLayout className={styles.pageMiner}>
@@ -51,7 +52,7 @@ const PageMiner: React.FC<Props> = () => {
           </div>
         </div>
       </NormalLayout>
-    </>
+    </BgLayer>
   )
 }
 

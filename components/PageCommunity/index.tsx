@@ -8,12 +8,13 @@ import styles from './index.module.scss'
 import Join from './Join'
 import Maintain from './Maintain'
 import Build from './Build'
+import BgLayer from '../BgLayer'
 
 type Props = {}
 
 const PageCommunity: React.FC<Props> = () => {
   return (
-    <>
+    <BgLayer backgroundUrl='/images/PageCommunity/bg.png'>
       <PageTitle zh='社区' en='Community'></PageTitle>
       <NormalLayout className={styles.pageCommunity}>
         <div className='container'>
@@ -43,7 +44,7 @@ const PageCommunity: React.FC<Props> = () => {
           </div>
         </div>
       </NormalLayout>
-    </>
+    </BgLayer>
   )
 }
 

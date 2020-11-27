@@ -12,12 +12,13 @@ import styles from './index.module.scss'
 import Gatekeeper from './Gatekeeper'
 import Nominator from './Nominator'
 import ConsensusMechanism from './ConsensusMechanism'
+import BgLayer from '../BgLayer'
 
 type Props = {}
 
 const PageNode: React.FC<Props> = () => {
   return (
-    <>
+    <BgLayer backgroundUrl='/images/PageNode/bg.png'>
       <PageTitle zh='节点' en='Node'></PageTitle>
 
       <NormalLayout className={styles.pageNode}>
@@ -69,7 +70,7 @@ const PageNode: React.FC<Props> = () => {
           </div>
         </div>
       </NormalLayout>
-    </>
+    </BgLayer>
   )
 }
 

@@ -12,18 +12,13 @@ import TokenUtibility from './TokenUtibility'
 import Distribution from './Distribution'
 import Mining from './Mining'
 import HowToGet from './HowToGet'
+import BgLayer from '../BgLayer'
 
 type Props = {}
 
-/*
-'Token Utibility',
-'Distribution',
-'Mining',
-'How to ', 'get PHA?'
-*/
 const PagePHA: React.FC<Props> = () => {
   return (
-    <>
+    <BgLayer backgroundUrl='/images/PagePHA/bg.png'>
       <PageTitle zh='PHA' en='PHA'></PageTitle>
       <NormalLayout className={styles.pagePHA}>
         <div className='container'>
@@ -60,7 +55,7 @@ const PagePHA: React.FC<Props> = () => {
           </div>
         </div>
       </NormalLayout>
-    </>
+    </BgLayer>
   )
 }
 
