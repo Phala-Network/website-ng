@@ -7,7 +7,7 @@ import classnames from 'classnames'
 type Props = {
   title: any
   content: any
-  link: any
+  link?: any
 }
 
 const TextCard: React.FC<Props> = (props) => {
