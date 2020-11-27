@@ -47,9 +47,7 @@ const Mining: React.FC<Props> = (props) => {
       <div className={styles.title}>
         <I18nRender {...content}></I18nRender>
       </div>
-      <div className={styles.pieImage}>
-        <img src={`/images/PagePHA/line.svg`} alt='pie' />
-      </div>
+      <img src={`/images/PagePHA/line.svg`} alt='pie' />
     </Card>
   )
 }
