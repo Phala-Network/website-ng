@@ -110,8 +110,8 @@ export const ResourcesMenuConfig = {
         zh: '测试网',
       },
       href: {
-        en: 'https://poc3.phala.network',
-        zh: 'https://poc3.phala.network',
+        en: 'https://app.phala.network/legacy.html',
+        zh: 'https://app.phala.network/legacy.html',
       },
     },
     {
