@@ -43,21 +43,26 @@
     @media (max-width: $md) {
       font-size: 16px;
       line-height: 1.13;
+      width: 200px;
     }
   }
 
-  .button {
+  .buttons {
     margin-top: 107px;
-
-    &:lang(zh) {
-      width: 240px;
-    }
+    display: flex;
 
     @media (max-width: $md) {
       margin-top: 25px;
+      display: block;
+    }
 
-      &:lang(zh) {
-        width: 120px;
+    .button {
+      margin-right: 30px;
+      margin-bottom: 15px;
+      width: 280px;
+
+      @media (max-width: $md) {
+        width: 180px;
       }
     }
   }

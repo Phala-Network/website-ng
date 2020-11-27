@@ -3,7 +3,7 @@ import Button from '../../Button'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 import I18n from '../../I18n'
-import { PHAConfig } from '../../../config'
+import { DarkWalletConfig, ExplorerConfig, PHAConfig } from '../../../config'
 
 type Props = {}
 
@@ -24,13 +24,21 @@ const FirstScreen: React.FC<Props> = () => {
             en='Blockchain Confidentiality by Trusted Computing'
             zh='通过隐私计算帮助区块链保护秘密'></I18n>
         </div>
-        <Button
-          className={styles.button}
-          href={PHAConfig.href}
-          type='link'
-          color='primary'>
-          <I18n en='Learn about PHA' zh='了解 PHA'></I18n>
-        </Button>
+        <div className={styles.buttons}>
+          <Button
+            text={DarkWalletConfig.name}
+            href={DarkWalletConfig.href}
+            className={styles.button}
+            type='link'
+            color='primary'></Button>
+          <Button
+            text={ExplorerConfig.name}
+            href={ExplorerConfig.href}
+            className={styles.button}
+            hasArrowIcon
+            type='link'
+            color='gray'></Button>
+        </div>
       </div>
     </section>
   )

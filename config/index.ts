@@ -62,6 +62,28 @@ export const MaintainMenuConfig = {
   ],
 }
 
+export const ExplorerConfig = {
+  name: {
+    en: 'Explorer',
+    zh: '浏览器',
+  },
+  href: {
+    en: 'https://phala.subscan.io',
+    zh: 'https://phala.subscan.io',
+  },
+}
+
+export const DarkWalletConfig = {
+  name: {
+    en: 'DarkWallet',
+    zh: '暗钱包',
+  },
+  href: {
+    en: 'https://app.phala.network',
+    zh: 'https://app.phala.network',
+  },
+}
+
 export const ResourcesMenuConfig = {
   name: {
     en: 'Resources',
@@ -70,16 +92,7 @@ export const ResourcesMenuConfig = {
   subMenu: [
     TechWhitepaperConfig,
     EconomyWhitepaperConfig,
-    {
-      name: {
-        en: 'DarkWallet',
-        zh: '暗钱包',
-      },
-      href: {
-        en: 'https://app.phala.network',
-        zh: 'https://app.phala.network',
-      },
-    },
+    DarkWalletConfig,
     WikiConfig,
     {
       name: {
