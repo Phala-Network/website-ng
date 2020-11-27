@@ -15,13 +15,15 @@ const Newsletter: React.FC<Props> = () => {
     setVisible(false)
   }
 
-  const news = (
-    <div className={styles.news}>
-      <TagA href={newsletterConfig.link}>
-        <I18n {...newsletterConfig.news}></I18n>
-      </TagA>
-    </div>
-  )
+  const news = newsletterConfig.map((item) => {
+    return (
+      <div key={JSON.stringify(item)} className={styles.news}>
+        <TagA href={item.link}>
+          <I18n {...item.news}></I18n>
+        </TagA>
+      </div>
+    )
+  })
 
   return visible ? (
     <div className={styles.newsletter}>
