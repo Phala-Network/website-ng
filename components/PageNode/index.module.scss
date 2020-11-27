@@ -2,8 +2,6 @@
 @import '../../styles/detailPage.scss';
 
 .pageNode {
-  background-image: url('/images/PageNode/bg.png');
-
   @extend .detailPage;
 
   .btn1 {

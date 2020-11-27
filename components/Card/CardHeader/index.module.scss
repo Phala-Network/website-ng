@@ -17,23 +17,22 @@
     padding: 20px 18px 20px 30px;
     font-family: mplus_hzk_12;
     font-size: 44px;
+
+    @media (max-width: $md) {
+      font-size: 22px;
+      padding: 15px;
+    }
   }
 
   &:lang(en) {
     padding: 30px 18px 20px 30px;
     font-family: Minecraft;
     font-size: 36px;
-  }
 
-  @media (max-width: $md) {
-    &:lang(zh) {
-      font-size: 22px;
-    }
-    &:lang(en) {
+    @media (max-width: $md) {
       font-size: 18px;
+      padding: 15px;
     }
-
-    padding: 15px;
   }
 
   &.small {

@@ -17,6 +17,7 @@ import Composability from './Composability'
 import ApplicableScenarios from './ApplicableScenarios'
 import HowToUse from './HowToUse'
 import styles from './index.module.scss'
+import BgLayer from '../BgLayer'
 
 type Props = {}
 
@@ -24,7 +25,7 @@ const config = {}
 
 const PageTechnology: React.FC<Props> = () => {
   return (
-    <>
+    <BgLayer backgroundUrl='/images/PageTechnology/bg.png'>
       <PageTitle zh='技术' en='Technology'></PageTitle>
       <NormalLayout className={styles.pageTechnology}>
         <div className='container'>
@@ -67,7 +68,7 @@ const PageTechnology: React.FC<Props> = () => {
           </div>
         </div>
       </NormalLayout>
-    </>
+    </BgLayer>
   )
 }
 
