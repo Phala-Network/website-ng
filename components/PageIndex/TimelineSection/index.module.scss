@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.mobile {
+  display: none;
+
+  @media (max-width: $md) {
+    display: block;
+  }
+}
+.pc {
+  display: none;
+
+  @media (min-width: $md) {
+    display: block;
+  }
+}
