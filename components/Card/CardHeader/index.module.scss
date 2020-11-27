@@ -2,13 +2,10 @@
 
 .cardHeader {
   width: 400px;
-  padding: 30px 18px 20px 30px;
   background-color: #000000;
   color: $color-primary;
-  font-family: Minecraft, mplus_hzk_12;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
   text-transform: uppercase;
   position: relative;
   display: flex;
@@ -16,8 +13,26 @@
   justify-content: space-between;
   z-index: $index-card-header;
 
+  &:lang(zh) {
+    padding: 20px 18px 20px 30px;
+    font-family: mplus_hzk_12;
+    font-size: 44px;
+  }
+
+  &:lang(en) {
+    padding: 30px 18px 20px 30px;
+    font-family: Minecraft;
+    font-size: 36px;
+  }
+
   @media (max-width: $md) {
-    font-size: 18px;
+    &:lang(zh) {
+      font-size: 22px;
+    }
+    &:lang(en) {
+      font-size: 18px;
+    }
+
     padding: 15px;
   }
 
@@ -25,9 +40,14 @@
     flex-direction: row;
     height: 80px;
     width: 453px;
+    align-items: center;
 
     .randomBlock {
       display: none;
+    }
+
+    .top {
+      margin-bottom: 0;
     }
 
     @media (max-width: $lg) {
