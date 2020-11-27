@@ -1,33 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import I18n from '../../I18n'
+import React, { useState } from 'react'
 import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'
-import hljs from 'highlight.js/lib/core'
-import rust from 'highlight.js/lib/languages/rust'
-import PerfectScrollbar from 'perfect-scrollbar'
-import 'perfect-scrollbar/css/perfect-scrollbar.css'
-import Web3AnalyticsImage from './Web3AnalyticsImage'
-import PLibraImage from './PLibraImage'
-import DarkpoolAndDarkwalletImage from './DarkpoolAndDarkwalletImage'
 import classnames from 'classnames'
 import { config } from './config'
-hljs.registerLanguage('rust', rust)
+import CodePanel from './CodePanel'
 
 type Props = {}
 
 const ProductSection: React.FC<Props> = () => {
   const [selectedProduct, setSelectedProduct] = useState('Web3Analytics')
-
-  useEffect(() => {
-    hljs.initHighlighting.called = false
-    hljs.initHighlighting()
-
-    const perfectScrollbar = new PerfectScrollbar('#codeDiv')
-
-    return () => {
-      perfectScrollbar.destroy()
-    }
-  }, [selectedProduct])
 
   return (
     <div className={styles.productSection}>
@@ -45,58 +26,37 @@ const ProductSection: React.FC<Props> = () => {
               />
 
               <div className={styles.productIcons}>
-                <Web3AnalyticsImage
-                  onClick={() => setSelectedProduct('Web3Analytics')}
-                  className={classnames([
-                    styles.productIcon,
-                    {
-                      [styles.active]: selectedProduct === 'Web3Analytics',
-                    },
-                  ])}></Web3AnalyticsImage>
+                {Object.keys(config).map((key) => {
+                  const value = config[key]
+                  const Component = value.image
 
-                <PLibraImage
-                  onClick={() => setSelectedProduct('pLibra')}
-                  className={classnames([
-                    styles.productIcon,
-                    {
-                      [styles.active]: selectedProduct === 'pLibra',
-                    },
-                  ])}></PLibraImage>
+                  return (
+                    <>
+                      <Component
+                        onClick={() => setSelectedProduct(key)}
+                        className={classnames([
+                          styles.productIcon,
+                          {
+                            [styles.active]: selectedProduct === key,
+                          },
+                        ])}></Component>
 
-                <DarkpoolAndDarkwalletImage
-                  onClick={() => setSelectedProduct('DarkpoolAndDarkwallet')}
-                  className={classnames([
-                    styles.productIcon,
-                    {
-                      [styles.active]:
-                        selectedProduct === 'DarkpoolAndDarkwallet',
-                    },
-                  ])}></DarkpoolAndDarkwalletImage>
+                      {selectedProduct === key && (
+                        <CodePanel
+                          id={`${key}`}
+                          className={styles.mobileCodePanel}
+                          selectedProduct={key}></CodePanel>
+                      )}
+                    </>
+                  )
+                })}
               </div>
             </div>
             <div className='col-lg-6'>
-              <div className={styles.link}>
-                <a
-                  target='_blank'
-                  href={config[selectedProduct].link}
-                  className={styles.link}>
-                  <I18n en='Check on Github' zh='访问 Github 查看'></I18n>
-                </a>
-              </div>
-
-              <div className={styles.line}></div>
-
-              <div id='codeDiv' className={styles.code}>
-                <pre>
-                  <code className='language-rust'>
-                    {config[selectedProduct].code.content}
-                  </code>
-                </pre>
-              </div>
-
-              <p className={styles.description}>
-                <I18n {...config[selectedProduct].text}></I18n>
-              </p>
+              <CodePanel
+                id={'mainCodePanel'}
+                className={styles.pcCodePanel}
+                selectedProduct={selectedProduct}></CodePanel>
             </div>
           </div>
         </div>

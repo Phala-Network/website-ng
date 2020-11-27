@@ -1,5 +1,10 @@
+import Web3AnalyticsImage from './Web3AnalyticsImage'
+import PLibraImage from './PLibraImage'
+import DarkpoolAndDarkwalletImage from './DarkpoolAndDarkwalletImage'
+
 export const config = {
   Web3Analytics: {
+    image: Web3AnalyticsImage,
     link:
       'https://github.com/Phala-Network/phala-blockchain/blob/master/pruntime/enclave/src/contracts/web3analytics.rs',
     text: {
@@ -36,6 +41,7 @@ export const config = {
     },
   },
   pLibra: {
+    image: PLibraImage,
     link:
       'https://github.com/Phala-Network/plibra-experimental/blob/master/src/main.rs',
     text: {
@@ -94,6 +100,7 @@ export const config = {
     },
   },
   DarkpoolAndDarkwallet: {
+    image: DarkpoolAndDarkwalletImage,
     link:
       'https://github.com/Phala-Network/phala-blockchain/blob/master/pruntime/enclave/src/contracts/balances.rs',
     text: {
