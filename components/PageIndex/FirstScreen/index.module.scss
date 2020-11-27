@@ -49,8 +49,16 @@
   .button {
     margin-top: 107px;
 
+    &:lang(zh) {
+      width: 240px;
+    }
+
     @media (max-width: $md) {
       margin-top: 25px;
+
+      &:lang(zh) {
+        width: 120px;
+      }
     }
   }
 }

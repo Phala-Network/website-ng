@@ -24,11 +24,13 @@ const FirstScreen: React.FC<Props> = () => {
             en='Blockchain Confidentiality by Trusted Computing'
             zh='通过隐私计算帮助区块链保护秘密'></I18n>
         </div>
-        <div className={styles.button}>
-          <Button href={PHAConfig.href} type='link' color='primary'>
-            <I18n en='Learn about PHA' zh='了解 PHA'></I18n>
-          </Button>
-        </div>
+        <Button
+          className={styles.button}
+          href={PHAConfig.href}
+          type='link'
+          color='primary'>
+          <I18n en='Learn about PHA' zh='了解 PHA'></I18n>
+        </Button>
       </div>
     </section>
   )
