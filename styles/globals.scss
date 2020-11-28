@@ -28,3 +28,112 @@ a {
   /* Microsoft Edge */
   color: rgba($color-primary, 0.3);
 }
+
+// global
+.sticky-container {
+  position: relative;
+}
+
+.sticky-container .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+@media screen and (max-width: 1024px) {
+  .sticky-container .sticky {
+    position: static;
+  }
+}
+
+.sticky-container .sticky.nav {
+  top: -4vw;
+  height: 100vh;
+}
+
+// nav
+@media screen and (max-width: 1024px) {
+  .sticky-container .sticky.nav {
+    height: auto;
+  }
+}
+
+.sticky-container .sticky.nav .sticky-positioning {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .sticky-container .sticky.nav .sticky-positioning {
+    position: relative;
+  }
+}
+
+// navigation
+.navigation {
+  background-color: #191919;
+  box-sizing: border-box;
+  margin-left: -4vw;
+  width: 22.5vw;
+  position: relative;
+
+  &:hover {
+    z-index: 100;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+}
+
+// section
+.section {
+  position: relative;
+  // margin-top: 50vh;
+}
+
+// lead
+.section .lead-wrap {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .section .lead-wrap {
+    position: relative;
+    height: auto;
+  }
+}
+
+.section .lead {
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  // transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .section .lead {
+    position: relative;
+  }
+}
+
+// story
+.section .story {
+  position: sticky;
+}
+
+@media screen and (max-width: 1024px) {
+  .section .story {
+    position: static;
+  }
+}
+
+.section .story .story-inner {
+  width: 100%;
+  min-height: 50vh;
+}

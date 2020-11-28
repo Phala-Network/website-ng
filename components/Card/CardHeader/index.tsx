@@ -5,6 +5,7 @@ import classnames from 'classnames'
 import styles from './index.module.scss'
 
 export type CardHeaderProps = {
+  style: any
   index?: number
   name?: { [key: string]: string[] }
   className?: string
@@ -12,11 +13,13 @@ export type CardHeaderProps = {
 }
 
 const CardHeader: React.FC<CardHeaderProps> = (props) => {
-  const { index, name, className, type = 'normal' } = props
+  const { style, index, name, className, type = 'normal' } = props
   const { locale } = useRouter()
 
   return (
-    <div className={classnames([styles.cardHeader, styles[type], className])}>
+    <div
+      style={style}
+      className={classnames([styles.cardHeader, styles[type], className])}>
       <div
         className={styles.target}
         // id for link jump

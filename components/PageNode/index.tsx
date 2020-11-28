@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { EconomyWhitepaperConfig } from '../../config/EconomyWhitepaperConfig'
 import { PageNodeConfig } from '../../config/PageNode'
 import { WikiConfig } from '../../config/WikiConfig'
@@ -17,6 +17,16 @@ import BgLayer from '../BgLayer'
 type Props = {}
 
 const PageNode: React.FC<Props> = () => {
+  useEffect(() => {
+    Array.from(document.querySelectorAll('.story.sticky')).forEach(function (
+      el: any
+    ) {
+      const { height: e } = el.getBoundingClientRect()
+      const bottom = -e + 50
+      el.style.bottom = bottom + 'px'
+    })
+  }, [])
+
   return (
     <BgLayer backgroundUrl='/images/PageNode/bg.png'>
       <PageTitle zh='节点' en='Node'></PageTitle>
@@ -51,25 +61,33 @@ const PageNode: React.FC<Props> = () => {
             />
           </DetailPageHeaderButtons>
 
-          <div id='content' className={styles.content}>
-            {PageNodeConfig.content.map((item, index) => {
-              const Component = {
-                Gatekeeper,
-                Nominator,
-                ConsensusMechanism,
-              }[item.id]
+          <div className='sticky-container'>
+            <div className='sticky nav'>
+              <div className='sticky-positioning'>
+                <div className='navigation'>
+                  <FloatMenu
+                    menuTitle={PageNodeConfig.menuTitle}
+                    menu={PageNodeConfig.content}></FloatMenu>
+                </div>
+              </div>
+            </div>
 
-              return (
-                <Component
-                  {...item}
-                  index={index + 1}
-                  key={JSON.stringify(item.name)}></Component>
-              )
-            })}
+            <div id='content' className={styles.content}>
+              {PageNodeConfig.content.map((item, index) => {
+                const Component = {
+                  Gatekeeper,
+                  Nominator,
+                  ConsensusMechanism,
+                }[item.id]
 
-            <FloatMenu
-              menuTitle={PageNodeConfig.menuTitle}
-              menu={PageNodeConfig.content}></FloatMenu>
+                return (
+                  <Component
+                    {...item}
+                    index={index + 1}
+                    key={JSON.stringify(item.name)}></Component>
+                )
+              })}
+            </div>
           </div>
         </div>
       </NormalLayout>
