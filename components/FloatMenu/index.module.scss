@@ -15,7 +15,11 @@
     display: none;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1466px) {
+    margin-left: -100px;
+  }
+
+  @media (min-width: 1666px) {
     margin-left: -180px;
   }
 
