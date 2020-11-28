@@ -2,7 +2,7 @@
 
 .floatMenu {
   position: absolute;
-  width: 347px;
+  width: 380px;
   padding: 35px 20px;
   background-color: #d1ff52;
   font-family: Lato-Bold;
@@ -15,11 +15,15 @@
     display: none;
   }
 
+  @media (min-width: 1366px) {
+    margin-left: -180px;
+  }
+
   &.fixed {
     position: fixed;
     top: auto;
     // have no idea
-    bottom: 40px;
+    bottom: 300px;
   }
 
   &.bottom {

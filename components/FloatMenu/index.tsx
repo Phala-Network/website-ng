@@ -20,7 +20,7 @@ function offset(el) {
 }
 
 const FloatMenu: React.FC<Props> = (props) => {
-  const { menuTitle, menu, offsetBottom = 40 } = props
+  const { menuTitle, menu, offsetBottom = 300 } = props
   const { locale } = useRouter()
   const [fixed, setFixed] = useState(false)
   const [bottom, setBottom] = useState(false)
