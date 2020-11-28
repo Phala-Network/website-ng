@@ -1,6 +1,4 @@
 import React from 'react'
-import { isClient } from '../../utils/isClient'
-import BackTop from '../BackTop'
 import Footer from '../Footer'
 import Header from '../Header'
 import Nav from '../Nav'
@@ -24,8 +22,6 @@ const NormalLayout: React.FC<Props> = (props) => {
       <div {...props}>{props.children}</div>
 
       <Footer></Footer>
-
-      <>{isClient() && <BackTop></BackTop>}</>
     </>
   )
 }

@@ -7,6 +7,8 @@ import ProductSection from './ProductSection'
 import PartnersSection from './PartnersSection'
 import TimelineSection from './TimelineSection'
 import NormalLayout from '../NormalLayout'
+import { isClient } from '../../utils/isClient'
+import BackTop from '../BackTop'
 
 type Props = {}
 
@@ -20,6 +22,7 @@ const PageIndex: React.FC<Props> = () => {
       <ProductSection></ProductSection>
       <PartnersSection></PartnersSection>
       <TimelineSection></TimelineSection>
+      <>{isClient() && <BackTop></BackTop>}</>
     </NormalLayout>
   )
 }
