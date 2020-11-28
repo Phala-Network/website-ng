@@ -28,9 +28,8 @@ const CommunityBuilder: React.FC<CardProps> = (props) => {
               src={getPath(index)}
               srcSet={getPath(index, 2) + ',' + getPath(index, 3)}></img>
             <div className={styles.label}>
-              <div>
-                {item.name} - {item.from}
-              </div>
+              <div>{item.name}</div>
+              <div>{item.from}</div>
             </div>
           </div>
         )
