@@ -16,7 +16,12 @@ const FirstScreen: React.FC<Props> = () => {
   return (
     <section className={classnames([styles.firstScreen])}>
       <div className={styles.video}>
-        <video autoPlay={true} muted loop={true}>
+        <video
+          controls={false}
+          webkit-playsinline
+          autoPlay={true}
+          muted
+          loop={true}>
           <source src='/video/phala1.mp4' type='video/mp4' />
         </video>
       </div>

@@ -13,7 +13,7 @@
   flex-direction: column;
   transform: translate3d(0, -100vh, 0);
   transition: transform 0.4s ease;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 
   @media (max-width: $md) {
     display: flex;
