@@ -12,25 +12,18 @@ const Composability: React.FC<Props> = (props) => {
     en: (
       <div>
         <div>
-          Phala created a distributed computing architecture that separates
-          computing and consensus, and achieves multiple computing task loads
-          through the flexible scalability of TEE privacy cloud computing.
+          Phala built on Substrate has natural interoperability. Phala plans to
+          become a Polkadot parachain, which can serve the entire Polkadot
+          ecological parachain as well as other mainstream blockchain
+          developers.
         </div>
         <div>
-          Phala’s consensus adopts the NPOS consensus consistent with Polkadot.
-          The NPOS (Nominated Proof of Stake) consensus algorithm is to use
-          election to make the system safer and more efficient. The set of
-          validators. The more democratic Phragmén algorithm prevents any
-          routine pool from being The selected validator is too low
-          representative, and the validator not selected is too low
-          representative
-        </div>
-        <div>
-          Phala’s computing layer adopts the design of free registration agency,
-          mortgage economy and random allocation, which allows variable
-          calculation tasks to be randomly dispatched to any TEE device for
-          execution, and availability is achieved through secret smart contract
-          design.
+          The biggest difference between the Phala network and similar consensus
+          layer/computing layer separation + TEE computing device network is
+          that Phala’s secret smart contracts are alternately designed and
+          compatible with the XCMP protocol messaging design to achieve mutual
+          invocation and mutual calling of smart contracts within the TEE
+          environment. effect
         </div>
       </div>
     ),
