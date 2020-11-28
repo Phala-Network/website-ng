@@ -1,4 +1,5 @@
 @import '../../../styles/variables.scss';
+@import '../../../styles/card.scss';
 
 .textAndButton {
   display: flex;
@@ -15,6 +16,13 @@
 }
 
 .iconCard {
+  @extend .cardHover;
+  @extend .card;
+  padding: 15px;
+
+  img {
+    width: 100%;
+  }
   @media (max-width: $md) {
     margin-bottom: 30px;
   }

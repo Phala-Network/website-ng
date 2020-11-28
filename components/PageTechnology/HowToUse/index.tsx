@@ -46,24 +46,27 @@ const HowToUse: React.FC<Props> = (props) => {
   return (
     <Card type='vertical' firstLetter {...props}>
       <div className='row flex-column-reverse flex-md-row'>
-        <div className={classnames(['col-md-8', styles.textAndButton])}>
+        <div className={classnames(['col-md-6', styles.textAndButton])}>
           <I18nRender {...content}></I18nRender>
           <DetailPageButton
             className={styles.button}
             color='black'
             type='link'
-            href={EconomyWhitepaperConfig.href}
-            text={EconomyWhitepaperConfig.name}
+            href={{
+              en:
+                'https://github.com/Phala-Network/hello-world-by-polkadot/issues/1',
+              zh:
+                'https://github.com/Phala-Network/hello-world-by-polkadot/issues/1',
+            }}
+            text={{
+              en: 'check tutorial',
+              zh: '查看教程',
+            }}
             hasArrowIcon></DetailPageButton>
         </div>
-        <div className='col-md-4'>
+        <div className='col-md-6'>
           <div className={styles.iconCard}>
-            <IconTextCard
-              bgIndex={3}
-              text={{
-                en: 'code here',
-                zh: '查看教程',
-              }}></IconTextCard>
+            <img src='/images/PageTechnology/code.png' alt='' />
           </div>
         </div>
       </div>
