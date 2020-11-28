@@ -11,9 +11,9 @@
   padding: 20px;
   display: none;
   flex-direction: column;
-  transform: translate3d(0, -100vh, 0);
-  transition: transform 0.4s ease;
-  // padding-bottom: 80px;
+  transform: translate3d(0, -150vh, 0);
+  transition: transform 0.5s ease;
+  padding-bottom: 60px;
 
   @media (max-width: $md) {
     display: flex;
