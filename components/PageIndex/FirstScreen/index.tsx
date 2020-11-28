@@ -3,7 +3,7 @@ import Button from '../../Button'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 import I18n from '../../I18n'
-import { DarkWalletConfig, ExplorerConfig, PHAConfig } from '../../../config'
+import { DarkWalletConfig, ExplorerConfig } from '../../../config'
 
 type Props = {}
 
@@ -15,6 +15,11 @@ const FirstScreen: React.FC<Props> = () => {
 
   return (
     <section className={classnames([styles.firstScreen])}>
+      <div className={styles.video}>
+        <video autoPlay={true} muted loop={true}>
+          <source src='/video/phala1.mp4' type='video/mp4' />
+        </video>
+      </div>
       <div className={classnames(['container', styles.content])}>
         <div className={styles.title}>
           <I18n render={(str) => <div key={str}>{str}</div>} {...title}></I18n>
