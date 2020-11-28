@@ -24,6 +24,7 @@ const FirstScreen: React.FC<Props> = () => {
         dangerouslySetInnerHTML={{
           __html: `
           <video
+          preload="none"
           id="video"
           playsinline
           webkit-playsinline
