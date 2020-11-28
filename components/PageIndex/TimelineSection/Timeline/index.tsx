@@ -56,16 +56,16 @@ const Timeline: React.FC<Props> = () => {
     }
   }, [index])
 
-  useEffect(() => {
-    if (breakpoint === 'mobile') {
-      setBgColor('primary')
-      setIndex(0)
-    } else if (breakpoint === 'tablet') {
-      setSlideNumber(2)
-    } else {
-      setSlideNumber(3)
-    }
-  }, [breakpoint])
+  // useEffect(() => {
+  //   if (breakpoint === 'mobile') {
+  //     setBgColor('primary')
+  //     setIndex(0)
+  //   } else if (breakpoint === 'tablet') {
+  //     setSlideNumber(2)
+  //   } else {
+  //     setSlideNumber(3)
+  //   }
+  // }, [breakpoint])
 
   return (
     <div className={classnames([styles.timelineWrap, styles[bgColor]])}>

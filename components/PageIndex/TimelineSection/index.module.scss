@@ -3,14 +3,14 @@
 .mobile {
   display: none;
 
-  @media (max-width: $md) {
+  @media (max-width: $lg) {
     display: block;
   }
 }
 .pc {
   display: none;
 
-  @media (min-width: $md) {
+  @media (min-width: $lg) {
     display: block;
   }
 }
