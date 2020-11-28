@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../../Button'
 import styles from './index.module.scss'
 import classnames from 'classnames'
@@ -13,18 +13,26 @@ const FirstScreen: React.FC<Props> = () => {
     zh: ['Phala Network', '给区块链打上马赛克'],
   }
 
+  useEffect(() => {
+    document.querySelector('video').play()
+  }, [])
+
   return (
     <section className={classnames([styles.firstScreen])}>
-      <div className={styles.video}>
-        <video
-          controls={false}
+      <div
+        className={styles.video}
+        dangerouslySetInnerHTML={{
+          __html: `
+          <video
+          id="video"
+          playsinline
           webkit-playsinline
-          autoPlay={true}
+          autoplay
           muted
-          loop={true}>
+          loop>
           <source src='/video/phala1.mp4' type='video/mp4' />
-        </video>
-      </div>
+        </video>`,
+        }}></div>
       <div className={classnames(['container', styles.content])}>
         <div className={styles.title}>
           <I18n render={(str) => <div key={str}>{str}</div>} {...title}></I18n>
