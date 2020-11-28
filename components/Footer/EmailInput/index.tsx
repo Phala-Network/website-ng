@@ -58,7 +58,7 @@ const EmailInput: React.FC<Props> = (props) => {
     if (checkEmail()) {
       try {
         props.onValidated({
-          email: textValue,
+          EMAIL: textValue,
         })
       } catch (e) {}
     }
