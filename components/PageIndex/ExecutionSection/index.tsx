@@ -1,6 +1,6 @@
 import React from 'react'
 import { TechnologyConfig } from '../../../config'
-import { ExecutionSectionConfig } from '../../../config/PageIndex/ExecutionSectionConfig'
+import { ExecutionSectionConfig } from '../../../config/PageIndexConfig/ExecutionSectionConfig'
 import Button from '../../Button'
 import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'

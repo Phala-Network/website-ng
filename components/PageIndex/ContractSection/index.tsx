@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContractSectionConfig } from '../../../config/PageIndex/ContractSectionConfig'
+import { ContractSectionConfig } from '../../../config/PageIndexConfig/ContractSectionConfig'
 import Button from '../../Button'
 import SectionHeader from '../../SectionHeader'
 import styles from './index.module.scss'

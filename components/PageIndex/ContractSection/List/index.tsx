@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContractSectionConfig } from '../../../../config/PageIndex/ContractSectionConfig'
+import { ContractSectionConfig } from '../../../../config/PageIndexConfig/ContractSectionConfig'
 import ImageCard from '../../ImageCard'
 import styles from './index.module.scss'
 import classnames from 'classnames'
