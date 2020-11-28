@@ -6,6 +6,7 @@ import Subscribe from './Subscribe'
 import ListMenu from '../ListMenu'
 import { MaintainMenuConfig, ResourcesMenuConfig } from '../../config'
 import Copyright from './Copyright'
+import MailchimpSubscribe from 'react-mailchimp-subscribe'
 
 type Props = {}
 
@@ -18,7 +19,18 @@ const Footer: React.FC<Props> = () => {
             <div className='col-md-6'>
               <div className={styles.left}>
                 <Subscribe></Subscribe>
-                <EmailInput></EmailInput>
+                <MailchimpSubscribe
+                  url={
+                    'https://network.us19.list-manage.com/subscribe/post?u=af3fc86df5d49999a90140756&amp;id=5b9fbb1db9'
+                  }
+                  render={({ subscribe, status, message }) => (
+                    <EmailInput
+                      status={status}
+                      message={message}
+                      onValidated={(formData) => subscribe(formData)}
+                    />
+                  )}
+                />
                 <MediaList></MediaList>
               </div>
             </div>

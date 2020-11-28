@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import isEmail from '../../../utils/isEmail'
 import IconArrow from '../../IconArrow'
 import IconSuccessCircle from '../../IconSuccessCircle'
@@ -7,7 +7,11 @@ import classnames from 'classnames'
 import I18n from '../../I18n'
 import { useRouter } from 'next/router'
 
-type Props = {}
+type Props = {
+  status: any
+  message: any
+  onValidated: Function
+}
 
 enum STATUS {
   default = 'default',
@@ -15,7 +19,7 @@ enum STATUS {
   success = 'success',
 }
 
-const EmailInput: React.FC<Props> = () => {
+const EmailInput: React.FC<Props> = (props) => {
   const [textValue, setTextValue] = useState<string>('')
   const [status, setStatus] = useState<STATUS>(STATUS.default)
   const { locale } = useRouter()
@@ -23,6 +27,12 @@ const EmailInput: React.FC<Props> = () => {
     en: 'Enter your email address',
     zh: '输入您的邮箱',
   }
+
+  useEffect(() => {
+    if (props.status === 'success') {
+      setStatus(STATUS.success)
+    }
+  }, [props.status])
 
   function onChange(e) {
     setTextValue(e.target.value)
@@ -47,9 +57,9 @@ const EmailInput: React.FC<Props> = () => {
   async function sendEmail() {
     if (checkEmail()) {
       try {
-        // TODO: send email to server
-
-        setStatus(STATUS.success)
+        props.onValidated({
+          email: textValue,
+        })
       } catch (e) {}
     }
   }
@@ -74,6 +84,18 @@ const EmailInput: React.FC<Props> = () => {
           )}
         </div>
       </div>
+
+      {props.status === 'sending' && (
+        <div className={classnames([styles.infoText, styles.warning])}>
+          <I18n en='Sending...' zh='发送中...'></I18n>
+        </div>
+      )}
+
+      {props.status === 'error' && (
+        <div className={classnames([styles.infoText, styles.warning])}>
+          <I18n en='Subscribe Fail' zh='订阅失败'></I18n>
+        </div>
+      )}
 
       {status === STATUS.warning && (
         <div className={classnames([styles.infoText, styles.warning])}>
