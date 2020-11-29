@@ -4,14 +4,15 @@ import TagA from '../TagA'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 
-const CardList: React.FC<any> = (props) => {
+const TextCardList: React.FC<any> = (props) => {
   const { config = [], imgPath, hoverEffect = false } = props
 
   return (
-    <div className={styles.cardList}>
+    <div className={styles.textCardList}>
       {config.map((item, index) => {
         return (
           <div
+            key={JSON.stringify(item)}
             className={classnames([
               styles.item,
               {
@@ -34,4 +35,4 @@ const CardList: React.FC<any> = (props) => {
   )
 }
 
-export default CardList
+export default TextCardList

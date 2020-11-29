@@ -36,7 +36,7 @@ const Maintain: React.FC<CardProps> = (props) => {
     <Card type='small' cardContentClassName={styles.cardContent} {...props}>
       {config.map((item, index) => {
         return (
-          <div className={styles.item}>
+          <div key={JSON.stringify(item)} className={styles.item}>
             <TagA href={item.url}>
               <img src={`/images/PageCommunity/icon${index + 1}.svg`} alt='' />
               <div className={styles.name}>

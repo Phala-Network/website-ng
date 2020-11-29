@@ -28,7 +28,7 @@ const text = {
   zh: '社区自制已通过 SGX 挖矿测试设备一览表',
 }
 
-const WhyNeed: React.FC<Props> = (props) => {
+const Environment: React.FC<Props> = (props) => {
   return (
     <Card
       type='wideNormal'
@@ -38,7 +38,7 @@ const WhyNeed: React.FC<Props> = (props) => {
       <div>
         {config.map((item, index) => {
           return (
-            <div className={styles.item}>
+            <div key={JSON.stringify(item)} className={styles.item}>
               <div className={styles.icon}>
                 <img src={`/images/PageMiner/icon${index}.svg`} alt='' />
               </div>
@@ -56,4 +56,4 @@ const WhyNeed: React.FC<Props> = (props) => {
   )
 }
 
-export default WhyNeed
+export default Environment
