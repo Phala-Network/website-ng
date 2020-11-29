@@ -1,6 +1,10 @@
-## Preview
+## Website
 
-https://phala-network-website.vercel.app/
+- website-ng.vercel.app
+- phala.network
+- website-ng.phala-network.vercel.app
+- www.phala.network
+- website-ng-git-master.phala-network.vercel.app
 
 ## Development
 
