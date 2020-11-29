@@ -6,12 +6,12 @@ export const ContractSectionConfig = {
 
   title: {
     en: ['Privacy-preserving', 'Smart Contract'],
-    zh: ['具有秘密的智能合约'],
+    zh: ['隐私保护智能合约'],
   },
 
   description: {
     en: 'Built on TEE-Blockchain Hybrid Architecture',
-    zh: 'Phala Network通过TEE-区块链混合架构实施机密智能合约',
+    zh: 'Phala Network 基于TEE-区块链混合架构实现保密合约',
   },
 
   list: [
@@ -19,12 +19,12 @@ export const ContractSectionConfig = {
       image: '/images/indexPage/contractSection/icon-credible.svg',
       name: {
         en: 'Credible',
-        zh: '保留秘密且可被验证',
+        zh: '无需信任的保秘',
       },
       description: {
         en:
-          'Remote attestation is required for each node as the proof to be TEE-enabled and privacy-preserving.',
-        zh: '远程认证保证了智能合约的可靠执行，同时可以秘密地保存数据',
+          'Remote attestation guarantees the contract runs right inside a trustless and confidential environment.',
+        zh: '远程认证保证了智能合约的可靠执行，同时可以秘密地使用数据',
       },
     },
     {
@@ -34,7 +34,7 @@ export const ContractSectionConfig = {
         zh: '非验证则不可信',
       },
       description: {
-        en: 'All the codes and execution are verifiable on-chain.',
+        en: 'All the code and execution are verifiable on-chain.',
         zh: 'Phala上的合约执行均可追溯到TEE证书，在区块链上可供用户验证',
       },
     },
@@ -42,12 +42,12 @@ export const ContractSectionConfig = {
       image: '/images/indexPage/contractSection/icon-interoperatable.svg',
       name: {
         en: 'Interoperatable',
-        zh: '可组合性和互操作性',
+        zh: '可组合与互操作',
       },
       description: {
         en:
-          'The 1st smart contract that is highly-compatible with contracts from other blockchain or ecosystem.',
-        zh: '首创具有可组合性和互操作性的秘密智能合约协议',
+          'Smart contract is 90% less useful without composability. Phala is the only confidential contract protocol that keeps interoperability and composability.',
+        zh: '失去可组合与互操作性，智能合约便毫无意义。Phala 保留了它们，并赋予了保密性。',
       },
     },
     {
@@ -58,8 +58,8 @@ export const ContractSectionConfig = {
       },
       description: {
         en:
-          'Phala will serve all blockchains through through Polkadot XCMP and Substrate-based cross-chain technology.',
-        zh: '基于Substrate开发，通过Polkadot的XCMP为其他区块链提供秘密合约服务',
+          'As a Substrate-based blockchain, Phala aim to serve any blockchain through Polkadot XCMP.',
+        zh: '基于Substrate开发，通过Polkadot的XCMP为其他区块链提供保密合约服务',
       },
     },
   ],

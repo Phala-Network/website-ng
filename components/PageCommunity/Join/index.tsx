@@ -94,7 +94,7 @@ const Join: React.FC<CardProps> = (props) => {
             <IconDiscord></IconDiscord>
           </div>
           <div className={styles.name}></div>
-          <I18n en='Discord General' zh='Discord 频道'></I18n>
+          <I18n en='Discord Server' zh='Discord 频道'></I18n>
         </TagA>
       </div>
 
@@ -105,7 +105,7 @@ const Join: React.FC<CardProps> = (props) => {
             <IconWechat></IconWechat>
           </div>
           <div className={styles.name}></div>
-          <I18n en='Wechat' zh='微信'></I18n>
+          <I18n en='WeChat' zh='微信'></I18n>
         </TagA>
       </div>
     </Card>

@@ -6,7 +6,7 @@ export const PageAboutUsConfig = {
 
   description: {
     en:
-      'We believe the value of humanistic products & developer-friendly protocols will attract loyal users and bring us real growth.',
+      'We believe that Phala as a humanistic product & developer-friendly protocol will bring the real mass adoption.',
 
     zh: '我们相信产品驱动和协议价值将会为Phala带来真正的使用者',
   },
@@ -24,7 +24,7 @@ export const PageAboutUsConfig = {
     {
       id: 'Consultant',
       name: {
-        en: ['Consultant'],
+        en: ['Advisor'],
         zh: ['顾问'],
       },
     },

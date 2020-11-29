@@ -26,7 +26,7 @@ export const TimelineSectionConfig = {
         year: 2019,
         quarter: 3,
         content: {
-          en: ['Whitepaper model', 'Web3 Foundation Grant for pLIBRA'],
+          en: ['Whitepaper released', 'pLIBRA won the Web3 Foundation Grant'],
           zh: [
             '发布技术白皮书',
             'Phala 旗下首个产品 pLIBRA 获得 Web3 基金会 Grant 奖金',
@@ -37,7 +37,7 @@ export const TimelineSectionConfig = {
         year: 2019,
         quarter: 4,
         content: {
-          en: ['Hang Yin was entitled with Polkadot', 'Ambassador China'],
+          en: ['Hang was entitled with', 'China Polkadot Ambassador'],
           zh: ['尹航成为波卡中国大使'],
         },
       },
@@ -45,7 +45,7 @@ export const TimelineSectionConfig = {
         year: 2020,
         quarter: 1,
         content: {
-          en: ['Economics model', 'Web3 Foundation Grant for W3A'],
+          en: ['Token Economics', 'W3A won the Web3 Foundation Grant'],
           zh: ['发布经济白皮书', '通过Web3 Analytics再次获得获得Grant资助'],
         },
       },
@@ -61,7 +61,7 @@ export const TimelineSectionConfig = {
         year: 2020,
         quarter: 3,
         content: {
-          en: ['Testnet Rorschach', 'Kusama Darkpool development kickoff'],
+          en: ['Testnet Rorschach', 'Kusama Dark Pool development kickoff'],
           zh: [
             'Phala POC-2 “罗夏测试网” 上线',
             '受Kusama社区委托，与社区合作开发去中心化暗池协议',
@@ -74,7 +74,7 @@ export const TimelineSectionConfig = {
         year: 2020,
         quarter: 4,
         content: {
-          en: ['Testnet Vendetta', ' Canary launch: Darth Vader'],
+          en: ['Testnet Vendetta', ' Pre-mainnet: Darth Vader'],
           zh: [
             '上线 Phala POC-3 “Vendetta测试网”',
             '上线 预备主网 Darth Vader',

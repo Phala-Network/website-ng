@@ -11,7 +11,7 @@ const config = [
     },
     description: {
       en:
-        'A roleplay game where you can be whoever you want to be, and gain PHA returns via various contribution.',
+        'A roleplay game where you can be whoever you want to be, and gain PHA prize via various contribution.',
       zh: '各有所长，各司其职，各放光彩',
     },
     url:
@@ -24,7 +24,7 @@ const config = [
     },
     description: {
       en:
-        'A roleplay game where you can be whoever you want to be, and gain PHA returns via various contribution.',
+        'Grow with Phala and be an opinion leader in the Web3.0 age',
       zh: 'PHA & 流量扶持，助你出道成为 Web3.0 时代的意见领袖',
     },
     url:

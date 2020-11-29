@@ -11,18 +11,12 @@ const LoanAgreement: React.FC<Props> = (props) => {
   const content = {
     en: (
       <div>
-        Lower the mortgage threshold. In Phala's computing node model, private
-        computing nodes need to mortgage PHA to register and receive rewards. In
-        order to lower the equipment participation threshold, we will provide a
-        mechanism similar to Polkadot validator-nominator, so that TEE equipment
-        can complete the mortgage threshold through the nomination of token
-        holders, and the two parties can freely negotiate the profit sharing
-        mechanism through the market.
+        In Phala's token economics model, worker nodes have to mine with some PHA staked. To lower miners' entrance barrier, Phala implements a risk-free lending protocol similar to Polkadot's NPoS. PHA holders can lend their token to worker operators in an interest rate agreed by both parties. Therefore an intrest rates market establishes.
       </div>
     ),
     zh: (
       <div>
-        Phala的计算节点模型中，隐私计算节点需要抵押PHA才能注册并获得奖励。为降低设备参与门槛，我们将提供类似于波卡验证人-提名人的机制即借贷协议，让TEE设备可以通过持币者提名的方式完成抵押门槛，双方可以通过市场自由协商分润机制{' '}
+        Phala的计算节点模型中，隐私计算节点需要抵押PHA才能注册并获得奖励。为降低设备参与门槛，我们将提供类似于波卡验证人-提名人的机制即借贷协议，让TEE设备可以通过持币者提名的方式完成抵押门槛，双方可以通过市场自由协商利率分配{' '}
       </div>
     ),
   }

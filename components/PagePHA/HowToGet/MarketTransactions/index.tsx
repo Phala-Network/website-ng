@@ -14,7 +14,7 @@ const MarketTransactions: React.FC<Props> = (props) => {
   return (
     <div className={classnames([styles.marketTransactions, className])}>
       <div className={styles.title}>
-        <I18n en='Market transactions' zh='市场交易'></I18n>
+        <I18n en='Trade on markets' zh='市场交易'></I18n>
       </div>
       <LinkList></LinkList>
     </div>

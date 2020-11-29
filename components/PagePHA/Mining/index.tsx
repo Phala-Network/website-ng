@@ -22,7 +22,7 @@ const Mining: React.FC<Props> = (props) => {
         <div>Rewards decay by 25% every 6 months</div>
         <br />
         <div>
-          20% ecological contribution donation of TEE mining Treasure rate: 20%
+          20% treasury endowment
         </div>
       </div>
     ),
@@ -37,7 +37,7 @@ const Mining: React.FC<Props> = (props) => {
         <br />
         <div>每6个月奖励衰减25%</div>
         <br />
-        <div>TEE挖矿的20%生态贡献捐献 Treasure rate: 20%</div>
+        <div>TEE挖矿的20%作为生态捐赠存入国库</div>
       </div>
     ),
   }

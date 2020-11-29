@@ -41,7 +41,7 @@ const FirstScreen: React.FC<Props> = () => {
         <div className={styles.description}>
           <I18n
             en='Blockchain Confidentiality by Trusted Computing'
-            zh='通过隐私计算帮助区块链保护秘密'></I18n>
+            zh='使用隐私计算保卫区块链上秘密'></I18n>
         </div>
         <div className={styles.buttons}>
           <Button

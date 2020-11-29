@@ -19,16 +19,16 @@ export const cardData = [
     content: {
       en: (
         <div>
-          <div>- Computing device supporting Intel SGX</div>
-          <div>- A certain PHA mortgage </div>
-          <div>- Public IP or access to the Phala mining pool protocol</div>
+          <div>- Intel SGX-enabled computer </div>
+          <div>- A certain amount of PHA staking </div>
+          <div>- Public IP or join a Phala mining pool</div>
         </div>
       ),
       zh: (
         <div>
           <div>- 支持英特尔 SGX 的计算设备</div>
           <div>- 抵押一定PHA</div>
-          <div>- 公网ip或接入Phala矿池协议</div>
+          <div>- 公网IP或接入Phala矿池协议</div>
         </div>
       ),
     },
@@ -53,14 +53,14 @@ export const cardData = [
     content: {
       en: (
         <div>
-          <div>- Computing device supporting Intel SGX</div>
-          <div>- High bandwidth, low latency network environment</div>
+          <div>- Intel SGX-enabled computer</div>
+          <div>- High quality network and high available power supply</div>
         </div>
       ),
       zh: (
         <div>
           <div>- 支持英特尔 SGX 的计算设备</div>
-          <div>- 高带宽、低延迟的网络环境</div>
+          <div>- 高带宽、低延迟的网络环境与高可用电源</div>
         </div>
       ),
     },
@@ -73,7 +73,7 @@ export const cardData = [
     title: {
       en: (
         <div>
-          Become a <b>Nominee</b>
+          Become a <b>Nominator</b>
         </div>
       ),
       zh: (
@@ -84,7 +84,7 @@ export const cardData = [
     },
     content: {
       en: <div>- Hold PHA</div>,
-      zh: <div>持有PHA</div>,
+      zh: <div>- 持有PHA</div>,
     },
   },
   {
@@ -96,12 +96,12 @@ export const cardData = [
     },
 
     title: {
-      en: <div>Support Phala Network </div>,
+      en: <div>Support Phala Network</div>,
       zh: <div>通过DOT或KSM支持Phala Network</div>,
     },
     content: {
-      en: <div>to become a Polkadot parachain through DOT or KSM </div>,
-      zh: <div>成为波卡平行链</div>,
+      en: <div>to become a parachain with your DOT or KSM</div>,
+      zh: <div>成为平行链</div>,
     },
   },
 ]

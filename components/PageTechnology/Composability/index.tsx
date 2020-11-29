@@ -12,30 +12,20 @@ const Composability: React.FC<Props> = (props) => {
     en: (
       <div>
         <div>
-          Phala built on Substrate has natural interoperability. Phala plans to
-          become a Polkadot parachain, which can serve the entire Polkadot
-          ecological parachain as well as other mainstream blockchain
-          developers.
+          Phala is built on Substrate. Therefore it's naturally interoperabile with Polkadot ecosystem. We plans to become a Polkadot parachain, which can serve the entire Polkadot parachain ecosystem, as well as other blockchain developers.
         </div>
         <div>
-          The biggest difference between the Phala network and similar consensus
-          layer/computing layer separation + TEE computing device network is
-          that Phala’s secret smart contracts are alternately designed and
-          compatible with the XCMP protocol messaging design to achieve mutual
-          invocation and mutual calling of smart contracts within the TEE
-          environment. effect
+          The highlight of Phala Network's heterogeneous architecture is that Phala confidential contracts are designed with interoperability in our mind. It's based on XCMP to achieve interoperability and composability between contract and blockchains.
         </div>
       </div>
     ),
     zh: (
       <div>
         <div>
-          基于 Substrate 搭建的 Phala 具有天然的互操作性，Phala
-          计划成为波卡平行链，不仅可以服务整个波卡生态平行链，还可以服务于其他主流区块链开发者
+          基于 Substrate 搭建的 Phala 具有天然的互操作性，Phala 计划成为波卡平行链，不仅可以服务波卡生态下的平行链，还可以服务于其他区块链开发者
         </div>
         <div>
-          Phala
-          Network与类似共识层/计算层分离+TEE计算设备网络的最大区别是，Phala的秘密智能合约通过异构设计和兼容XCMP协议的消息传递设计，实现运算在TEE环境内的智能合约完成互相调用和交互
+          Phala Network 与类似共识-计算层分离，以及TEE计算网络的最大区别是，Phala的保密合约采用了异构设计，并基于XCMP消息传递协议，实现了保密合约之间的互操作与可组合性
         </div>
       </div>
     ),

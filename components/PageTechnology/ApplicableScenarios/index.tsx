@@ -12,26 +12,26 @@ const ApplicableScenarios: React.FC<Props> = (props) => {
   const config = [
     {
       text: {
-        en: 'Proprietary function development of Defi and Dapp',
-        zh: 'Defi和Dapp的隐私功能开发',
+        en: 'Confidential DeFi and Dapps',
+        zh: '原生隐私 DeFi 和 Dapp',
       },
     },
     {
       text: {
-        en: 'Decentralized financial design',
-        zh: '去中心化金融设计',
+        en: 'Cross-chain Confidentiality Layer',
+        zh: '跨链数据保密层',
       },
     },
     {
       text: {
         en:
-          'Data collection, proprietary data protection, data transactions in a secure environment',
+          'Trustless Privacy Data Computation and Exchange',
         zh: '数据收集、隐私数据保护、安全环境下的数据交易',
       },
     },
     {
       text: {
-        en: 'Artificial Intelligence Medical',
+        en: 'Artificial Intelligence & Healthcare',
         zh: '人工智能医疗',
       },
     },

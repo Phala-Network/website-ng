@@ -35,7 +35,7 @@ const PageNode: React.FC<Props> = () => {
             <DetailPageButton
               className={styles.btn3}
               text={{
-                en: 'Wechat Group',
+                en: 'WeChat Group',
                 zh: '微信群',
               }}
             />
