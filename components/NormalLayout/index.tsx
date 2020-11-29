@@ -10,7 +10,7 @@ type Props = {
 }
 
 const NormalLayout: React.FC<Props> = (props) => {
-  const { newsletter = false } = props
+  const { newsletter = false, className } = props
 
   return (
     <>
@@ -19,7 +19,7 @@ const NormalLayout: React.FC<Props> = (props) => {
         {newsletter && <Newsletter></Newsletter>}
       </Header>
 
-      <div {...props}>{props.children}</div>
+      <div className={className}>{props.children}</div>
 
       <Footer></Footer>
     </>

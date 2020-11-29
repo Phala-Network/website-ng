@@ -31,7 +31,7 @@ const ProductSection: React.FC<Props> = () => {
                   const Component = value.image
 
                   return (
-                    <>
+                    <div key={key}>
                       <Component
                         onClick={() => setSelectedProduct(key)}
                         className={classnames([
@@ -47,7 +47,7 @@ const ProductSection: React.FC<Props> = () => {
                           className={styles.mobileCodePanel}
                           selectedProduct={key}></CodePanel>
                       )}
-                    </>
+                    </div>
                   )
                 })}
               </div>

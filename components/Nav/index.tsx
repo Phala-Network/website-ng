@@ -1,8 +1,6 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { MenuConfig } from '../../config'
-import { isClient } from '../../utils/isClient'
+import { useClient } from '../../hooks/useClient'
 import I18n from '../I18n'
 import LangSwitch from '../LangSwitch'
 import Logo from '../Logo'
@@ -15,8 +13,8 @@ import SubMenu from './SubMenu'
 type Props = {}
 
 const Nav: React.FC<Props> = () => {
-  const { locale } = useRouter()
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false)
+  const [isClient] = useClient()
 
   return (
     <div className={styles.bg}>
@@ -46,7 +44,7 @@ const Nav: React.FC<Props> = () => {
         </nav>
       </div>
 
-      {isClient() && (
+      {isClient && (
         <MobileMenu
           visible={mobileMenuVisible}
           onClose={() => setMobileMenuVisible(false)}></MobileMenu>
