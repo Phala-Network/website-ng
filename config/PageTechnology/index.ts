@@ -1,7 +1,6 @@
 export const PageTechnologyConfig = {
   title: {
-    en:
-      'Phala Network as a confidentiality layer for Web3.0 developers',
+    en: 'Phala Network as a confidentiality layer for Web3.0 developers',
     zh: 'Phala Network为Web3.0开发者提供隐私功能支持',
   },
 
@@ -12,8 +11,8 @@ export const PageTechnologyConfig = {
   },
 
   menuTitle: {
-    en: 'PHA',
-    zh: 'PHA',
+    en: 'Technology',
+    zh: '技术',
   },
   content: [
     {
