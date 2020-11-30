@@ -1,13 +1,13 @@
 export const PageMinerConfig = {
   title: {
-    en: 'Any CPU device that supports TEE can become a privacy computing node',
+    en: 'Any TEE-compatible device can become a privacy computing node',
     zh: '任何支持TEE的CPU设备，都可以成为隐私计算节点',
   },
 
   description: {
     en: [
-      'Distributed computing cloud, Phala’s incentives to computing nodes account for 70% of the PHA!',
-      'PHA has a clear total mining output, reward release speed, fair distribution rules, and small amount of calculation on the chain.',
+      'To bootstrap a trustless distribution cloud, the incentives to computing nodes account for 70% of the PHA supply!',
+      'PHA has a clear mining supply, release plan, fair distribution rules, and efficient on-chain token distribution algorithm.',
     ],
     zh: [
       '分布式计算云，Phala对计算节点的激励占有70%的PHA！',
@@ -46,7 +46,7 @@ export const PageMinerConfig = {
     {
       id: 'LoanAgreement',
       name: {
-        en: ['Loan', 'agreement '],
+        en: ['Lending', 'protocol '],
         zh: ['借贷', '协议'],
       },
     },

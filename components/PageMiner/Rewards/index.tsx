@@ -18,18 +18,18 @@ const config = [
     },
     description: {
       en:
-        'TEE devices can get rewards when they stay online, and all online devices are equally divided',
-      zh: 'TEE设备保持在线即可获得奖励，由所有在线设备平分',
+      'Standby worker nodes receive rewards proportionally based on their performance.',
+      zh: 'TEE设备保持在线即可获得奖励，由所有在线设备按性能分配',
     },
   },
   {
     title: {
-      en: 'Task rewards',
-      zh: '任务奖励',
+      en: 'Computation rewards',
+      zh: '计算奖励',
     },
     description: {
       en:
-        'Phala randomly distributes private computing tasks, which are obtained after online miners complete computing tasks',
+        'Selected workers are rewareded based on the randomly assigned computing tasks.',
       zh: 'Phala随机性分发隐私计算任务，在线矿工完成计算任务后获得',
     },
   },
@@ -42,13 +42,10 @@ const Rewards: React.FC<Props> = (props) => {
     en: (
       <div>
         <div>
-          The PHA that miners can dig out accounts for 70% of the initial
-          issuance, or 700 million.
+          70% of the initial supply (i.e. 700M) is reserved for mining.
         </div>
         <div>
-          The daily output is fixed at 720,000. Except for 144,000 of which are
-          automatically included in the financial library, all the rest are
-          divided equally by the miners according to their participation.
+          At beginning, it has a fixed amount of daily supply, 720,000 PHA. Among them 144,000 PHA goes into the treasury, and all the rest is divided proportionally to the miners.
         </div>
       </div>
     ),
@@ -56,8 +53,7 @@ const Rewards: React.FC<Props> = (props) => {
       <div>
         <div>矿工可以挖出的 PHA，占到了初始发行量的 70%，即 7 亿。</div>
         <div>
-          每日产量固定为 72 万，除其中 14.4
-          万自动纳入财政库外，其余所有均由矿工按参与方式平分。
+          初始每日产量固定为 72 万 PHA，除其中 14.4 万 PHA 自动纳入财政库外，其余所有均由矿工按参与方式分配。
         </div>
       </div>
     ),
@@ -76,15 +72,15 @@ const Rewards: React.FC<Props> = (props) => {
 
       <div className={styles.text}>
         <I18n
-          en='Phala designed two rewards for miners: online rewards and task rewards.'
-          zh='Phala 为矿工设计了两种奖励：在线奖励和任务奖励。'></I18n>
+          en='Phala has two kinds of reward for miners: online rewards and computation rewards.'
+          zh='Phala 为矿工设计了两种奖励：在线奖励和计算奖励。'></I18n>
       </div>
 
       <CardList imgPath={imgPath} config={config}></CardList>
 
       <div className={styles.text}>
         <I18n
-          en='For more details, such as attenuation rules and algorithms, please refer to the miner’s manual.'
+          en='For more details, such as the halving rule and the algorithm, please refer to the Miner Guide.'
           zh='更多细则，如衰减规则、算法，请查阅矿工手册。'></I18n>
       </div>
     </Card>

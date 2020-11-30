@@ -1,14 +1,14 @@
 export const PageTechnologyConfig = {
   title: {
     en:
-      'Phala Network provides multiple functional support for Web3.0 developers',
+      'Phala Network as a confidentiality layer for Web3.0 developers',
     zh: 'Phala Network为Web3.0开发者提供隐私功能支持',
   },
 
   description: {
     en:
-      'Phala is a Polkadot parachain, and developers can use confidential smart contracts in other Polkadot parachains',
-    zh: 'Phala是波卡平行链，开发者可以在其他波卡平行链使用机密智能合约',
+      'Phala is a Polkadot parachain, and developers can invoke and interact with confidential contracts on other Polkadot parachains',
+    zh: 'Phala是波卡平行链，开发者可以在其他波卡平行链使用保密智能合约',
   },
 
   menuTitle: {
@@ -27,15 +27,15 @@ export const PageTechnologyConfig = {
     {
       id: 'ThreePartyTrustedCommunication',
       name: {
-        en: ['Three-party', 'trusted', 'communication'],
-        zh: ['三方可信通信'],
+        en: ['Full lifetime', 'trusted', 'communication'],
+        zh: ['全生命周期可信通信'],
       },
       content: {},
     },
     {
       id: 'SeparationOfConsensusAndComputingLayer',
       name: {
-        en: ['Separation', 'of consensus and', 'computing layer'],
+        en: ['Separation', 'of consensus and', 'computation'],
         zh: ['共识与计算层分离'],
       },
       content: {},
@@ -43,15 +43,15 @@ export const PageTechnologyConfig = {
     {
       id: 'Composability',
       name: {
-        en: ['The composability', 'of cross-chain and', 'secret contracts'],
-        zh: ['跨链和秘密合约的可组合性'],
+        en: ['Composability', 'of blockchains', 'and contracts'],
+        zh: ['跨链和保密合约的可组合性'],
       },
       content: {},
     },
     {
       id: 'ApplicableScenarios',
       name: {
-        en: ['Applicable', 'scenarios'],
+        en: ['Applications', 'and use cases'],
         zh: ['适用场景'],
       },
       content: {},
@@ -59,8 +59,8 @@ export const PageTechnologyConfig = {
     {
       id: 'HowToUse',
       name: {
-        en: ['How to use'],
-        zh: ['如何使用'],
+        en: ['Your first', 'confidential', 'contract'],
+        zh: ['编写保密合约'],
       },
       content: {},
     },

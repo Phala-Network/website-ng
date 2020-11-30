@@ -6,7 +6,7 @@ export const PagePHAConfig = {
 
   description: {
     en:
-      'PHA is the functional token of Phala Network Pha is the currency of Phala.',
+      'PHA is the native utility token of Phala Network',
     zh: 'PHA是Phala Network的功能性代币',
   },
 
@@ -19,7 +19,7 @@ export const PagePHAConfig = {
     {
       id: 'TokenUtibility',
       name: {
-        en: ['Token Utibility'],
+        en: ['Token Utiility'],
         zh: ['代币功能'],
       },
     },

@@ -9,23 +9,23 @@ type Props = CardHeaderProps & CardContentProps
 
 const config = [
   {
-    en: 'Hardware: PC/laptop with Intel chip supporting SGX',
-    zh: '硬件：搭载支持 SGX 的英特尔芯片的电脑/笔记本电脑',
+    en: 'Hardware: Computer with Intel SGX enabled CPU',
+    zh: '硬件：搭载 Intel SGX 芯片的电脑',
   },
   {
-    en: 'Software: Ubuntu 18.04.5 + passed SGX mining test',
-    zh: '软件：Ubuntu 18.04.5 + 通过 SGX 挖矿测试',
+    en: 'Software: SGX-enabled Linux (REC. Ubuntu 18.04)',
+    zh: '软件：可通过SGX检测的Linux (推荐Ubuntu 18.04)',
   },
   {
     en:
-      'Public IP: required. But miners who don’t have access to Phala’s mining pool protocol',
-    zh: '公网ip：需要。但没有的矿工可以接入 Phala 的矿池协议',
+      'Public IP for solo mining, or join a Phala-enabled mining pool otherwise',
+    zh: '独立挖矿需要公网IP，其他矿工可以接入 Phala 矿池协议',
   },
 ]
 
 const text = {
-  en: 'A list of community-made mining test equipment that has passed SGX',
-  zh: '社区自制已通过 SGX 挖矿测试设备一览表',
+  en: 'A community maintained list of SGX-ready rigs',
+  zh: '一份由社区维护的已知可用 SGX 设备一览表',
 }
 
 const Environment: React.FC<Props> = (props) => {

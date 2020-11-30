@@ -11,7 +11,7 @@ export const config = [
     },
     description: {
       en:
-        'B.A., Jilin University. Former core developer of multiple blockchain projects such as permissionless chain, alliance chain, wallet, etc.',
+        'B.A., Jilin University. Core developer of multiple blockchain projects including permissionless chain, consortium blockchain, and wallets.',
       zh:
         '曾参与过公链、联盟链、钱包等项目的研发，具有丰富的区块链开发经验。吉林大学学士。',
     },
@@ -28,9 +28,9 @@ export const config = [
     },
     description: {
       en:
-        'Former EOS developer and TRON DApp developer. Independent web wallet developer. Believer of blockchain and encyption technology.',
+        'Believer of blockchain and cryptographic technology. Former EOS developer and TRON DApp developer. Independent web wallet developer.',
       zh:
-        '开发过EOS、波场Dapp应用，独立完成通用型网页钱包。区块链及加密技术爱好者。',
+        '区块链及加密技术爱好者。开发过EOS、波场Dapp应用，独立完成通用型网页钱包。',
     },
   },
   {

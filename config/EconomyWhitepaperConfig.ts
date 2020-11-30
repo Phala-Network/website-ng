@@ -1,6 +1,6 @@
 export const EconomyWhitepaperConfig = {
   name: {
-    en: 'Economy Whitepaper',
+    en: 'Token Economics',
     zh: '经济白皮书',
   },
   href: {

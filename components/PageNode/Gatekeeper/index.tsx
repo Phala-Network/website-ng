@@ -12,37 +12,26 @@ const Gatekeeper: React.FC<Props> = (props) => {
     en: (
       <div>
         <div>
-          In the confidentiality contract, all data is encrypted and stored. In
-          order to ensure that the miners can use the data at any time, we need
-          the role of Gatekeeper to be online at all times and hold the key
-          securely.
+          All the data in a confidential contract is end-to-end encrypted. To ensure the availability of the contarct states, Gatekeepers are responsible for the key management and thus must be always online.
         </div>
         <div>
-          Gatekeeper packs new blocks in the Phala network and manages the key
-          distribution in the system, so it needs to be online at all times.
+          Gatekeepers manage the contract keys and produce new block candidates. High availability is required.
         </div>
         <div>
-          A Gatekeeper must run the Gatekeeper client on a trusted device with
-          high availability and high bandwidth. On each block, the node must be
-          prepared to receive a new block on the submitted parachain. This
-          process involves accepting, verifying, and republishing candidate
-          blocks.
+          The node operator has to run a Gatekeeper on a trusted-computing enabled device with high availability and high bandwidth. At each block, Gatekeepers maintain the key rotation, prepare to receive user transactions, and produce a new parachain block candidate. This process involves re-encryption, and accepting, verifying, and publishing candidate blocks.
         </div>
       </div>
     ),
     zh: (
       <div>
         <div>
-          在保密合约中所有数据都加密保存，为了保证矿工随时可以使用数据我们需要
-          Gatekeeper 这一角色时刻在线并安全持有密钥。
+          保密合约中的所有数据都加密保存，为了保证工作节点随时可以访问加密数据，我们需要 Gatekeeper 这一角色时刻在线并安全管理密钥。
         </div>
         <div>
-          Gatekeeper 在 Phala
-          网络里打包新区块、并管理系统中的密钥分配，因此需要时刻在线。
+          Gatekeeper 在 Phala Network 中负责管理系统中的密钥分配以及打包新区块，因此需要时刻在线。
         </div>
         <div>
-          一个 Gatekeeper 必须在高可用、高带宽的可信设备上运行 Gatekeeper
-          客户端。每个区块上，节点都必须准备接收一个已提交的平行链上的新区块。这个过程涉及接受、验证、再发布候选区块。
+          必须在高可用、高带宽、且具备可信计算能力的设备上运行 Gatekeeper 节点。每个区块，Gatekeeper 都必须维护合约密钥的轮转，接收用户交易，并产生新的平行链区块。这个过程涉及重加密、接受、验证、再发布候选区块。
         </div>
       </div>
     ),

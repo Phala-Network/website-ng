@@ -12,11 +12,7 @@ const ConsensusMechanism: React.FC<Props> = (props) => {
     en: (
       <div>
         <div>
-          With reference to Polkadot, Phala uses the NPos inflation model to
-          issue PHA tokens to Gatekeeper and nominators for rewards. Phala’s
-          inflation number and inflation rate are not fixed, but through
-          sophisticated algorithm design, the number of token mortgages is
-          reasonably guided to achieve consensus security and token liquidity.
+          Inspired by Polkadot, Phala adopts the NPoS inflation model to issue PHA tokens as the incentives for Gatekeeper and nominators. Phala’s inflation rate is not fixed, but through a sophisticated algorithm design, the amount of the staked token is reasonably guided to achieve a balance between the staking security and the token liquidity.
         </div>
         <div>
           <br />
@@ -25,21 +21,16 @@ const ConsensusMechanism: React.FC<Props> = (props) => {
           <b>NPoS consensus algorithm:</b>
         </div>
         <div>
-          NPoS (Nominated Proof of Stake) is a consensus algorithm designed by
-          Polkadot based on the PoS algorithm. Validators run nodes to
-          participate in the production and confirmation of blocks. Nominators
-          can pledge their tokens to obtain the right to nominate. And nominate
-          the validators you trust and get rewards.
+          NPoS (Nominated Proof of Stake) is a consensus algorithm designed by Polkadot. Validators run nodes to participate in the production and finalization of blocks. Nominators can stake their tokens to obtain the right to nominate the trusted validators.
         </div>
         <div>
           <br />
         </div>
         <div>
-          <b>PHA’s inflationary economy:</b>
+          <b>PHA inflation:</b>
         </div>
         <div>
-          Phala expects an annual inflation rate of 5%. In a 40% mortgage rate,
-          the average annualized return of mortgage tokens is 12.5%
+          Phala expects an annual inflation rate of 5%. With a 40% staking rate, the APR is 12.5%.
         </div>
       </div>
     ),

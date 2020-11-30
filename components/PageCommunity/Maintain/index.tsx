@@ -10,7 +10,7 @@ const config = [
     zh: '矿工',
     url: {
       en: 'https://wiki.phala.network/en-us/docs/poc3/',
-      zh: 'https://wiki.phala.network/en-us/docs/poc3/',
+      zh: 'https://wiki.phala.network/zh-cn/docs/poc3/',
     },
   },
   {

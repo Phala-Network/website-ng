@@ -87,6 +87,15 @@ const FloatMenu: React.FC<Props> = (props) => {
     }
   }, [locale])
 
+  function addI18nSpaces(langItems: {[locale :string]: string[] | string}) {
+    const fixed = {};
+    for (const k in langItems) {
+      const v = langItems[k];
+      fixed[k] = (typeof v === 'string' || k === 'cn') ? v : v.join(' ');
+    }
+    return fixed;
+  }
+
   return (
     <div
       id='floatMenu'
@@ -116,7 +125,7 @@ const FloatMenu: React.FC<Props> = (props) => {
               ])}>
               <div className={styles.index}>0{index + 1}</div>
               <div>
-                <I18n {...item.name}></I18n>
+                <I18n {...addI18nSpaces(item.name)}></I18n>
               </div>
             </a>
           )

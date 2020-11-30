@@ -26,7 +26,7 @@ const HeaderButtons: React.FC<Props> = (props) => {
         href={'https://wiki.phala.network/en-us/docs/poc3/'}
         text={{
           en: 'Mining Tutorial',
-          zh: '挖坑教程',
+          zh: '挖矿教程',
         }}
       />
 

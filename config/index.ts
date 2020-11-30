@@ -4,7 +4,7 @@ import { WikiConfig } from './WikiConfig'
 
 export const TechWhitepaperConfig = {
   name: {
-    en: 'Tech Whitepaper',
+    en: 'Techical Whitepaper',
     zh: '技术白皮书',
   },
   href: {
@@ -15,7 +15,7 @@ export const TechWhitepaperConfig = {
 
 export const MaintainMenuConfig = {
   name: {
-    en: 'Maintain',
+    en: 'Participate',
     zh: '参与',
   },
   subMenu: [
@@ -65,7 +65,7 @@ export const MaintainMenuConfig = {
 export const ExplorerConfig = {
   name: {
     en: 'Explorer',
-    zh: '浏览器',
+    zh: '区块链浏览器',
   },
   href: {
     en: 'https://phala.subscan.io',
@@ -75,7 +75,7 @@ export const ExplorerConfig = {
 
 export const DarkWalletConfig = {
   name: {
-    en: 'DarkWallet',
+    en: 'Secret Wallet',
     zh: '暗钱包',
   },
   href: {
@@ -107,7 +107,7 @@ export const ResourcesMenuConfig = {
     {
       name: {
         en: 'Testnet',
-        zh: '测试网',
+        zh: '测试网络',
       },
       href: {
         en: 'https://app.phala.network/legacy.html',
