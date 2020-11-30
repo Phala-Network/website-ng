@@ -16,8 +16,8 @@ export const PageNodeConfig = {
   },
 
   menuTitle: {
-    en: 'Gatekeeper node and Nominator',
-    zh: '守门人节点和提名人',
+    en: 'Gatekeeper and Nominator',
+    zh: '守门人和提名人',
   },
 
   content: [
