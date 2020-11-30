@@ -4,7 +4,7 @@ import { WikiConfig } from './WikiConfig'
 
 export const TechWhitepaperConfig = {
   name: {
-    en: 'Techical Whitepaper',
+    en: 'Technical Whitepaper',
     zh: '技术白皮书',
   },
   href: {
