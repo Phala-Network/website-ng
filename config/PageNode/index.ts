@@ -33,7 +33,7 @@ export const PageNodeConfig = {
       id: 'Nominator',
       name: {
         en: ['Nominator'],
-        zh: ['提名者'],
+        zh: ['提名人'],
       },
       content: {},
     },
