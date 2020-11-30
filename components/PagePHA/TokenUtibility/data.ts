@@ -5,7 +5,8 @@ export const data = [
       zh: '获取可信计算资源',
     },
     content: {
-      en: 'CPU time, on-chain storage, network bandwidth, off-chain storage, and more resources',
+      en:
+        'CPU time, on-chain storage, network bandwidth, off-chain storage, and more resources',
       zh:
         '所有 Phala 可信计算的算力购买、链上资源、链下数据存储，均使用PHA结算',
     },
@@ -17,7 +18,7 @@ export const data = [
     },
     content: {
       en:
-        'Phala provides a wide-ranged infrastructure including cross-chain confidential widgets, multiparty privacy computing protocol, and trustless general-purpose computing platform. All these features are accessible with PHA',
+        'Phala provides a wide-ranged infrastructure including cross-chain confidential widgets, and trustless general-purpose computing platform. All these features are accessible with PHA',
       zh:
         'Phala 提供了各式各样的基础设施，包括跨链数据保密层、多方隐私计算协议、去信任化的通用计算平台等。而 PHA 是以上功能的结算货币。',
     },
