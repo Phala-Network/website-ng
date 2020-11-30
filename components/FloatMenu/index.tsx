@@ -87,13 +87,15 @@ const FloatMenu: React.FC<Props> = (props) => {
     }
   }, [locale])
 
-  function addI18nSpaces(langItems: {[locale :string]: string[] | string}) {
-    const fixed = {};
-    for (const k in langItems) {
-      const v = langItems[k];
-      fixed[k] = (typeof v === 'string' || k === 'cn') ? v : v.join(' ');
+  function addI18nSpaces(langItems: { [locale: string]: string[] | string }) {
+    if (Array.isArray(langItems.en)) {
+      return {
+        ...langItems,
+        en: langItems.en.join(' '),
+      }
     }
-    return fixed;
+
+    return langItems
   }
 
   return (
