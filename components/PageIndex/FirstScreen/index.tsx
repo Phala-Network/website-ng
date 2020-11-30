@@ -13,27 +13,9 @@ const FirstScreen: React.FC<Props> = () => {
     zh: ['Phala Network', '给区块链打上马赛克'],
   }
 
-  useEffect(() => {
-    document.querySelector('video').play()
-  }, [])
-
   return (
     <section className={classnames([styles.firstScreen])}>
-      <div
-        className={styles.video}
-        dangerouslySetInnerHTML={{
-          __html: `
-          <video
-          preload="none"
-          id="video"
-          playsinline
-          webkit-playsinline
-          autoplay
-          muted
-          loop>
-          <source src='/video/phala1.mp4' type='video/mp4' />
-        </video>`,
-        }}></div>
+      <div className={styles.bg}></div>
       <div className={classnames(['container', styles.content])}>
         <div className={styles.title}>
           <I18n render={(str) => <div key={str}>{str}</div>} {...title}></I18n>
