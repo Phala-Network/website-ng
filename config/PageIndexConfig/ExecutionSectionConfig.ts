@@ -1,6 +1,6 @@
 export const ExecutionSectionConfig = {
   buttonText: {
-    en: 'Learn more about the developers',
+    en: 'MORE ABOUT THE DEVELOPERS',
     zh: '了解更多关于开发者的信息',
   },
 
@@ -10,8 +10,7 @@ export const ExecutionSectionConfig = {
   },
 
   descriptionText: {
-    en:
-      'Empowered by TEE, Phala is secure against system-level attacks',
+    en: 'Empowered by TEE, Phala is secure against system-level attacks',
     zh: '硬件级隔离是兼顾信任和保密的关键',
   },
 
