@@ -19,12 +19,11 @@ const config = [
   },
   {
     title: {
-      en: 'Phala Watchman Program',
+      en: 'Phala Spokesman Program',
       zh: 'Phala 发言人计划',
     },
     description: {
-      en:
-        'Grow with Phala and be an opinion leader in the Web3.0 age',
+      en: 'Grow with Phala and be an opinion leader in the Web3.0 age',
       zh: 'PHA & 流量扶持，助你出道成为 Web3.0 时代的意见领袖',
     },
     url:
