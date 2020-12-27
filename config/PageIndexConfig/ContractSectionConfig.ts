@@ -41,7 +41,7 @@ export const ContractSectionConfig = {
     {
       image: '/images/indexPage/contractSection/icon-interoperatable.svg',
       name: {
-        en: 'Interoperatable',
+        en: 'Interoperable',
         zh: '可组合与互操作',
       },
       description: {
