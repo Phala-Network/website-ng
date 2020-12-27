@@ -5,7 +5,7 @@ export const ExecutionSectionConfig = {
   },
 
   titleText: {
-    en: ['Temper-proof, ', 'trustless', 'execution'],
+    en: ['Tamper-proof, ', 'trustless', 'execution'],
     zh: ['TEE', '提供去信任化环境'],
   },
 
