@@ -2,13 +2,13 @@ export const newsletterConfig = [
   {
     link: {
       en:
-        'https://medium.com/phala-network/1-000-000-pha-announcing-1605-race-gkol-workshop-and-bounties-6319d3d62032',
-      zh: 'https://mp.weixin.qq.com/s/83xA-lBG56a7xQZfYwq7ig',
+        'https://medium.com/phala-network/phala-community-roundup-2020-74d57c112ed7',
+      zh: 'https://mp.weixin.qq.com/s/yLgGtVs-GnSsnS8ArMBKIw',
     },
     news: {
       en:
-        '🔥1,000,000 PHA: Announcing 1605 Race, GKOL Workshop, and Bounties🔥',
-      zh: '🔥1,000,000 PHA：1605竞赛与Vendetta激励计划将于11月27日启动🔥',
+        'A map for all Phala newcomers and an answer for all Phala believers.',
+      zh: '2020 年度 Phala 社区报告出炉 🗒️',
     },
   },
 ]
