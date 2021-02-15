@@ -30,7 +30,7 @@ export const ContractSectionConfig = {
     {
       image: '/images/indexPage/contractSection/icon-verifieable.svg',
       name: {
-        en: 'Verifieable',
+        en: 'Verifiable',
         zh: '非验证则不可信',
       },
       description: {
