@@ -6,7 +6,7 @@ export const config = {
   Web3Analytics: {
     image: Web3AnalyticsImage,
     link:
-      'https://github.com/Phala-Network/phala-blockchain/blob/master/pruntime/enclave/src/contracts/web3analytics.rs',
+      'https://github.com/Phala-Network/phala-blockchain/blob/master/standalone/pruntime/enclave/src/contracts/web3analytics.rs',
     text: {
       en:
         'Time to drop the centralized analytics tools! Instead of sending your user\'s privacy to the Internet cartels, W3A SDK enforces users\' 100% control over the privacy. With the SDK, any web service can become a part of Web3.0 in just a few minutes.',
@@ -15,7 +15,7 @@ export const config = {
     },
     code: {
       link:
-        'https://github.com/Phala-Network/phala-blockchain/blob/master/pruntime/enclave/src/contracts/web3analytics.rs#L674-L695',
+        'https://github.com/Phala-Network/phala-blockchain/blob/master/standalone/pruntime/enclave/src/contracts/web3analytics.rs#L674-L695',
       content: (
 `fn update_total_stat(&mut self, total_stat: HourlyPageViewStat, count_str: String) {
   self.total_stat = HourlyPageViewStat::default();
