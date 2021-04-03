@@ -47,9 +47,9 @@ export const config = {
       'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/diem.rs',
     text: {
       en:
-        'A bridge between Diem and Polkadot, helping the Libra users take back privacy rights in the real Web3.0 world.',
+        'A bridge between Diem and Polkadot, helping the Diem users take back privacy rights in the real Web3.0 world.',
       zh:
-        '连接 Diem 与 Polkadot 的桥梁，让 Libra 用户在真正的 Web3.0 世界中重获隐私',
+        '连接 Diem 与 Polkadot 的桥梁，让 Diem 用户在真正的 Web3.0 世界中重获隐私',
     },
     code: {
       link:
