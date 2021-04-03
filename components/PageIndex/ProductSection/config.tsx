@@ -6,7 +6,7 @@ export const config = {
   Web3Analytics: {
     image: Web3AnalyticsImage,
     link:
-      'https://github.com/Phala-Network/phala-blockchain/blob/master/standalone/pruntime/enclave/src/contracts/web3analytics.rs',
+      'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/data_plaza.rs',
     text: {
       en:
         'Time to drop the centralized analytics tools! Instead of sending your user\'s privacy to the Internet cartels, W3A SDK enforces users\' 100% control over the privacy. With the SDK, any web service can become a part of Web3.0 in just a few minutes.',
@@ -15,7 +15,7 @@ export const config = {
     },
     code: {
       link:
-        'https://github.com/Phala-Network/phala-blockchain/blob/master/standalone/pruntime/enclave/src/contracts/web3analytics.rs#L674-L695',
+        'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/data_plaza.rs',
       content: (
 `fn update_total_stat(&mut self, total_stat: HourlyPageViewStat, count_str: String) {
   self.total_stat = HourlyPageViewStat::default();
@@ -44,16 +44,16 @@ export const config = {
   pLibra: {
     image: PLibraImage,
     link:
-      'https://github.com/Phala-Network/plibra-experimental/blob/master/src/main.rs',
+      'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/diem.rs',
     text: {
       en:
-        'A bridge between Libra and Polkadot, helping the Libra users take back privacy rights in the real Web3.0 world.',
+        'A bridge between Diem and Polkadot, helping the Libra users take back privacy rights in the real Web3.0 world.',
       zh:
-        '连接 Libra 与 Polkadot 的桥梁，让 Libra 用户在真正的 Web3.0 世界中重获隐私',
+        '连接 Diem 与 Polkadot 的桥梁，让 Libra 用户在真正的 Web3.0 世界中重获隐私',
     },
     code: {
       link:
-        'https://github.com/Phala-Network/plibra-experimental/blob/master/src/main.rs#L298-L341',
+        'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/diem.rs',
       content: (
 `pub fn verify_transactions(
     &mut self,
@@ -101,7 +101,7 @@ export const config = {
   DarkpoolAndDarkwallet: {
     image: DarkpoolAndDarkwalletImage,
     link:
-      'https://github.com/Phala-Network/phala-blockchain/blob/master/pruntime/enclave/src/contracts/balances.rs',
+      'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/balances.rs',
     text: {
       en:
         'The elegant solution of sensitive information in the DeFi world; a dark pool built with ZKP + TEE on Kusama Network',
@@ -110,7 +110,7 @@ export const config = {
     },
     code: {
       link:
-        'https://github.com/Phala-Network/phala-blockchain/blob/master/pruntime/enclave/src/contracts/balances.rs#L137-L174',
+        'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/balances.rs',
       content: (
 `let o = AccountIdWrapper(origin.clone());
 if let Some(src_amount) = self.accounts.get_mut(&o) {
