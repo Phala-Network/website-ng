@@ -35,8 +35,15 @@ const PageNode: React.FC<Props> = () => {
             <DetailPageButton
               className={styles.btn3}
               text={{
-                en: 'WeChat Group',
+                en: 'Telegram',
                 zh: '微信群',
+              }}
+              href={{
+                en: 'https://t.me/phalanetwork',
+                zh: '#',
+              }}
+              qrCodeSrc={{
+                zh: '/images/PageNode/wechatQrCode.png'
               }}
             />
 
@@ -44,8 +51,8 @@ const PageNode: React.FC<Props> = () => {
               type='link'
               className={styles.btn2}
               href={{
-                en: 'https://wiki.phala.network/en-us/docs/poc2/',
-                zh: 'https://wiki.phala.network/zh-cn/docs/poc2/ ',
+                en: 'https://wiki.phala.network/en-us/docs/gatekeeper/',
+                zh: 'https://wiki.phala.network/zh-cn/docs/gatekeeper/ ',
               }}
               text={WikiConfig.name}
             />
