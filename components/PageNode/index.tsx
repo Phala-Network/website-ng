@@ -5,6 +5,7 @@ import { WikiConfig } from '../../config/WikiConfig'
 import DetailPageButton from '../DetailPageButton'
 import DetailPageHeader from '../DetailPageHeader'
 import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
+import I18nRender from '../I18nRender'
 import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
@@ -32,20 +33,15 @@ const PageNode: React.FC<Props> = () => {
               text={EconomyWhitepaperConfig.name}
             />
 
-            <DetailPageButton
-              className={styles.btn3}
-              text={{
-                en: 'Telegram',
-                zh: '微信群',
-              }}
-              href={{
-                en: 'https://t.me/phalanetwork',
-                zh: '#',
-              }}
-              qrCodeSrc={{
-                zh: '/images/PageNode/wechatQrCode.png'
-              }}
-            />
+            <I18nRender
+              en={
+                <DetailPageButton
+                  className={styles.btn3}
+                  text='Telegram'
+                  href='https://t.me/phalanetwork'
+                />
+              }
+              zh=""></I18nRender>
 
             <DetailPageButton
               type='link'
