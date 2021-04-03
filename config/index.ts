@@ -21,22 +21,22 @@ export const MaintainMenuConfig = {
   subMenu: [
     {
       name: {
-        en: 'Node',
-        zh: '节点',
-      },
-      href: {
-        en: '/node',
-        zh: '/node',
-      },
-    },
-    {
-      name: {
         en: 'Miner',
         zh: '矿工',
       },
       href: {
         en: '/miner',
         zh: '/miner',
+      },
+    },
+    {
+      name: {
+        en: 'Node',
+        zh: '节点',
+      },
+      href: {
+        en: '/node',
+        zh: '/node',
       },
     },
     {
@@ -110,8 +110,8 @@ export const ResourcesMenuConfig = {
         zh: '测试网络',
       },
       href: {
-        en: 'https://app.phala.network/legacy.html',
-        zh: 'https://app.phala.network/legacy.html',
+        en: 'https://poc3.phala.network/polkadotjs/#/explorer',
+        zh: 'https://poc3.phala.network/polkadotjs/#/explorer',
       },
     },
     {
