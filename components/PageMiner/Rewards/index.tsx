@@ -7,6 +7,7 @@ import styles from './index.module.scss'
 import classnames from 'classnames'
 import I18n from '../../I18n'
 import CardList from '../../TextCardList'
+import TagA from '../../TagA'
 
 type Props = CardHeaderProps & CardContentProps
 
@@ -18,7 +19,7 @@ const config = [
     },
     description: {
       en:
-      'Standby worker nodes receive rewards proportionally based on their performance.',
+        'Standby worker nodes receive rewards proportionally based on their performance.',
       zh: 'TEE设备保持在线即可获得奖励，由所有在线设备按性能分配',
     },
   },
@@ -41,11 +42,11 @@ const Rewards: React.FC<Props> = (props) => {
   const content = {
     en: (
       <div>
+        <div>70% of the initial supply (i.e. 700M) is reserved for mining.</div>
         <div>
-          70% of the initial supply (i.e. 700M) is reserved for mining.
-        </div>
-        <div>
-          At beginning, it has a fixed amount of daily supply, 720,000 PHA. Among them 144,000 PHA goes into the treasury, and all the rest is divided proportionally to the miners.
+          At beginning, it has a fixed amount of daily supply, 720,000 PHA.
+          Among them 144,000 PHA goes into the treasury, and all the rest is
+          divided proportionally to the miners.
         </div>
       </div>
     ),
@@ -53,7 +54,8 @@ const Rewards: React.FC<Props> = (props) => {
       <div>
         <div>矿工可以挖出的 PHA，占到了初始发行量的 70%，即 7 亿。</div>
         <div>
-          初始每日产量固定为 72 万 PHA，除其中 14.4 万 PHA 自动纳入财政库外，其余所有均由矿工按参与方式分配。
+          初始每日产量固定为 72 万 PHA，除其中 14.4 万 PHA
+          自动纳入财政库外，其余所有均由矿工按参与方式分配。
         </div>
       </div>
     ),
@@ -79,9 +81,30 @@ const Rewards: React.FC<Props> = (props) => {
       <CardList imgPath={imgPath} config={config}></CardList>
 
       <div className={styles.text}>
-        <I18n
-          en='For more details, such as the halving rule and the algorithm, please refer to the Miner Guide.'
-          zh='更多细则，如衰减规则、算法，请查阅矿工手册。'></I18n>
+        <I18nRender
+          en={
+            <>
+              For more details, such as the halving rule and the algorithm,
+              please refer to the{' '}
+              <TagA
+                className={styles.link}
+                href='https://wiki.phala.network/en-us/'>
+                Miner Guide
+              </TagA>
+              .
+            </>
+          }
+          zh={
+            <>
+              更多细则，如衰减规则、算法，请查阅
+              <TagA
+                className={styles.link}
+                href='https://www.yuque.com/phala/mining'>
+                矿工手册
+              </TagA>
+              。
+            </>
+          }></I18nRender>
       </div>
     </Card>
   )
