@@ -7,7 +7,7 @@ type Props = {}
 
 const data = [
   {
-    name: 'Biance',
+    name: 'Binance',
     href: 'https://www.binance.com/en/trade/PHA_BUSD',
   },
   {
