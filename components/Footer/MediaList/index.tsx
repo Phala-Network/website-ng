@@ -5,14 +5,14 @@ import IconMedium from '../icons/IconMedium'
 import IconTelegram from '../icons/IconTelegram'
 import IconTwitter from '../icons/IconTwitter'
 import IconWechat from '../icons/IconWechat'
-import IconWeibo from '../icons/IconWeibo'
+import IconDiscord from '../icons/IconDiscord'
 import classnames from 'classnames'
 import styles from './index.module.scss'
 import { GithubConfig } from '../../../config/GithubConfig'
 import { TelegramConfig } from '../../../config/TelegramConfig'
 import { BBSConfig } from '../../../config/BBSConfig'
 import { MediumConfig } from '../../../config/MediumConfig'
-import { WeiboConfig } from '../../../config/WeiboConfig'
+import { DiscordConfig } from '../../../config/DiscordConfig'
 import { TwitterConfig } from '../../../config/TwitterConfig'
 import Image from 'next/image'
 import TagA from '../../TagA'
@@ -66,10 +66,10 @@ const MediaList: React.FC<Props> = () => {
         </TagA>
       </div>
 
-      {/* Weibo */}
+      {/* Discord */}
       <div className={styles.item}>
-        <TagA href={WeiboConfig.url}>
-          <IconWeibo></IconWeibo>
+        <TagA href={DiscordConfig.href}>
+          <IconDiscord></IconDiscord>
         </TagA>
       </div>
     </div>
