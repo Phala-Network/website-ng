@@ -26,10 +26,10 @@ export const TimelineSectionConfig = {
         year: 2019,
         quarter: 3,
         content: {
-          en: ['Whitepaper released', 'pLIBRA won the Web3 Foundation Grant'],
+          en: ['Whitepaper released', 'pLibra ( Now is pDiem ) won the Web3 Foundation Grant'],
           zh: [
             '发布技术白皮书',
-            'Phala 旗下首个产品 pLIBRA 获得 Web3 基金会 Grant 奖金',
+            'Phala 旗下首个产品 pLibra（现更名为pDiem） 获得 Web3 基金会 Grant 奖金',
           ],
         },
       },
@@ -68,51 +68,74 @@ export const TimelineSectionConfig = {
           ],
         },
       },
-    ],
-    doing: [
       {
         year: 2020,
         quarter: 4,
         content: {
-          en: ['Testnet Vendetta', ' Pre-mainnet: Darth Vader'],
+          en: ['Testnet Vendetta', 'Completed the planned stress-testing of the computing task module for the PoC3 stage'],
           zh: [
             '上线 Phala POC-3 “Vendetta测试网”',
-            '上线 预备主网 Darth Vader',
+            '完成 POC-3 阶段计算任务模块的相关测试',
           ],
         },
       },
       {
         year: 2021,
-        newest: true,
+        quarter: 1,
+        content: {
+          en: ['PHA got listed on Binance、OKEx、KuCoin'],
+          zh: [
+            'PHA 上线币安、OKEx、KuCoin',
+          ],
+        },
+      },
+    ],
+    doing: [
+      {
+        year: 2021,
+        quarter: 2,
         content: {
           en: [
-            {
-              title: 'Kusama parachain auction',
-              text: [
-                'Launch Phala on Kusama',
-                'Decentralize Phala phase by phase',
-              ],
-            },
-            {
-              title: 'Polkadot parachain auction',
-              text: ['Launch Phala on Polkadot'],
-            },
+            'Become a parachain on Kusama, launch pre-mainnet and K-PHA',
+            'TEE Mining system and Staking PHA for TEE begin to work',
+            'Invisible Wallet for all Polkadot cross-chain asstest',
+            'Phala Governance and council begin to work',
           ],
           zh: [
-            {
-              title: '第一批Kusama Slot Auction 事件后',
-              text: [
-                'Phala Network成为Kusama平行链',
-                '从POA(权限化管理)到去中心化状态过度',
-              ],
-            },
-            {
-              title: '第一批Polkadot Slot Auction 事件后',
-              text: [
-                'Phala Network成为Polkadot平行链',
-                '从Kusama平行链迁移至Polkadot平行链',
-              ],
-            },
+            '成为 Kusama 平行链，上线预备主网',
+            '开启 TEE 挖矿和 PHA 抵押',
+            '上线暗钱包，可以服务于所有波卡跨链资产',
+            '开启民主治理和议会选举',
+          ],
+        },
+      },
+      {
+        year: 2021,
+        quarter: 3,
+        content: {
+          en: [
+            'Private DEFI and NFT apps',
+            'Private Bridges, like pDiem, pBTC, pBTG…',
+            'Phala become Polkadot parachain after winning Polkadot slot',
+          ],
+          zh: [
+            '上线隐私DEFI和NFT',
+            '上线隐私桥，例如 pDiem、pBTC、pBTG…',
+            'Phala 主网成为 Polkadot 平行链',
+          ],
+        },
+      },
+      {
+        year: 2021,
+        quarter: 4,
+        content: {
+          en: [
+            'Privacy Cloud begins to serve nodes and developers',
+            'Confidential smart contract ready to use',
+          ],
+          zh: [
+            '开启隐私云服务，节点服务商、开发者可以通过 Phala 隐私云部署程序',
+            '上线隐私智能合约',
           ],
         },
       },
