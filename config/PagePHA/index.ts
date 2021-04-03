@@ -19,7 +19,7 @@ export const PagePHAConfig = {
     {
       id: 'TokenUtibility',
       name: {
-        en: ['Token Utiility'],
+        en: ['Token Utility'],
         zh: ['代币功能'],
       },
     },

@@ -29,7 +29,7 @@ const config = [
     },
     description: {
       en:
-        'Selected workers are rewareded based on the randomly assigned computing tasks.',
+        'Selected workers are rewarded based on the randomly assigned computing tasks.',
       zh: 'Phala随机性分发隐私计算任务，在线矿工完成计算任务后获得',
     },
   },

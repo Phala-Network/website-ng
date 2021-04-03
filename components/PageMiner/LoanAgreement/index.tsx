@@ -11,7 +11,7 @@ const LoanAgreement: React.FC<Props> = (props) => {
   const content = {
     en: (
       <div>
-        In Phala's token economics model, worker nodes have to mine with some PHA staked. To lower miners' entrance barrier, Phala implements a risk-free lending protocol similar to Polkadot's NPoS. PHA holders can lend their token to worker operators in an interest rate agreed by both parties. Therefore an intrest rates market establishes.
+        In Phala's token economics model, worker nodes have to mine with some PHA staked. To lower miners' entrance barrier, Phala implements a risk-free lending protocol similar to Polkadot's NPoS. PHA holders can lend their token to worker operators at an interest rate agreed by both parties, leading to the creation of an interest rates market.
       </div>
     ),
     zh: (
