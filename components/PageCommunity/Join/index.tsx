@@ -8,6 +8,7 @@ import IconForum from './icons/IconForum'
 import IconTelegram from './icons/IconTelegram'
 import IconWechat from './icons/IconWechat'
 import IconWiki from './icons/IconWiki'
+import IconMedium from './icons/IconMedium'
 import I18n from '../../I18n'
 import { GithubConfig } from '../../../config/GithubConfig'
 import { TwitterConfig } from '../../../config/TwitterConfig'
@@ -16,6 +17,7 @@ import { DiscordConfig, DiscordDevChannel } from '../../../config/DiscordConfig'
 import { BBSConfig } from '../../../config/BBSConfig'
 import { WikiConfig } from '../../../config/WikiConfig'
 import { WechatConfig } from '../../../config/WechatConfig'
+import { MediumConfig } from '../../../config/MediumConfig'
 import { useRouter } from 'next/router'
 import TagA from '../../TagA'
 
@@ -106,6 +108,17 @@ const Join: React.FC<CardProps> = (props) => {
           </div>
           <div className={styles.name}></div>
           <I18n en='WeChat' zh='微信'></I18n>
+        </TagA>
+      </div>
+
+      {/* Medium */}
+      <div className={styles.item}>
+        <TagA href={MediumConfig.url} className={styles.inner}>
+          <div className={styles.icon}>
+            <IconMedium></IconMedium>
+          </div>
+          <div className={styles.name}></div>
+          <I18n en='Medium' zh='Medium'></I18n>
         </TagA>
       </div>
     </Card>

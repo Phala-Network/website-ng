@@ -25,8 +25,8 @@ const config = [
     en: 'Nominator',
     zh: '提名人',
     url: {
-      en: 'https://wiki.phala.network/en-us/docs/poc2/',
-      zh: 'https://wiki.phala.network/en-us/docs/poc2/',
+      en: 'https://www.yuque.com/phala/mining/qp9euu',
+      zh: 'https://wiki.phala.network/en-us/docs/gatekeeper/',
     },
   },
 ]
