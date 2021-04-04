@@ -1,5 +1,5 @@
 export const TimelineSectionConfig = {
-  doneTitle: { zh: '已完成', en: "What we've done" },
+  doneTitle: { zh: '已完成', en: "What we’ve done" },
   doingTitle: {
     en: 'What we’re doing',
     zh: '进行中',
