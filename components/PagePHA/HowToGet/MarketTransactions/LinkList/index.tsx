@@ -7,24 +7,20 @@ type Props = {}
 
 const data = [
   {
+    name: 'Binance',
+    href: 'https://www.binance.com/en/trade/PHA_BUSD',
+  },
+  {
     name: 'Huobi',
     href: 'https://www.huobi.com/zh-cn/exchange/pha_usdt',
   },
   {
-    name: 'Gate',
-    href: 'https://www.gate.io/trade/PHA_USDT',
+    name: 'OKEx',
+    href: 'https://www.okex.com/trade-spot/pha-usdt',
   },
   {
-    name: 'Biki',
-    href: 'https://www.biki.com/zh_CN/trade/PHA_USDT',
-  },
-  {
-    name: 'Bibox',
-    href: 'https://www.bibox.com/v2/exchange?pair=PHA_USDT',
-  },
-  {
-    name: 'Hotbit',
-    href: 'https://www.hotbit.io/exchange?symbol=PHA_USDT',
+    name: 'KuCoin',
+    href: 'https://trade.kucoin.com/PHA-USDT',
   },
   {
     name: 'Uniswap',
@@ -32,16 +28,13 @@ const data = [
       'https://app.uniswap.org/#/swap?outputCurrency=0x6c5ba91642f10282b576d91922ae6448c9d52f4e',
   },
   {
-    name: 'MXC',
-    href: 'https://www.mxc.ai/trade/easy#PHA_USDT',
+    name: '1inch',
+    href:
+      'https://1inch.exchange/#/ETH/PHA?network=1',
   },
   {
-    name: 'HBTC',
-    href: 'https://www.bhex.com/exchange/PHA/USDT',
-  },
-  {
-    name: 'Bkex',
-    href: 'https://www.bkex.com/#/trade/PHA_USDT ',
+    name: 'Gate',
+    href: 'https://www.gate.io/trade/PHA_USDT',
   },
 ]
 

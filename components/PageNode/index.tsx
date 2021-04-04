@@ -5,6 +5,7 @@ import { WikiConfig } from '../../config/WikiConfig'
 import DetailPageButton from '../DetailPageButton'
 import DetailPageHeader from '../DetailPageHeader'
 import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
+import I18nRender from '../I18nRender'
 import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
@@ -32,20 +33,22 @@ const PageNode: React.FC<Props> = () => {
               text={EconomyWhitepaperConfig.name}
             />
 
-            <DetailPageButton
-              className={styles.btn3}
-              text={{
-                en: 'WeChat Group',
-                zh: '微信群',
-              }}
-            />
+            <I18nRender
+              en={
+                <DetailPageButton
+                  className={styles.btn3}
+                  text='Telegram'
+                  href='https://t.me/phalanetwork'
+                />
+              }
+              zh=""></I18nRender>
 
             <DetailPageButton
               type='link'
               className={styles.btn2}
               href={{
-                en: 'https://wiki.phala.network/en-us/docs/poc2/',
-                zh: 'https://wiki.phala.network/zh-cn/docs/poc2/ ',
+                en: 'https://wiki.phala.network/en-us/docs/gatekeeper/',
+                zh: 'https://wiki.phala.network/zh-cn/docs/gatekeeper/ ',
               }}
               text={WikiConfig.name}
             />

@@ -13,24 +13,41 @@ const HeaderButtons: React.FC<Props> = (props) => {
       <DetailPageButton
         className={styles.btn1}
         type='link'
-        href={'https://wiki.phala.network/en-us/docs/poc3/'}
+        href={{
+          en: 'https://t.me/phalaminer',
+          zh: '#',
+        }}
         text={{
-          en: 'Mining Pool Protocol',
-          zh: '矿池协议',
+          en: 'Telegram Group',
+          zh: '微信群',
+        }}
+        qrCodeSrc={{
+          zh: '/images/PageMiner/wechatQrCode.png',
         }}
       />
 
       <DetailPageButton
         className={styles.btn2}
         type='link'
-        href={'https://wiki.phala.network/en-us/docs/poc3/'}
+        href={{
+          en: 'https://wiki.phala.network/en-us/docs/poc3/',
+          zh: 'https://www.yuque.com/phala/mining/',
+        }}
         text={{
           en: 'Mining Tutorial',
           zh: '挖矿教程',
         }}
       />
 
-      <DetailPageButton className={styles.btn3} type='link' {...WikiConfig} />
+      <DetailPageButton 
+        className={styles.btn3} 
+        type='link' 
+        {...WikiConfig}
+        href={{
+          en: 'https://wiki.phala.network/en-us/docs/poc3/',
+          zh: 'https://wiki.phala.network/zh-cn/docs/poc3/',
+        }}
+      />
 
       <DetailPageButton
         className={styles.btn4}
