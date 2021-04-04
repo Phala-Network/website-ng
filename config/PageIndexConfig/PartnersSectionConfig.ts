@@ -74,5 +74,15 @@ export const PartnersSectionConfig = {
       link: 'https://www.paka.fund/1',
       logo: '/images/indexPage/partnersSection/partner-PAKA.png',
     },
+    {
+      name: 'Incuba',
+      link: 'https://www.incuba.capital/',
+      logo: '/images/indexPage/partnersSection/partner-Incuba.png',
+    },
+    {
+      name: 'HappyBlock',
+      link: 'https://happyblocklabs.com/',
+      logo: '/images/indexPage/partnersSection/partner-HappyBlock.png',
+    },
   ],
 }
