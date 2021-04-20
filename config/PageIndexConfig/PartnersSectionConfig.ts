@@ -10,11 +10,6 @@ export const PartnersSectionConfig = {
   },
   partners: [
     {
-      name: 'Web3',
-      link: 'https://web3.foundation/',
-      logo: '/images/indexPage/partnersSection/partner-Web3.png',
-    },
-    {
       name: 'Polkadot',
       link: 'https://polkadot.network/',
       logo: '/images/indexPage/partnersSection/partner-Polkadot.png',
