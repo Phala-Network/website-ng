@@ -46,7 +46,7 @@ export const ContractSectionConfig = {
       },
       description: {
         en:
-          'Smart contract is 90% less useful without composability. Phala is the only confidential contract protocol that keeps interoperability and composability.',
+          'Smart contracts are 90% less useful without composability. Phala is the only confidential contract protocol that keeps interoperability and composability.',
         zh: '失去可组合与互操作性，智能合约便毫无意义。Phala 保留了它们，并赋予了保密性。',
       },
     },
@@ -58,7 +58,7 @@ export const ContractSectionConfig = {
       },
       description: {
         en:
-          'As a Substrate-based blockchain, Phala aim to serve any blockchain through Polkadot XCMP.',
+          'As a Substrate-based blockchain, Phala aims to serve any blockchain through Polkadot XCMP.',
         zh: '基于Substrate开发，通过Polkadot的XCMP为其他区块链提供保密合约服务',
       },
     },

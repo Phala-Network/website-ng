@@ -15,7 +15,7 @@ const Composability: React.FC<Props> = (props) => {
           Phala is built on Substrate. Therefore it's naturally interoperabile with Polkadot ecosystem. We plans to become a Polkadot parachain, which can serve the entire Polkadot parachain ecosystem, as well as other blockchain developers.
         </div>
         <div>
-          The highlight of Phala Network's heterogeneous architecture is that Phala confidential contracts are designed with interoperability in our mind. It's based on XCMP to achieve interoperability and composability between contract and blockchains.
+          The highlight of Phala Network's heterogeneous architecture is that Phala confidential contracts are designed with interoperability in mind. It's based on XCMP to achieve interoperability and composability between contract and blockchains.
         </div>
       </div>
     ),
