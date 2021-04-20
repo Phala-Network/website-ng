@@ -22,8 +22,8 @@ const PartnersSection: React.FC<Props> = (props) => {
             <div className={styles.partners}>
               <PartnerRow from={0} to={2}></PartnerRow>
               <PartnerRow from={3} to={7}></PartnerRow>
-              <PartnerRow from={8} to={11}></PartnerRow>
-              <PartnerRow from={12} to={12}></PartnerRow>
+              <PartnerRow from={8} to={12}></PartnerRow>
+              <PartnerRow from={13} to={13}></PartnerRow>
             </div>
           )}
 
@@ -34,7 +34,7 @@ const PartnersSection: React.FC<Props> = (props) => {
                 title={PartnersSectionConfig.title}
               />
 
-              <PartnerRow from={0} to={12}></PartnerRow>
+              <PartnerRow from={0} to={13}></PartnerRow>
             </div>
           )}
 
@@ -53,6 +53,7 @@ const PartnersSection: React.FC<Props> = (props) => {
               <PartnerRow from={7} to={8}></PartnerRow>
               <PartnerRow from={9} to={10}></PartnerRow>
               <PartnerRow from={11} to={12}></PartnerRow>
+              <PartnerRow from={13} to={13}></PartnerRow>
             </div>
           )}
 

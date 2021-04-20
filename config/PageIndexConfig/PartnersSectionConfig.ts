@@ -10,11 +10,6 @@ export const PartnersSectionConfig = {
   },
   partners: [
     {
-      name: 'Web3',
-      link: 'https://web3.foundation/',
-      logo: '/images/indexPage/partnersSection/partner-Web3.png',
-    },
-    {
       name: 'Polkadot',
       link: 'https://polkadot.network/',
       logo: '/images/indexPage/partnersSection/partner-Polkadot.png',
@@ -73,6 +68,16 @@ export const PartnersSectionConfig = {
       name: 'PAKA',
       link: 'https://www.paka.fund/1',
       logo: '/images/indexPage/partnersSection/partner-PAKA.png',
+    },
+    {
+      name: 'Incuba',
+      link: 'https://www.incuba.capital/',
+      logo: '/images/indexPage/partnersSection/partner-Incuba.png',
+    },
+    {
+      name: 'HappyBlock',
+      link: 'https://happyblocklabs.com/',
+      logo: '/images/indexPage/partnersSection/partner-HappyBlock.png',
     },
   ],
 }
