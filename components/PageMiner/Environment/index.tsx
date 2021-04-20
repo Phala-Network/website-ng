@@ -4,6 +4,7 @@ import { CardHeaderProps } from '../../Card/CardHeader'
 import Card from '../../Card'
 import styles from './index.module.scss'
 import I18n from '../../I18n'
+import TagA from '../../TagA'
 
 type Props = CardHeaderProps & CardContentProps
 
@@ -28,6 +29,11 @@ const text = {
   zh: '一份由社区维护的已知可用 SGX 设备一览表',
 }
 
+const link = {
+  en: 'https://docs.google.com/spreadsheets/u/1/d/10MDwhiYGvkP0LZqy0hs8msn7XCKhZjJ6cB_RAgnpvV0/edit#gid=0',
+  zh: 'https://www.yuque.com/fagephalanetwork/phalatothemoon/kp0rv0',
+}
+
 const Environment: React.FC<Props> = (props) => {
   return (
     <Card
@@ -50,7 +56,9 @@ const Environment: React.FC<Props> = (props) => {
         })}
       </div>
       <div className={styles.text}>
-        <I18n {...text}></I18n>
+        <TagA href={link} className={styles.link}>
+          <I18n {...text}></I18n>
+        </TagA>
       </div>
     </Card>
   )

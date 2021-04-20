@@ -9,7 +9,7 @@ type Props = CardHeaderProps & CardContentProps
 
 const Cooperative: React.FC<Props> = (props) => {
   const content = {
-    en: <div>comming soon...</div>,
+    en: <div>coming soon...</div>,
     zh: <div>即将来临...</div>,
   }
 

@@ -12,13 +12,13 @@ const Gatekeeper: React.FC<Props> = (props) => {
     en: (
       <div>
         <div>
-          All the data in a confidential contract is end-to-end encrypted. To ensure the availability of the contarct states, Gatekeepers are responsible for the key management and thus must be always online.
+          All the data in a confidential contract is end-to-end encrypted. To ensure the availability of the contract states, Gatekeepers are responsible for the key management and must always be online.
         </div>
         <div>
           Gatekeepers manage the contract keys and produce new block candidates. High availability is required.
         </div>
         <div>
-          The node operator has to run a Gatekeeper on a trusted-computing enabled device with high availability and high bandwidth. At each block, Gatekeepers maintain the key rotation, prepare to receive user transactions, and produce a new parachain block candidate. This process involves re-encryption, and accepting, verifying, and publishing candidate blocks.
+          The node operator has to run a Gatekeeper on a trusted-computing enabled device with high availability and high bandwidth. At each block, Gatekeepers maintain the key rotation, prepare to receive user transactions and produce a new parachain block candidate. This process involves re-encryption, verification, acceptance and publication of candidate blocks.
         </div>
       </div>
     ),

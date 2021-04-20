@@ -2,13 +2,13 @@ export const newsletterConfig = [
   {
     link: {
       en:
-        'https://medium.com/phala-network/phala-community-roundup-2020-74d57c112ed7',
-      zh: 'https://mp.weixin.qq.com/s/yLgGtVs-GnSsnS8ArMBKIw',
+        'https://medium.com/phala-network/phala-transparent-and-private-global-computation-cloud-2d80c70ad1e9',
+      zh: 'https://mp.weixin.qq.com/s/duidJdYQgzudCnGqDKtXSg',
     },
     news: {
       en:
-        'A map for all Phala newcomers and an answer for all Phala believers.',
-      zh: '2020 年度 Phala 社区报告出炉 🗒️',
+        'Phala Network: Transparent and Private Global Computation Cloud in Web3.0',
+      zh: '一文读懂Phala Network——web3.0 时代的隐私计算云平台',
     },
   },
 ]

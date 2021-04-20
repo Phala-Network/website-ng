@@ -1,6 +1,31 @@
 @import '../../styles/variables.scss';
 
 .button {
+  position: relative;
+
+  .qrCodeContainer {
+    position: absolute;
+    top: 40px;
+    left: -1px;
+    border: 2px solid #d1ff52;
+    z-index: 100;
+    display: none;
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+  }
+
+  .qrCode {
+    width: 190px;
+    height: 190px;
+  }
+  
+  &:hover {
+    .qrCodeContainer {
+      display: block;
+    }
+  }
+
   @media (max-width: $md) {
     width: 180px !important;
     // font-size: 12px !important;
