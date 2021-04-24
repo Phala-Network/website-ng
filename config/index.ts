@@ -110,8 +110,8 @@ export const ResourcesMenuConfig = {
         zh: '测试网络',
       },
       href: {
-        en: 'https://poc3.phala.network/polkadotjs/#/explorer',
-        zh: 'https://poc3.phala.network/polkadotjs/#/explorer',
+        en: 'https://poc4.phala.network/polkadotjs/#/explorer',
+        zh: 'https://poc4.phala.network/polkadotjs/#/explorer',
       },
     },
     {
