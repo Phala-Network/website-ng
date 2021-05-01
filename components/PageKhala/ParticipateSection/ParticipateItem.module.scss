@@ -1,0 +1,101 @@
+@import '../../../styles/variables.scss';
+
+.parcitipateItem {
+  margin: 0 24px;
+  display: flex;
+}
+
+.left {
+  color: $color-primary;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+
+  @media (max-width: $md) {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.left {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.numberSvg {
+  top: -20px;
+  width: 100px;
+  position: relative;
+
+  @media (max-width: $md) {
+    top: 0;
+    width: 72px;
+  }
+}
+
+.number {
+  font: bold 150px Lato;
+  paint-order: stroke;
+  stroke: #000000;
+  stroke-width: 3px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  fill: $color-primary;
+  position: relative;
+}
+
+.right {
+  width: 180px;
+  margin-left: 24px;
+
+  a:link {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: $xxl) {
+    width: 240px;
+  }
+
+  @media (max-width: $xl) {
+    width: 180px;
+  }
+
+  @media (max-width: $md) {
+    width: auto;
+  }
+}
+
+.rightBottom {
+  padding-top: 24px;
+
+  @media (max-width: $xl) {
+    padding-top: 0;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  
+  @media (max-width: $md) {
+    margin: 12px 0;
+  }
+}
+
+.description {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (max-width: $md) {
+    margin: 0;
+  }
+}

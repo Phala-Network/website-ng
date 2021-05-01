@@ -7,6 +7,27 @@ const Logo: React.FC<Props> = () => {
   return (
     <div className={styles.logo}>
       <svg
+        class={styles.khala}
+        width="22" 
+        height="23" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path 
+          fill-rule="evenodd" 
+          clip-rule="evenodd" 
+          d="M6 12h6V6H6v6zM12 18h6v-6h-6v6z" 
+          fill="#D9D9D9" 
+        />
+        <path 
+          fill-rule="evenodd" 
+          clip-rule="evenodd" 
+          d="M16 23h6v-6h-6v6zM0 23h6V0H0v23zM12 6h10V0H12v6z" 
+          fill="#D9D9D9" 
+        />
+      </svg>
+      <svg
+        class={styles.phala}
         width='23'
         height='23'
         viewBox='0 0 23 23'

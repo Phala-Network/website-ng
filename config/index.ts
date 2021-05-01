@@ -114,6 +114,7 @@ export const ResourcesMenuConfig = {
         zh: 'https://poc4.phala.network/polkadotjs/#/explorer',
       },
     },
+    ExplorerConfig,
     {
       name: {
         en: 'Medium',
@@ -138,6 +139,17 @@ export const TechnologyConfig = {
   },
 }
 
+export const KhalaConfig = {
+  name: {
+    en: 'Khala',
+    zh: 'Khala',
+  },
+  href: {
+    en: '/khala',
+    zh: '/khala',
+  },
+}
+
 export const PHAConfig = {
   name: {
     en: 'What is PHA',
@@ -149,6 +161,28 @@ export const PHAConfig = {
   },
 }
 
+export const LearnMoreConfig = {
+  name: {
+    en: 'Learn More',
+    zh: '了解更多',
+  },
+  href: {
+    en: '#',
+    zh: '#',
+  },
+}
+
+export const CrowdloanConfig = {
+  name: {
+    en: 'Join Crowdloan (Coming)',
+    zh: '参与众贷（即将到来）',
+  },
+  href: {
+    en: '#',
+    zh: '#',
+  },
+}
+
 export const MenuConfig: {
   name: { [key: string]: string }
   subMenu?: {
@@ -156,7 +190,7 @@ export const MenuConfig: {
     href: { [key: string]: string }
   }[]
   href?: { [key: string]: string }
-}[] = [PHAConfig, TechnologyConfig, MaintainMenuConfig, ResourcesMenuConfig]
+}[] = [KhalaConfig, PHAConfig, TechnologyConfig, MaintainMenuConfig, ResourcesMenuConfig]
 
 const config = {}
 
