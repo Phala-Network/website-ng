@@ -7,6 +7,7 @@ const Logo: React.FC<Props> = () => {
   return (
     <div className={styles.logo}>
       <svg
+        // @ts-ignore: For svg element.
         class={styles.khala}
         width="22" 
         height="23" 
@@ -27,6 +28,7 @@ const Logo: React.FC<Props> = () => {
         />
       </svg>
       <svg
+        // @ts-ignore: For svg element.
         class={styles.phala}
         width='23'
         height='23'
