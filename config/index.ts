@@ -75,7 +75,7 @@ export const ExplorerConfig = {
 
 export const DarkWalletConfig = {
   name: {
-    en: 'Secret Wallet',
+    en: 'PhaSe Wallet',
     zh: '暗钱包',
   },
   href: {
