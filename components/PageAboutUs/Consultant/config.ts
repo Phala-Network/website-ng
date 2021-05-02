@@ -11,7 +11,7 @@ export const config = [
     },
     description: {
       en:
-        'Sandro Gorduladze is an angel investor and partner at HASH CIB, a digital asset investment company covering mostly EMEA and Asian regions. Sandro built Research department at HASH that made a name for itself for its in-depth reports. Prior to joining Hash Sandro worked at PwC Russia, advising TMT sector companies on tax.',
+        'Sandro Gorduladze is the CIO at Gagra Ventures, an early-stage investment firm. Prior to launching the fund, Sandro ran Research at HASH CIB, a digital asset financial services company that made a name for itself with in-depth research reports. Prior to joining Hash Sandro worked at PwC Russia, advising TMT sector companies on tax.',
       zh:
         'Sandro Gorduladze是HASH CIB——一家主要覆盖EMEA和亚洲地区的数字资产投资公司——的天使投资人和合伙人。 Sandro在HASH设立了研究部门，该部门因其深入的报告而声名大噪。 加入HASH之前，Sandro曾在俄罗斯普华永道工作，为TMT行业的公司提供税务咨询。',
     },
