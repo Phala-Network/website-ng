@@ -9,7 +9,7 @@ type Props = {}
 
 const FirstScreen: React.FC<Props> = () => {
   const title = {
-    en: ['Global', 'Private', 'Compute Cloud'],
+    en: ['Global', 'Confidential', 'Compute Cloud'],
     zh: ['Phala Network', '给区块链打上马赛克'],
   }
 
