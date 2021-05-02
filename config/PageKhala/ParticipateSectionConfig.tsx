@@ -1,6 +1,6 @@
 export const ParticipateSectionConfig = [
   {
-    icon: '/images/pageKhala/participantIcon1.svg',
+    icon: '/images/pageKhala/participant-icon-1.svg',
     title: {
       en: 'Learn',
       zh: '了解更多',
@@ -11,7 +11,7 @@ export const ParticipateSectionConfig = [
     }
   },
   {
-    icon: '/images/pageKhala/participantIcon2.svg',
+    icon: '/images/pageKhala/participant-icon-2.svg',
     title: {
       en: 'Follow us',
       zh: '关注我们',
@@ -22,7 +22,7 @@ export const ParticipateSectionConfig = [
     }
   },
   {
-    icon: '/images/pageKhala/participantIcon3.svg',
+    icon: '/images/pageKhala/participant-icon-3.svg',
     title: {
       en: 'Unbond your KSM',
       zh: '解除 KSM 抵押',
@@ -33,7 +33,7 @@ export const ParticipateSectionConfig = [
     }
   },
   {
-    icon: '/images/pageKhala/participantIcon4.svg',
+    icon: '/images/pageKhala/participant-icon-4.svg',
     title: {
       en: 'Participate',
       zh: '参与',

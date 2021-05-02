@@ -167,8 +167,8 @@ export const LearnMoreConfig = {
     zh: '了解更多',
   },
   href: {
-    en: '#',
-    zh: '#',
+    en: 'https://medium.com/phala-network/phalas-kusama-slot-auction-strategy-34cb93e07f3a',
+    zh: 'https://mp.weixin.qq.com/s/1iaLE_8Q2LjlgUsxW6LtWA',
   },
 }
 
@@ -182,6 +182,18 @@ export const CrowdloanConfig = {
     zh: '#',
   },
 }
+
+export const SlotAuctionConfig = {
+  name: {
+    en: 'Slot Auction',
+    zh: '插槽竞拍',
+  },
+  href: {
+    en: '/khala',
+    zh: '/khala',
+  },
+}
+
 
 export const MenuConfig: {
   name: { [key: string]: string }

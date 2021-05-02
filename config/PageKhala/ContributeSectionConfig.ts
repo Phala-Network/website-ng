@@ -1,6 +1,6 @@
 export const ContributeSectionConfig = [
   {
-    icon: '/images/pageKhala/contributeIcon1.svg',
+    icon: '/images/pageKhala/contribute-icon-1.svg',
     title: {
       en: '1KSM = 100PHA',
       zh: '1KSM = 100PHA',
@@ -11,7 +11,7 @@ export const ContributeSectionConfig = [
     }
   },
   {
-    icon: '/images/pageKhala/contributeIcon2.svg',
+    icon: '/images/pageKhala/contribute-icon-2.svg',
     title: {
       en: '15,000,000 PHA Rewards',
       zh: '15,000,000 PHA 奖励',
@@ -22,7 +22,7 @@ export const ContributeSectionConfig = [
     }
   },
   {
-    icon: '/images/pageKhala/contributeIcon3.svg',
+    icon: '/images/pageKhala/contribute-icon-3.svg',
     title: {
       en: 'Quick rewards available',
       zh: '奖励快速释放',
@@ -33,7 +33,7 @@ export const ContributeSectionConfig = [
     }
   },
   {
-    icon: '/images/pageKhala/contributeIcon4.svg',
+    icon: '/images/pageKhala/contribute-icon-4.svg',
     title: {
       en: 'Refferal Rewards',
       zh: '邀请奖励',

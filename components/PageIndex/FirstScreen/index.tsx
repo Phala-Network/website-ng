@@ -3,7 +3,7 @@ import Button from '../../Button'
 import styles from './index.module.scss'
 import classnames from 'classnames'
 import I18n from '../../I18n'
-import { DarkWalletConfig, ExplorerConfig } from '../../../config'
+import { DarkWalletConfig, SlotAuctionConfig } from '../../../config'
 
 interface Props {}
 
@@ -33,8 +33,8 @@ const FirstScreen = (x: Props) => {
             type='link'
             color='primary'></Button>
           <Button
-            text={ExplorerConfig.name}
-            href={ExplorerConfig.href}
+            text={SlotAuctionConfig.name}
+            href={SlotAuctionConfig.href}
             className={styles.button}
             hasArrowIcon
             type='link'

@@ -37,14 +37,8 @@ const FirstScreen: React.FC<Props> = () => {
         <div className={styles.description}>
           <p>
             <I18n 
-              en="Khala Network's native token will be K-PHA,"
-              zh="Khala Network 将会以 K-PHA 作为网络通证，"
-            />
-          </p>
-          <p>
-            <I18n 
-              en={<>which can be swapped with ERC20-PHA  and Phala native token PHA at a <span className={styles.highlight}>1:1</span> rate.</>}
-              zh={<>K-PHA 是 PHA 通证的 Kusama 版本，与 ERC20-PHA 和主网 PHA 可以进行 <span className={styles.highlight}>1:1</span> 兑换。</>}
+              en={<>Khala Network's native token will be K-PHA, which can be swapped with ERC20-PHA and Phala native token PHA at a <span className={styles.highlight}>1:1</span> rate.</>}
+              zh={<>Khala Network 将会以 K-PHA 作为网络通证，K-PHA 是 PHA 通证的 Kusama 版本，与 ERC20-PHA 和主网 PHA 可以进行 <span className={styles.highlight}>1:1</span> 兑换。</>}
             />
           </p>
         </div>

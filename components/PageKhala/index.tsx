@@ -20,7 +20,7 @@ const PageKhala = (x: Props) => {
   }, [])
 
   return (
-    <NormalLayout newsletter={true}>
+    <NormalLayout>
       <PageTitle zh='Khala' en='Khala'></PageTitle>
       <FirstScreen />
       <ContributeSection />
