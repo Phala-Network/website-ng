@@ -20,7 +20,7 @@ const FirstScreen: React.FC<Props> = () => {
 
   const subtitleSecondLine = {
     en: ['Canary for Phala'],
-    zh: ['Phala的预备主网'],
+    zh: ['Phala 的预备主网'],
   }
 
   return (
