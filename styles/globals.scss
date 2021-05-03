@@ -8,6 +8,17 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body,
+body.phala {
+  --color-primary: #d1ff52;
+  --color-primary-dark: #9dc431;
+}
+
+body.khala {
+  --color-primary: #03ffff;
+  --color-primary-dark: #02cccc;
+}
+
 a {
   color: inherit;
   text-decoration: none;

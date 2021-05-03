@@ -1,6 +1,6 @@
 // color
-$color-primary: #d1ff52;
-$color-primary-dark: #9dc431;
+$color-primary: var(--color-primary);
+$color-primary-dark: var(--color-primary-dark);
 $color-black: #0a0a0a;
 $color-gray: #d9d9d9;
 $color-bg-black: #191919;
@@ -25,3 +25,4 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1240px;
+$xxl: 1400px;
