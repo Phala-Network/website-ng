@@ -20,9 +20,10 @@ const PartnersSection: React.FC<Props> = (props) => {
         <div className={classnames([styles.content, 'row'])}>
           {breakpoint === 'desktop' && (
             <div className={styles.partners}>
-              <PartnerRow from={0} to={3}></PartnerRow>
-              <PartnerRow from={4} to={8}></PartnerRow>
-              <PartnerRow from={9} to={13}></PartnerRow>
+              <PartnerRow from={0} to={2}></PartnerRow>
+              <PartnerRow from={3} to={7}></PartnerRow>
+              <PartnerRow from={8} to={12}></PartnerRow>
+              <PartnerRow from={13} to={13}></PartnerRow>
             </div>
           )}
 
