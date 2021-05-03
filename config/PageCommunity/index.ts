@@ -6,7 +6,7 @@ export const PageCommunityConfig = {
 
   description: {
     en:
-      'A trustworthy and sustainable community with believers of privacy, Polkadot and Web3.0',
+      'A commited and vibrant community who believe in privacy, Polkadot, and Web 3.0',
 
     zh: '与全球隐私、波卡、Web3.0信仰者，共同打造一个可信且可持续的社区',
   },

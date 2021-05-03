@@ -29,6 +29,10 @@
     font-size: 24px;
     line-height: 29px;
 
+    &::placeholder {
+      color: $color-primary-dark;
+    }
+
     @media (max-width: $sm) {
       font-size: 18px;
       height: 45px;

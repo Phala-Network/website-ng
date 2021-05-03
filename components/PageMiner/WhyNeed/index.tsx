@@ -11,7 +11,7 @@ const WhyNeed: React.FC<Props> = (props) => {
   const content = {
     en: (
       <div>
-        The highly secure and scalable TEE network is the backbone of Phala Network confidential contracts. That's why the computation power of the worker nodes with TEE-capable CPUs are critical to the network. Therefore, like PoW blockchains, Phala miners need to run a “mining client” to rent their computing power to the network for rewards.
+        The backbone of the Phala network is a highly scalable distributed network of worker nodes powered by TEE-capable CPU's, working to ensure the secure, reliable operation of confidential Smart Contracts.
       </div>
     ),
     zh: (
