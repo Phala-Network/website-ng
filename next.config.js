@@ -6,4 +6,5 @@ module.exports = {
     defaultLocale: 'en',
   },
   poweredByHeader: false,
+  target: 'serverless'
 }
