@@ -18,13 +18,13 @@ const SeparationOfConsensusAndComputingLayer: React.FC<Props> = (props) => {
         en={
           <div>
             <div>
-              Phala adopts a distributed computing architecture that separates computation and consensus. Thanks to the flexibility of the TEE network, Phala achieves grate scalability that is capable for confidential cloud computing.
+              Phala adopts a distributed computing architecture that separates computation and consensus. Thanks to the flexibility of the TEE network, Phala facilitates highly scalable confidential cloud computing.
             </div>
             <div>
-              Phala’s adopts the NPoS consensus consistent with Polkadot. The NPoS (Nominated Proof of Stake) consensus algorithm is used to elect the validator set that can make the system safer and more efficient. The Phragmén algorithm prevents any group from being over-representative or under-representative.
+              Phala utilises Polkadot's Nominated Proof of Stake (NPoS) algorithm to ensure that the elected validator set is optimised for system security and efficiency. The Phragmén algorithm prevents any group from being over-representative or under-representative.
             </div>
             <div>
-              Phala’s computation layer adopts permissionless node registration, staking economics and random scheduling. Computation tasks are be randomly dispatched to the TEE around the world. The design of confidential contract guarantees the data availability.
+              Phala’s computation layer adopts permissionless node registration, staking economics and random scheduling. Computation tasks are randomly and securely distributed across the global TEE network. The design of confidential contract guarantees the data availability.
             </div>
           </div>
         }

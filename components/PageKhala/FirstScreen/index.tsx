@@ -14,12 +14,12 @@ const FirstScreen: React.FC<Props> = () => {
   }
 
   const subtitleFirstLine = {
-    en: ['Parachain for Kusama'],
+    en: ['Kusama Parachain'],
     zh: ['Kusama 上的隐私平行链'],
   }
 
   const subtitleSecondLine = {
-    en: ['Canary for Phala'],
+    en: ['Phala’s Canary Network'],
     zh: ['Phala 的预备主网'],
   }
 
@@ -36,8 +36,8 @@ const FirstScreen: React.FC<Props> = () => {
         </div>
         <div className={styles.description}>
           <p>
-            <I18n 
-              en={<>Khala Network's native token will be K-PHA, which can be swapped with ERC20-PHA and Phala native token PHA at a <span className={styles.highlight}>1:1</span> rate.</>}
+            <I18n
+              en={<>K-PHA will be Khala’s native token, swappable with ERC20-PHA and Phala native PHA at <span className={styles.highlight}>1:1</span>.</>}
               zh={<>Khala Network 将会以 K-PHA 作为网络通证，K-PHA 是 PHA 通证的 Kusama 版本，与 ERC20-PHA 和主网 PHA 可以进行 <span className={styles.highlight}>1:1</span> 兑换。</>}
             />
           </p>

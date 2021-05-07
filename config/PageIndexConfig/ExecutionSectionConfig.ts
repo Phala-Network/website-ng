@@ -35,7 +35,7 @@ export const ExecutionSectionConfig = {
       },
       description: {
         en:
-          'The integrity of code and data is guaranteed. Only authorization actions are allowed.',
+          'The integrity of the code and data is guaranteed. Only authorized actions are allowed.',
         zh: '区块链与TEE远程验证互相确认，保障代码和数据可信',
       },
     },
@@ -47,7 +47,7 @@ export const ExecutionSectionConfig = {
       },
       description: {
         en:
-          'Phala confidential contract is compatible to multiple standards including Intel SGX and AMD SEV, etc.',
+          'Phala confidential contracts are compatible with multiple standards including Intel SGX and AMD SEV, etc.',
         zh: '通过兼容多种TEE标准，包括Intel SGX、AMD SEV等标准',
       },
     },
