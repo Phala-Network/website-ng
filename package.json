@@ -13,7 +13,7 @@
     "classnames": "^2.2.6",
     "highlight.js": "^10.4.0",
     "lodash.debounce": "^4.0.8",
-    "next": "10.0.1",
+    "next": "^10.2.0",
     "perfect-scrollbar": "^1.5.0",
     "react": "17.0.1",
     "react-dom": "^17.0.1",

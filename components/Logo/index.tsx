@@ -29,7 +29,7 @@ const Logo: React.FC<Props> = () => {
       </svg>
       <svg
         // @ts-ignore: For svg element.
-        class={styles.phala}
+        className={styles.phala}
         width='23'
         height='23'
         viewBox='0 0 23 23'
