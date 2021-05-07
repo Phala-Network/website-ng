@@ -18,7 +18,7 @@ export const data = [
     },
     content: {
       en:
-        'Phala provides a wide-ranged infrastructure including cross-chain confidential widgets, and trustless general-purpose computing platform. All these features are accessible with PHA',
+        'Phala\'s diverse and comprehensive infrastructure includes support for cross-chain confidential widgets, trustless general-purpose compute platforms and more.',
       zh:
         'Phala 提供了各式各样的基础设施，包括跨链数据保密层、多方隐私计算协议、去信任化的通用计算平台等。而 PHA 是以上功能的结算货币。',
     },
@@ -30,7 +30,7 @@ export const data = [
     },
     content: {
       en:
-        'To be a Gatekeeper one must stake a certain amount of PHA. The stake would be fined and took if he betrayed Gatekeeper rules.',
+        'Gatekeepers and CPU Miners must stake their nodes with PHA which can be slashed in the event of misbehavior, providing a powerful disincentive for malicious activity.',
       zh:
         'Phala 网络需要 Gatekeeper 作为安全保障节点时刻在线，而竞选 Gatekeeper 需要抵押PHA作为保证金。若 Gatekeeper 作恶，将被罚没保障金',
     },
@@ -42,7 +42,7 @@ export const data = [
     },
     content: {
       en:
-        'Stakeholders who owns a certain amount of PHA would be able to join Phala DAO to further participate in community governance.',
+        'Stakeholders who own a certain amount of PHA, will be able to join the Phala DAO to participate in governance.',
       zh: '超过一定阈值的PHA代币持有者有权参与Phala DAO的治理和投票',
     },
   },

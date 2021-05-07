@@ -9,7 +9,7 @@ interface Props {}
 
 const FirstScreen = (x: Props) => {
   const title = {
-    en: ['Mask', 'yourself', 'on blockchain'],
+    en: ['Global', 'Confidential', 'Compute Cloud'],
     zh: ['Phala Network', '给区块链打上马赛克'],
   }
 

@@ -26,8 +26,8 @@ const ContributionSection = (x: Props) => {
         <div className={styles.rightContent}>
           <div className={styles.rightTop}>
             <I18n
-              en={["Contribute Khala in the"]}
-              zh={["在 Kusama 平行链插槽拍卖中"]}
+              en={["Contribute to Khala"]}
+              zh={["在 Kusama"]}
               render={(item: string, locale: string) => (
                 <p className={cn(styles.title, { [styles.highlight]: locale === "zh" })}>
                   {item}
@@ -35,7 +35,16 @@ const ContributionSection = (x: Props) => {
               )}
             />
             <I18n
-              en={["Kusama slots auction"]}
+              en={["in the"]}
+              zh={["平行链插槽拍卖中"]}
+              render={(item: string, locale: string) => (
+                <p className={cn(styles.title, { [styles.highlight]: locale === "zh" })}>
+                  {item}
+                </p>
+              )}
+            />
+            <I18n
+              en={["Kusama slot auction"]}
               zh={["支持 Khala"]}
               render={(item: string, locale: string) => (
                 <p className={cn(styles.title, { [styles.highlight]: locale === "en" })}>
@@ -45,7 +54,7 @@ const ContributionSection = (x: Props) => {
             />
             <p className={styles.description}>
               <I18n
-                en="Khala Network will join the Kusama slot auction when the second slot is released. Khala will bid for an 8-periods slot, which means Khala will lease the slot for 6*8=48 weeks."
+                en="Khala Network will join the Kusama slot auction when the second slot auction opens. Khala will bid for an 8-period slot, which means Khala will lease the slot for 6 x 8 = 48 weeks."
                 zh="Khala Network 从第 2 个插槽开始参与 Kusama 平行链插槽拍卖，将拍卖 8 个时间段的插槽槽位，即租赁期为 6 周*8=48 周。"
               />
             </p>
