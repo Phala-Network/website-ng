@@ -9,22 +9,20 @@ import styles from './index.module.scss'
 interface Props { }
 
 const ParticipateSection = (x: Props) => {
-  const { breakpoint } = useBreakpoint()
-
   return (
     <div className={styles.participateSection}>
       <div className={styles.content}>
         <div className={styles.top}>
           <p className={styles.title}>
             <I18n
-              en={<>How do I<br />participate<br />Crowdloan?</>}
+              en={<>How can I help<br />with the Crowdloan?</>}
               zh={<>如何<br />参与众贷？</>}
             />
           </p>
           <p className={styles.description}>
             <I18n
-              en="Khala crowdfund slot lease using Kusama’s built-in crowdloan mechanism."
-              zh="Khala 使用 Kusama 的内置众贷机制对插槽租赁标的进行众贷。"
+              en="Support Khala’s auction bid through Kusama’s built-in Crowdloan mechanism, and earn rewards!"
+              zh="使用 Kusama 的内置众贷功能支持 Khala 竞拍，并获得奖励！"
             />
           </p>
         </div>
