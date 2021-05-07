@@ -1,7 +1,8 @@
 @import '../../../styles/variables.scss';
 
 .firstScreen {
-  background-image: black;
+  background: #252525 url(./images/line.svg) repeat;
+  background-size: 5px 5px;
   height: 100vh;
   min-height: 760px;
   margin: 0 auto;
@@ -9,7 +10,6 @@
   position: relative;
 
   .bg {
-    background-color: #252525;
     background-image: url(./images/bg.svg);
     position: absolute;
     left: 0;

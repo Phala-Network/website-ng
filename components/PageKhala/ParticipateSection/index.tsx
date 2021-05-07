@@ -17,7 +17,7 @@ const ParticipateSection = (x: Props) => {
         <div className={styles.top}>
           <p className={styles.title}>
             <I18n
-              en={<>How do I<br />participate<br />Crowdloan?</>}
+              en={<>How do I<br />participate in<br />Crowdloan?</>}
               zh={<>如何<br />参与众贷？</>}
             />
           </p>

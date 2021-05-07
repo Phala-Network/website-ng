@@ -35,7 +35,7 @@ export const ContributeSectionConfig = [
   {
     icon: '/images/PageKhala/ContributeSection/contribute-icon-4.svg',
     title: {
-      en: 'Refferal Rewards',
+      en: 'Referal Rewards',
       zh: '邀请奖励',
     },
     description: {
