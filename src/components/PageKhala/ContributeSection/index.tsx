@@ -1,12 +1,12 @@
+import Button from '../../Button'
+import I18n from '../../I18n'
 import React from 'react'
 import cn from 'classnames'
-import I18n from '../../I18n'
-import Button from '../../Button'
 
 import Feature from './Feature'
 
-import { CrowdloanConfig } from '../../../config'
 import { ContributeSectionConfig } from '../../../config/PageKhala/ContributeSectionConfig'
+import { CrowdloanConfig } from '../../../config'
 
 import styles from './index.module.scss'
 
@@ -26,28 +26,28 @@ const ContributionSection = (x: Props) => {
         <div className={styles.rightContent}>
           <div className={styles.rightTop}>
             <I18n
-              en={["Contribute to Khala"]}
-              zh={["在 Kusama"]}
+              en={['Contribute to Khala']}
+              zh={['在 Kusama']}
               render={(item: string, locale: string) => (
-                <p className={cn(styles.title, { [styles.highlight]: locale === "zh" })}>
+                <p className={cn(styles.title, { [styles.highlight]: locale === 'zh' })}>
                   {item}
                 </p>
               )}
             />
             <I18n
-              en={["in the"]}
-              zh={["平行链插槽拍卖中"]}
+              en={['in the']}
+              zh={['平行链插槽拍卖中']}
               render={(item: string, locale: string) => (
-                <p className={cn(styles.title, { [styles.highlight]: locale === "zh" })}>
+                <p className={cn(styles.title, { [styles.highlight]: locale === 'zh' })}>
                   {item}
                 </p>
               )}
             />
             <I18n
-              en={["Kusama slot auction"]}
-              zh={["支持 Khala"]}
+              en={['Kusama slot auction']}
+              zh={['支持 Khala']}
               render={(item: string, locale: string) => (
-                <p className={cn(styles.title, { [styles.highlight]: locale === "en" })}>
+                <p className={cn(styles.title, { [styles.highlight]: locale === 'en' })}>
                   {item}
                 </p>
               )}

@@ -1,26 +1,26 @@
-import React, { useEffect } from 'react'
-import Button from '../../Button'
-import styles from './index.module.scss'
-import classnames from 'classnames'
-import I18n from '../../I18n'
 import { CrowdloanConfig, LearnMoreConfig } from '../../../config'
+import Button from '../../Button'
+import I18n from '../../I18n'
+import React, { useEffect } from 'react'
+import classnames from 'classnames'
+import styles from './index.module.scss'
 
 type Props = {}
 
 const FirstScreen: React.FC<Props> = () => {
   const title = {
     en: ['Khala Network'],
-    zh: ['Khala Network'],
+    zh: ['Khala Network']
   }
 
   const subtitleFirstLine = {
     en: ['Kusama Parachain'],
-    zh: ['Kusama 上的隐私平行链'],
+    zh: ['Kusama 上的隐私平行链']
   }
 
   const subtitleSecondLine = {
     en: ['Phala’s Canary Network'],
-    zh: ['Phala 的预备主网'],
+    zh: ['Phala 的预备主网']
   }
 
   return (

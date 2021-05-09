@@ -1,5 +1,5 @@
-import React from 'react'
 import I18n from '../../I18n'
+import React from 'react'
 import styles from './ParticipateItem.module.scss'
 
 interface Props {

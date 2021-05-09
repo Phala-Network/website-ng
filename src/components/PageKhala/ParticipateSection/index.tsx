@@ -1,8 +1,8 @@
-import React from 'react'
-import I18n from '../../I18n'
-import { useBreakpoint } from '../../../hooks/useBreakpoint'
-import ParticipateItem from './ParticipateItem'
 import { ParticipateSectionConfig } from '../../../config/PageKhala/ParticipateSectionConfig'
+import { useBreakpoint } from '../../../hooks/useBreakpoint'
+import I18n from '../../I18n'
+import ParticipateItem from './ParticipateItem'
+import React from 'react'
 
 import styles from './index.module.scss'
 

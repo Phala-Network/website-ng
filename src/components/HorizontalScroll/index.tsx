@@ -1,7 +1,7 @@
-import * as React from "react"
-import cn from "classnames"
+import cn from 'classnames'
+import * as React from 'react'
 
-import styles from "./index.module.scss"
+import styles from './index.module.scss'
 
 interface IHorizontalScroll {
   className?: string
@@ -59,10 +59,10 @@ const HorizontalScroll: React.FC<IHorizontalScroll> = (props) => {
       event.preventDefault()
     }
 
-    $container.addEventListener("wheel", handleWheel, { passive: false })
+    $container.addEventListener('wheel', handleWheel, { passive: false })
 
     return () => {
-      $container.removeEventListener("wheel", handleWheel)
+      $container.removeEventListener('wheel', handleWheel)
     }
   }, [])
 

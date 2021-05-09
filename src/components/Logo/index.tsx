@@ -8,7 +8,7 @@ const Logo: React.FC<Props> = () => {
     <div className={styles.logo}>
       <svg
         // @ts-ignore: For svg element.
-        class={styles.khala}
+        className={styles.khala}
         width="22"
         height="23"
         fill="none"

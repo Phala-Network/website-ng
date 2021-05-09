@@ -1,21 +1,21 @@
-import React from 'react'
-import PageTitle from '../PageTitle'
-import NormalLayout from '../NormalLayout'
 import { isClient } from '../../utils/isClient'
 import BackTop from '../BackTop'
+import NormalLayout from '../NormalLayout'
+import PageTitle from '../PageTitle'
+import React from 'react'
 
-import FirstScreen from './FirstScreen'
 import ContributeSection from './ContributeSection'
+import FirstScreen from './FirstScreen'
 import ParticipateSection from './ParticipateSection'
 
 interface Props {}
 
 const PageKhala = (x: Props) => {
   React.useEffect(() => {
-    document.body.classList.add('khala');
-    
+    document.body.classList.add('khala')
+
     return () => {
-        document.body.classList.remove('khala');
+      document.body.classList.remove('khala')
     }
   }, [])
 

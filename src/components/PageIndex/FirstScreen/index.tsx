@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react'
-import Button from '../../Button'
-import styles from './index.module.scss'
-import classnames from 'classnames'
-import I18n from '../../I18n'
 import { DarkWalletConfig, SlotAuctionConfig } from '../../../config'
+import Button from '../../Button'
+import I18n from '../../I18n'
+import React, { useEffect } from 'react'
+import classnames from 'classnames'
+import styles from './index.module.scss'
 
 interface Props {}
 
 const FirstScreen = (x: Props) => {
   const title = {
     en: ['Global', 'Confidential', 'Compute Cloud'],
-    zh: ['Phala Network', '给区块链打上马赛克'],
+    zh: ['Phala Network', '给区块链打上马赛克']
   }
 
   return (
