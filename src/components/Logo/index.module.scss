@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+.logo {
+  &:hover {
+    svg path,
+    svg rect {
+      fill: $color-primary;
+    }
+  }
+
+  .khala {
+    display: none;
+  }
+}
+
+:global(.khala) .khala {
+  display: inline;
+}
+
+:global(.khala) .phala {
+  display: none;
+}

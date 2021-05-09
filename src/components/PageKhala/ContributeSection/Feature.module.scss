@@ -1,0 +1,29 @@
+@import '../../../styles/variables.scss';
+
+.feature {
+  max-width: 320px;
+  align-self: start;
+}
+.icon {
+  width: 200px;
+  
+  @media (max-width: $md) {
+    width: 120px;
+  }
+}
+
+.title {
+  border-top: 1px solid black;
+  margin-top: 48px;
+  padding-top: 16px;
+  font-size: 22px;
+  
+  @media (max-width: $md) {
+    margin-top: 24px;
+  }
+}
+
+.description {
+  margin-top: 24px;
+  font-size: 14px;
+}
