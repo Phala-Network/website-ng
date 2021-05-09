@@ -2301,6 +2301,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-helmet@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "@types/react-helmet@npm:6.1.1"
+  dependencies:
+    "@types/react": "*"
+  checksum: da14d9b180a3a9c046f49873786bb59887d3b9de8b250b8978cf18df0e41469e3914d02c2e77946ac909ce090c5909b3ff84d00076e47366d07e650b9e0be795
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*":
   version: 17.0.5
   resolution: "@types/react@npm:17.0.5"
@@ -11454,6 +11463,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "phala-network@workspace:."
   dependencies:
+    "@types/react-helmet": ^6.1.1
     "@types/smoothscroll-polyfill": ^0.3.1
     "@typescript-eslint/eslint-plugin": ^4.22.1
     "@typescript-eslint/parser": ^4.22.1

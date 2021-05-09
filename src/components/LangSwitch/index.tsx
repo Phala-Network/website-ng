@@ -28,20 +28,19 @@ const LangSwitch: React.FC<Props> = () => {
   return (
     <div className={styles.langSwitch}>
       {locales.map((lang) => {
+        console.log(locale, lang)
         return (
           <Link
             key={lang}
             to={isHomePage ? `/${lang}` : pathJoin(['/', lang, route])}
+            className={classnames([
+              styles.item,
+              {
+                [styles.active]: lang === locale
+              }
+            ])}
           >
-            <a
-              className={classnames([
-                styles.item,
-                {
-                  [styles.active]: lang === locale
-                }
-              ])}>
-              {lang}
-            </a>
+            {lang}
           </Link>
         )
       })}

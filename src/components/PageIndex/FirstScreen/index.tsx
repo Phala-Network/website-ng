@@ -1,9 +1,9 @@
 import { DarkWalletConfig, SlotAuctionConfig } from '../../../config'
 import Button from '../../Button'
 import I18n from '../../I18n'
-import React, { useEffect } from 'react'
+import React from 'react'
 import classnames from 'classnames'
-import styles from './index.module.scss'
+import * as styles from './index.module.scss'
 
 interface Props {}
 

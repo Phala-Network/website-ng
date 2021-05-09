@@ -1,6 +1,6 @@
 import I18n from '../../I18n'
 import React from 'react'
-import styles from './Feature.module.scss'
+import * as styles from './Feature.module.scss'
 
 export interface FeatureConfig {
     icon: string

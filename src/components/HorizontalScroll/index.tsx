@@ -1,7 +1,7 @@
 import cn from 'classnames'
 import * as React from 'react'
 
-import styles from './index.module.scss'
+import * as styles from './index.module.scss'
 
 interface IHorizontalScroll {
   className?: string
