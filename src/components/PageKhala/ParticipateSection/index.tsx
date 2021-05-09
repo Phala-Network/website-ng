@@ -4,7 +4,7 @@ import I18n from '../../I18n'
 import ParticipateItem from './ParticipateItem'
 import React from 'react'
 
-import * as styles from './index.module.scss'
+import styles from './index.module.scss'
 
 interface Props { }
 

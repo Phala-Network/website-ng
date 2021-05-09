@@ -1,6 +1,6 @@
 import I18n from '../../I18n'
 import React from 'react'
-import * as styles from './ParticipateItem.module.scss'
+import styles from './ParticipateItem.module.scss'
 
 interface Props {
   index: number

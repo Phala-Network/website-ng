@@ -98,7 +98,7 @@ export const TimelineSectionConfig = {
           en: [
             'Become a parachain on Kusama, launch pre-mainnet and K-PHA',
             'TEE Mining system and Staking PHA for TEE begin to work',
-            'Invisible Wallet for all Polkadot cross-chain asstest',
+            'Invisible Wallet for all Polkadot cross-chain assets',
             'Phala Governance and council begin to work'
           ],
           zh: [

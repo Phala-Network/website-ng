@@ -8,7 +8,7 @@ import Feature from './Feature'
 import { ContributeSectionConfig } from '../../../config/PageKhala/ContributeSectionConfig'
 import { CrowdloanConfig } from '../../../config'
 
-import * as styles from './index.module.scss'
+import styles from './index.module.scss'
 
 interface Props { }
 

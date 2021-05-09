@@ -8,7 +8,7 @@ export type CardHeaderProps = {
   index?: number
   name?: { [key: string]: string[] }
   className?: string
-  type: 'normal' | 'small' | 'vertical' | 'wideNormal'
+  type?: 'normal' | 'small' | 'vertical' | 'wideNormal'
 }
 
 const CardHeader: React.FC<CardHeaderProps> = (props) => {

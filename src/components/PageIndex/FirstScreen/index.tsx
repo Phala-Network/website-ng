@@ -1,15 +1,17 @@
-import { DarkWalletConfig, ExplorerConfig } from '../../../config'
+import { DarkWalletConfig, SlotAuctionConfig } from '../../../config'
+import classnames from 'classnames'
+
 import Button from '../../Button'
 import I18n from '../../I18n'
-import React from 'react'
-import classnames from 'classnames'
+
+import * as React from 'react'
 import * as styles from './index.module.scss'
 
-type Props = {}
+interface Props { }
 
-const FirstScreen: React.FC<Props> = () => {
+const FirstScreen = (x: Props) => {
   const title = {
-    en: ['Mask', 'yourself', 'on blockchain'],
+    en: ['Global', 'Confidential', 'Compute Cloud'],
     zh: ['Phala Network', '给区块链打上马赛克']
   }
 
@@ -18,7 +20,7 @@ const FirstScreen: React.FC<Props> = () => {
       <div className={styles.bg}></div>
       <div className={classnames(['container', styles.content])}>
         <div className={styles.title}>
-          <I18n render={(str) => <div key={str}>{str}</div>} {...title}></I18n>
+          <I18n render={(str: string) => <div key={str}>{str}</div>} {...title}></I18n>
         </div>
         <div className={styles.description}>
           <I18n
@@ -33,8 +35,8 @@ const FirstScreen: React.FC<Props> = () => {
             type='link'
             color='primary'></Button>
           <Button
-            text={ExplorerConfig.name}
-            href={ExplorerConfig.href}
+            text={SlotAuctionConfig.name}
+            href={SlotAuctionConfig.href}
             className={styles.button}
             hasArrowIcon
             type='link'

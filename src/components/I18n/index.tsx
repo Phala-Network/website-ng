@@ -2,9 +2,9 @@ import { useLocale } from '../../hooks/useLocale'
 import React from 'react'
 
 export type I18nProps = {
-  en?: string[] | string
-  zh?: string[] | string
-  render?: Function
+  en?: string[] | string | React.ReactNode
+  zh?: string[] | string | React.ReactNode
+  render?: (item: string[] | string, locale: string) => React.ReactNode
 }
 
 const I18n: React.FC<I18nProps> = (props) => {
