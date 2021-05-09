@@ -1,5 +1,6 @@
 node_modules/
 .cache/
+public
 
 # yarn 2
 .yarn/*
