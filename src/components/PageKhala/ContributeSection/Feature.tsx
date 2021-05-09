@@ -1,5 +1,5 @@
-import I18n from '../../I18n'
 import React from 'react'
+import I18n from '../../I18n'
 import styles from './Feature.module.scss'
 
 export interface FeatureConfig {
@@ -15,7 +15,7 @@ export interface FeatureConfig {
 }
 
 const Feature = (x: FeatureConfig) => {
-  return (
+    return (
         <li className={styles.feature}>
             <div className={styles.iconContainer}>
                 <img className={styles.icon} src={x.icon} alt="" />
@@ -27,7 +27,7 @@ const Feature = (x: FeatureConfig) => {
                 <I18n {...x.description} />
             </div>
         </li>
-  )
+    )
 }
 
 export default Feature
