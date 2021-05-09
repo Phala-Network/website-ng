@@ -28,7 +28,6 @@ const LangSwitch: React.FC<Props> = () => {
   return (
     <div className={styles.langSwitch}>
       {locales.map((lang) => {
-        console.log(locale, lang)
         return (
           <Link
             key={lang}
