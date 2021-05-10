@@ -4,14 +4,13 @@ import { useLocale } from '../../hooks/useLocale'
 import React from 'react'
 
 type Props = {
-  justLink?: boolean
   className?: string
   href?: string | { [key: string]: string }
 }
 
 const TagA: React.FC<Props> = (props) => {
   const locale = useLocale()
-  let { className, children, href, justLink = false } = props
+  let { className, children, href } = props
 
   if (!href) {
     return <a className={className}>{children}</a>
@@ -31,23 +30,15 @@ const TagA: React.FC<Props> = (props) => {
     target: JumpOut ? '_blank' : '_self'
   }
 
-  if (!justLink) {
-    children = (
-      <a className={className} {...aProps}>
-        {children}
-      </a>
-    )
-  }
-
   if (JumpOut) {
     return (
-      <a href={href as string}>
+      <a href={href as string} className={className} {...aProps}>
         {children}
       </a>
     )
   }
   return (
-    <Link to={href as string}>
+    <Link to={href as string} className={className} {...aProps}>
       {children}
     </Link>
   )
