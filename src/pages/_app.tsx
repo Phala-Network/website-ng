@@ -4,9 +4,16 @@ import '../styles/hljs.scss'
 import '../styles/latoFonts.scss'
 import '../styles/layout.scss'
 import { Helmet } from 'react-helmet'
+import { useLocale } from '../hooks/useLocale'
 import React from 'react'
 
 function MyApp ({ children }: { children: React.ReactNode }) {
+  const locale = useLocale()
+
+  React.useEffect(() => {
+    document.querySelector('html')?.setAttribute('lang', locale)
+  }, [locale])
+
   return (
     <div>
       <Helmet>
