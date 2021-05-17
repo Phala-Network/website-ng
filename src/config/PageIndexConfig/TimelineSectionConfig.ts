@@ -59,17 +59,6 @@ export const TimelineSectionConfig = {
       },
       {
         year: 2020,
-        quarter: 3,
-        content: {
-          en: ['Testnet Rorschach', 'Kusama Dark Pool development kickoff'],
-          zh: [
-            'Phala POC-2 “罗夏测试网” 上线',
-            '受Kusama社区委托，与社区合作开发去中心化暗池协议'
-          ]
-        }
-      },
-      {
-        year: 2020,
         quarter: 4,
         content: {
           en: ['Testnet Vendetta', 'Completed the planned stress-testing of the computing task module for the PoC3 stage'],
