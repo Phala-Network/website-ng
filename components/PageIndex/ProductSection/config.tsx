@@ -1,6 +1,5 @@
 import Web3AnalyticsImage from './Web3AnalyticsImage'
 import PLibraImage from './PLibraImage'
-import DarkpoolAndDarkwalletImage from './DarkpoolAndDarkwalletImage'
 
 export const config = {
   Web3Analytics: {
@@ -95,56 +94,6 @@ export const config = {
     println!("{:#?}", transaction.version);
   }
   Ok(())
-}`),
-    },
-  },
-  DarkpoolAndDarkwallet: {
-    image: DarkpoolAndDarkwalletImage,
-    link:
-      'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/balances.rs',
-    text: {
-      en:
-        'The elegant solution of sensitive information in the DeFi world; a dark pool built with ZKP + TEE on Kusama Network',
-      zh:
-        '构建于 Kusama 上的 ZKP + TEE 异构去中心化暗池，彻底解决 DeFi 衍生品与交易策略的隐私问题。',
-    },
-    code: {
-      link:
-        'https://github.com/Phala-Network/phala-blockchain/blob/71f6b94bd075aab2580efdbbada24cf6931954e2/standalone/pruntime/enclave/src/contracts/balances.rs',
-      content: (
-`let o = AccountIdWrapper(origin.clone());
-if let Some(src_amount) = self.accounts.get_mut(&o) {
-    if *src_amount >= value {
-        if self.id.is_none() {
-            return TransactionStatus::BadSecret;
-        }
-
-        let src0 = *src_amount;
-        *src_amount -= value;
-        self.total_issuance -= value;
-        let sequence = self.sequence + 1;
-
-        let data = Transfer {
-            dest,
-            amount: value,
-            sequence,
-        };
-
-        let id = self.id.as_ref().unwrap();
-        let sig = id.sign(&Encode::encode(&data));
-        let transfer_data = TransferData {
-            data,
-            signature: sig.0.to_vec(),
-        };
-        self.queue.push(transfer_data);
-        self.sequence = sequence;
-
-        TransactionStatus::Ok
-    } else {
-        TransactionStatus::InsufficientBalance
-    }
-} else {
-    TransactionStatus::NoBalance
 }`),
     },
   },
