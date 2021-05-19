@@ -51,3 +51,14 @@ export const PageAboutUsConfig = {
     }
   ]
 }
+
+export const JoinUsConfig = {
+  name: {
+    en: 'Join Us',
+    zh: '加入我们'
+  },
+  href: {
+    en: 'https://angel.co/company/phala-network',
+    zh: 'https://angel.co/company/phala-network'
+  }
+}

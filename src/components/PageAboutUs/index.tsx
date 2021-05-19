@@ -1,9 +1,11 @@
-import { PageAboutUsConfig } from '../../config/PageAboutUs'
+import { PageAboutUsConfig, JoinUsConfig } from '../../config/PageAboutUs'
 import BgLayer from '../BgLayer'
 import CommunityBuilder from './CommunityBuilder'
 import Consultant from './Consultant'
 import Contributor from './Contributor'
+import DetailPageButton from '../DetailPageButton'
 import DetailPageHeader from '../DetailPageHeader'
+import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
 import FloatMenu from '../FloatMenu'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
@@ -22,6 +24,13 @@ const PageAboutUs: React.FC<Props> = () => {
         <div className='container'>
           <div className={styles.header}>
             <DetailPageHeader {...PageAboutUsConfig}></DetailPageHeader>
+
+            <DetailPageHeaderButtons>
+              <DetailPageButton
+                className={styles.btn}
+                {...JoinUsConfig}
+              />
+            </DetailPageHeaderButtons>
           </div>
 
           <div id='content' className={styles.content}>

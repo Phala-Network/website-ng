@@ -1,4 +1,5 @@
 import * as React from 'react'
+import TagA from '../../components/TagA'
 
 export const ParticipateSectionConfig = [
   {
@@ -8,7 +9,7 @@ export const ParticipateSectionConfig = [
       zh: '关注我们'
     },
     description: {
-      en: <>Join our <a href="https://discord.com/invite/myBmQu5">Discord</a>, <a href="https://twitter.com/PhalaNetwork">Twitter</a>, and <a href="https://t.me/phalanetwork">Telegram</a> for timely updates and news.</>,
+      en: <>Join our <TagA href="https://discord.com/invite/myBmQu5">Discord</TagA>, <TagA href="https://twitter.com/PhalaNetwork">Twitter</TagA>, and <TagA href="https://t.me/phalanetwork">Telegram</TagA> for timely updates and news.</>,
       zh: '关注我们的公众号“Phala 可信网络”，获取动态，加入社群。'
     }
   },
@@ -19,8 +20,8 @@ export const ParticipateSectionConfig = [
       zh: '了解更多'
     },
     description: {
-      en: <><a href="https://kusama.network/auctions">Learn</a> how Crowdloan works.</>,
-      zh: <><a href="https://kusama.network/auctions">了解</a>众贷如何运转。</>
+      en: <><TagA href="https://kusama.network/auctions">Learn</TagA> how Crowdloan works.</>,
+      zh: <><TagA href="https://kusama.network/auctions">了解</TagA>众贷如何运转。</>
     }
   },
   {
@@ -30,8 +31,8 @@ export const ParticipateSectionConfig = [
       zh: '准备KSM： 解除抵押'
     },
     description: {
-      en: <><a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/staking/actions">Unbond</a> your KSM soon if they’re already bonded! (At least 7 days before the Crowdloan starts).</>,
-      zh: <>如果您的KSM已抵押，则您需要提前至少7天在众贷开始日期前<a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/staking/actions">解除</a>对KSM的抵押。</>
+      en: <><TagA href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/staking/actions">Unbond</TagA> your KSM soon if they’re already bonded! (At least 7 days before the Crowdloan starts).</>,
+      zh: <>如果您的KSM已抵押，则您需要提前至少7天在众贷开始日期前<TagA href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/staking/actions">解除</TagA>对KSM的抵押。</>
     }
   },
   {

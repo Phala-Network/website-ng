@@ -117,12 +117,12 @@ export const ResourcesMenuConfig = {
     ExplorerConfig,
     {
       name: {
-        en: 'Medium',
-        zh: 'Medium'
+        en: 'Careers',
+        zh: '职位'
       },
       href: {
-        en: 'https://medium.com/phala-network',
-        zh: 'https://medium.com/phala-network'
+        en: 'https://angel.co/company/phala-network',
+        zh: 'https://angel.co/company/phala-network'
       }
     }
   ]
