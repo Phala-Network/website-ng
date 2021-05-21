@@ -50,13 +50,14 @@ const Button: React.FC<ButtonProps> = (props) => {
     ])
   }
 
+  href = !isString(href) ? href[locale] : href
   const JumpOut = href?.toString()?.indexOf?.('http') !== -1
 
-  if (isLink && href) {
-    if (!isString(href)) {
-      href = href[locale]
-    }
+  if (!JumpOut) {
+    href = '/' + locale + href
+  }
 
+  if (isLink && href) {
     if (JumpOut) {
       Object.assign(buttonProps, {
         target: '_blank'
@@ -75,7 +76,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   if (isLink && href) {
     if (JumpOut) {
       return (
-        <a href={href as string}>{el}</a>
+        <a href={href as string} target="_blank" rel="noreferrer">{el}</a>
       )
     } else {
       return (
