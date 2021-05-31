@@ -92,7 +92,6 @@ export const ResourcesMenuConfig = {
   subMenu: [
     TechWhitepaperConfig,
     EconomyWhitepaperConfig,
-    DarkWalletConfig,
     WikiConfig,
     {
       name: {
@@ -178,8 +177,8 @@ export const CrowdloanConfig = {
     zh: '参与众贷（即将到来）'
   },
   href: {
-    en: '#',
-    zh: '#'
+    en: 'https://crowdloan.phala.network/en',
+    zh: 'https://crowdloan.phala.network/zh'
   }
 }
 

@@ -1,4 +1,4 @@
-import { DarkWalletConfig, SlotAuctionConfig } from '../../../config'
+import { ExplorerConfig, SlotAuctionConfig } from '../../../config'
 import Button from '../../Button'
 import I18n from '../../I18n'
 import React from 'react'
@@ -27,14 +27,14 @@ const FirstScreen = (x: Props) => {
         </div>
         <div className={styles.buttons}>
           <Button
-            text={DarkWalletConfig.name}
-            href={DarkWalletConfig.href}
+            text={SlotAuctionConfig.name}
+            href={SlotAuctionConfig.href}
             className={styles.button}
             type='link'
             color='primary'></Button>
           <Button
-            text={SlotAuctionConfig.name}
-            href={SlotAuctionConfig.href}
+            text={ExplorerConfig.name}
+            href={ExplorerConfig.href}
             className={styles.button}
             hasArrowIcon
             type='link'
