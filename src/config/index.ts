@@ -92,7 +92,6 @@ export const ResourcesMenuConfig = {
   subMenu: [
     TechWhitepaperConfig,
     EconomyWhitepaperConfig,
-    DarkWalletConfig,
     WikiConfig,
     {
       name: {
