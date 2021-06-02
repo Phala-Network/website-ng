@@ -111,11 +111,22 @@
 
     .button {
       margin-right: 30px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+      margin-top: 10px;
 
       @media (min-width: $md) {
         font-size: 20px;
       }
+    }
+  }
+
+  .buttonDescription {
+    font-size: 12px;
+    margin: 0;
+    color: white;
+
+    @media (min-width: $md) {
+      font-size: 16px;
     }
   }
 }
