@@ -49,13 +49,18 @@ const FirstScreen: React.FC<Props> = () => {
             className={styles.button}
             type='link'
             color='primary'></Button>
-          <Button
-            text={CrowdloanConfig.name}
-            href={CrowdloanConfig.href}
-            className={styles.button}
-            hasArrowIcon
-            type='link'
-            color='gray'></Button>
+          <div>
+            <Button
+              text={CrowdloanConfig.name}
+              href={CrowdloanConfig.href}
+              className={styles.button}
+              hasArrowIcon
+              type='link'
+              color='gray'></Button>
+            <div className={styles.buttonDescription}>
+              <I18n {...CrowdloanConfig.desc}></I18n>
+            </div>
+          </div>
         </div>
       </div>
     </section>

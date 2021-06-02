@@ -66,7 +66,10 @@ const ContributionSection = (x: Props) => {
               className={styles.button}
               hasArrowIcon
               type='link'
-              color='gray' />
+              color='gray'></Button>
+            <div className={styles.buttonDescription}>
+              <I18n {...CrowdloanConfig.desc}></I18n>
+            </div>
           </div>
         </div>
       </div>
