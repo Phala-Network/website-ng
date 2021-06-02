@@ -1,22 +1,5 @@
 export const config = [
   {
-    avatar: 'people7',
-    name: {
-      en: 'LusWar',
-      zh: 'LusWar'
-    },
-    position: {
-      en: 'Core Developer',
-      zh: 'Phala 核心代码贡献者'
-    },
-    description: {
-      en:
-        'B.A., Jilin University. Core developer of multiple blockchain projects including permissionless chain, consortium blockchain, and wallets.',
-      zh:
-        '曾参与过公链、联盟链、钱包等项目的研发，具有丰富的区块链开发经验。吉林大学学士。'
-    }
-  },
-  {
     avatar: 'people8',
     name: {
       en: 'Goldenfiredo',
@@ -51,19 +34,20 @@ export const config = [
     }
   },
   {
-    avatar: 'people10',
+    avatar: 'people12',
     name: {
-      en: 'Antonia',
-      zh: 'Antonia'
+      en: 'Lucia',
+      zh: 'Lucia'
     },
     position: {
-      en: 'Community & Growth',
+      en: 'Community Manager',
       zh: 'Phala 社区运营'
     },
     description: {
       en:
-        'Former Localization and Player Community Operation of Yotta Games. B.A., Language & Translation, Zhejiang University.',
-      zh: '前友塔游戏社区运营&本地化运营。浙江大学翻译系学士。'
+        'Has rich experience in blockchain community operations.',
+      zh:
+        '具有丰富的区块链社区运营经验。'
     }
   }
 ]
