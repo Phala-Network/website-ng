@@ -1,22 +1,5 @@
 export const config = [
   {
-    avatar: 'people8',
-    name: {
-      en: 'Goldenfiredo',
-      zh: 'Goldenfiredo'
-    },
-    position: {
-      en: 'Core Developer',
-      zh: 'Phala 核心代码贡献者'
-    },
-    description: {
-      en:
-        'Believer of blockchain and cryptographic technology. Former EOS developer and TRON DApp developer. Independent web wallet developer.',
-      zh:
-        '区块链及加密技术爱好者。开发过EOS、波场Dapp应用，独立完成通用型网页钱包。'
-    }
-  },
-  {
     avatar: 'people9',
     name: {
       en: 'Krhougs',
