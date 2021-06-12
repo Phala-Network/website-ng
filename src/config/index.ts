@@ -176,10 +176,6 @@ export const CrowdloanConfig = {
     en: 'CROWDLOAN',
     zh: '众贷'
   },
-  desc: {
-    en: 'JOIN & REFER now, CONTRIBUTE soon',
-    zh: '已开放邀请，众贷即将到来'
-  },
   href: {
     en: 'https://crowdloan.phala.network/en',
     zh: 'https://crowdloan.phala.network/zh'
