@@ -48,7 +48,8 @@ const FirstScreen: React.FC<Props> = () => {
             href={LearnMoreConfig.href}
             className={styles.button}
             type='link'
-            color='primary'></Button>
+            color='primary'>
+          </Button>
           <div>
             <Button
               text={CrowdloanConfig.name}
@@ -56,10 +57,8 @@ const FirstScreen: React.FC<Props> = () => {
               className={styles.button}
               hasArrowIcon
               type='link'
-              color='gray'></Button>
-            <div className={styles.buttonDescription}>
-              <I18n {...CrowdloanConfig.desc}></I18n>
-            </div>
+              color='gray'>
+            </Button>
           </div>
         </div>
       </div>
