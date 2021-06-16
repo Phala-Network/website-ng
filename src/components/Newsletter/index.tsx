@@ -35,6 +35,7 @@ const Newsletter: React.FC<Props> = () => {
         direction='left'>
         {news}
         {news}
+        {news}
       </Marquee>
       <div className={styles.line}></div>
       <IconClose onClick={close} />
