@@ -16,6 +16,12 @@ module.exports = {
       }
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: ['G-H3VG3RPY7M', 'G-242TN6WXZV']
+      }
+    }
   ]
 }
