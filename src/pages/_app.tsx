@@ -40,6 +40,7 @@ function MyApp ({ children }: { children: React.ReactNode }) {
               gtag('js', new Date());
 
               gtag('config', 'G-H3VG3RPY7M');
+              gtag('config', 'G-242TN6WXZV');
             `
           }}
         />
