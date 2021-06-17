@@ -29,21 +29,6 @@ function MyApp ({ children }: { children: React.ReactNode }) {
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
         />
-        <script
-          async
-          src='https://www.googletagmanager.com/gtag/js?id=G-H3VG3RPY7M'></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-H3VG3RPY7M');
-              gtag('config', 'G-242TN6WXZV');
-            `
-          }}
-        />
       </Helmet>
       {children}
     </div>

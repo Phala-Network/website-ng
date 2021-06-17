@@ -1402,6 +1402,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.14.0":
+  version: 7.14.6
+  resolution: "@babel/runtime@npm:7.14.6"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: dd931f6ef1c8dab295c4a00c592db6352bf12a5c443f8222304d5c1d3e88d795fa949afcb6f053eec2e69e9827a17ff274524c1cd43813f56b61e3a540274d2f
+  languageName: node
+  linkType: hard
+
 "@babel/standalone@npm:^7.12.6":
   version: 7.14.1
   resolution: "@babel/standalone@npm:7.14.1"
@@ -6947,6 +6956,20 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-google-gtag@npm:^3.7.1":
+  version: 3.7.1
+  resolution: "gatsby-plugin-google-gtag@npm:3.7.1"
+  dependencies:
+    "@babel/runtime": ^7.14.0
+    minimatch: ^3.0.4
+  peerDependencies:
+    gatsby: ^3.0.0-next.0
+    react: ^16.9.0 || ^17.0.0
+    react-dom: ^16.9.0 || ^17.0.0
+  checksum: 961f8c48d2c309f137659bd3e141c357405c854674a06a9ddccdad927d647493ad2506c53aca8c68c7ccd87a5020de0d2bd2842ee807a1a39ccfd0df85af639f
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-i18n@npm:^1.0.1":
   version: 1.0.1
   resolution: "gatsby-plugin-i18n@npm:1.0.1"
@@ -11476,6 +11499,7 @@ fsevents@~2.3.1:
     eslint-plugin-react: ^7.23.2
     eslint-plugin-sort-imports-es6-autofix: ^0.6.0
     gatsby: ^3.4.1
+    gatsby-plugin-google-gtag: ^3.7.1
     gatsby-plugin-i18n: ^1.0.1
     gatsby-plugin-intl: ^0.3.3
     gatsby-plugin-react-helmet: ^4.4.0
