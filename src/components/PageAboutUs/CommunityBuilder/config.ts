@@ -1,110 +1,31 @@
 export const config = [
-  {
-    name: 'D3V3LIN',
-    from: 'French Community'
-  },
-  {
-    name: 'Abhilash Atmaram',
-    from: 'English Community'
-  },
-  {
-    name: 'Alex Morozov',
-    from: 'Russian Community'
-  },
-  {
-    name: 'Vlady Limes',
-    from: 'Russian Community'
-  },
-  {
-    name: 'PacoBits',
-    from: 'Spanish Community'
-  },
-  {
-    name: 'MC',
-    from: 'Italian Community'
-  },
-  {
-    name: 'Vo1d',
-    from: 'Italian Community'
-  },
-  {
-    name: 'cash__',
-    from: 'Italian Community'
-  },
-  {
-    name: 'Khuong Phan',
-    from: 'Vietnam Community'
-  },
-  {
-    name: 'MF Jakariya',
-    from: 'Bangladesh Community'
-  },
-  {
-    name: 'Hoang Nguyen',
-    from: 'English Community'
-  },
-  {
-    name: 'Matt Nowack',
-    from: 'English Community'
-  },
-  {
-    name: '来来',
-    from: 'Chinese Community'
-  },
-  {
-    name: '峰哥',
-    from: 'Chinese Community'
-  },
-  {
-    name: '莱斯威特',
-    from: 'Chinese Community'
-  },
-  {
-    name: '亿久',
-    from: 'Chinese Community'
-  },
-  {
-    name: '柏人',
-    from: 'Chinese Community'
-  },
-  {
-    name: 'Newsletter',
-    from: 'Chinese Community'
-  },
-  {
-    name: '海河',
-    from: 'Chinese Community'
-  },
-  {
-    name: '张扬',
-    from: 'Chinese Community'
-  },
-  {
-    name: '阿龙',
-    from: 'Chinese Community'
-  },
-  {
-    name: '夕阳',
-    from: 'Chinese Community'
-  },
-  {
-    name: '阿华',
-    from: 'Chinese Community'
-  },
-  {
-    name: '四表叔',
-    from: 'Chinese Community'
-  },
-  {
-    name: '无题',
-    from: 'Chinese Community'
-  },
-  {
-    name: '天天都是DerrickLee',
-    from: 'Chinese Community'
-  },
-  {
-    name: 'Peng',
-    from: 'Chinese Community'
-  }
+  { index: '1', name: 'Crypto Jedi', from: 'English Community' },
+  { index: '2', name: 'JEKZ', from: 'English Community' },
+  { index: '3', name: 'Willy Renaldi', from: 'English Community' },
+  { index: '4', name: 'Hoang Nguyen', from: 'English Community' },
+  { index: '5', name: 'Matt Nowack', from: 'English Community' },
+  { index: '6', name: 'Sirash', from: 'English Community' },
+  { index: '7', name: 'Neon Thunder', from: 'English Community' },
+  { index: '8', name: 'PacoBits', from: 'Spainish Community' },
+  { index: '9', name: 'Lucio', from: 'Spainish Community' },
+  { index: '10', name: 'MC', from: 'Italy Community' },
+  { index: '11', name: 'Ondin', from: 'Italy Community' },
+  { index: '12', name: 'Zak', from: 'Italy Community' },
+  { index: '13', name: 'Akata', from: 'French Community' },
+  { index: '14', name: 'BlackStoneSheperd', from: 'French Community' },
+  { index: '15', name: 'James Pham', from: 'Vietnam Community' },
+  { index: '16', name: 'Amir', from: 'Persian Community' },
+  { index: '17', name: 'Nova', from: 'Persian Community' },
+  { index: '18', name: '森·焱', from: 'Chinese Community' },
+  { index: '19', name: '无题', from: 'Chinese Community' },
+  { index: '20', name: '莱斯威特', from: 'Chinese Community' },
+  { index: '21', name: '夕阳', from: 'Chinese Community' },
+  { index: '22', name: 'newsletter', from: 'Chinese Community' },
+  { index: '23', name: '阿龙', from: 'Chinese Community' },
+  { index: '24', name: '陈先森', from: 'Chinese Community' },
+  { index: '25', name: 't1n6', from: 'Chinese Community' },
+  { index: '26', name: '别做梦', from: 'Chinese Community' },
+  { index: '27', name: '来来', from: 'Chinese Community' },
+  { index: '28', name: '张杨', from: 'Chinese Community' },
+  { index: '29', name: '海河', from: 'Chinese Community' }
 ]

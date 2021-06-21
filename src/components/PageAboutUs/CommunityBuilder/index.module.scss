@@ -1,25 +1,30 @@
 @import '../../../styles/variables.scss';
 
 .cardContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+
+  @media (max-width: $xl) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media (max-width: $lg) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
   @media (max-width: $md) {
-    padding: 15px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @media (max-width: $sm) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .item {
-    margin: 12px;
-    position: relative;
+    margin: 5px auto;
 
-    @media (max-width: $md) {
-      margin: 10px;
-    }
-
-    @media (max-width: $sm) {
-      margin: 10px 0;
+    img {
+      width: 80px;
     }
 
     &:hover img {
