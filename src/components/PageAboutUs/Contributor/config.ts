@@ -7,7 +7,7 @@ export const config = [
     },
     position: {
       en: 'Phala Whitepaper Co-author',
-      zh: '研究科学家 & 顾问'
+      zh: '研究科学家'
     },
     description: {
       en:
