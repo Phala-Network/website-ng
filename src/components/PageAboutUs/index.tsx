@@ -1,8 +1,8 @@
-import { PageAboutUsConfig, JoinUsConfig } from '../../config/PageAboutUs'
+import { JoinUsConfig, PageAboutUsConfig } from '../../config/PageAboutUs'
 import BgLayer from '../BgLayer'
 import CommunityBuilder from './CommunityBuilder'
-import Consultant from './Consultant'
 import Contributor from './Contributor'
+import Council from './Council'
 import DetailPageButton from '../DetailPageButton'
 import DetailPageHeader from '../DetailPageHeader'
 import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
@@ -38,8 +38,8 @@ const PageAboutUs: React.FC<Props> = () => {
               const Component =
                 {
                   PhalaCore,
-                  Consultant,
                   Contributor,
+                  Council,
                   CommunityBuilder,
                   Partners
                 }[item.id] ?? PhalaCore

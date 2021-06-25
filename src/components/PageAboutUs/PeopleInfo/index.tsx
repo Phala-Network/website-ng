@@ -1,4 +1,3 @@
-import { useLocale } from '../../../hooks/useLocale'
 import I18n, { I18nProps } from '../../I18n'
 import React from 'react'
 import classnames from 'classnames'
@@ -12,7 +11,7 @@ type Props = {
   last?: boolean
 }
 
-function getPath (name, base = 1) {
+function getPath (name: string, base = 1) {
   const imageBase = '/images/PageAboutUs/people'
 
   if (base > 1) {
@@ -24,13 +23,13 @@ function getPath (name, base = 1) {
 
 const PeopleInfo: React.FC<Props> = (props) => {
   const { name, position, description, avatar, last } = props
-  const locale = useLocale()
+  const zh = name.zh as string
 
   let style = {}
 
-  if (locale === 'zh' && name.zh === '周顺帆博士') {
+  if (zh?.length > 2) {
     style = {
-      marginBottom: 58
+      height: 60
     }
   }
 

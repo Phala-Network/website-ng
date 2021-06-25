@@ -22,17 +22,17 @@ export const PageAboutUsConfig = {
       }
     },
     {
-      id: 'Consultant',
-      name: {
-        en: ['Advisor'],
-        zh: ['顾问']
-      }
-    },
-    {
       id: 'Contributor',
       name: {
         en: ['Contributor'],
         zh: ['建设者']
+      }
+    },
+    {
+      id: 'Council',
+      name: {
+        en: ['Council'],
+        zh: ['议会']
       }
     },
     {
