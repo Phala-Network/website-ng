@@ -4,6 +4,7 @@
 }
 
 .leftHand {
+  transform: translate3d(0, 0, 0);
   opacity: 0.6;
   position: absolute;
   top: 50%;
@@ -16,6 +17,7 @@
 }
 
 .rightHand {
+  transform: translate3d(0, 0, 0);
   opacity: 0.6;
   position: absolute;
   top: 50%;
@@ -28,6 +30,7 @@
 }
 
 .playerButton {
+  transform: translate3d(0, 0, 0);
   opacity: 0.5;
   position: absolute;
   top: 50%;
@@ -60,6 +63,7 @@
   height: 500px * 0.9;
   background-image: url('./images/browser.svg');
   background-size: 100% 100%;
+  transform: translate3d(0, 0, 0);
 }
 
 .blocks {
@@ -73,4 +77,5 @@
   height: 595px * 1.1;
   background-image: url('./images/blocks.svg');
   background-size: 100% 100%;
+  transform: translate3d(0, 0, 0);
 }

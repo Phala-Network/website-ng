@@ -18,48 +18,39 @@ const PlayerContent: React.FC<Props> = () => {
   useEffect(() => {
     if (!section.current) return
 
-    console.log('11111')
-
     const sectionDom = section.current
-    const leftHandDom = sectionDom.querySelector(leftHandClass)
-    const rightHandDom = sectionDom.querySelector(rightHandClass)
-    const playerButtonDom = sectionDom.querySelector(playerButtonClass)
-    const browserDom = sectionDom.querySelector(browserClass)
-    const blocksDom = sectionDom.querySelector(blocksClass)
 
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: sectionDom,
         start: '30% bottom',
         end: '70% top',
-        scrub: true,
-        markers: true
+        scrub: true
       }
     })
 
-    timeline.to(blocksDom, { opacity: 1 }, 0)
-    timeline.to(blocksDom, { opacity: 0.5 }, 0.6)
+    timeline
+      .to(blocksClass, { opacity: 1 }, 0)
+      .to(blocksClass, { opacity: 0.5 }, 0.6)
 
-    timeline.to(browserDom, { opacity: 0 }, 0)
-    timeline.to(browserDom, { opacity: 1 }, 0.6)
-    timeline.to(browserDom, { opacity: 0 }, 1)
+      .to(browserClass, { opacity: 0 }, 0)
+      .to(browserClass, { opacity: 1 }, 0.4)
+      .to(browserClass, { opacity: 0 }, 1)
 
-    timeline.to(playerButtonDom, { opacity: 1, scale: 1.8 }, 0)
-    timeline.to(playerButtonDom, { opacity: 0.5, scale: 1 }, 1)
+      .to(playerButtonClass, { opacity: 1, scale: 1.8 }, 0)
+      .to(playerButtonClass, { opacity: 0.5, scale: 1 }, 1)
 
-    timeline.to(leftHandDom, { x: 100, opacity: 1, scale: 1.4 }, 0)
-    timeline.to(leftHandDom, { x: 0, opacity: 0.6, scale: 1 }, 1)
+      .to(leftHandClass, { x: 100, opacity: 1, y: 0, z: 0, scale: 1.6 }, 0)
+      .to(leftHandClass, { x: 0, opacity: 0.6, y: 0, z: 0, scale: 1 }, 1)
 
-    timeline.to(rightHandDom, { x: -100, opacity: 1, scale: 1.4 }, 0)
-    timeline.to(rightHandDom, { x: 0, opacity: 0.6, scale: 1 }, 1)
+      .to(rightHandClass, { x: -100, opacity: 1, y: 0, z: 0, scale: 1.6 }, 0)
+      .to(rightHandClass, { x: 0, opacity: 0.6, y: 0, z: 0, scale: 1 }, 1)
 
     return () => {
       timeline.kill()
       timeline.clear(true)
     }
   }, [])
-
-  console.log(222)
 
   return (
     <section ref={section} className={styles.comparisonSection}>
@@ -72,4 +63,4 @@ const PlayerContent: React.FC<Props> = () => {
   )
 }
 
-export default PlayerContent
+export default React.memo(PlayerContent)
