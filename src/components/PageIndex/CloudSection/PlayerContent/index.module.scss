@@ -1,6 +1,29 @@
+@import '../../../../styles/variables.scss';
+
 .comparisonSection {
   position: relative;
   height: 90vh;
+
+  @media (max-width: $sm) {
+    display: none;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.mobile {
+  margin-top: 80px;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: $sm) {
+    display: none;
+  }
 }
 
 .leftHand {

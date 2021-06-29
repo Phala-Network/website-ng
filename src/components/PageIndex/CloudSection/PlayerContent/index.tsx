@@ -2,6 +2,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { gsap } from 'gsap'
 import { useIntl } from 'gatsby-plugin-intl'
 import React, { useEffect, useRef, useState } from 'react'
+import bgImage from './images/bg.jpg'
 import * as styles from './index.module.scss'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -60,16 +61,23 @@ const PlayerContent: React.FC<Props> = () => {
   }, [])
 
   const showVideoPlayer = () => {
+    console.log('showVideoPlayer', showVideoPlayer)
+
     setShowPlayer(true)
   }
 
   return (
-    <section ref={section} className={styles.comparisonSection}>
-      <div className={styles.leftHand}></div>
-      <div className={styles.rightHand}></div>
-      <div className={styles.blocks}></div>
-      <div className={styles.browser}></div>
-      <div onClick={showVideoPlayer} className={styles.playerButton}></div>
+    <>
+      <section ref={section} className={styles.comparisonSection}>
+        <div className={styles.leftHand}></div>
+        <div className={styles.rightHand}></div>
+        <div className={styles.blocks}></div>
+        <div className={styles.browser}></div>
+        <div onClick={showVideoPlayer} className={styles.playerButton}></div>
+      </section>
+      <div onClick={showVideoPlayer} className={styles.mobile}>
+        <img src={bgImage} alt="bg" />
+      </div>
 
       {showPlayer && (
         <div className={styles.backdrop}>
@@ -88,7 +96,7 @@ const PlayerContent: React.FC<Props> = () => {
             }}></div>
         </div>
       )}
-    </section>
+    </>
   )
 }
 
