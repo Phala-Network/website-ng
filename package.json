@@ -25,6 +25,7 @@
     "gatsby-plugin-react-helmet": "^4.4.0",
     "gatsby-plugin-sass": "^4.4.0",
     "gatsby-plugin-sitemap": "^4.0.0",
+    "gsap": "^3.7.0",
     "highlight.js": "^10.4.0",
     "lodash.debounce": "^4.0.8",
     "perfect-scrollbar": "^1.5.0",

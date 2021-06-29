@@ -7761,6 +7761,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"gsap@npm:^3.7.0":
+  version: 3.7.0
+  resolution: "gsap@npm:3.7.0"
+  checksum: 92081587ea47848c9e3c3898fa2c09975253aa31618451653ed60ec70e7381cbf5eccf3712c889ad5517871167ad25b56b2b86b8c383ecdb7c5300a484e09934
+  languageName: node
+  linkType: hard
+
 "gzip-size@npm:5.1.1":
   version: 5.1.1
   resolution: "gzip-size@npm:5.1.1"
@@ -11505,6 +11512,7 @@ fsevents@~2.3.1:
     gatsby-plugin-react-helmet: ^4.4.0
     gatsby-plugin-sass: ^4.4.0
     gatsby-plugin-sitemap: ^4.0.0
+    gsap: ^3.7.0
     highlight.js: ^10.4.0
     lodash.debounce: ^4.0.8
     perfect-scrollbar: ^1.5.0
