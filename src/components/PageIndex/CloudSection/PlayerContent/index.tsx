@@ -1,6 +1,7 @@
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { gsap } from 'gsap'
-import React, { useEffect, useRef } from 'react'
+import { useIntl } from 'gatsby-plugin-intl'
+import React, { useEffect, useRef, useState } from 'react'
 import * as styles from './index.module.scss'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -9,6 +10,12 @@ type Props = {}
 
 const PlayerContent: React.FC<Props> = () => {
   const section = useRef<HTMLDivElement>(null)
+  const [showPlayer, setShowPlayer] = useState(false)
+  const { locale } = useIntl()
+  const videoURL =
+    locale === 'en'
+      ? 'https://www.youtube.com/embed/9AGWOqienOU'
+      : 'https://www.youtube.com/embed/vl3QkcimYho'
   const leftHandClass = `.${styles.leftHand}`
   const rightHandClass = `.${styles.rightHand}`
   const playerButtonClass = `.${styles.playerButton}`
@@ -52,15 +59,37 @@ const PlayerContent: React.FC<Props> = () => {
     }
   }, [])
 
+  const showVideoPlayer = () => {
+    setShowPlayer(true)
+  }
+
   return (
     <section ref={section} className={styles.comparisonSection}>
       <div className={styles.leftHand}></div>
       <div className={styles.rightHand}></div>
       <div className={styles.blocks}></div>
       <div className={styles.browser}></div>
-      <div className={styles.playerButton}></div>
+      <div onClick={showVideoPlayer} className={styles.playerButton}></div>
+
+      {showPlayer && (
+        <div className={styles.backdrop}>
+          <iframe
+            width={560 * 1.5}
+            height={315 * 1.5}
+            src={videoURL}
+            title="What is Phala Network？"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen={true}></iframe>
+          <div
+            className={styles.close}
+            onClick={() => {
+              setShowPlayer(false)
+            }}></div>
+        </div>
+      )}
     </section>
   )
 }
 
-export default React.memo(PlayerContent)
+export default PlayerContent
