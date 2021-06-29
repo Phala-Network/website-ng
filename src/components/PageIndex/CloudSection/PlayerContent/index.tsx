@@ -40,10 +40,10 @@ const PlayerContent: React.FC<Props> = () => {
       .to(playerButtonClass, { opacity: 1, scale: 1.8 }, 0)
       .to(playerButtonClass, { opacity: 0.5, scale: 1 }, 1)
 
-      .to(leftHandClass, { x: 100, opacity: 1, y: 0, z: 0, scale: 1.6 }, 0)
+      .to(leftHandClass, { x: 50, opacity: 1, y: 0, z: 0, scale: 1.5 }, 0)
       .to(leftHandClass, { x: 0, opacity: 0.6, y: 0, z: 0, scale: 1 }, 1)
 
-      .to(rightHandClass, { x: -100, opacity: 1, y: 0, z: 0, scale: 1.6 }, 0)
+      .to(rightHandClass, { x: -50, opacity: 1, y: 0, z: 0, scale: 1.5 }, 0)
       .to(rightHandClass, { x: 0, opacity: 0.6, y: 0, z: 0, scale: 1 }, 1)
 
     return () => {
