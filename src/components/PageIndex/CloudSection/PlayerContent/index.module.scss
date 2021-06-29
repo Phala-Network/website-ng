@@ -1,14 +1,15 @@
 .comparisonSection {
   position: relative;
-  height: 50vh;
+  height: 60vh;
 }
 
 .leftHand {
   opacity: 0.6;
   position: absolute;
-  bottom: 10%;
-  left: -400px;
+  top: 50%;
+  left: -500px;
   width: 715px;
+  margin-top: -300px;
   height: 330px;
   background-image: url('./images/left-hand.svg');
   background-size: 100% 100%;
@@ -17,10 +18,59 @@
 .rightHand {
   opacity: 0.6;
   position: absolute;
-  bottom: 10%;
-  right: -400px;
+  top: 50%;
+  right: -500px;
   width: 705px;
+  margin-top: -100px;
   height: 350px;
   background-image: url('./images/right-hand.svg');
+  background-size: 100% 100%;
+}
+
+.playerButton {
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 141px;
+  margin-left: -70px;
+  height: 70px;
+  margin-top: -35px;
+  background-image: url('./images/player-button.svg');
+  background-size: 100% 100%;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8 !important;
+  }
+
+  &:active {
+    transform: scale(1.6) !important;
+  }
+}
+
+.browser {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -340px * 0.9;
+  width: 680px * 0.9;
+  margin-top: -260px * 0.9;
+  height: 500px * 0.9;
+  background-image: url('./images/browser.svg');
+  background-size: 100% 100%;
+}
+
+.blocks {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -835px * 1.1;
+  width: 1670px * 1.1;
+  margin-top: -297px * 1.1;
+  height: 595px * 1.1;
+  background-image: url('./images/blocks.svg');
   background-size: 100% 100%;
 }
