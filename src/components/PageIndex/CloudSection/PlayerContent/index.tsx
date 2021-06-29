@@ -18,6 +18,8 @@ const PlayerContent: React.FC<Props> = () => {
   useEffect(() => {
     if (!section.current) return
 
+    console.log('11111')
+
     const sectionDom = section.current
     const leftHandDom = sectionDom.querySelector(leftHandClass)
     const rightHandDom = sectionDom.querySelector(rightHandClass)
@@ -28,9 +30,10 @@ const PlayerContent: React.FC<Props> = () => {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: sectionDom,
-        start: '30% 70%',
-        end: '70% 30%',
-        scrub: true
+        start: '30% bottom',
+        end: '70% top',
+        scrub: true,
+        markers: true
       }
     })
 
@@ -55,6 +58,8 @@ const PlayerContent: React.FC<Props> = () => {
       timeline.clear(true)
     }
   }, [])
+
+  console.log(222)
 
   return (
     <section ref={section} className={styles.comparisonSection}>
