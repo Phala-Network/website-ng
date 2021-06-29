@@ -1,17 +1,14 @@
 import { EconomyWhitepaperConfig } from '../../../config/EconomyWhitepaperConfig'
 import { TechWhitepaperConfig } from '../../../config'
 import Button from '../../Button'
-import I18n from '../../I18n'
+import PlayerContent from './PlayerContent'
 import React from 'react'
 import SectionHeader from '../../SectionHeader'
 import * as styles from './index.module.scss'
 
-type Props = {}
-
-const CloudSection: React.FC<Props> = () => {
+const CloudSection: React.FC = () => {
   const descriptionText = {
-    en:
-      'General-Purpose Confidential Smart Contract for DApps and DeFi',
+    en: 'General-Purpose Confidential Smart Contract for DApps and DeFi',
     zh: '安全、不暴露隐私的通用计算，为 Defi 和 Dapp 提供保密智能合约服务'
   }
 
@@ -22,35 +19,36 @@ const CloudSection: React.FC<Props> = () => {
 
   return (
     <div className={styles.cloudSection}>
-      <div className='container'>
+      <div className="container">
         <div className={styles.content}>
-          <div className='row'>
-            <div className='col-lg-6'>
+          <div className="row">
+            <div className="col-lg-6">
               <SectionHeader
-                color='gray'
+                color="gray"
                 title={titleText}
                 description={descriptionText}
               />
             </div>
-            <div className='col-lg-6'>
+            <div className="col-lg-6">
               <div className={styles.buttons}>
                 <Button
                   href={EconomyWhitepaperConfig.href}
                   text={EconomyWhitepaperConfig.name}
-                  type='link'
-                  color='gray'
+                  type="link"
+                  color="gray"
                   hasArrowIcon></Button>
 
                 <Button
                   href={TechWhitepaperConfig.href}
                   text={TechWhitepaperConfig.name}
-                  type='link'
-                  color='gray'
+                  type="link"
+                  color="gray"
                   hasArrowIcon></Button>
               </div>
             </div>
           </div>
         </div>
+        <PlayerContent></PlayerContent>
       </div>
     </div>
   )

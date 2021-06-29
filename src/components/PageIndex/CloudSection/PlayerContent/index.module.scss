@@ -1,0 +1,26 @@
+.comparisonSection {
+  position: relative;
+  height: 50vh;
+}
+
+.leftHand {
+  opacity: 0.6;
+  position: absolute;
+  bottom: 10%;
+  left: -400px;
+  width: 715px;
+  height: 330px;
+  background-image: url('./images/left-hand.svg');
+  background-size: 100% 100%;
+}
+
+.rightHand {
+  opacity: 0.6;
+  position: absolute;
+  bottom: 10%;
+  right: -400px;
+  width: 705px;
+  height: 350px;
+  background-image: url('./images/right-hand.svg');
+  background-size: 100% 100%;
+}
