@@ -4,7 +4,7 @@
   position: relative;
   height: 90vh;
 
-  @media (max-width: $sm) {
+  @media (max-width: $md) {
     display: none;
   }
 
@@ -21,7 +21,7 @@
     width: 100%;
   }
 
-  @media (min-width: $sm) {
+  @media (min-width: $md) {
     display: none;
   }
 }
@@ -31,12 +31,20 @@
   opacity: 0.6;
   position: absolute;
   top: 50%;
-  left: -500px;
-  width: 715px;
-  margin-top: -300px;
-  height: 330px;
+  left: -10vw;
+  width: 71.5 * 0.5vw;
+  margin-top: -30 * 0.5vw;
+  height: 33 * 0.5vw;
   background-image: url('./images/left-hand.png');
   background-size: 100% 100%;
+
+  @media (min-width: $xxl) {
+    top: 50%;
+    left: -500px;
+    width: 715px;
+    margin-top: -300px;
+    height: 330px;
+  }
 }
 
 .rightHand {
@@ -44,12 +52,19 @@
   opacity: 0.6;
   position: absolute;
   top: 50%;
-  right: -500px;
-  width: 705px;
-  margin-top: -100px;
-  height: 350px;
+  right: -10vw;
+  width: 70.5 * 0.5vw;
+  margin-top: -10 * 0.5vw;
+  height: 35 * 0.5vw;
   background-image: url('./images/right-hand.png');
   background-size: 100% 100%;
+
+  @media (min-width: $xxl) {
+    right: -500px;
+    width: 705px;
+    margin-top: -100px;
+    height: 350px;
+  }
 }
 
 .playerButton {
@@ -58,10 +73,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 141px;
-  margin-left: -70px;
-  height: 70px;
-  margin-top: -35px;
+  width: 7vw;
+  margin-left: -3.5vw;
+  height: 3.5vw;
+  margin-top: -1.75vw;
   background-image: url('./images/player-button.svg');
   background-size: 100% 100%;
 
@@ -73,6 +88,13 @@
   &:active {
     transform: scale(1.6) !important;
   }
+
+  @media (min-width: $xxl) {
+    width: 141px;
+    margin-left: -70px;
+    height: 70px;
+    margin-top: -35px;
+  }
 }
 
 .browser {
@@ -80,13 +102,20 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -340px * 0.9;
-  width: 680px * 0.9;
-  margin-top: -260px * 0.9;
-  height: 500px * 0.9;
+  margin-left: -17vw * 1.1;
+  width: 34vw * 1.1;
+  margin-top: -12vw * 1.1;
+  height: 25vw * 1.1;
   background-image: url('./images/browser.svg');
   background-size: 100% 100%;
   transform: translate3d(0, 0, 0);
+
+  @media (min-width: $xxl) {
+    margin-left: -340px * 0.9;
+    margin-top: -260px * 0.9;
+    height: 500px * 0.9;
+    width: 680px * 0.9;
+  }
 }
 
 .blocks {
@@ -94,13 +123,20 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -835px * 1.1;
-  width: 1670px * 1.1;
-  margin-top: -297px * 1.1;
-  height: 595px * 1.1;
+  margin-left: -83.5 * 0.7vw;
+  width: 167 * 0.7vw;
+  margin-top: -29.7 * 0.7vw;
+  height: 59.5 * 0.7vw;
   background-image: url('./images/blocks.svg');
   background-size: 100% 100%;
   transform: translate3d(0, 0, 0);
+
+  @media (min-width: $xxl) {
+    margin-left: -835px * 1.1;
+    width: 1670px * 1.1;
+    margin-top: -297px * 1.1;
+    height: 595px * 1.1;
+  }
 }
 
 .backdrop {
