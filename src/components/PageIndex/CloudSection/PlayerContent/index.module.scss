@@ -31,14 +31,14 @@
   opacity: 0.6;
   position: absolute;
   top: 50%;
-  left: -10vw;
+  left: -12vw;
   width: 71.5 * 0.5vw;
   margin-top: -30 * 0.5vw;
   height: 33 * 0.5vw;
   background-image: url('./images/left-hand.png');
   background-size: 100% 100%;
 
-  @media (min-width: $xxl) {
+  @media (min-width: 1960px) {
     top: 50%;
     left: -500px;
     width: 715px;
@@ -52,14 +52,14 @@
   opacity: 0.6;
   position: absolute;
   top: 50%;
-  right: -10vw;
+  right: -12vw;
   width: 70.5 * 0.5vw;
   margin-top: -10 * 0.5vw;
   height: 35 * 0.5vw;
   background-image: url('./images/right-hand.png');
   background-size: 100% 100%;
 
-  @media (min-width: $xxl) {
+  @media (min-width: 1960px) {
     right: -500px;
     width: 705px;
     margin-top: -100px;
@@ -89,7 +89,7 @@
     transform: scale(1.6) !important;
   }
 
-  @media (min-width: $xxl) {
+  @media (min-width: 1960px) {
     width: 141px;
     margin-left: -70px;
     height: 70px;
@@ -110,7 +110,7 @@
   background-size: 100% 100%;
   transform: translate3d(0, 0, 0);
 
-  @media (min-width: $xxl) {
+  @media (min-width: 1960px) {
     margin-left: -340px * 0.9;
     margin-top: -260px * 0.9;
     height: 500px * 0.9;
@@ -131,7 +131,7 @@
   background-size: 100% 100%;
   transform: translate3d(0, 0, 0);
 
-  @media (min-width: $xxl) {
+  @media (min-width: 1960px) {
     margin-left: -835px * 1.1;
     width: 1670px * 1.1;
     margin-top: -297px * 1.1;
