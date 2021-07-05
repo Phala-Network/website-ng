@@ -14,9 +14,9 @@ const PlayerContent: React.FC<Props> = () => {
   const [showPlayer, setShowPlayer] = useState(false)
   const { locale } = useIntl()
   const videoURL =
-    locale === 'en'
-      ? 'https://www.youtube.com/embed/9AGWOqienOU'
-      : 'https://www.youtube.com/embed/vl3QkcimYho'
+    locale === 'zh'
+      ? 'https://player.bilibili.com/player.html?aid=461387150&bvid=BV1eL411p7Do&cid=364635988&page=1&high_quality=1'
+      : 'https://www.youtube.com/embed/9AGWOqienOU'
   const leftHandClass = `.${styles.leftHand}`
   const rightHandClass = `.${styles.rightHand}`
   const playerButtonClass = `.${styles.playerButton}`
