@@ -15,14 +15,11 @@ const HeaderButtons: React.FC<Props> = (props) => {
         type='link'
         href={{
           en: 'https://t.me/phalaminer',
-          zh: '#'
+          zh: 'https://www.yuque.com/docs/share/2d2ec132-e6fc-44c0-a286-882f0d49c55e'
         }}
         text={{
           en: 'Telegram Group',
-          zh: '微信群'
-        }}
-        qrCodeSrc={{
-          zh: '/images/PageMiner/wechatQrCode.png'
+          zh: '交流群'
         }}
       />
 
