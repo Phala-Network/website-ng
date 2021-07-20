@@ -24,7 +24,7 @@ export const config = [
       en:
         'the technology integration lead of Web3 Foundation. Joe also hosts the “Relay Chain” podcast that covers people and projects in the Polkadot ecosystem.',
       zh:
-        'Web3基金会的技术整合主管，Parity 技术研究专员'
+        'Web3 基金会的技术整合主管'
     }
   },
   {
@@ -50,9 +50,9 @@ export const config = [
     position: {},
     description: {
       en:
-        'Polkadot Global Head Ambassador of Events. Blockchain technology and Cybersecurity advocate. She is the COO of MH-IT & Service GmbH, an IT services and consulting company in Germany. Before joining MH-IT, she worked for Google as an applications analyst.',
+        'M.Sc. in Information & Cybersecurity. Polkadot Global Head Ambassador of Events. Blockchain technology and Cybersecurity advocate. She is the COO of MH-IT & Service GmbH, an IT security company. Zoé worked for several star-ups in Silicon Valley as well as an applications analyst for Google.',
       zh:
-        'Polkadot 高级大使，研究者和 Web3 和网络安全的倡导者。她目前是 MH-IT & Service GmbH 的 COO，在加入 MH-IT 之前曾担任谷歌的应用分析职位。'
+        '信息和网络安全理学硕士。Polkadot 高级大使，研究者和 Web3 和网络安全的倡导者。她目前是 MH-IT & Service GmbH 的 COO，在加入 MH-IT 之前曾担任谷歌的应用分析职位。'
     }
   }
 ]

@@ -26,7 +26,7 @@ const MediaList: React.FC<Props> = () => {
         <IconWechat></IconWechat>
 
         <div className={styles.qrcode}>
-          <img src='/images/qrcode.png' alt='qrcode' />
+          <img src='/images/qrcode.jpg' alt='qrcode' />
         </div>
       </div>
 

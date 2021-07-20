@@ -22,6 +22,12 @@ module.exports = {
       options: {
         trackingIds: ['G-H3VG3RPY7M', 'G-242TN6WXZV']
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-TX3VQZP'
+      }
     }
   ]
 }
