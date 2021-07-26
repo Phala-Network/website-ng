@@ -68,8 +68,8 @@ export const ExplorerConfig = {
     zh: '区块链浏览器'
   },
   href: {
-    en: 'https://phala.subscan.io',
-    zh: 'https://phala.subscan.io'
+    en: 'https://khala.subscan.io',
+    zh: 'https://khala.subscan.io'
   }
 }
 
@@ -166,30 +166,30 @@ export const LearnMoreConfig = {
     zh: '了解更多'
   },
   href: {
-    en: 'https://medium.com/phala-network/phalas-kusama-slot-auction-strategy-34cb93e07f3a',
-    zh: 'https://mp.weixin.qq.com/s/1iaLE_8Q2LjlgUsxW6LtWA'
+    en: 'https://github.com/orgs/Phala-Network/projects/11',
+    zh: 'https://github.com/orgs/Phala-Network/projects/12'
   }
 }
 
 export const CrowdloanConfig = {
   name: {
-    en: 'CROWDLOAN',
-    zh: '众贷'
+    en: 'Crowdloan Claim',
+    zh: '众贷领奖'
   },
   href: {
-    en: 'https://crowdloan.phala.network/en',
-    zh: 'https://crowdloan.phala.network/zh'
+    en: 'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf',
+    zh: 'https://mp.weixin.qq.com/s/RH1HUFr_wKS-d59Iw2YiyQ'
   }
 }
 
-export const SlotAuctionConfig = {
+export const PhalaAppConfig = {
   name: {
-    en: 'Slot Auction',
-    zh: '插槽竞拍'
+    en: 'Phala App',
+    zh: 'Phala App'
   },
   href: {
-    en: '/khala',
-    zh: '/khala'
+    en: 'https://app.phala.network',
+    zh: 'https://app.phala.network'
   }
 }
 
