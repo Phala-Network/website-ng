@@ -1,4 +1,4 @@
-import { ExplorerConfig, SlotAuctionConfig } from '../../../config'
+import { ExplorerConfig, PhalaAppConfig } from '../../../config'
 import Button from '../../Button'
 import I18n from '../../I18n'
 import React from 'react'
@@ -27,8 +27,8 @@ const FirstScreen = (x: Props) => {
         </div>
         <div className={styles.buttons}>
           <Button
-            text={SlotAuctionConfig.name}
-            href={SlotAuctionConfig.href}
+            text={PhalaAppConfig.name}
+            href={PhalaAppConfig.href}
             className={styles.button}
             type='link'
             color='primary'></Button>

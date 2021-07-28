@@ -75,6 +75,11 @@ export const PartnersSectionConfig = {
       logo: '/images/indexPage/partnersSection/partner-Incuba.png'
     },
     {
+      name: 'Gagra',
+      link: 'https://www.gagra.vc/',
+      logo: '/images/indexPage/partnersSection/partner-Gagra.png'
+    },
+    {
       name: 'HappyBlock',
       link: 'https://happyblocklabs.com/',
       logo: '/images/indexPage/partnersSection/partner-HappyBlock.png'

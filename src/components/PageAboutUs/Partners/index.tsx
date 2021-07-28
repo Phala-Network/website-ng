@@ -11,15 +11,15 @@ const Partners: React.FC<CardProps> = (props) => {
     <Card type='small' cardContentClassName={styles.cardContent} {...props}>
       {breakpoint === 'desktop' && (
         <div className={styles.partners}>
-          <PartnerRow from={0} to={3}></PartnerRow>
-          <PartnerRow from={4} to={8}></PartnerRow>
-          <PartnerRow from={9} to={13}></PartnerRow>
+          <PartnerRow from={0} to={4}></PartnerRow>
+          <PartnerRow from={5} to={9}></PartnerRow>
+          <PartnerRow from={10} to={14}></PartnerRow>
         </div>
       )}
 
       {breakpoint === 'tablet' && (
         <div className={styles.partners}>
-          <PartnerRow from={0} to={13}></PartnerRow>
+          <PartnerRow from={0} to={14}></PartnerRow>
         </div>
       )}
 
@@ -31,7 +31,7 @@ const Partners: React.FC<CardProps> = (props) => {
           <PartnerRow from={7} to={8}></PartnerRow>
           <PartnerRow from={9} to={10}></PartnerRow>
           <PartnerRow from={11} to={12}></PartnerRow>
-          <PartnerRow from={13} to={13}></PartnerRow>
+          <PartnerRow from={13} to={14}></PartnerRow>
         </div>
       )}
     </Card>

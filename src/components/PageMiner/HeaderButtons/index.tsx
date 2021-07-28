@@ -15,7 +15,7 @@ const HeaderButtons: React.FC<Props> = (props) => {
         type='link'
         href={{
           en: 'https://t.me/phalaminer',
-          zh: 'https://www.yuque.com/docs/share/2d2ec132-e6fc-44c0-a286-882f0d49c55e'
+          zh: 'https://mp.weixin.qq.com/s/L2faw5ljbLI8gAWeU_I0Ew'
         }}
         text={{
           en: 'Telegram Group',
