@@ -109,8 +109,8 @@ export const ResourcesMenuConfig = {
         zh: '测试网络'
       },
       href: {
-        en: 'https://poc4.phala.network/polkadotjs/#/explorer',
-        zh: 'https://poc4.phala.network/polkadotjs/#/explorer'
+        en: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer',
+        zh: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer'
       }
     },
     ExplorerConfig,
