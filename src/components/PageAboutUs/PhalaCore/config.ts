@@ -23,14 +23,14 @@ export const config = [
       zh: '佟林'
     },
     position: {
-      en: 'Co-founder & CEO',
-      zh: '联合创始人 & CEO'
+      en: 'Co-founder',
+      zh: '联合创始人'
     },
     description: {
       en:
-        'Former Senior Product Manager at Tencent & Didi. Led the million-users-level trading strategy design with profound experience in strategy design, data-driven decision and business model design.',
+        'Investment Advisor of PAKA Fund, Co-organizer of Privacy Computing In China. Former Senior Product Manager at Tencent & Didi.',
       zh:
-        '中国传媒大学硕士。前腾讯&滴滴资深产品人，百万级用户产品线负责人, 在策略设计、数据驱动、商业模型上有着深厚的经验积淀。'
+        'PAKA 基金投资顾问，隐私计算联盟（PCIC）联合发起人，前腾讯&滴滴资深产品人。'
     }
   },
   {
@@ -61,8 +61,10 @@ export const config = [
       zh: '联合创始人 & CTO'
     },
     description: {
-      en: 'Webmaster of RubyChina. Former CTO at KnewOne. Former Software Architect at DJI.',
-      zh: 'RubyChina 站长。前 KnewOne CTO，前大疆软件架构师。在技术圈影响力深厚。'
+      en:
+        'Webmaster of RubyChina. Former CTO at KnewOne. Former Software Architect at DJI.',
+      zh:
+        'RubyChina 站长。前 KnewOne CTO，前大疆软件架构师。在技术圈影响力深厚。'
     }
   }
 ]
