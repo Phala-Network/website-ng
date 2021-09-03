@@ -4,7 +4,7 @@ export const WikiConfig = {
     zh: 'Wiki'
   },
   href: {
-    en: 'https://wiki.phala.network/en-us/',
-    zh: 'https://wiki.phala.network/zh-cn/'
+    en: 'https://wiki.phala.network/en-us/docs/',
+    zh: 'https://wiki.phala.network/zh-cn/docs/'
   }
 }
