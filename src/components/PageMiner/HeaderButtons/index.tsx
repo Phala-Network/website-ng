@@ -1,8 +1,8 @@
+import React from 'react'
 import { EconomyWhitepaperConfig } from '../../../config/EconomyWhitepaperConfig'
 import { WikiConfig } from '../../../config/WikiConfig'
 import DetailPageButton from '../../DetailPageButton'
 import DetailPageHeaderButtons from '../../DetailPageHeaderButtons'
-import React from 'react'
 import * as styles from './index.module.scss'
 
 type Props = {}
@@ -12,7 +12,7 @@ const HeaderButtons: React.FC<Props> = (props) => {
     <DetailPageHeaderButtons>
       <DetailPageButton
         className={styles.btn1}
-        type='link'
+        type="link"
         href={{
           en: 'https://t.me/phalaminer',
           zh: 'https://mp.weixin.qq.com/s/L2faw5ljbLI8gAWeU_I0Ew'
@@ -25,10 +25,10 @@ const HeaderButtons: React.FC<Props> = (props) => {
 
       <DetailPageButton
         className={styles.btn2}
-        type='link'
+        type="link"
         href={{
-          en: 'https://wiki.phala.network/en-us/docs/poc3/',
-          zh: 'https://www.yuque.com/phala/mining/'
+          en: 'https://wiki.phala.network/en-us/docs/khala-mining/',
+          zh: 'https://wiki.phala.network/zh-cn/docs/khala-mining/'
         }}
         text={{
           en: 'Mining Tutorial',
@@ -38,7 +38,7 @@ const HeaderButtons: React.FC<Props> = (props) => {
 
       <DetailPageButton
         className={styles.btn3}
-        type='link'
+        type="link"
         {...WikiConfig}
         href={{
           en: 'https://wiki.phala.network/en-us/docs/poc3/',
@@ -48,7 +48,7 @@ const HeaderButtons: React.FC<Props> = (props) => {
 
       <DetailPageButton
         className={styles.btn4}
-        type='link'
+        type="link"
         {...EconomyWhitepaperConfig}
       />
     </DetailPageHeaderButtons>
