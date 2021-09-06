@@ -109,8 +109,10 @@ export const ResourcesMenuConfig = {
         zh: '测试网络'
       },
       href: {
-        en: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer',
-        zh: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer'
+        en:
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer',
+        zh:
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer'
       }
     },
     ExplorerConfig,
@@ -122,6 +124,16 @@ export const ResourcesMenuConfig = {
       href: {
         en: 'https://angel.co/company/phala-network',
         zh: 'https://angel.co/company/phala-network'
+      }
+    },
+    {
+      name: {
+        en: 'Responsible Disclosure',
+        zh: '责任披露'
+      },
+      href: {
+        en: '/Phala-Network-Responsible-Disclosure.pdf',
+        zh: '/Phala-Network-Responsible-Disclosure.pdf'
       }
     }
   ]
@@ -177,7 +189,8 @@ export const CrowdloanConfig = {
     zh: '众贷领奖'
   },
   href: {
-    en: 'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf',
+    en:
+      'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf',
     zh: 'https://mp.weixin.qq.com/s/RH1HUFr_wKS-d59Iw2YiyQ'
   }
 }
@@ -200,7 +213,13 @@ export const MenuConfig: {
     href: { [key: string]: string }
   }[]
   href?: { [key: string]: string }
-}[] = [KhalaConfig, PHAConfig, TechnologyConfig, MaintainMenuConfig, ResourcesMenuConfig]
+}[] = [
+  KhalaConfig,
+  PHAConfig,
+  TechnologyConfig,
+  MaintainMenuConfig,
+  ResourcesMenuConfig
+]
 
 const config = {}
 
