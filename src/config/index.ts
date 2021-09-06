@@ -132,8 +132,8 @@ export const ResourcesMenuConfig = {
         zh: '责任披露'
       },
       href: {
-        en: '/Phala-Network-Responsible-Disclosure.pdf',
-        zh: '/Phala-Network-Responsible-Disclosure.pdf'
+        en: 'https://phala.network/en/Phala-Network-Responsible-Disclosure.pdf',
+        zh: 'https://phala.network/zh/Phala-Network-Responsible-Disclosure.pdf'
       }
     }
   ]
