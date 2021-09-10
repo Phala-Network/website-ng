@@ -5,8 +5,8 @@ export const newsletterConfig = [
       zh: 'https://wiki.phala.network/zh-cn/docs/khala-mining/'
     },
     news: {
-      en: 'Para-1 testnet goes live, TEE mining test starts!',
-      zh: 'Para-1 测试网上线，全新经济模型及挖矿机制，欢迎体验！'
+      en: 'para-2 testnet goes live, TEE mining test starts!',
+      zh: 'para-2 测试网上线，全新经济模型及挖矿机制，欢迎体验！'
     }
   },
   {
