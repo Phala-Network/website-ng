@@ -11,8 +11,8 @@ export const newsletterConfig = [
   },
   {
     link: {
-      en: 'https://app.phala.network/mining/',
-      zh: 'https://app.phala.network/mining/'
+      en: 'https://app.phala.network/delegate/',
+      zh: 'https://app.phala.network/delegate/'
     },
     news: {
       en: 'Be a delegator, share mining rewards!💰',
