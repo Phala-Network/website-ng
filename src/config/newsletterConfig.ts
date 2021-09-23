@@ -5,12 +5,18 @@ export const newsletterConfig = [
       zh: 'https://wiki.phala.network/zh-cn/docs/khala-mining/'
     },
     news: {
-      en: 'para-2 testnet goes live, TEE mining test starts!',
-      zh: 'para-2 测试网上线，全新经济模型及挖矿机制，欢迎体验！'
+      en: '🔥🔥🔥Khala Secure Worker Mining Starts! TRY NOW！',
+      zh: '🔥🔥🔥Khala Secure Worker 挖矿正式上线，阅读指南，立刻加入！'
     }
   },
   {
-    link: { zh: 'https://mp.weixin.qq.com/s/1IvzIx_PHIMhmDqUtS9qww' },
-    news: { zh: '*矿工必读' }
+    link: {
+      en: 'https://app.phala.network/mining/',
+      zh: 'https://app.phala.network/mining/'
+    },
+    news: {
+      en: 'Be a delegator, share mining rewards!💰',
+      zh: '成为委托人，参与链上挖矿收益分配💰'
+    }
   }
 ]
