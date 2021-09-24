@@ -1,10 +1,11 @@
+import classnames from 'classnames'
+import React, { useEffect, useState } from 'react'
 import { useLocale } from '../../../hooks/useLocale'
+import isEmail from '../../../utils/isEmail'
 import I18n from '../../I18n'
 import IconArrow from '../../IconArrow'
 import IconSuccessCircle from '../../IconSuccessCircle'
-import React, { useEffect, useState } from 'react'
-import classnames from 'classnames'
-import isEmail from '../../../utils/isEmail'
+import useHobspot from '../useHobspot'
 import * as styles from './index.module.scss'
 
 type Props = {
@@ -16,7 +17,7 @@ type Props = {
 enum STATUS {
   default = 'default',
   warning = 'warning',
-  success = 'success',
+  success = 'success'
 }
 
 const EmailInput: React.FC<Props> = (props) => {
@@ -28,18 +29,32 @@ const EmailInput: React.FC<Props> = (props) => {
     zh: '输入您的邮箱'
   }
 
+  const { data, isLoading, isError, handleSubmit } = useHobspot(
+    {
+      portalId: '20647882',
+      formId: '0b071cad-c7bd-44dd-9f2d-e1a822e2e1cf'
+    },
+    {
+      email: textValue
+    }
+  )
+
+  const isSuccess =
+    data?.data?.inlineMessage === 'Thanks for submitting the form.'
+
   useEffect(() => {
     if (props.status === 'success') {
       setStatus(STATUS.success)
     }
   }, [props.status])
 
-  function onChange (e) {
+  function onChange(e) {
     setTextValue(e.target.value)
   }
 
-  function checkEmail () {
+  function checkEmail() {
     const isOk = isEmail(textValue)
+    setStatus(STATUS.default)
 
     if (!isOk) {
       setStatus(STATUS.warning)
@@ -48,19 +63,19 @@ const EmailInput: React.FC<Props> = (props) => {
     return isOk
   }
 
-  function onKeyPress (e) {
+  function onKeyPress(e) {
     if (e.key === 'Enter') {
       sendEmail()
     }
   }
 
-  async function sendEmail () {
+  async function sendEmail() {
     if (checkEmail()) {
       try {
-        props.onValidated({
-          EMAIL: textValue
-        })
-      } catch (e) {}
+        handleSubmit()
+      } catch (e) {
+        console.error(e)
+      }
     }
   }
 
@@ -72,12 +87,12 @@ const EmailInput: React.FC<Props> = (props) => {
           onChange={onChange}
           value={textValue}
           placeholder={placeholderText[locale]}
-          type='text'
+          type="text"
         />
 
         <div className={styles.icon}>
-          {status === STATUS.success && <IconSuccessCircle></IconSuccessCircle>}
-          {status !== STATUS.success && (
+          {isSuccess && <IconSuccessCircle></IconSuccessCircle>}
+          {!isSuccess && (
             <div onClick={sendEmail}>
               <IconArrow className={styles.iconArrow}></IconArrow>
             </div>
@@ -85,29 +100,29 @@ const EmailInput: React.FC<Props> = (props) => {
         </div>
       </div>
 
-      {props.status === 'sending' && (
+      {isLoading && (
         <div className={classnames([styles.infoText, styles.warning])}>
-          <I18n en='Sending...' zh='发送中...'></I18n>
+          <I18n en="Sending..." zh="发送中..."></I18n>
         </div>
       )}
 
       {props.status === 'error' && (
         <div className={classnames([styles.infoText, styles.warning])}>
-          <I18n en='Subscribe Fail' zh='订阅失败'></I18n>
+          <I18n en="Subscribe Fail" zh="订阅失败"></I18n>
         </div>
       )}
 
       {status === STATUS.warning && (
         <div className={classnames([styles.infoText, styles.warning])}>
           <I18n
-            en='Please enter the right email address'
-            zh='请输入正确的邮箱地址'></I18n>
+            en="Please enter the right email address"
+            zh="请输入正确的邮箱地址"></I18n>
         </div>
       )}
 
-      {status === STATUS.success && (
+      {isSuccess && (
         <div className={styles.infoText}>
-          <I18n en='Thanks for subscribing!' zh='感谢订阅！'></I18n>
+          <I18n en="Thanks for subscribing!" zh="感谢订阅！"></I18n>
         </div>
       )}
     </div>
