@@ -17,23 +17,6 @@ export const config = [
     }
   },
   {
-    avatar: 'people6',
-    name: {
-      en: 'Dr. Konstantin Shamruk',
-      zh: 'Konstantin Shamruk 博士'
-    },
-    position: {
-      en: 'Advisor',
-      zh: '顾问'
-    },
-    description: {
-      en:
-        'Ph.D., Economics, Toulouse School of Economics. Led the game-theoretic analysis of Phala Network token economics model.',
-      zh:
-        '法国图卢兹大学经济学博士。主导了 Phala Network 经济设计的博弈论分析工作。'
-    }
-  },
-  {
     avatar: 'people11',
     name: {
       en: 'Sandro Gorduladze',

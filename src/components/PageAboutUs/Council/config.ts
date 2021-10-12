@@ -1,19 +1,5 @@
 export const config = [
   {
-    avatar: 'people6',
-    name: {
-      en: 'Dr. Konstantin Shamruk',
-      zh: 'Konstantin Shamruk 博士'
-    },
-    position: {},
-    description: {
-      en:
-        'Ph.D., Economics, Toulouse School of Economics. Led the game-theoretic analysis of Phala Network token economics model.',
-      zh:
-        '法国图卢兹大学经济学博士。主导了 Phala Network 经济设计的博弈论分析工作。'
-    }
-  },
-  {
     avatar: 'people13',
     name: {
       en: 'Joe Petrowski',
@@ -23,8 +9,7 @@ export const config = [
     description: {
       en:
         'the technology integration lead of Web3 Foundation. Joe also hosts the “Relay Chain” podcast that covers people and projects in the Polkadot ecosystem.',
-      zh:
-        'Web3 基金会的技术整合主管'
+      zh: 'Web3 基金会的技术整合主管'
     }
   },
   {
