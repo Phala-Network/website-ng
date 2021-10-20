@@ -1,10 +1,10 @@
 export const EconomyWhitepaperConfig = {
   name: {
-    en: 'Token Economics',
-    zh: '经济白皮书'
+    en: 'Tokenomics',
+    zh: '矿经济模型'
   },
   href: {
-    en: 'https://files.phala.network/phala-token-economics-en.pdf',
-    zh: 'https://files.phala.network/phala-token-economics-cn.pdf'
+    en: 'https://wiki.phala.network/en-us/docs/tokenomic/',
+    zh: 'https://wiki.phala.network/zh-cn/docs/tokenomic/'
   }
 }
