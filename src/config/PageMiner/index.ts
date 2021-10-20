@@ -49,13 +49,6 @@ export const PageMinerConfig = {
         en: ['Lending', 'protocol '],
         zh: ['借贷', '协议']
       }
-    },
-    {
-      id: 'Cooperative',
-      name: {
-        en: ['Cooperative', 'mining pool'],
-        zh: ['合作', '矿池']
-      }
     }
   ]
 }

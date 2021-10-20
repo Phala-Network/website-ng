@@ -1,41 +1,39 @@
+import React from 'react'
 import { PageMinerConfig } from '../../config/PageMiner'
 import BgLayer from '../BgLayer'
-import Cooperative from './Cooperative'
 import DetailPageHeader from '../DetailPageHeader'
-import Environment from './Environment'
 import FloatMenu from '../FloatMenu'
-import HeaderButtons from './HeaderButtons'
-import LoanAgreement from './LoanAgreement'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
-import React from 'react'
+import Environment from './Environment'
+import HeaderButtons from './HeaderButtons'
+import * as styles from './index.module.scss'
+import LoanAgreement from './LoanAgreement'
 import Rewards from './Rewards'
 import WhyNeed from './WhyNeed'
-import * as styles from './index.module.scss'
 
 type Props = {}
 
 const PageMiner: React.FC<Props> = () => {
   return (
-    <BgLayer backgroundUrl='/images/PageMiner/bg2.png'>
-      <PageTitle zh='矿工' en='Miner'></PageTitle>
+    <BgLayer backgroundUrl="/images/PageMiner/bg2.png">
+      <PageTitle zh="矿工" en="Miner"></PageTitle>
 
       <NormalLayout className={styles.pageMiner}>
-        <div className='container'>
+        <div className="container">
           <DetailPageHeader {...PageMinerConfig}></DetailPageHeader>
 
           <HeaderButtons></HeaderButtons>
 
-          <div id='content' className={styles.content}>
+          <div id="content" className={styles.content}>
             {PageMinerConfig.content.map((item, index) => {
               const Component =
                 {
                   WhyNeed,
                   Environment,
                   LoanAgreement,
-                  Cooperative,
                   Rewards
-                }[item.id] ?? Cooperative
+                }[item.id] ?? WhyNeed
 
               return (
                 <Component
