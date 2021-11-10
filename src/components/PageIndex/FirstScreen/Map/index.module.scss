@@ -1,0 +1,19 @@
+@import '../../../../styles/variables.scss';
+
+.Map {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  path {
+    transition: fill 8s linear;
+  }
+
+  path {
+    fill: #3d3d3d;
+  }
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+}

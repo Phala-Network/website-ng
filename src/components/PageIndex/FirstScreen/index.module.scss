@@ -5,6 +5,7 @@
   width: 100%;
   position: relative;
   padding: 200px 0 120px 0;
+  background-color: #111111;
 
   .bg {
     position: absolute;
@@ -12,11 +13,14 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background-color: #111111;
     background-image: url(./map.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: right -60px bottom 260px;
+
+    @media (min-width: $lg) {
+      display: none;
+    }
   }
 
   .content {
