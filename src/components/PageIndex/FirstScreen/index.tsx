@@ -1,4 +1,5 @@
 import { ExplorerConfig, PhalaAppConfig } from '../../../config'
+import { StaticsList } from './StaticsList'
 import Button from '../../Button'
 import I18n from '../../I18n'
 import React, { FC } from 'react'
@@ -44,6 +45,8 @@ const FirstScreen: FC = () => {
             type="link"
             color="gray"></Button>
         </div>
+
+        <StaticsList></StaticsList>
       </div>
     </section>
   )
