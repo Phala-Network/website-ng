@@ -1,12 +1,10 @@
 @import '../../../styles/variables.scss';
 
 .firstScreen {
-  background-image: url(./bg.png);
-  height: 100vh;
-  min-height: 760px;
   margin: 0 auto;
   width: 100%;
   position: relative;
+  padding: 200px 0;
 
   .bg {
     position: absolute;
@@ -14,10 +12,11 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background-image: url('/video/phala.gif');
-    background-size: cover;
+    background-color: #111111;
+    background-image: url(./map.jpg);
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right -60px bottom 260px;
   }
 
   .content {
@@ -59,7 +58,6 @@
     @media (max-width: $md) {
       font-size: 16px;
       line-height: 1.13;
-      width: 200px;
     }
   }
 
