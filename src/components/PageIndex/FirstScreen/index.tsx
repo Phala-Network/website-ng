@@ -9,7 +9,7 @@ import * as styles from './index.module.scss'
 
 const FirstScreen: FC = () => {
   const title = {
-    en: ['Global', 'Confidential', 'Compute Cloud'],
+    en: ['COMPUTATION', 'FOR WEB3'],
     zh: ['Phala Network', '给区块链打上马赛克']
   }
 
