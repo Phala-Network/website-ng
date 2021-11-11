@@ -4,6 +4,21 @@
   margin-right: 47px;
   margin-bottom: 28px;
 
+  @media (min-width: 1268px) {
+    width: 264px;
+    margin-right: 188px;
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 158px;
+    margin-bottom: 88px;
+  }
+
+  &:last-child {
+    margin-right: 0 !important;
+  }
+
   .name {
     font-family: Montserrat;
     font-style: normal;
@@ -11,6 +26,11 @@
     font-size: 14px;
     line-height: 29px;
     color: #ffffff;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   .line {
@@ -18,6 +38,11 @@
     border-top: 1px solid #cdfa50;
     width: 100%;
     margin-bottom: 11px;
+
+    @media (min-width: 768px) {
+      margin-top: 13px;
+      margin-bottom: 30px;
+    }
   }
 
   .value {
@@ -27,5 +52,10 @@
     font-size: 36px;
     line-height: 29px;
     color: #d9d9d9;
+
+    @media (min-width: 768px) {
+      font-size: 60px;
+      line-height: 29px;
+    }
   }
 }

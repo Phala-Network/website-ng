@@ -14,7 +14,7 @@ export const Statics: FC<StaticsProps> = (props) => {
   useEffect(() => {
     setInterval(() => {
       if (ref.current) {
-        number.current = number.current + value / 180
+        number.current = number.current + value / 60
         if (number.current > value) {
           ref.current.innerText = value.toFixed(0)
         } else {
