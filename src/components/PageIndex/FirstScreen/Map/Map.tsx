@@ -22,7 +22,7 @@ const C: FC = () => {
 
     setInterval(() => {
       main()
-    }, 3000)
+    }, 2000)
   }, [])
 
   return (
