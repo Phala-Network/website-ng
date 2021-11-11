@@ -34,7 +34,7 @@ export const StaticsList: FC = () => {
         <>
           <Statics name="Workers" value={workers}></Statics>
           <Statics name="vCPU" value={cpu}></Statics>
-          <Statics name="Country" value={345}></Statics>
+          <Statics name="City" value={50} addPlus></Statics>
         </>
       )}
     </div>

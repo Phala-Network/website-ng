@@ -9,7 +9,7 @@ const C: FC = () => {
 
       if (map) {
         Array.from(map.getElementsByTagName('path')).forEach((item) => {
-          if (Math.random() < 0.08 || item.style.fill === '#CDFA50') {
+          if (Math.random() < 0.06 || item.style.fill === '#CDFA50') {
             item.style.fill = '#CDFA50'
           } else {
             item.style.fill = '#3D3D3D'
@@ -22,7 +22,7 @@ const C: FC = () => {
 
     setInterval(() => {
       main()
-    }, 2000)
+    }, 1100)
   }, [])
 
   return (
