@@ -1,6 +1,6 @@
-import { Svg } from './Svg'
 import React, { FC, memo, useEffect } from 'react'
 import * as styles from './index.module.scss'
+import { Svg } from './Svg'
 
 const C: FC = () => {
   useEffect(() => {
@@ -20,9 +20,11 @@ const C: FC = () => {
 
     main()
 
-    setInterval(() => {
+    const id = setInterval(() => {
       main()
     }, 1100)
+
+    return () => clearInterval(id)
   }, [])
 
   return (
