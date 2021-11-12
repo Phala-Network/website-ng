@@ -13,7 +13,7 @@ const CloudSection: React.FC = () => {
   }
 
   const titleText = {
-    en: ['Low Latency', 'High-Performance computing', 'Data Confidentiality'],
+    en: ['Low Latency', 'Data Confidentiality'],
     zh: ['低延迟', '高性能计算', '数据隐私']
   }
 
@@ -26,6 +26,7 @@ const CloudSection: React.FC = () => {
               <SectionHeader
                 color="gray"
                 title={titleText}
+                titleClassName={styles.title}
                 description={descriptionText}
               />
             </div>

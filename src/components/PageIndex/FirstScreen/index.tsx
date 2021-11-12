@@ -27,7 +27,7 @@ const FirstScreen: FC = () => {
         </div>
         <div className={styles.description}>
           <I18n
-            en="Privacy-Enhanced Permissionless computing protocol"
+            en="Privacy-Enhanced Permissionless Computing Protocol"
             zh="隐私增强、无需许可的自治计算网络"
           />
         </div>
