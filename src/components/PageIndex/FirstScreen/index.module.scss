@@ -4,8 +4,9 @@
   margin: 0 auto;
   width: 100%;
   position: relative;
-  padding: 200px 0 120px 0;
+  padding: 200px 0 0 0;
   background-color: #111111;
+  overflow: hidden;
 
   .bg {
     position: absolute;
