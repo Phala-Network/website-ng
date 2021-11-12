@@ -1,16 +1,16 @@
+import classnames from 'classnames'
+import React, { FC } from 'react'
 import { ExplorerConfig, PhalaAppConfig } from '../../../config'
-import { Map } from './Map'
-import { StaticsList } from './StaticsList'
 import Button from '../../Button'
 import I18n from '../../I18n'
-import React, { FC } from 'react'
-import classnames from 'classnames'
 import * as styles from './index.module.scss'
+import { Map } from './Map'
+import { StaticsList } from './StaticsList'
 
 const FirstScreen: FC = () => {
   const title = {
     en: ['COMPUTATION', 'FOR WEB3'],
-    zh: ['Phala Network', '给区块链打上马赛克']
+    zh: ['Web3.0 计算协议']
   }
 
   return (
@@ -27,8 +27,8 @@ const FirstScreen: FC = () => {
         </div>
         <div className={styles.description}>
           <I18n
-            en="Blockchain Confidentiality by Trusted Computing"
-            zh="使用隐私计算保卫区块链上秘密"
+            en="Privacy-Enhanced Permissionless computing protocol"
+            zh="隐私增强、无需许可的自治计算网络"
           />
         </div>
         <div className={styles.buttons}>

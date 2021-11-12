@@ -1,20 +1,20 @@
-import { EconomyWhitepaperConfig } from '../../../config/EconomyWhitepaperConfig'
-import { TechWhitepaperConfig } from '../../../config'
-import Button from '../../Button'
-import PlayerContent from './PlayerContent'
 import React from 'react'
+import { TechWhitepaperConfig } from '../../../config'
+import { EconomyWhitepaperConfig } from '../../../config/EconomyWhitepaperConfig'
+import Button from '../../Button'
 import SectionHeader from '../../SectionHeader'
 import * as styles from './index.module.scss'
+import PlayerContent from './PlayerContent'
 
 const CloudSection: React.FC = () => {
   const descriptionText = {
-    en: 'General-Purpose Confidential Smart Contract for DApps and DeFi',
-    zh: '安全、不暴露隐私的通用计算，为 Defi 和 Dapp 提供保密智能合约服务'
+    en: 'Provide Trustless Computing to Web 3.0',
+    zh: '为Web3.0提供零信任的计算'
   }
 
   const titleText = {
-    en: ['Trustless', 'Privacy-Preserving', 'Cloud Computing'],
-    zh: ['去信任化隐私计算云']
+    en: ['Low Latency', 'High-Performance computing', 'Data Confidentiality'],
+    zh: ['低延迟', '高性能计算', '数据隐私']
   }
 
   return (
@@ -22,14 +22,14 @@ const CloudSection: React.FC = () => {
       <div className="container">
         <div className={styles.content}>
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-8">
               <SectionHeader
                 color="gray"
                 title={titleText}
                 description={descriptionText}
               />
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-4">
               <div className={styles.buttons}>
                 <Button
                   href={EconomyWhitepaperConfig.href}
