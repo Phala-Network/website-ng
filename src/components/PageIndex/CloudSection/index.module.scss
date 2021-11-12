@@ -5,6 +5,10 @@
   overflow-x: hidden;
   background-color: $color-bg-black;
 
+  .title {
+    line-height: 1.5;
+  }
+
   .content {
     background-repeat: no-repeat;
     background-position: bottom center;

@@ -1,7 +1,6 @@
-import { useLocale } from '../../hooks/useLocale'
-import I18n from '../I18n'
-import React, { useEffect, useState } from 'react'
 import classnames from 'classnames'
+import React, { useEffect, useState } from 'react'
+import { useLocale } from '../../hooks/useLocale'
 import * as styles from './index.module.scss'
 
 export type SectionHeaderProps = {
@@ -47,16 +46,16 @@ const SectionHeader: React.FC<SectionHeaderProps> = (props) => {
       <div className={classnames([styles.title, titleClassName])}>
         {Array.isArray(localeTitle)
           ? localeTitle.map((str) => {
-            return <div key={str}>{str}</div>
-          })
+              return <div key={str}>{str}</div>
+            })
           : localeTitle}
       </div>
       {description && (
         <div className={classnames([styles.description, descriptionClassName])}>
           {Array.isArray(localeDescription)
             ? localeDescription.map((str) => {
-              return <div key={str}>{str}</div>
-            })
+                return <div key={str}>{str}</div>
+              })
             : localeDescription}
         </div>
       )}

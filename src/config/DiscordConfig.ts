@@ -4,8 +4,8 @@ export const DiscordConfig = {
     zh: 'Discord'
   },
   href: {
-    en: 'https://discord.gg/myBmQu5',
-    zh: 'https://discord.gg/myBmQu5'
+    en: 'https://discord.gg/phala',
+    zh: 'https://discord.gg/phala'
   }
 }
 
@@ -14,5 +14,5 @@ export const DiscordDevChannel = {
     en: 'Discord Dev Channel',
     zh: 'Discord 开发者频道'
   },
-  href: 'https://discord.gg/sCxM9Pw'
+  href: 'https://discord.gg/phala'
 }
