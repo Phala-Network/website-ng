@@ -13,7 +13,7 @@ const CloudSection: React.FC = () => {
   }
 
   const titleText = {
-    en: ['Low Latency', 'Data Confidentiality'],
+    en: ['Low Latency', 'High-Performance', 'Data Confidentiality'],
     zh: ['低延迟', '高性能计算', '数据隐私']
   }
 
