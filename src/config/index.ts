@@ -118,6 +118,18 @@ export const ResourcesMenuConfig = {
     ExplorerConfig,
     {
       name: {
+        en: 'Brand',
+        zh: '品牌'
+      },
+      href: {
+        en:
+          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq',
+        zh:
+          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq'
+      }
+    },
+    {
+      name: {
         en: 'Careers',
         zh: '职位'
       },

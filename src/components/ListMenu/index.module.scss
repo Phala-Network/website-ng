@@ -1,7 +1,8 @@
 @import '../../styles/variables.scss';
 
 .listMenu {
-  @media (max-width: $md) {
+  @media (max-width: $lg) {
+    margin-top: 20px;
     border-top: 1px solid rgba($color-gray, 0.6);
     padding-top: 16px;
     padding-bottom: 16px;
@@ -21,14 +22,21 @@
   }
 
   .items {
-    height: 225px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
+    &.first {
+      height: 225px;
+    }
+
+    &.last {
+      height: 180px;
+    }
+
     @media (max-width: $sm) {
       flex-wrap: nowrap;
-      height: auto;
+      height: auto !important;
     }
   }
 

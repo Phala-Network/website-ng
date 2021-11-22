@@ -15,7 +15,7 @@ const Footer: React.FC<Props> = () => {
       <div className="container">
         <div className={styles.content}>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className={styles.left}>
                 <Subscribe></Subscribe>
 
@@ -24,14 +24,14 @@ const Footer: React.FC<Props> = () => {
                 <MediaList></MediaList>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className={styles.right}>
                 <div className="row">
-                  <div className="col-sm-4">
-                    <ListMenu data={MaintainMenuConfig}></ListMenu>
+                  <div className="col-sm-3">
+                    <ListMenu no={0} data={MaintainMenuConfig}></ListMenu>
                   </div>
-                  <div className="col-sm-8">
-                    <ListMenu data={ResourcesMenuConfig}></ListMenu>
+                  <div className="col-sm-9">
+                    <ListMenu no={1} data={ResourcesMenuConfig}></ListMenu>
                   </div>
                 </div>
 
