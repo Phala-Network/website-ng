@@ -60,9 +60,9 @@ export const PartnersSectionConfig = {
       logo: '/images/indexPage/partnersSection/partner-SNZ.png'
     },
     {
-      name: 'CANDAQ',
-      link: 'http://candaq.com/',
-      logo: '/images/indexPage/partnersSection/partner-CANDAQ.png'
+      name: 'Alameda',
+      link: '/',
+      logo: '/images/indexPage/partnersSection/partner-Alameda.png'
     },
     {
       name: 'PAKA',
