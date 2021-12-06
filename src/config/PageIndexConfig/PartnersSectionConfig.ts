@@ -61,7 +61,7 @@ export const PartnersSectionConfig = {
     },
     {
       name: 'Alameda',
-      link: '/',
+      link: 'https://www.alameda-research.com/',
       logo: '/images/indexPage/partnersSection/partner-Alameda.png'
     },
     {
