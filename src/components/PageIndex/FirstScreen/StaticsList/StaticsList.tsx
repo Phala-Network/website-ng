@@ -32,9 +32,9 @@ export const StaticsList: FC = () => {
     <div className={styles.StaticsList}>
       {workers > 0 && (
         <>
-          <Statics name="Worker" value={workers}></Statics>
-          <Statics name="vCPU" value={cpu}></Statics>
-          <Statics name="City" value={50} addPlus></Statics>
+          <Statics name="Workers" value={workers}></Statics>
+          <Statics name="vCPUs" value={cpu}></Statics>
+          <Statics name="Cities" value={50} addPlus></Statics>
         </>
       )}
     </div>
