@@ -12,9 +12,21 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
+    position: relative;
+    padding-left: 36px;
+    padding-right: 29px;
+    box-sizing: content-box;
+
+    .close {
+      position: absolute;
+      right: 23px;
+      top: 22px;
+      width: 17px;
+      height: auto;
+    }
 
     .left {
-      margin: 0 36px;
+      margin-right: 36px;
 
       .header {
         font-family: Lato;
@@ -81,7 +93,7 @@
     .right {
       width: 184px;
       height: auto;
-      margin-right: 29px;
+      // margin-right: 29px;
     }
 
     @media (max-width: $md) {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classnames from 'classnames'
 import * as styles from './index.module.scss'
 
@@ -42,6 +42,14 @@ const LINKS = [
 ]
 
 const Crowdloan: React.FC = () => {
+  const [visible, setVisible] = useState(true)
+
+  const handleClose = () => {
+    setVisible(false)
+  }
+
+  if (!visible) return null
+
   return (
     <section className={styles.crowdloan}>
       <div className={classnames(['container', styles.wrapper])}>
@@ -75,6 +83,12 @@ const Crowdloan: React.FC = () => {
           className={styles.right}
           src="/images/indexPage/crowdloanSecion/logo.svg"
           alt="Phala Crowdloan"
+        />
+        <img
+          onClick={handleClose}
+          className={styles.close}
+          src="/images/indexPage/crowdloanSecion/close.svg"
+          alt="close"
         />
       </div>
     </section>
