@@ -93,16 +93,17 @@
     .right {
       width: 184px;
       height: auto;
-      // margin-right: 29px;
     }
 
-    @media (max-width: $md) {
+    @media (max-width: $sm) {
       flex-direction: column;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
       margin: 0 10px;
       padding-bottom: 15px;
+      padding-left: 0;
+      padding-right: 0;
 
       .left {
         margin: 0 5px;
