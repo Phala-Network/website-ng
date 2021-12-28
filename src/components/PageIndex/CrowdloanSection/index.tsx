@@ -1,22 +1,28 @@
 import React from 'react'
+import classnames from 'classnames'
 import * as styles from './index.module.scss'
 
 const LINKS = [
   {
     name: 'Parallel',
-    icon: '/images/indexPage/crowdloanSecion/parallel.svg',
+    icon: '/images/indexPage/crowdloanSecion/polkadotjs.svg',
     href: 'https://crowdloan.parallel.fi/#/auction/contribute/polkadot/2035'
   },
   {
     name: 'Polkadot.js',
-    icon: '/images/indexPage/crowdloanSecion/polkadotjs.svg',
+    icon: '/images/indexPage/crowdloanSecion/Equlilibrium.svg',
     href:
       'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/parachains/crowdloan'
   },
   {
     name: 'Equlilibrium',
-    icon: '/images/indexPage/crowdloanSecion/Equlilibrium.svg',
+    icon: '/images/indexPage/crowdloanSecion/parallel.svg',
     href: 'https://xdot.equilibrium.io/en/contribute?p=Phala'
+  },
+  {
+    name: 'Subscan',
+    icon: '/images/indexPage/crowdloanSecion/subscan.svg',
+    href: 'https://polkadot.subscan.io/crowdloan'
   },
   {
     name: 'OKEx',
@@ -32,18 +38,13 @@ const LINKS = [
     name: 'Gate',
     icon: '/images/indexPage/crowdloanSecion/gate.svg',
     href: 'https://www.gate.io/cn/slot_auction'
-  },
-  {
-    name: 'Subscan',
-    icon: '/images/indexPage/crowdloanSecion/subscan.svg',
-    href: 'https://polkadot.subscan.io/crowdloan'
   }
 ]
 
 const Crowdloan: React.FC = () => {
   return (
     <section className={styles.crowdloan}>
-      <div className={styles.wrapper}>
+      <div className={classnames(['container', styles.wrapper])}>
         <div className={styles.left}>
           <div className={styles.header}>JOIN PHALA CROWDLOAN</div>
           <div className={styles.body}>

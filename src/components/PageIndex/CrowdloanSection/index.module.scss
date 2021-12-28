@@ -83,7 +83,7 @@
       margin-right: 29px;
     }
 
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
       flex-direction: column;
       flex-direction: column-reverse;
       justify-content: center;
@@ -137,6 +137,7 @@
       .right {
         width: 90px;
         margin-right: 0;
+        margin-bottom: 15px;
       }
     }
   }
