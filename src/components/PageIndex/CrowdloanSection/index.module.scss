@@ -3,13 +3,14 @@
 .crowdloan {
   margin-top: $nav-height;
   background: #111111;
+  display: flex;
+  justify-content: center;
 
   .wrapper {
     box-sizing: border-box;
     border: 2px solid #cdfa50;
     display: flex;
     justify-content: space-between;
-    margin: 0 100px;
     padding: 25px 0;
 
     .left {
