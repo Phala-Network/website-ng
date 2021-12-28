@@ -45,9 +45,9 @@ const Crowdloan: React.FC = () => {
     <section className={styles.crowdloan}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
-          <div className={styles.header}>Join Phala Crowdloan</div>
+          <div className={styles.header}>JOIN PHALA CROWDLOAN</div>
           <div className={styles.body}>
-            <span className={styles.title}>contribute now</span>
+            <span className={styles.title}>Contribute Now</span>
             <div className={styles.itemBox}>
               {LINKS.map(({ name, icon, href }) => (
                 <a
