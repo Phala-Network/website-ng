@@ -15,7 +15,7 @@ const LINKS = [
       'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/parachains/crowdloan'
   },
   {
-    name: 'Equlilibrium',
+    name: 'Equilibrium',
     icon: '/images/indexPage/crowdloanSecion/Equlilibrium.svg',
     href: 'https://xdot.equilibrium.io/en/contribute?p=Phala'
   },
