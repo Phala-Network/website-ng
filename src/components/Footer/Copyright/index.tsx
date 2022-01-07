@@ -8,7 +8,7 @@ const Copyright: React.FC<Props> = () => {
 
   return (
     <div className={styles.copyright}>
-      <div>COPYRIGHT © 2021 PHALA.LTD ALL RIGHTS RESERVED. </div>
+      <div>COPYRIGHT © 2022 PHALA.LTD ALL RIGHTS RESERVED. </div>
       <div>May Phala be with you!</div>
     </div>
   )
