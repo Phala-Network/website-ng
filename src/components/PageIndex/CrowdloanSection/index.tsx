@@ -46,7 +46,7 @@ const LINKS = [
   },
   {
     name: 'MEXC',
-    icon: '/images/indexPage/crowdloanSecion/mexc.png',
+    icon: '/images/indexPage/crowdloanSecion/mexc.svg',
     href: 'https://www.mexc.com/slot/polkadot'
   }
 ]
