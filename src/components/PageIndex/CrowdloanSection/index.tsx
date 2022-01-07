@@ -43,6 +43,11 @@ const LINKS = [
     name: 'Gate',
     icon: '/images/indexPage/crowdloanSecion/gate.svg',
     href: 'https://www.gate.io/cn/slot_auction'
+  },
+  {
+    name: 'MEXC',
+    icon: '/images/indexPage/crowdloanSecion/mexc.png',
+    href: 'https://www.mexc.com/slot/polkadot'
   }
 ]
 
