@@ -30,6 +30,11 @@ const LINKS = [
     href: 'https://polkadot.subscan.io/crowdloan'
   },
   {
+    name: 'Kraken',
+    icon: '/images/indexPage/crowdloanSecion/kraken.svg',
+    href: 'https://www.kraken.com/u/earn/parachains'
+  },
+  {
     name: 'OKEx',
     icon: '/images/indexPage/crowdloanSecion/ok.svg',
     href: 'https://www.okex.com/earn/slotauction/home'
