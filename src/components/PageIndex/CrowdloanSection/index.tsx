@@ -53,6 +53,11 @@ const LINKS = [
     name: 'MEXC',
     icon: '/images/indexPage/crowdloanSecion/mexc.svg',
     href: 'https://www.mexc.com/slot/polkadot'
+  },
+  {
+    name: 'KuCoin',
+    icon: '/images/indexPage/crowdloanSecion/KuCoin.png',
+    href: 'https://www.kucoin.com/earn/polkadot'
   }
 ]
 
