@@ -11,7 +11,7 @@ export const TimelineSectionConfig = {
         quarter: 4,
         content: {
           en: ['Phala Team was founded'],
-          zh: ['Phala团队成立']
+          zh: ['Phala 团队成立']
         }
       },
       {
@@ -22,7 +22,10 @@ export const TimelineSectionConfig = {
             'Whitepaper released',
             'pLibra (Now pDiem) won the Web3 Foundation Grant'
           ],
-          zh: ['发布 Phala Network技术白皮书', '首个Web3基金会 Grant: pLibra']
+          zh: [
+            '发布 Phala Network 技术白皮书',
+            '首个 Web3 基金会 Grant: pLibra'
+          ]
         }
       },
       {
@@ -33,7 +36,7 @@ export const TimelineSectionConfig = {
             'Token Economics paper released',
             'W3A won another Web3 Foundation Grant'
           ],
-          zh: ['发布经济白皮书', '第二个 Web3基金会 Grant: Web3 Analytics']
+          zh: ['发布经济白皮书', '第二个 Web3 基金会 Grant: Web3 Analytics']
         }
       },
       {
@@ -45,8 +48,8 @@ export const TimelineSectionConfig = {
             'KSM x PHA stakedrop with 2.1% allocation'
           ],
           zh: [
-            '测试网POC-1上线，获得融资',
-            '通过Stakedrop活动空投了2.1%的代币给Kusama社区'
+            '测试网 POC-1 上线，获得融资',
+            '通过 Stakedrop 活动空投了 2.1% 的代币给 Kusama 社区'
           ]
         }
       },
@@ -59,8 +62,8 @@ export const TimelineSectionConfig = {
             'Testnet POC-3 , run a cross-chain demo with Acala on Rococo'
           ],
           zh: [
-            'ERC20代币发行',
-            '上线POC-3测试网，并在Rococo测试网实现了与Acala测试网的跨链交易'
+            'ERC20 代币发行',
+            '上线 POC-3 测试网，并在 Rococo 测试网实现了与 Acala 测试网的跨链交易'
           ]
         }
       },
@@ -74,8 +77,8 @@ export const TimelineSectionConfig = {
             'Launch Khala Network on Kusama'
           ],
           zh: [
-            'PHA代币上线了币安、Kucoin、Okex、Huobi多家交易所',
-            '赢得Kusama首批卡槽，奖励池为2.5%代币',
+            'PHA 代币上线了币安、Kucoin、Okex、Huobi 多家交易所',
+            '赢得 Kusama 首批卡槽，奖励池为 2.5% 代币',
             '上线平行链 Khala Network'
           ]
         }
@@ -90,7 +93,7 @@ export const TimelineSectionConfig = {
           ],
           zh: [
             '开通 以太坊-Khala 桥',
-            '上线 Secure Worker Mining系统，支持PHA抵押'
+            '上线 Secure Worker Mining 系统，支持 PHA 抵押'
           ]
         }
       },
@@ -103,7 +106,7 @@ export const TimelineSectionConfig = {
             'Roadmap to Metaverse',
             'Fat Contract POC'
           ],
-          zh: ['民主化治理', '发布元宇宙路线图', '发布Fat Contract 产品概念']
+          zh: ['民主化治理', '发布元宇宙路线图', '发布 Fat Contract 产品概念']
         }
       }
     ],
@@ -119,10 +122,10 @@ export const TimelineSectionConfig = {
             'Phala World NFT'
           ],
           zh: [
-            '在Polkadot或Kusama上线Phala主网',
-            'Fat Contract V1版本发布，支持 ink! 语言和 Javascript SDK',
+            '在 Polkadot 或 Kusama 上线 Phala 主网',
+            'Fat Contract V1 版本发布，支持 ink! 语言和 Javascript SDK',
             '经济模型升级',
-            '发布Phala World NFT'
+            '发布 Phala World NFT'
           ]
         }
       },
@@ -137,10 +140,10 @@ export const TimelineSectionConfig = {
             'Kusama new slot auction'
           ],
           zh: [
-            '发布 Fat Contract V2，支持异步调用和HTTP请求',
-            'Web3云计算系统升级，支持SGX DCAP',
-            '3D渲染服务上线',
-            'Khala获得新的一年卡槽租期'
+            '发布 Fat Contract V2，支持异步调用和 HTTP 请求',
+            'Web3 云计算系统升级，支持 SGX DCAP',
+            '3D 渲染服务上线',
+            'Khala 获得新的一年卡槽租期'
           ]
         }
       },
@@ -155,10 +158,10 @@ export const TimelineSectionConfig = {
             'Phala World Game (Beta)'
           ],
           zh: [
-            'Web3云架构完整上线： QoS、MapReduce、消息队列、去中心化存储整合...',
-            '支持AMD SEV',
+            'Web3 云架构完整上线: QoS、MapReduce、消息队列、去中心化存储整合...',
+            '支持 AMD SEV',
             'Fat Contract V3 上线',
-            '发布 Phala World 游戏Beta版'
+            '发布 Phala World 游戏 Beta 版'
           ]
         }
       }
