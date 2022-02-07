@@ -19,15 +19,15 @@ type Props = {}
 
 const PageNode: React.FC<Props> = () => {
   return (
-    <BgLayer backgroundUrl='/images/PageNode/bg.png'>
-      <PageTitle zh='节点' en='Node'></PageTitle>
+    <BgLayer backgroundUrl="/images/PageNode/bg.png">
+      <PageTitle zh="节点" en="Node"></PageTitle>
 
       <NormalLayout className={styles.pageNode}>
-        <div className='container'>
+        <div className="container">
           <DetailPageHeader {...PageNodeConfig}></DetailPageHeader>
           <DetailPageHeaderButtons>
             <DetailPageButton
-              type='link'
+              type="link"
               className={styles.btn1}
               href={EconomyWhitepaperConfig.href}
               text={EconomyWhitepaperConfig.name}
@@ -37,24 +37,26 @@ const PageNode: React.FC<Props> = () => {
               en={
                 <DetailPageButton
                   className={styles.btn3}
-                  text='Telegram'
-                  href='https://t.me/phalanetwork'
+                  text="Telegram"
+                  href="https://t.me/phalanetwork"
                 />
               }
               zh=""></I18nRender>
 
             <DetailPageButton
-              type='link'
+              type="link"
               className={styles.btn2}
               href={{
-                en: 'https://wiki.phala.network/en-us/docs/gatekeeper/',
-                zh: 'https://wiki.phala.network/zh-cn/docs/gatekeeper/ '
+                en:
+                  'https://wiki.phala.network/en-us/learn/maintain/gatekeeper/',
+                zh:
+                  'https://wiki.phala.network/en-us/learn/maintain/gatekeeper/'
               }}
               text={WikiConfig.name}
             />
           </DetailPageHeaderButtons>
 
-          <div id='content' className={styles.content}>
+          <div id="content" className={styles.content}>
             {PageNodeConfig.content.map((item, index) => {
               const Component = {
                 Gatekeeper,
