@@ -1,3 +1,4 @@
+import Newsletter from '../../Newsletter'
 import React, { useState } from 'react'
 import classnames from 'classnames'
 import * as styles from './index.module.scss'
@@ -68,48 +69,51 @@ const Crowdloan: React.FC = () => {
     setVisible(false)
   }
 
-  if (!visible) return null
-
   return (
     <section className={styles.crowdloan}>
-      <div className={classnames(['container', styles.wrapper])}>
-        <div className={styles.left}>
-          <div className={styles.header}>JOIN PHALA CROWDLOAN</div>
-          <div className={styles.body}>
-            <span className={styles.title}>Contribute Now</span>
-            <div className={styles.itemBox}>
-              {LINKS.map(({ name, icon, href }) => (
-                <a
-                  key={name}
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.item}>
-                  <img src={icon} alt={name} />
-                  <span>{name}</span>
-                </a>
-              ))}
+      {visible && (
+        <div className={classnames(['container', styles.wrapper])}>
+          <div className={styles.left}>
+            <div className={styles.header}>JOIN PHALA CROWDLOAN</div>
+            <div className={styles.body}>
+              <span className={styles.title}>Contribute Now</span>
+              <div className={styles.itemBox}>
+                {LINKS.map(({ name, icon, href }) => (
+                  <a
+                    key={name}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.item}>
+                    <img src={icon} alt={name} />
+                    <span>{name}</span>
+                  </a>
+                ))}
+              </div>
             </div>
+            <a
+              className={styles.footer}
+              target="_blank"
+              rel="noreferrer"
+              href="https://medium.com/phala-network/phalas-polkadot-slot-auction-strategy-d7432e73b6c">
+              Read more
+            </a>
           </div>
-          <a
-            className={styles.footer}
-            target="_blank"
-            rel="noreferrer"
-            href="https://medium.com/phala-network/phalas-polkadot-slot-auction-strategy-d7432e73b6c">
-            Read more
-          </a>
+          <img
+            className={styles.right}
+            src="/images/indexPage/crowdloanSecion/logo.svg"
+            alt="Phala Crowdloan"
+          />
+          <img
+            onClick={handleClose}
+            className={styles.close}
+            src="/images/indexPage/crowdloanSecion/close.svg"
+            alt="close"
+          />
         </div>
-        <img
-          className={styles.right}
-          src="/images/indexPage/crowdloanSecion/logo.svg"
-          alt="Phala Crowdloan"
-        />
-        <img
-          onClick={handleClose}
-          className={styles.close}
-          src="/images/indexPage/crowdloanSecion/close.svg"
-          alt="close"
-        />
+      )}
+      <div className={styles.newsLetter}>
+        <Newsletter></Newsletter>
       </div>
     </section>
   )

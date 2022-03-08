@@ -1,13 +1,14 @@
 export const newsletterConfig = [
   {
     link: {
-      en: 'https://forum.phala.network/t/topic/3213',
-      zh: 'https://forum.phala.network/t/topic/3213'
+      en: 'https://app.phala.network/end-game/',
+      zh: 'https://app.phala.network/end-game/'
     },
     news: {
       en:
-        '🎤 Open discussion: Polkadot slot auction strategy for Phala Network!',
-      zh: '🎤 社区开放讨论：Phala 波卡卡槽竞拍策略交流'
+        '🧙‍♀️ 1605 END-GAME is in full swing! Join and get 1,100,000 $PHA free-delegation & NFT/NFT SEAL now!',
+      zh:
+        '🧙‍♀️ 1605 END-GAME 火热进行中！即刻参与，赢取 1,100,000 PHA 免抵押额 & Phala World NFT/NFT 印记！'
     }
   }
 ]
