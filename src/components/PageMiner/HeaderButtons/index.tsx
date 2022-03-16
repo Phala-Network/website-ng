@@ -14,9 +14,9 @@ const HeaderButtons: React.FC<Props> = (props) => {
         type="link"
         href={{
           en:
-            'https://wiki.phala.network/en-us/maintain/khala-mining/khala-pre-mainnet-mining-guide/',
+            'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/',
           zh:
-            'https://wiki.phala.network/en-us/maintain/khala-mining/khala-pre-mainnet-mining-guide/'
+            'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/'
         }}
         text={{
           en: 'Mining Tutorial',

@@ -88,7 +88,7 @@ const Rewards: React.FC<Props> = (props) => {
               please refer to the{' '}
               <TagA
                 className={styles.link}
-                href="https://wiki.phala.network/en-us/learn/maintain/mine/">
+                href="https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/">
                 Miner Guide
               </TagA>
               .
@@ -99,7 +99,7 @@ const Rewards: React.FC<Props> = (props) => {
               更多细则，如衰减规则、算法，请查阅
               <TagA
                 className={styles.link}
-                href="https://wiki.phala.network/en-us/learn/maintain/mine/">
+                href="https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/">
                 矿工手册
               </TagA>
               。
