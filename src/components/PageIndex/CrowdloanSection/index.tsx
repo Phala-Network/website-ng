@@ -5,20 +5,15 @@ import * as styles from './index.module.scss'
 
 const LINKS = [
   {
-    name: 'Parallel',
-    icon: '/images/indexPage/crowdloanSecion/parallel.svg',
-    href: 'https://crowdloan.parallel.fi/#/auction/contribute/polkadot/2035'
-  },
-  {
     name: 'Polkadot.js',
     icon: '/images/indexPage/crowdloanSecion/polkadotjs.svg',
     href:
       'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/parachains/crowdloan'
   },
   {
-    name: 'Bifrost',
-    icon: '/images/indexPage/crowdloanSecion/bifrost.svg',
-    href: 'https://bifrost.app/vcrowdloan?paraId=2035'
+    name: 'Parallel',
+    icon: '/images/indexPage/crowdloanSecion/parallel.svg',
+    href: 'https://crowdloan.parallel.fi/#/auction/contribute/polkadot/2035'
   },
   {
     name: 'Equilibrium',
@@ -36,11 +31,6 @@ const LINKS = [
     href: 'https://www.kraken.com/u/earn/parachains'
   },
   {
-    name: 'OKEx',
-    icon: '/images/indexPage/crowdloanSecion/ok.svg',
-    href: 'https://www.okex.com/earn/slotauction/home'
-  },
-  {
     name: 'AscendEX',
     icon: '/images/indexPage/crowdloanSecion/ascend.svg',
     href: 'https://ascendex.com/zh-cn/dotslot'
@@ -49,11 +39,6 @@ const LINKS = [
     name: 'Gate',
     icon: '/images/indexPage/crowdloanSecion/gate.svg',
     href: 'https://www.gate.io/cn/slot_auction'
-  },
-  {
-    name: 'MEXC',
-    icon: '/images/indexPage/crowdloanSecion/mexc.svg',
-    href: 'https://www.mexc.com/slot/polkadot'
   },
   {
     name: 'KuCoin',
@@ -74,7 +59,11 @@ const Crowdloan: React.FC = () => {
       {visible && (
         <div className={classnames(['container', styles.wrapper])}>
           <div className={styles.left}>
-            <div className={styles.header}>JOIN PHALA CROWDLOAN</div>
+            <div className={styles.header}>Phala Crowdloan Reward Upgrate!</div>
+            <ul className={styles.subHeader}>
+              <li>Phala Crowdloan Reward Upgrate!</li>
+              <li>1 DOT= 24 PHA +10% OG Bonus</li>
+            </ul>
             <div className={styles.body}>
               <span className={styles.title}>Contribute Now</span>
               <div className={styles.itemBox}>
@@ -95,7 +84,7 @@ const Crowdloan: React.FC = () => {
               className={styles.footer}
               target="_blank"
               rel="noreferrer"
-              href="https://medium.com/phala-network/phalas-polkadot-slot-auction-strategy-d7432e73b6c">
+              href="https://medium.com/phala-network/phala-crowdloan-upgrade-double-rewards-coming-9a01a7c32a62">
               Read more
             </a>
           </div>
