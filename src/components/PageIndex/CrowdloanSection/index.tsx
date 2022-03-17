@@ -25,11 +25,11 @@ const LINKS = [
     icon: '/images/indexPage/crowdloanSecion/subscan.svg',
     href: 'https://polkadot.subscan.io/crowdloan'
   },
-  {
-    name: 'Kraken',
-    icon: '/images/indexPage/crowdloanSecion/kraken.svg',
-    href: 'https://www.kraken.com/u/earn/parachains'
-  },
+  // {
+  //   name: 'Kraken',
+  //   icon: '/images/indexPage/crowdloanSecion/kraken.svg',
+  //   href: 'https://www.kraken.com/u/earn/parachains'
+  // },
   {
     name: 'AscendEX',
     icon: '/images/indexPage/crowdloanSecion/ascend.svg',
