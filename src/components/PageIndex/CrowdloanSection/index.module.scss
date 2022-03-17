@@ -38,6 +38,22 @@
         line-height: 43px;
         color: #ffffff;
       }
+      .subHeader {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        margin-top: 8px;
+        gap: 50px;
+
+        li {
+          font-family: Lato;
+          font-style: normal;
+          font-size: 18px;
+          line-height: 20px;
+          color: #ffffff;
+        }
+      }
       .body {
         display: flex;
         padding: 19px 0;
@@ -94,8 +110,9 @@
     }
 
     .right {
-      width: 184px;
+      width: 292px;
       height: auto;
+      margin-right: 40px;
     }
 
     @media (max-width: $sm) {
