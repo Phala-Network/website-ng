@@ -30,11 +30,11 @@ const LINKS = [
   //   icon: '/images/indexPage/crowdloanSecion/kraken.svg',
   //   href: 'https://www.kraken.com/u/earn/parachains'
   // },
-  {
-    name: 'AscendEX',
-    icon: '/images/indexPage/crowdloanSecion/ascend.svg',
-    href: 'https://ascendex.com/zh-cn/dotslot'
-  },
+  // {
+  //   name: 'AscendEX',
+  //   icon: '/images/indexPage/crowdloanSecion/ascend.svg',
+  //   href: 'https://ascendex.com/zh-cn/dotslot'
+  // },
   {
     name: 'Gate',
     icon: '/images/indexPage/crowdloanSecion/gate.svg',
@@ -90,7 +90,7 @@ const Crowdloan: React.FC = () => {
           </div>
           <img
             className={styles.right}
-            src="/images/indexPage/crowdloanSecion/logo.svg"
+            src="/images/indexPage/crowdloanSecion/crowdloan-logo.svg"
             alt="Phala Crowdloan"
           />
           <img
