@@ -59,9 +59,9 @@ const Crowdloan: React.FC = () => {
       {visible && (
         <div className={classnames(['container', styles.wrapper])}>
           <div className={styles.left}>
-            <div className={styles.header}>Phala Crowdloan Reward Upgrate!</div>
+            <div className={styles.header}>Phala Crowdloan Reward Upgrade!</div>
             <ul className={styles.subHeader}>
-              <li>Phala Crowdloan Reward Upgrate!</li>
+              <li>Phala Crowdloan Reward Upgrade!</li>
               <li>1 DOT= 24 PHA +10% OG Bonus</li>
             </ul>
             <div className={styles.body}>
