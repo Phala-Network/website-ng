@@ -59,12 +59,12 @@ const Crowdloan: React.FC = () => {
       {visible && (
         <div className={classnames(['container', styles.wrapper])}>
           <div className={styles.left}>
-            <div className={styles.header}>PHALA WIN</div>
-            <ul className={styles.subHeader}>
+            <div className={styles.header}>Phala Win Polkadot Auction #13</div>
+            {/* <ul className={styles.subHeader}>
               <li>Polkadot Auction #13</li>
-            </ul>
+            </ul> */}
             <div className={styles.body}>
-              <span className={styles.title}>Contribute Now</span>
+              <span className={styles.title}>Support Platform</span>
               <div className={styles.itemBox}>
                 {LINKS.map(({ name, icon, href }) => (
                   <a
