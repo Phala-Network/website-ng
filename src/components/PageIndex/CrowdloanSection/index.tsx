@@ -1,4 +1,4 @@
-import Newsletter from '../../Newsletter'
+// import Newsletter from '../../Newsletter'
 import React, { useState } from 'react'
 import classnames from 'classnames'
 import * as styles from './index.module.scss'
@@ -59,10 +59,9 @@ const Crowdloan: React.FC = () => {
       {visible && (
         <div className={classnames(['container', styles.wrapper])}>
           <div className={styles.left}>
-            <div className={styles.header}>Phala Crowdloan Reward Upgrade!</div>
+            <div className={styles.header}>PHALA WIN</div>
             <ul className={styles.subHeader}>
-              <li>Phala Crowdloan Reward Upgrade!</li>
-              <li>1 DOT= 24 PHA +10% OG Bonus</li>
+              <li>Polkadot Auction #13</li>
             </ul>
             <div className={styles.body}>
               <span className={styles.title}>Contribute Now</span>
@@ -101,9 +100,9 @@ const Crowdloan: React.FC = () => {
           />
         </div>
       )}
-      <div className={styles.newsLetter}>
+      {/* <div className={styles.newsLetter}>
         <Newsletter></Newsletter>
-      </div>
+      </div> */}
     </section>
   )
 }
