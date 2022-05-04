@@ -110,9 +110,9 @@ export const ResourcesMenuConfig = {
       },
       href: {
         en:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer',
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer',
         zh:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpara1-api.phala.network%2Fws%2F#/explorer'
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer'
       }
     },
     ExplorerConfig,
