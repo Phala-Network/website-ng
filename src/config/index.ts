@@ -203,7 +203,8 @@ export const CrowdloanConfig = {
   href: {
     en:
       'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf',
-    zh: 'https://mp.weixin.qq.com/s/RH1HUFr_wKS-d59Iw2YiyQ'
+    zh:
+      'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf'
   }
 }
 
