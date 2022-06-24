@@ -2,7 +2,7 @@ import { isClient } from '../../utils/isClient'
 import BackTop from '../BackTop'
 import CloudSection from './CloudSection'
 import ContractSection from './ContractSection'
-import CrowdloanSection from './CrowdloanSection'
+// import CrowdloanSection from './CrowdloanSection'
 import ExecutionSection from './ExecutionSection'
 import FirstScreen from './FirstScreen'
 import NormalLayout from '../NormalLayout'
@@ -15,7 +15,7 @@ type Props = {}
 const PageIndex: React.FC<Props> = () => {
   return (
     <NormalLayout newsletter={false}>
-      <CrowdloanSection />
+      {/* <CrowdloanSection /> */}
       <FirstScreen></FirstScreen>
       <CloudSection></CloudSection>
       <ExecutionSection></ExecutionSection>
