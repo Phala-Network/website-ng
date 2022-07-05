@@ -1,5 +1,9 @@
+import { BountyConfig } from './BountyConfig'
 import { EconomyWhitepaperConfig } from './EconomyWhitepaperConfig'
+import { FatContractConfig } from './FatContractConfig'
 import { GithubConfig } from './GithubConfig'
+import { JoinUsConfig } from './JoinUsConfig'
+import { MediaKitConfig } from './MediaKitConfig'
 import { WikiConfig } from './WikiConfig'
 
 export const TechWhitepaperConfig = {
@@ -11,69 +15,6 @@ export const TechWhitepaperConfig = {
     en: 'https://files.phala.network/phala-paper.pdf',
     zh: 'https://files.phala.network/phala-paper.pdf'
   }
-}
-
-export const CommunityConfig = {
-  name: {
-    en: 'Community',
-    zh: '社区'
-  },
-  subMenu: [
-    {
-      name: {
-        en: 'Governance',
-        zh: '治理'
-      },
-      href: {
-        en:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy',
-        zh:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy'
-      }
-    },
-    {
-      name: {
-        en: 'Launch Plan',
-        zh: 'Launch Plan'
-      },
-      href: {
-        en:
-          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b',
-        zh:
-          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b'
-      }
-    },
-    {
-      name: {
-        en: 'Core Builders',
-        zh: '核心贡献者'
-      },
-      href: {
-        en: 'https://www.phala.network/en/aboutUs',
-        zh: 'https://www.phala.network/zh/aboutUs'
-      }
-    },
-    {
-      name: {
-        en: 'Forum',
-        zh: '论坛'
-      },
-      href: {
-        en: 'https://forum.phala.network',
-        zh: 'https://forum.phala.network'
-      }
-    },
-    {
-      name: {
-        en: 'Ambassador Program',
-        zh: '大使计划'
-      },
-      href: {
-        en: 'https://github.com/Phala-Network/growth-program',
-        zh: 'https://github.com/Phala-Network/growth-program'
-      }
-    }
-  ]
 }
 
 export const MaintainMenuConfig = {
@@ -147,120 +88,6 @@ export const DarkWalletConfig = {
   }
 }
 
-export const ProductConfig = {
-  name: {
-    en: 'Product',
-    zh: '产品'
-  },
-  subMenu: [
-    {
-      name: {
-        en: 'Fat Contract',
-        zh: 'Fat Contract'
-      },
-      href: {
-        en:
-          'https://wiki.phala.network/en-us/general/phala-network/01-phala-network/#fat-contract',
-        zh:
-          'https://wiki.phala.network/en-us/general/phala-network/01-phala-network/#fat-contract'
-      }
-    },
-    {
-      name: {
-        en: 'PhalaWorld',
-        zh: 'PhalaWorld'
-      },
-      href: {
-        en: 'https://phala.world/',
-        zh: 'https://phala.world/'
-      }
-    },
-    {
-      name: {
-        en: 'SubBridge',
-        zh: 'SubBridge'
-      },
-      href: {
-        en: 'https://subbridge.io/',
-        zh: 'https://subbridge.io/'
-      }
-    },
-    {
-      name: {
-        en: 'Phala App',
-        zh: 'Phala App'
-      },
-      href: {
-        en: 'https://app.phala.network/',
-        zh: 'https://app.phala.network/'
-      }
-    },
-    {
-      name: {
-        en: 'Web 3 Analytics',
-        zh: 'Web 3 Analytics'
-      },
-      href: {
-        en: 'https://3analytics.io/',
-        zh: 'https://3analytics.io/'
-      }
-    }
-  ]
-}
-
-export const AboutUsConfig = {
-  name: {
-    en: 'About Us',
-    zh: '关于我们'
-  },
-  subMenu: [
-    WikiConfig,
-    ExplorerConfig,
-    {
-      name: {
-        en: 'Blog',
-        zh: '博客'
-      },
-      href: {
-        en: 'https://medium.com/phala-network',
-        zh: 'https://medium.com/phala-network'
-      }
-    },
-    {
-      name: {
-        en: 'Join Us',
-        zh: '加入我们'
-      },
-      href: {
-        en: 'http://linktr.ee/phalanetwork',
-        zh: 'http://linktr.ee/phalanetwork'
-      }
-    },
-    {
-      name: {
-        en: 'Media Kit',
-        zh: 'Media Kit'
-      },
-      href: {
-        en:
-          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq',
-        zh:
-          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq'
-      }
-    },
-    {
-      name: {
-        en: 'Careers',
-        zh: 'Careers'
-      },
-      href: {
-        en: 'https://angel.co/company/phala-network',
-        zh: 'https://angel.co/company/phala-network'
-      }
-    }
-  ]
-}
-
 export const ResourcesMenuConfig = {
   name: {
     en: 'Resources',
@@ -328,6 +155,230 @@ export const ResourcesMenuConfig = {
   ]
 }
 
+export const FooterAboutUsConfig = {
+  name: {
+    en: 'About Us',
+    zh: '关于我们'
+  },
+  subMenu: [
+    JoinUsConfig,
+    MediaKitConfig,
+    WikiConfig,
+    {
+      name: {
+        en: 'Phala Explorer',
+        zh: 'Phala 区块链浏览器'
+      },
+      href: {
+        en: 'https://phala.subscan.io/',
+        zh: 'https://phala.subscan.io/'
+      }
+    },
+    {
+      name: {
+        en: 'Khala Explorer',
+        zh: 'Khala 区块链浏览器'
+      },
+      href: {
+        en: 'https://khala.subscan.io/',
+        zh: 'https://khala.subscan.io/'
+      }
+    },
+
+    {
+      name: {
+        en: 'Responsible Disclosure',
+        zh: '责任披露'
+      },
+      href: {
+        en:
+          'https://www.phala.network/zh/Phala-Network-Responsible-Disclosure.pdf',
+        zh:
+          'https://www.phala.network/zh/Phala-Network-Responsible-Disclosure.pdf'
+      }
+    }
+  ]
+}
+
+export const DevelopersConfig = {
+  name: {
+    en: 'Developers',
+    zh: '开发'
+  },
+  subMenu: [
+    {
+      name: {
+        en: GithubConfig.name,
+        zh: GithubConfig.name
+      },
+      href: {
+        en: GithubConfig.url,
+        zh: GithubConfig.url
+      }
+    },
+    FatContractConfig,
+    {
+      name: {
+        en: 'Secure Worker',
+        zh: 'Secure Worker'
+      },
+      href: {
+        en:
+          'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/',
+        zh:
+          'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/'
+      }
+    },
+    BountyConfig
+  ]
+}
+
+export const CommunityConfig = {
+  name: {
+    en: 'Community',
+    zh: '社区'
+  },
+  subMenu: [
+    {
+      name: {
+        en: 'Governance',
+        zh: '治理'
+      },
+      href: {
+        en:
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy',
+        zh:
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy'
+      }
+    },
+    {
+      name: {
+        en: 'Launch Plan',
+        zh: 'Launch Plan'
+      },
+      href: {
+        en:
+          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b',
+        zh:
+          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b'
+      }
+    },
+    {
+      name: {
+        en: 'Core Builders',
+        zh: '核心贡献者'
+      },
+      href: {
+        en: 'https://www.phala.network/en/aboutUs',
+        zh: 'https://www.phala.network/zh/aboutUs'
+      }
+    },
+    {
+      name: {
+        en: 'Forum',
+        zh: '论坛'
+      },
+      href: {
+        en: 'https://forum.phala.network',
+        zh: 'https://forum.phala.network'
+      }
+    },
+    {
+      name: {
+        en: 'Ambassador Program',
+        zh: '大使计划'
+      },
+      href: {
+        en: 'https://github.com/Phala-Network/growth-program',
+        zh: 'https://github.com/Phala-Network/growth-program'
+      }
+    }
+  ]
+}
+
+export const ProductConfig = {
+  name: {
+    en: 'Product',
+    zh: '产品'
+  },
+  subMenu: [
+    FatContractConfig,
+    {
+      name: {
+        en: 'PhalaWorld',
+        zh: 'PhalaWorld'
+      },
+      href: {
+        en: 'https://phala.world/',
+        zh: 'https://phala.world/'
+      }
+    },
+    {
+      name: {
+        en: 'SubBridge',
+        zh: 'SubBridge'
+      },
+      href: {
+        en: 'https://subbridge.io/',
+        zh: 'https://subbridge.io/'
+      }
+    },
+    {
+      name: {
+        en: 'Phala App',
+        zh: 'Phala App'
+      },
+      href: {
+        en: 'https://app.phala.network/',
+        zh: 'https://app.phala.network/'
+      }
+    },
+    {
+      name: {
+        en: 'Web 3 Analytics',
+        zh: 'Web 3 Analytics'
+      },
+      href: {
+        en: 'https://3analytics.io/',
+        zh: 'https://3analytics.io/'
+      }
+    }
+  ]
+}
+
+export const AboutUsConfig = {
+  name: {
+    en: 'About Us',
+    zh: '关于我们'
+  },
+  subMenu: [
+    WikiConfig,
+    ExplorerConfig,
+    {
+      name: {
+        en: 'Blog',
+        zh: '博客'
+      },
+      href: {
+        en: 'https://medium.com/phala-network',
+        zh: 'https://medium.com/phala-network'
+      }
+    },
+    JoinUsConfig,
+    MediaKitConfig,
+    {
+      name: {
+        en: 'Careers',
+        zh: 'Careers'
+      },
+      href: {
+        en: 'https://angel.co/company/phala-network',
+        zh: 'https://angel.co/company/phala-network'
+      }
+    }
+  ]
+}
+
 export const TechnologyConfig = {
   name: {
     en: 'Technology',
@@ -359,24 +410,15 @@ export const TechnologyConfig = {
     },
     {
       name: {
-        en: 'Github',
-        zh: 'Github'
+        en: GithubConfig.name,
+        zh: GithubConfig.name
       },
       href: {
-        en: 'https://github.com/Phala-Network',
-        zh: 'https://github.com/Phala-Network'
+        en: GithubConfig.url,
+        zh: GithubConfig.url
       }
     },
-    {
-      name: {
-        en: 'Bounty',
-        zh: 'Bounty'
-      },
-      href: {
-        en: 'https://github.com/Phala-Network/phala-bounty-tracker',
-        zh: 'https://github.com/Phala-Network/phala-bounty-tracker'
-      }
-    },
+    BountyConfig,
     {
       name: {
         en: 'Hackathon',
