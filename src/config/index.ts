@@ -13,6 +13,69 @@ export const TechWhitepaperConfig = {
   }
 }
 
+export const CommunityConfig = {
+  name: {
+    en: 'Community',
+    zh: '社区'
+  },
+  subMenu: [
+    {
+      name: {
+        en: 'Governance',
+        zh: '治理'
+      },
+      href: {
+        en:
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy',
+        zh:
+          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy'
+      }
+    },
+    {
+      name: {
+        en: 'Launch Plan',
+        zh: 'Launch Plan'
+      },
+      href: {
+        en:
+          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b',
+        zh:
+          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b'
+      }
+    },
+    {
+      name: {
+        en: 'Core Builders',
+        zh: '核心贡献者'
+      },
+      href: {
+        en: 'https://www.phala.network/en/aboutUs',
+        zh: 'https://www.phala.network/zh/aboutUs'
+      }
+    },
+    {
+      name: {
+        en: 'Forum',
+        zh: '论坛'
+      },
+      href: {
+        en: 'https://forum.phala.network',
+        zh: 'https://forum.phala.network'
+      }
+    },
+    {
+      name: {
+        en: 'Ambassador Program',
+        zh: '大使计划'
+      },
+      href: {
+        en: 'https://github.com/Phala-Network/growth-program',
+        zh: 'https://github.com/Phala-Network/growth-program'
+      }
+    }
+  ]
+}
+
 export const MaintainMenuConfig = {
   name: {
     en: 'Participate',
@@ -279,13 +342,7 @@ export const MenuConfig: {
     href: { [key: string]: string }
   }[]
   href?: { [key: string]: string }
-}[] = [
-  KhalaConfig,
-  PHAConfig,
-  TechnologyConfig,
-  MaintainMenuConfig,
-  AboutUsConfig
-]
+}[] = [KhalaConfig, PHAConfig, TechnologyConfig, CommunityConfig, AboutUsConfig]
 
 const config = {}
 
