@@ -68,8 +68,8 @@ export const ExplorerConfig = {
     zh: '区块链浏览器'
   },
   href: {
-    en: 'https://khala.subscan.io',
-    zh: 'https://khala.subscan.io'
+    en: 'https://phala.subscan.io/',
+    zh: 'https://phala.subscan.io/'
   }
 }
 
@@ -82,6 +82,59 @@ export const DarkWalletConfig = {
     en: 'https://poc3.phala.network',
     zh: 'https://poc3.phala.network'
   }
+}
+
+export const AboutUsConfig = {
+  name: {
+    en: 'About Us',
+    zh: '关于我们'
+  },
+  subMenu: [
+    WikiConfig,
+    ExplorerConfig,
+    {
+      name: {
+        en: 'Blog',
+        zh: '博客'
+      },
+      href: {
+        en: 'https://medium.com/phala-network',
+        zh: 'https://medium.com/phala-network'
+      }
+    },
+    {
+      name: {
+        en: 'Join Us',
+        zh: '加入我们'
+      },
+      href: {
+        en: 'http://linktr.ee/phalanetwork',
+        zh: 'http://linktr.ee/phalanetwork'
+      }
+    },
+    {
+      name: {
+        en: 'Media Kit',
+        zh: 'Media Kit'
+      },
+      href: {
+        en:
+          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq',
+        zh:
+          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq'
+      }
+    },
+    {
+      name: {
+        en: 'Careers',
+        zh: 'Careers'
+      },
+      href: {
+        en: 'https://angel.co/company/phala-network',
+        zh: 'https://angel.co/company/phala-network'
+      }
+    }
+  ]
 }
 
 export const ResourcesMenuConfig = {
@@ -231,7 +284,7 @@ export const MenuConfig: {
   PHAConfig,
   TechnologyConfig,
   MaintainMenuConfig,
-  ResourcesMenuConfig
+  AboutUsConfig
 ]
 
 const config = {}
