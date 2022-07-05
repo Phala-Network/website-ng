@@ -147,6 +147,67 @@ export const DarkWalletConfig = {
   }
 }
 
+export const ProductConfig = {
+  name: {
+    en: 'Product',
+    zh: '产品'
+  },
+  subMenu: [
+    {
+      name: {
+        en: 'Fat Contract',
+        zh: 'Fat Contract'
+      },
+      href: {
+        en:
+          'https://wiki.phala.network/en-us/general/phala-network/01-phala-network/#fat-contract',
+        zh:
+          'https://wiki.phala.network/en-us/general/phala-network/01-phala-network/#fat-contract'
+      }
+    },
+    {
+      name: {
+        en: 'PhalaWorld',
+        zh: 'PhalaWorld'
+      },
+      href: {
+        en: 'https://phala.world/',
+        zh: 'https://phala.world/'
+      }
+    },
+    {
+      name: {
+        en: 'SubBridge',
+        zh: 'SubBridge'
+      },
+      href: {
+        en: 'https://subbridge.io/',
+        zh: 'https://subbridge.io/'
+      }
+    },
+    {
+      name: {
+        en: 'Phala App',
+        zh: 'Phala App'
+      },
+      href: {
+        en: 'https://app.phala.network/',
+        zh: 'https://app.phala.network/'
+      }
+    },
+    {
+      name: {
+        en: 'Web 3 Analytics',
+        zh: 'Web 3 Analytics'
+      },
+      href: {
+        en: 'https://3analytics.io/',
+        zh: 'https://3analytics.io/'
+      }
+    }
+  ]
+}
+
 export const AboutUsConfig = {
   name: {
     en: 'About Us',
@@ -342,7 +403,14 @@ export const MenuConfig: {
     href: { [key: string]: string }
   }[]
   href?: { [key: string]: string }
-}[] = [KhalaConfig, PHAConfig, TechnologyConfig, CommunityConfig, AboutUsConfig]
+}[] = [
+  KhalaConfig,
+  // PHAConfig,
+  TechnologyConfig,
+  ProductConfig,
+  CommunityConfig,
+  AboutUsConfig
+]
 
 const config = {}
 
