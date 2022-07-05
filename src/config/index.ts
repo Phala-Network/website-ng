@@ -333,10 +333,71 @@ export const TechnologyConfig = {
     en: 'Technology',
     zh: '技术'
   },
-  href: {
-    en: '/technology',
-    zh: '/technology'
-  }
+  subMenu: [
+    {
+      name: {
+        en: 'Secure Enclave',
+        zh: 'Secure Enclave'
+      },
+      href: {
+        en:
+          'https://wiki.phala.network/en-us/learn/phala-blockchain/blockchain-detail/',
+        zh:
+          'https://wiki.phala.network/en-us/learn/phala-blockchain/blockchain-detail/'
+      }
+    },
+    {
+      name: {
+        en: 'Fat Contract',
+        zh: 'Fat Contract'
+      },
+      href: {
+        en:
+          'https://wiki.phala.network/en-us/general/development/fat-contract/',
+        zh: 'https://wiki.phala.network/en-us/general/development/fat-contract/'
+      }
+    },
+    {
+      name: {
+        en: 'Github',
+        zh: 'Github'
+      },
+      href: {
+        en: 'https://github.com/Phala-Network',
+        zh: 'https://github.com/Phala-Network'
+      }
+    },
+    {
+      name: {
+        en: 'Bounty',
+        zh: 'Bounty'
+      },
+      href: {
+        en: 'https://github.com/Phala-Network/phala-bounty-tracker',
+        zh: 'https://github.com/Phala-Network/phala-bounty-tracker'
+      }
+    },
+    {
+      name: {
+        en: 'Hackathon',
+        zh: 'Hackathon'
+      },
+      href: {
+        en: 'https://github.com/Phala-Network/amsterDOT-2022',
+        zh: 'https://github.com/Phala-Network/amsterDOT-2022'
+      }
+    },
+    {
+      name: {
+        en: 'Technical Paper',
+        zh: 'Technical Paper'
+      },
+      href: {
+        en: 'https://files.phala.network/phala-paper.pdf',
+        zh: 'https://files.phala.network/phala-paper.pdf'
+      }
+    }
+  ]
 }
 
 export const KhalaConfig = {
