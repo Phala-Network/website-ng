@@ -1,7 +1,7 @@
 export const MediaKitConfig = {
   name: {
     en: 'Media Kit',
-    zh: 'Media Kit'
+    zh: '品牌素材'
   },
   href: {
     en:

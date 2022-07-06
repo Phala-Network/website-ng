@@ -4,6 +4,7 @@ import { FatContractConfig } from './FatContractConfig'
 import { GithubConfig } from './GithubConfig'
 import { JoinUsConfig } from './JoinUsConfig'
 import { MediaKitConfig } from './MediaKitConfig'
+import { SecureEnclaveConfig } from './SecureEnclaveConfig'
 import { WikiConfig } from './WikiConfig'
 
 export const TechWhitepaperConfig = {
@@ -254,7 +255,7 @@ export const CommunityConfig = {
     {
       name: {
         en: 'Launch Plan',
-        zh: 'Launch Plan'
+        zh: '上线计划'
       },
       href: {
         en:
@@ -369,7 +370,7 @@ export const AboutUsConfig = {
     {
       name: {
         en: 'Careers',
-        zh: 'Careers'
+        zh: '职位'
       },
       href: {
         en: 'https://angel.co/company/phala-network',
@@ -385,18 +386,7 @@ export const TechnologyConfig = {
     zh: '技术'
   },
   subMenu: [
-    {
-      name: {
-        en: 'Secure Enclave',
-        zh: 'Secure Enclave'
-      },
-      href: {
-        en:
-          'https://wiki.phala.network/en-us/learn/phala-blockchain/blockchain-detail/',
-        zh:
-          'https://wiki.phala.network/en-us/learn/phala-blockchain/blockchain-detail/'
-      }
-    },
+    SecureEnclaveConfig,
     {
       name: {
         en: 'Fat Contract',
