@@ -1,4 +1,5 @@
-import { JoinUsConfig, PageAboutUsConfig } from '../../config/PageAboutUs'
+import { JoinUsConfig } from '../../config/JoinUsConfig'
+import { PageAboutUsConfig } from '../../config/PageAboutUs'
 import BgLayer from '../BgLayer'
 import CommunityBuilder from './CommunityBuilder'
 // import Contributor from './Contributor'

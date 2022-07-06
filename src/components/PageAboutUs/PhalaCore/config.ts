@@ -84,7 +84,7 @@ export const config = [
     },
     description: {
       en: 'Polkadot Head Ambassador of East Asia.',
-      zh: 'Polkadot Head Ambassador of East Asia.'
+      zh: '波卡亚太区高级大使。'
     }
   }
 ]
