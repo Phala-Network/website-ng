@@ -380,6 +380,35 @@ export const AboutUsConfig = {
   ]
 }
 
+export const HackathonConfig = {
+  name: {
+    en: 'Hackathon',
+    zh: 'Hackathon'
+  },
+  subMenu: [
+    {
+      name: {
+        en: 'amsterDOT-2022',
+        zh: 'amsterDOT-2022'
+      },
+      href: {
+        en: 'https://github.com/Phala-Network/amsterDOT-2022',
+        zh: 'https://github.com/Phala-Network/amsterDOT-2022'
+      }
+    },
+    {
+      name: {
+        en: 'Encode-2021',
+        zh: 'Encode-2021'
+      },
+      href: {
+        en: 'https://github.com/Phala-Network/Encode-Hackathon-2021',
+        zh: 'https://github.com/Phala-Network/Encode-Hackathon-2021'
+      }
+    }
+  ]
+}
+
 export const TechnologyConfig = {
   name: {
     en: 'Technology',
@@ -409,16 +438,6 @@ export const TechnologyConfig = {
       }
     },
     BountyConfig,
-    {
-      name: {
-        en: 'Hackathon',
-        zh: 'Hackathon'
-      },
-      href: {
-        en: 'https://github.com/Phala-Network/amsterDOT-2022',
-        zh: 'https://github.com/Phala-Network/amsterDOT-2022'
-      }
-    },
     {
       name: {
         en: 'Technical Paper',
@@ -500,6 +519,7 @@ export const MenuConfig: {
   KhalaConfig,
   // PHAConfig,
   TechnologyConfig,
+  HackathonConfig,
   ProductConfig,
   CommunityConfig,
   AboutUsConfig
