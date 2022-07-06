@@ -1,3 +1,6 @@
+import { config as ContributorConfig } from '../Contributor/config'
+import { config as CouncilConfig } from '../Council/config'
+
 export const config = [
   {
     avatar: 'people1',
@@ -66,5 +69,7 @@ export const config = [
       zh:
         'RubyChina 站长。前 KnewOne CTO，前大疆软件架构师。在技术圈影响力深厚。'
     }
-  }
+  },
+  ...ContributorConfig,
+  ...CouncilConfig
 ]
