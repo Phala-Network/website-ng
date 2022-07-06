@@ -2,12 +2,12 @@ export const config = [
   {
     avatar: 'people5',
     name: {
-      en: 'Dr. Shunfan Zhou',
+      en: 'Dr. Shelven Zhou',
       zh: '周顺帆博士'
     },
     position: {
-      en: 'Phala Whitepaper Co-author',
-      zh: '研究科学家'
+      en: 'Lead Researcher',
+      zh: '首席科学家'
     },
     description: {
       en:
@@ -30,7 +30,7 @@ export const config = [
       en:
         'Sandro Gorduladze is the CIO at Gagra Ventures, an early-stage investment firm. Prior to launching the fund, Sandro ran Research at HASH CIB, a digital asset financial services company that made a name for itself with in-depth research reports. Prior to joining Hash Sandro worked at PwC Russia, advising TMT sector companies on tax.',
       zh:
-        'Sandro Gorduladze是HASH CIB——一家主要覆盖EMEA和亚洲地区的数字资产投资公司——的天使投资人和合伙人。 Sandro在HASH设立了研究部门，该部门因其深入的报告而声名大噪。 加入HASH之前，Sandro曾在俄罗斯普华永道工作，为TMT行业的公司提供税务咨询。'
+        '早期投资机构 Gagra Ventures CIO，此前在数字资产金融服务公司 HASH CIB 负责研究工作，曾任职于普华永道（俄罗斯），负责TMT 行业税务咨询。'
     }
   },
   {
@@ -51,20 +51,33 @@ export const config = [
     }
   },
   {
-    avatar: 'people12',
+    avatar: 'peopleJoshua',
     name: {
-      en: 'Lucia',
-      zh: 'Lucia'
+      en: 'Joshua Waller',
+      zh: 'Joshua Waller'
     },
     position: {
-      en: 'Community Manager',
-      zh: 'Phala 社区运营'
+      en: 'Dev Advocate',
+      zh: '开发者教育'
     },
     description: {
-      en:
-        'Has rich experience in blockchain community operations.',
-      zh:
-        '具有丰富的区块链社区运营经验。'
+      en: '',
+      zh: ''
+    }
+  },
+  {
+    avatar: 'people12',
+    name: {
+      en: 'Lucia Guo',
+      zh: 'Lucia Guo'
+    },
+    position: {
+      en: 'Community Director',
+      zh: '运营总监'
+    },
+    description: {
+      en: 'Polkadot ecosystem early supporters, Core builder of PhalaWorld.',
+      zh: '波卡生态早期支持者，PhalaWorld 核心贡献者之一。'
     }
   }
 ]
