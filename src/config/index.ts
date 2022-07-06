@@ -269,8 +269,8 @@ export const CommunityConfig = {
         zh: '核心贡献者'
       },
       href: {
-        en: 'https://www.phala.network/en/aboutUs',
-        zh: 'https://www.phala.network/zh/aboutUs'
+        en: '/aboutUs',
+        zh: '/aboutUs'
       }
     },
     {
