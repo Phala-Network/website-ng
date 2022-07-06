@@ -70,7 +70,7 @@ export const MaintainMenuConfig = {
 export const GovernanceConfig = {
   name: {
     en: 'Governance',
-    zh: 'Governance'
+    zh: '治理'
   },
   href: {
     en: 'https://khala.subsquare.io/',
