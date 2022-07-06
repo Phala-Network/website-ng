@@ -67,6 +67,28 @@ export const MaintainMenuConfig = {
   ]
 }
 
+export const GovernanceConfig = {
+  name: {
+    en: 'Governance',
+    zh: 'Governance'
+  },
+  href: {
+    en: 'https://khala.subsquare.io/',
+    zh: 'https://khala.subsquare.io/'
+  }
+}
+
+export const KhalaExplorerConfig = {
+  name: {
+    en: 'Explorer',
+    zh: '区块链浏览器'
+  },
+  href: {
+    en: 'https://khala.subscan.io/',
+    zh: 'https://khala.subscan.io/'
+  }
+}
+
 export const ExplorerConfig = {
   name: {
     en: 'Explorer',
@@ -475,8 +497,8 @@ export const PHAConfig = {
 
 export const LearnMoreConfig = {
   name: {
-    en: 'Learn More',
-    zh: '了解更多'
+    en: 'Roadmap',
+    zh: 'Roadmap'
   },
   href: {
     en: 'https://github.com/orgs/Phala-Network/projects/11',
