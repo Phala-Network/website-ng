@@ -61,8 +61,10 @@ export const config = [
       zh: '开发者教育'
     },
     description: {
-      en: '',
-      zh: ''
+      en:
+        'B.Sc.A in Computer Science at The University of Texas at Austin. Former Software Engineer in Converged/Hyper-Converged Infrastructure for Enterprise Businesses at Dell EMC. Former Software Engineer in Network Access Control for Enterprise Networks at Forescout Technologies.',
+      zh:
+        '德克萨斯大学奥斯汀分校的计算机科学学士。曾在Dell EMC担任企业业务融合/超融合基础设施的软件工程师。曾在Forescout Technologies担任企业网络访问控制的软件工程师。'
     }
   },
   {

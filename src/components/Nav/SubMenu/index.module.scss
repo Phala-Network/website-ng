@@ -6,7 +6,7 @@ $sub-menu-border-color: rgba(209, 255, 82, 0.5);
 .subMenu {
   position: absolute;
   left: 50%;
-  margin-left: -($sub-menu-width / 2);
+  margin-left: -(calc($sub-menu-width / 2));
   top: 20px;
   padding: 20px 0;
   box-sizing: border-box;
