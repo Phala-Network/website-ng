@@ -36,6 +36,7 @@
     "react-fast-marquee": "^1.0.7",
     "react-helmet": "^6.1.0",
     "react-mailchimp-subscribe": "^2.1.0",
+    "react-responsive-carousel": "^3.2.23",
     "sass": "^1.32.12",
     "smoothscroll-polyfill": "^0.4.4",
     "use-breakpoint": "^1.1.2"
