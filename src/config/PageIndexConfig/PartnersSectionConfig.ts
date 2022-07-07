@@ -35,9 +35,9 @@ export const PartnersSectionConfig = {
       logo: '/images/indexPage/partnersSection/partner-Mask.png'
     },
     {
-      name: 'PLASM',
-      link: 'https://www.plasmnet.io/',
-      logo: '/images/indexPage/partnersSection/partner-PLASM.png'
+      name: '',
+      link: '',
+      logo: '/images/indexPage/partnersSection/partner-Astar.png'
     },
     {
       name: 'Crust',
