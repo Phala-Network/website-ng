@@ -4,8 +4,7 @@ export const PartnersSectionConfig = {
     zh: '合作伙伴'
   },
   description: {
-    en:
-      'With thriving partners and projects, Phala Network is rapidly growing and being developed',
+    en: 'With thriving partners and projects, Phala Network is rapidly growing and being developed',
     zh: '在众多合作伙伴与项目的不断努力下，Phala Network 正在快速发展壮大'
   },
   partners: [
@@ -35,9 +34,9 @@ export const PartnersSectionConfig = {
       logo: '/images/indexPage/partnersSection/partner-Mask.png'
     },
     {
-      name: '',
-      link: '',
-      logo: '/images/indexPage/partnersSection/partner-Astar.png'
+      name: 'PLASM',
+      link: 'https://www.plasmnet.io/',
+      logo: '/images/indexPage/partnersSection/partner-PLASM.png'
     },
     {
       name: 'Crust',
@@ -102,8 +101,7 @@ export const PartnersSectionConfig = {
     {
       name: 'ConfidentialcomputingConsortium',
       link: 'https://confidentialcomputing.io/',
-      logo:
-        '/images/indexPage/partnersSection/ConfidentialcomputingConsortium.png'
+      logo: '/images/indexPage/partnersSection/ConfidentialcomputingConsortium.png'
     },
     {
       name: 'RMRK',
@@ -143,7 +141,7 @@ export const PartnersSectionConfig = {
     {
       name: 'Moonriver',
       link: 'https://moonbeam.network/networks/moonriver/',
-      logo: ''
+      logo: '/images/indexPage/partnersSection/Moonbeam.png'
     },
     {
       name: 'Karura',
