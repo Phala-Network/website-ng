@@ -14,17 +14,19 @@ const Partners: React.FC<CardProps> = (props) => {
       {breakpoint === 'desktop' && (
         <Carousel showThumbs={false} showStatus={false}>
           <div className={styles.partners}>
-            <PartnerRow from={0} to={4}></PartnerRow>
-            <PartnerRow from={5} to={9}></PartnerRow>
-            <PartnerRow from={10} to={14}></PartnerRow>
+            {[0, 5, 10].map((item) => (
+              <PartnerRow key={item} from={item} to={item + 4}></PartnerRow>
+            ))}
           </div>
           <div className={styles.partners}>
-            <PartnerRow from={15} to={19}></PartnerRow>
-            <PartnerRow from={20} to={24}></PartnerRow>
-            <PartnerRow from={25} to={29}></PartnerRow>
+            {[15, 20, 25].map((item) => (
+              <PartnerRow key={item} from={item} to={item + 4}></PartnerRow>
+            ))}
           </div>
           <div className={styles.partners}>
-            <PartnerRow from={30} to={31}></PartnerRow>
+            {[30, 35].map((item) => (
+              <PartnerRow key={item} from={item} to={item + 4}></PartnerRow>
+            ))}
           </div>
         </Carousel>
       )}
@@ -35,7 +37,10 @@ const Partners: React.FC<CardProps> = (props) => {
             <PartnerRow from={0} to={14}></PartnerRow>
           </div>
           <div className={styles.partners}>
-            <PartnerRow from={0} to={14}></PartnerRow>
+            <PartnerRow from={15} to={29}></PartnerRow>
+          </div>
+          <div className={styles.partners}>
+            <PartnerRow from={30} to={44}></PartnerRow>
           </div>
         </Carousel>
       )}
@@ -43,22 +48,19 @@ const Partners: React.FC<CardProps> = (props) => {
       {breakpoint === 'mobile' && (
         <Carousel showThumbs={false} showStatus={false}>
           <div className={styles.partners}>
-            <PartnerRow from={0} to={1}></PartnerRow>
-            <PartnerRow from={2} to={3}></PartnerRow>
-            <PartnerRow from={4} to={6}></PartnerRow>
-            <PartnerRow from={7} to={8}></PartnerRow>
-            <PartnerRow from={9} to={10}></PartnerRow>
-            <PartnerRow from={11} to={12}></PartnerRow>
-            <PartnerRow from={13} to={14}></PartnerRow>
+            {[0, 2, 4, 6, 8, 10, 12].map((item) => (
+              <PartnerRow key={item} from={item} to={item + 1}></PartnerRow>
+            ))}
           </div>
           <div className={styles.partners}>
-            <PartnerRow from={0} to={1}></PartnerRow>
-            <PartnerRow from={2} to={3}></PartnerRow>
-            <PartnerRow from={4} to={6}></PartnerRow>
-            <PartnerRow from={7} to={8}></PartnerRow>
-            <PartnerRow from={9} to={10}></PartnerRow>
-            <PartnerRow from={11} to={12}></PartnerRow>
-            <PartnerRow from={13} to={14}></PartnerRow>
+            {[14, 16, 18, 20, 22, 24, 26].map((item) => (
+              <PartnerRow key={item} from={item} to={item + 1}></PartnerRow>
+            ))}
+          </div>
+          <div className={styles.partners}>
+            {[28, 30, 32, 34, 36, 38].map((item) => (
+              <PartnerRow key={item} from={item} to={item + 1}></PartnerRow>
+            ))}
           </div>
         </Carousel>
       )}
