@@ -13,17 +13,17 @@ const Partners: React.FC<CardProps> = (props) => {
     <Card type="small" cardContentClassName={styles.cardContent} {...props}>
       {breakpoint === 'desktop' && (
         <Carousel showThumbs={false} showStatus={false}>
-          <div className={styles.partners}>
+          <div>
             {[0, 5, 10].map((item) => (
               <PartnerRow key={item} from={item} to={item + 4}></PartnerRow>
             ))}
           </div>
-          <div className={styles.partners}>
+          <div>
             {[15, 20, 25].map((item) => (
               <PartnerRow key={item} from={item} to={item + 4}></PartnerRow>
             ))}
           </div>
-          <div className={styles.partners}>
+          <div>
             {[30, 35].map((item) => (
               <PartnerRow key={item} from={item} to={item + 4}></PartnerRow>
             ))}
@@ -33,13 +33,13 @@ const Partners: React.FC<CardProps> = (props) => {
 
       {breakpoint === 'tablet' && (
         <Carousel showThumbs={false} showStatus={false}>
-          <div className={styles.partners}>
+          <div>
             <PartnerRow from={0} to={14}></PartnerRow>
           </div>
-          <div className={styles.partners}>
+          <div>
             <PartnerRow from={15} to={29}></PartnerRow>
           </div>
-          <div className={styles.partners}>
+          <div>
             <PartnerRow from={30} to={44}></PartnerRow>
           </div>
         </Carousel>
@@ -47,17 +47,17 @@ const Partners: React.FC<CardProps> = (props) => {
 
       {breakpoint === 'mobile' && (
         <Carousel showThumbs={false} showStatus={false}>
-          <div className={styles.partners}>
+          <div>
             {[0, 2, 4, 6, 8, 10, 12].map((item) => (
               <PartnerRow key={item} from={item} to={item + 1}></PartnerRow>
             ))}
           </div>
-          <div className={styles.partners}>
+          <div>
             {[14, 16, 18, 20, 22, 24, 26].map((item) => (
               <PartnerRow key={item} from={item} to={item + 1}></PartnerRow>
             ))}
           </div>
-          <div className={styles.partners}>
+          <div>
             {[28, 30, 32, 34, 36, 38].map((item) => (
               <PartnerRow key={item} from={item} to={item + 1}></PartnerRow>
             ))}

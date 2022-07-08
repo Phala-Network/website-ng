@@ -7,8 +7,6 @@ const Partner = (props) => {
   const { partners } = PartnersSectionConfig
   const partner = partners[index]
 
-  console.log('**** partners', partners.length)
-
   if (!partner) return null
 
   return (
