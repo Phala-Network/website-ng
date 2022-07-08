@@ -126,7 +126,7 @@ export const PartnersSectionConfig = {
     {
       name: 'W3A',
       link: 'Litentry',
-      logo: '/images/indexPage/partnersSection/w3a.png'
+      logo: '/images/indexPage/partnersSection/W3A.png'
     },
     {
       name: 'Chainlink',
@@ -192,6 +192,21 @@ export const PartnersSectionConfig = {
       name: 'PINKNODE',
       link: 'https://www.pinknode.io/',
       logo: '/images/indexPage/partnersSection/PINKNODE.png'
+    },
+    {
+      name: 'Subscan',
+      link: 'https://www.subscan.io/',
+      logo: '/images/indexPage/partnersSection/subscan.png'
+    },
+    {
+      name: 'SubQuery',
+      link: 'https://subquery.network/',
+      logo: '/images/indexPage/partnersSection/subquery.png'
+    },
+    {
+      name: 'Dwellir',
+      link: 'https://dwellir.com/',
+      logo: '/images/indexPage/partnersSection/Dwellir.png'
     }
   ]
 }
