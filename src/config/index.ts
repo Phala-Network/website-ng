@@ -136,10 +136,8 @@ export const ResourcesMenuConfig = {
         zh: '测试网络'
       },
       href: {
-        en:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer',
-        zh:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer'
+        en: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer',
+        zh: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpoc5.phala.network%2Fws#/explorer'
       }
     },
     ExplorerConfig,
@@ -149,10 +147,8 @@ export const ResourcesMenuConfig = {
         zh: '品牌'
       },
       href: {
-        en:
-          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq',
-        zh:
-          'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq'
+        en: 'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq',
+        zh: 'https://drive.google.com/drive/folders/1u60uDV8CnZBBhySZMJfiMQ0XgdJXkVhq'
       }
     },
     {
@@ -214,10 +210,8 @@ export const FooterAboutUsConfig = {
         zh: '责任披露'
       },
       href: {
-        en:
-          'https://www.phala.network/zh/Phala-Network-Responsible-Disclosure.pdf',
-        zh:
-          'https://www.phala.network/zh/Phala-Network-Responsible-Disclosure.pdf'
+        en: 'https://www.phala.network/zh/Phala-Network-Responsible-Disclosure.pdf',
+        zh: 'https://www.phala.network/zh/Phala-Network-Responsible-Disclosure.pdf'
       }
     }
   ]
@@ -246,10 +240,8 @@ export const DevelopersConfig = {
         zh: 'Secure Worker'
       },
       href: {
-        en:
-          'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/',
-        zh:
-          'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/'
+        en: 'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/',
+        zh: 'https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/'
       }
     },
     BountyConfig
@@ -268,10 +260,8 @@ export const CommunityConfig = {
         zh: '治理'
       },
       href: {
-        en:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy',
-        zh:
-          'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy'
+        en: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy',
+        zh: 'https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fapi.phala.network%2Fws#/democracy'
       }
     },
     {
@@ -280,10 +270,8 @@ export const CommunityConfig = {
         zh: '上线计划'
       },
       href: {
-        en:
-          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b',
-        zh:
-          'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b'
+        en: 'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b',
+        zh: 'https://phalanetwork.notion.site/Phala-Network-Launch-Plan-and-Status-637b6486236f4a1c93a56af320e0ff5b'
       }
     },
     {
@@ -321,7 +309,7 @@ export const CommunityConfig = {
 
 export const ProductConfig = {
   name: {
-    en: 'Product',
+    en: 'Products',
     zh: '产品'
   },
   subMenu: [
@@ -444,8 +432,7 @@ export const TechnologyConfig = {
         zh: 'Fat Contract'
       },
       href: {
-        en:
-          'https://wiki.phala.network/en-us/general/development/fat-contract/',
+        en: 'https://wiki.phala.network/en-us/general/development/fat-contract/',
         zh: 'https://wiki.phala.network/en-us/general/development/fat-contract/'
       }
     },
@@ -512,10 +499,8 @@ export const CrowdloanConfig = {
     zh: '众贷领奖'
   },
   href: {
-    en:
-      'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf',
-    zh:
-      'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf'
+    en: 'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf',
+    zh: 'https://medium.com/phala-network/guidance-how-to-check-and-claim-your-rewards-c6305e7ae5cf'
   }
 }
 
