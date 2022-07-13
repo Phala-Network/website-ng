@@ -1,3 +1,5 @@
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 import { PartnersSectionConfig } from '../../../config/PageIndexConfig/PartnersSectionConfig'
 import { useBreakpoint } from '../../../hooks/useBreakpoint'
 import PartnerRow from './PartnerRow'
@@ -16,13 +18,36 @@ const PartnersSection: React.FC<Props> = (props) => {
 
   return (
     <div className={styles.partnersSection}>
-      <div className='container'>
+      <div className="container">
         <div className={classnames([styles.content, 'row'])}>
           {breakpoint === 'desktop' && (
             <div className={styles.partners}>
-              <PartnerRow from={0} to={4}></PartnerRow>
-              <PartnerRow from={5} to={9}></PartnerRow>
-              <PartnerRow from={10} to={14}></PartnerRow>
+              <Carousel showThumbs={false} showStatus={false}>
+                <div>
+                  {[0, 5, 10].map((item) => (
+                    <PartnerRow
+                      key={item}
+                      from={item}
+                      to={item + 4}></PartnerRow>
+                  ))}
+                </div>
+                <div>
+                  {[15, 20, 25].map((item) => (
+                    <PartnerRow
+                      key={item}
+                      from={item}
+                      to={item + 4}></PartnerRow>
+                  ))}
+                </div>
+                <div>
+                  {[30, 35].map((item) => (
+                    <PartnerRow
+                      key={item}
+                      from={item}
+                      to={item + 4}></PartnerRow>
+                  ))}
+                </div>
+              </Carousel>
             </div>
           )}
 
@@ -33,7 +58,10 @@ const PartnersSection: React.FC<Props> = (props) => {
                 title={PartnersSectionConfig.title}
               />
 
-              <PartnerRow from={0} to={14}></PartnerRow>
+              <Carousel showThumbs={false} showStatus={false}>
+                <PartnerRow from={0} to={19}></PartnerRow>
+                <PartnerRow from={20} to={39}></PartnerRow>
+              </Carousel>
             </div>
           )}
 
@@ -46,13 +74,32 @@ const PartnersSection: React.FC<Props> = (props) => {
                 />
               )}
 
-              <PartnerRow from={0} to={1}></PartnerRow>
-              <PartnerRow from={2} to={3}></PartnerRow>
-              <PartnerRow from={4} to={6}></PartnerRow>
-              <PartnerRow from={7} to={8}></PartnerRow>
-              <PartnerRow from={9} to={10}></PartnerRow>
-              <PartnerRow from={11} to={12}></PartnerRow>
-              <PartnerRow from={13} to={14}></PartnerRow>
+              <Carousel showThumbs={false} showStatus={false}>
+                <div>
+                  {[0, 2, 4, 6, 8, 10, 12].map((item) => (
+                    <PartnerRow
+                      key={item}
+                      from={item}
+                      to={item + 1}></PartnerRow>
+                  ))}
+                </div>
+                <div>
+                  {[14, 16, 18, 20, 22, 24, 26].map((item) => (
+                    <PartnerRow
+                      key={item}
+                      from={item}
+                      to={item + 1}></PartnerRow>
+                  ))}
+                </div>
+                <div>
+                  {[28, 30, 32, 34, 36, 38].map((item) => (
+                    <PartnerRow
+                      key={item}
+                      from={item}
+                      to={item + 1}></PartnerRow>
+                  ))}
+                </div>
+              </Carousel>
             </div>
           )}
 

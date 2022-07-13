@@ -1,1 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.96 50.15"><defs><style>.cls-1{fill:silver;}.cls-2{fill:#d1ff52;}.cls-3{fill:none;stroke:#040404;stroke-miterlimit:10;stroke-width:0.17px;}.cls-4{fill:#040404;}</style></defs><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><path class="cls-1" d="M67.1.86V49.29H.86V.86H67.1M68,0H0V50.15H68V0Z"/><polygon class="cls-1" points="67.96 4.99 0 4.99 0 5.58 67.96 5.58 67.96 4.99 67.96 4.99"/><rect class="cls-1" x="55.91" y="1.52" width="3.29" height="2.85"/><rect class="cls-1" x="59.43" y="1.52" width="3.29" height="2.85"/><rect class="cls-1" x="62.91" y="1.52" width="3.29" height="2.85"/><path class="cls-2" d="M2.18,3.85V2.56h.18V2.37H4.2v.19h.19v.55H4.2v.18H2.54v.56H2.18Zm.36-1.11v.19H4V2.74H2.54Z"/><path class="cls-2" d="M4.58,3.85V2.37H5v.56H6.42V2.37h.37V3.85H6.42V3.29H5v.56H4.58Z"/><path class="cls-2" d="M7,3.85V2.56h.18V2.37H9v.19h.19V3.85H8.82V3.29H7.34v.56H7Zm.36-1.11v.19H8.82V2.74H7.34Z"/><path class="cls-2" d="M9.37,3.66V2.37h.37V3.48h1.84v.37h-2V3.66Z"/><path class="cls-2" d="M11.77,3.85V2.56H12V2.37H13.8v.19H14V3.85h-.37V3.29H12.14v.56h-.37Zm.37-1.11v.19h1.48V2.74H12.14Z"/><path class="cls-2" d="M14.17,3.85V3.48h.37v.37h-.37Z"/><path class="cls-2" d="M14.72,3.66V2.56h.19V2.37h2v.37H15.09v.19h1.84v.36H15.09v.19h1.84v.37h-2V3.66Z"/><path class="cls-2" d="M17.12,3.85V3.48h.18V2.74h-.18V2.37h.36v.19h.19v.37h1.1V2.56H19V2.37h.37v.37h-.19v.74h.19v.37H19V3.66h-.19V3.29h-1.1v.37h-.19v.19h-.36Z"/><path class="cls-2" d="M19.52,3.66V2.56h.19V2.37h2v.37H19.89v.19h1.84v.36H19.89v.19h1.84v.37h-2V3.66Z"/><rect class="cls-3" x="60" y="2.11" width="2.16" height="1.73"/><line class="cls-3" x1="56.48" y1="3.85" x2="58.57" y2="3.85"/><rect class="cls-4" x="63.55" y="2.18" width="0.32" height="0.16"/><rect class="cls-4" x="63.77" y="2.34" width="0.32" height="0.16"/><rect class="cls-4" x="63.93" y="2.51" width="0.32" height="0.16"/><rect class="cls-4" x="63.52" y="3.62" width="0.32" height="0.16"/><rect class="cls-4" x="63.74" y="3.46" width="0.32" height="0.16"/><rect class="cls-4" x="63.9" y="3.29" width="0.32" height="0.16"/><rect class="cls-4" x="64.04" y="2.67" width="0.32" height="0.16"/><rect class="cls-4" x="64.12" y="2.91" width="0.32" height="0.16" transform="translate(67.27 -61.29) rotate(90)"/><rect class="cls-4" x="64.31" y="2.91" width="0.32" height="0.16" transform="translate(128.93 5.98) rotate(180)"/><rect class="cls-4" x="64.04" y="3.13" width="0.32" height="0.16"/><rect class="cls-4" x="65.06" y="2.18" width="0.32" height="0.16" transform="translate(130.45 4.53) rotate(180)"/><rect class="cls-4" x="64.85" y="2.34" width="0.32" height="0.16" transform="translate(130.02 4.85) rotate(180)"/><rect class="cls-4" x="64.69" y="2.51" width="0.32" height="0.16" transform="translate(129.69 5.17) rotate(180)"/><rect class="cls-4" x="65.09" y="3.62" width="0.32" height="0.16" transform="translate(130.5 7.39) rotate(180)"/><rect class="cls-4" x="64.87" y="3.46" width="0.32" height="0.16" transform="translate(130.07 7.07) rotate(180)"/><rect class="cls-4" x="64.71" y="3.29" width="0.32" height="0.16" transform="translate(129.75 6.75) rotate(180)"/><rect class="cls-4" x="64.57" y="2.67" width="0.32" height="0.16" transform="translate(129.46 5.49) rotate(180)"/><rect class="cls-4" x="64.49" y="2.91" width="0.32" height="0.16" transform="translate(67.64 -61.66) rotate(90)"/><rect class="cls-4" x="64.57" y="3.13" width="0.32" height="0.16" transform="translate(129.46 6.43) rotate(180)"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.96 50.15">
+	<!--
+	<defs>
+	<style>
+	.cls-1{fill:silver;}.cls-2{fill:#d1ff52;}.cls-3{fill:none;stroke:#040404;stroke-miterlimit:10;stroke-width:0.17px;}.cls-4{fill:#040404;}
+	</style>
+	</defs>
+	-->
+	<g id="图层_2" data-name="图层 2">
+		<g id="图层_1-2" data-name="图层 1">
+			<path fill="silver" d="M67.1.86V49.29H.86V.86H67.1M68,0H0V50.15H68V0Z" />
+			<polygon fill="silver" points="67.96 4.99 0 4.99 0 5.58 67.96 5.58 67.96 4.99 67.96 4.99" />
+			<rect fill="silver" x="55.91" y="1.52" width="3.29" height="2.85" />
+			<rect fill="silver" x="59.43" y="1.52" width="3.29" height="2.85" />
+			<rect fill="silver" x="62.91" y="1.52" width="3.29" height="2.85" />
+			<path fill="#d1ff52" d="M2.18,3.85V2.56h.18V2.37H4.2v.19h.19v.55H4.2v.18H2.54v.56H2.18Zm.36-1.11v.19H4V2.74H2.54Z" />
+			<path fill="#d1ff52" d="M4.58,3.85V2.37H5v.56H6.42V2.37h.37V3.85H6.42V3.29H5v.56H4.58Z" />
+			<path fill="#d1ff52" d="M7,3.85V2.56h.18V2.37H9v.19h.19V3.85H8.82V3.29H7.34v.56H7Zm.36-1.11v.19H8.82V2.74H7.34Z" />
+			<path fill="#d1ff52" d="M9.37,3.66V2.37h.37V3.48h1.84v.37h-2V3.66Z" />
+			<path fill="#d1ff52" d="M11.77,3.85V2.56H12V2.37H13.8v.19H14V3.85h-.37V3.29H12.14v.56h-.37Zm.37-1.11v.19h1.48V2.74H12.14Z" />
+			<path fill="#d1ff52" d="M14.17,3.85V3.48h.37v.37h-.37Z" />
+			<path fill="#d1ff52" d="M14.72,3.66V2.56h.19V2.37h2v.37H15.09v.19h1.84v.36H15.09v.19h1.84v.37h-2V3.66Z" />
+			<path fill="#d1ff52" d="M17.12,3.85V3.48h.18V2.74h-.18V2.37h.36v.19h.19v.37h1.1V2.56H19V2.37h.37v.37h-.19v.74h.19v.37H19V3.66h-.19V3.29h-1.1v.37h-.19v.19h-.36Z" />
+			<path fill="#d1ff52" d="M19.52,3.66V2.56h.19V2.37h2v.37H19.89v.19h1.84v.36H19.89v.19h1.84v.37h-2V3.66Z" />
+			<rect fill="none" stroke="#040404" stroke-miterlimit="10" stroke-width="0.17" x="60" y="2.11" width="2.16" height="1.73" />
+			<line fill="none" stroke="#040404" stroke-miterlimit="10" stroke-width="0.17" x1="56.48" y1="3.85" x2="58.57" y2="3.85" />
+			<rect fill="#040404" x="63.55" y="2.18" width="0.32" height="0.16" />
+			<rect fill="#040404" x="63.77" y="2.34" width="0.32" height="0.16" />
+			<rect fill="#040404" x="63.93" y="2.51" width="0.32" height="0.16" />
+			<rect fill="#040404" x="63.52" y="3.62" width="0.32" height="0.16" />
+			<rect fill="#040404" x="63.74" y="3.46" width="0.32" height="0.16" />
+			<rect fill="#040404" x="63.9" y="3.29" width="0.32" height="0.16" />
+			<rect fill="#040404" x="64.04" y="2.67" width="0.32" height="0.16" />
+			<rect fill="#040404" x="64.12" y="2.91" width="0.32" height="0.16" transform="translate(67.27 -61.29) rotate(90)" />
+			<rect fill="#040404" x="64.31" y="2.91" width="0.32" height="0.16" transform="translate(128.93 5.98) rotate(180)" />
+			<rect fill="#040404" x="64.04" y="3.13" width="0.32" height="0.16" />
+			<rect fill="#040404" x="65.06" y="2.18" width="0.32" height="0.16" transform="translate(130.45 4.53) rotate(180)" />
+			<rect fill="#040404" x="64.85" y="2.34" width="0.32" height="0.16" transform="translate(130.02 4.85) rotate(180)" />
+			<rect fill="#040404" x="64.69" y="2.51" width="0.32" height="0.16" transform="translate(129.69 5.17) rotate(180)" />
+			<rect fill="#040404" x="65.09" y="3.62" width="0.32" height="0.16" transform="translate(130.5 7.39) rotate(180)" />
+			<rect fill="#040404" x="64.87" y="3.46" width="0.32" height="0.16" transform="translate(130.07 7.07) rotate(180)" />
+			<rect fill="#040404" x="64.71" y="3.29" width="0.32" height="0.16" transform="translate(129.75 6.75) rotate(180)" />
+			<rect fill="#040404" x="64.57" y="2.67" width="0.32" height="0.16" transform="translate(129.46 5.49) rotate(180)" />
+			<rect fill="#040404" x="64.49" y="2.91" width="0.32" height="0.16" transform="translate(67.64 -61.66) rotate(90)" />
+			<rect fill="#040404" x="64.57" y="3.13" width="0.32" height="0.16" transform="translate(129.46 6.43) rotate(180)" />
+		</g>
+	</g>
+</svg>

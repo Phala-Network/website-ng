@@ -21,20 +21,20 @@ export const PageAboutUsConfig = {
         zh: ['核心团队']
       }
     },
-    {
-      id: 'Contributor',
-      name: {
-        en: ['Contributor'],
-        zh: ['建设者']
-      }
-    },
-    {
-      id: 'Council',
-      name: {
-        en: ['Council'],
-        zh: ['议会']
-      }
-    },
+    // {
+    //   id: 'Contributor',
+    //   name: {
+    //     en: ['Contributor'],
+    //     zh: ['建设者']
+    //   }
+    // },
+    // {
+    //   id: 'Council',
+    //   name: {
+    //     en: ['Council'],
+    //     zh: ['议会']
+    //   }
+    // },
     {
       id: 'CommunityBuilder',
       name: {

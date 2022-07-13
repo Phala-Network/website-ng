@@ -5,10 +5,13 @@ export const config = [
       en: 'Joe Petrowski',
       zh: 'Joe Petrowski'
     },
-    position: {},
+    position: {
+      en: 'Council Member',
+      zh: '议会成员'
+    },
     description: {
       en:
-        'the technology integration lead of Web3 Foundation. Joe also hosts the “Relay Chain” podcast that covers people and projects in the Polkadot ecosystem.',
+        'Technology integration lead of Web3 Foundation. Host of the “Relay Chain” podcast that covers people and projects in the Polkadot ecosystem.',
       zh: 'Web3 基金会的技术整合主管'
     }
   },
@@ -18,7 +21,10 @@ export const config = [
       en: 'Dr. Jonas Gehrlein',
       zh: 'Jonas Gehrlein 博士'
     },
-    position: {},
+    position: {
+      en: 'Council Member',
+      zh: '议会成员'
+    },
     description: {
       en:
         'Ph.D., University of Bern, who works as a research scientist at the Web3 Foundation in charge of researching economic problems in the Polkadot ecosystem. Before joining W3F, Jonas did his Ph.D. in Behavioral and Experimental Economics, working on projects which explore human decision-making. Before that, he obtained a master’s degree in quantitative economics from the University of Konstanz.',
@@ -32,7 +38,10 @@ export const config = [
       en: 'Zoé Meckbach',
       zh: 'Zoé Meckbach'
     },
-    position: {},
+    position: {
+      en: 'Council Member',
+      zh: '议会成员'
+    },
     description: {
       en:
         'M.Sc. in Information & Cybersecurity. Polkadot Global Head Ambassador of Events. Blockchain technology and Cybersecurity advocate. She is the COO of MH-IT & Service GmbH, an IT security company. Zoé worked for several star-ups in Silicon Valley as well as an applications analyst for Google.',

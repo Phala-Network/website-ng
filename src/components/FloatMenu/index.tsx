@@ -12,7 +12,7 @@ type Props = {
   offsetBottom?: number
 }
 
-function offset (el) {
+function offset(el) {
   const rect = el.getBoundingClientRect()
   const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -26,13 +26,13 @@ const FloatMenu: React.FC<Props> = (props) => {
   const [bottom, setBottom] = useState(false)
   const [done, setDone] = useState([])
 
-  function checkName (name) {
+  function checkName(name) {
     const localName = name[locale]
     return Array.isArray(localName) ? localName.join('_') : localName
   }
 
   useEffect(() => {
-    function checkPosition () {
+    function checkPosition() {
       const el = document.getElementById('floatMenu')
       const contentEl = document.getElementById('content')
       const winHeight = window.innerHeight
@@ -87,7 +87,7 @@ const FloatMenu: React.FC<Props> = (props) => {
     }
   }, [locale])
 
-  function addI18nSpaces (langItems: { [locale: string]: string[] | string }) {
+  function addI18nSpaces(langItems: { [locale: string]: string[] | string }) {
     if (Array.isArray(langItems.en)) {
       return {
         ...langItems,
@@ -100,7 +100,7 @@ const FloatMenu: React.FC<Props> = (props) => {
 
   return (
     <div
-      id='floatMenu'
+      id="floatMenu"
       className={classnames([
         styles.floatMenu,
         {

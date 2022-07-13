@@ -4,8 +4,7 @@ export const PartnersSectionConfig = {
     zh: '合作伙伴'
   },
   description: {
-    en:
-      'With thriving partners and projects, Phala Network is rapidly growing and being developed',
+    en: 'With thriving partners and projects, Phala Network is rapidly growing and being developed',
     zh: '在众多合作伙伴与项目的不断努力下，Phala Network 正在快速发展壮大'
   },
   partners: [
@@ -83,6 +82,131 @@ export const PartnersSectionConfig = {
       name: 'HappyBlock',
       link: 'https://happyblocklabs.com/',
       logo: '/images/indexPage/partnersSection/partner-HappyBlock.png'
+    },
+    {
+      name: 'Berchain',
+      link: 'https://berchain.com/',
+      logo: '/images/indexPage/partnersSection/Berchain.png'
+    },
+    {
+      name: 'MH-IT',
+      link: 'https://www.mhit-service.com/',
+      logo: '/images/indexPage/partnersSection/MH_IT.png'
+    },
+    {
+      name: 'Blender',
+      link: 'https://www.blender.org/',
+      logo: '/images/indexPage/partnersSection/blender.png'
+    },
+    {
+      name: 'ConfidentialcomputingConsortium',
+      link: 'https://confidentialcomputing.io/',
+      logo: '/images/indexPage/partnersSection/ConfidentialcomputingConsortium.png'
+    },
+    {
+      name: 'RMRK',
+      link: 'https://rmrk.app/',
+      logo: '/images/indexPage/partnersSection/rmrk.png'
+    },
+    {
+      name: 'bit.country',
+      link: 'https://bit.country/',
+      logo: '/images/indexPage/partnersSection/Bit.country.png'
+    },
+    {
+      name: 'Forj',
+      link: 'https://forj.network/',
+      logo: '/images/indexPage/partnersSection/Forj.png'
+    },
+    {
+      name: 'Litentry',
+      link: 'https://www.litentry.com/',
+      logo: '/images/indexPage/partnersSection/LitentryAssets.png'
+    },
+    {
+      name: 'W3A',
+      link: 'Litentry',
+      logo: '/images/indexPage/partnersSection/W3A.png'
+    },
+    {
+      name: 'Chainlink',
+      link: 'https://chain.link/',
+      logo: '/images/indexPage/partnersSection/chainlink.png'
+    },
+    {
+      name: 'Ternoa',
+      link: 'https://www.ternoa.com/',
+      logo: '/images/indexPage/partnersSection/Ternoa.png'
+    },
+    {
+      name: 'Moonriver',
+      link: 'https://moonbeam.network/networks/moonriver/',
+      logo: '/images/indexPage/partnersSection/Moonbeam.png'
+    },
+    {
+      name: 'Karura',
+      link: 'https://acala.network/karura',
+      logo: '/images/indexPage/partnersSection/karura.png'
+    },
+    {
+      name: 'Basilisk',
+      link: 'https://bsx.fi/',
+      logo: '/images/indexPage/partnersSection/Basilisk.png'
+    },
+    {
+      name: 'Parallel',
+      link: 'https://parallel.fi/',
+      logo: '/images/indexPage/partnersSection/Parallel.png'
+    },
+    {
+      name: 'Zenlink',
+      link: 'https://www.zenlink.pro/',
+      logo: '/images/indexPage/partnersSection/Zenlink.png'
+    },
+    {
+      name: 'OAK Network',
+      link: 'https://oak.tech/',
+      logo: '/images/indexPage/partnersSection/oak.png'
+    },
+    {
+      name: 'Talisman',
+      link: 'https://talisman.xyz/',
+      logo: '/images/indexPage/partnersSection/Talisman.png'
+    },
+    {
+      name: 'Subwallet',
+      link: 'https://subwallet.app/',
+      logo: '/images/indexPage/partnersSection/Subwallet.png'
+    },
+    {
+      name: 'Nova',
+      link: 'https://novawallet.io/',
+      logo: '/images/indexPage/partnersSection/Nova.png'
+    },
+    {
+      name: 'Encentive',
+      link: 'https://encentive.io/',
+      logo: '/images/indexPage/partnersSection/Encentive.png'
+    },
+    {
+      name: 'PINKNODE',
+      link: 'https://www.pinknode.io/',
+      logo: '/images/indexPage/partnersSection/PINKNODE.png'
+    },
+    {
+      name: 'Subscan',
+      link: 'https://www.subscan.io/',
+      logo: '/images/indexPage/partnersSection/subscan.png'
+    },
+    {
+      name: 'SubQuery',
+      link: 'https://subquery.network/',
+      logo: '/images/indexPage/partnersSection/subquery.png'
+    },
+    {
+      name: 'Dwellir',
+      link: 'https://dwellir.com/',
+      logo: '/images/indexPage/partnersSection/Dwellir.png'
     }
   ]
 }

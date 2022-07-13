@@ -30,8 +30,12 @@ export const config = [
   // { index: '29', name: '海河', from: 'Chinese Community' }
   { index: '30', name: 'Cappex', from: 'Italy Community' },
   { index: '31', name: 'Jaime Flores', from: 'Spanish Community' },
-  { index: '32', name: 'RHEE', from: 'Korean Community' },
+  // { index: '32', name: 'RHEE', from: 'Korean Community' },
   { index: '33', name: 'Kyle', from: 'Korean Community' },
   { index: '34', name: 'Tioneb', from: 'French Community' },
-  { index: '35', name: 'Salih', from: 'German Community' }
+  { index: '35', name: 'Salih', from: 'German Community' },
+  { index: '36', name: 'Jeremias Boyanovsky', from: 'Argentina Ambassador' },
+  { index: '37', name: 'Sonji', from: 'Korean Senior Ambassador' },
+  { index: '38', name: 'Cahit Necdet Gülnar', from: 'Turkish Ambasssador' },
+  { index: '39', name: 'Rafael Cabilla', from: 'Argentina Ambassador' }
 ]

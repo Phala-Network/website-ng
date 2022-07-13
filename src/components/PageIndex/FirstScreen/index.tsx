@@ -1,11 +1,12 @@
-import classnames from 'classnames'
-import React, { FC } from 'react'
-import { ExplorerConfig, PhalaAppConfig } from '../../../config'
+import { Map } from './Map'
+import { PhalaAppConfig } from '../../../config'
+import { StaticsList } from './StaticsList'
+import { WikiConfig } from '../../../config/WikiConfig'
 import Button from '../../Button'
 import I18n from '../../I18n'
+import React, { FC } from 'react'
+import classnames from 'classnames'
 import * as styles from './index.module.scss'
-import { Map } from './Map'
-import { StaticsList } from './StaticsList'
 
 const FirstScreen: FC = () => {
   const title = {
@@ -39,8 +40,8 @@ const FirstScreen: FC = () => {
             type="link"
             color="primary"></Button>
           <Button
-            text={ExplorerConfig.name}
-            href={ExplorerConfig.href}
+            text={WikiConfig.name}
+            href={WikiConfig.href}
             className={styles.button}
             hasArrowIcon
             type="link"

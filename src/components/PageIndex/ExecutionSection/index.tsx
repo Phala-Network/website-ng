@@ -1,5 +1,5 @@
 import { ExecutionSectionConfig } from '../../../config/PageIndexConfig/ExecutionSectionConfig'
-import { TechnologyConfig } from '../../../config'
+import { SecureEnclaveConfig } from '../../../config/SecureEnclaveConfig'
 import Button from '../../Button'
 import List from './List'
 import React from 'react'
@@ -11,22 +11,22 @@ type Props = {}
 const ExecutionSection: React.FC<Props> = () => {
   return (
     <div className={styles.executionSection}>
-      <div className='container'>
+      <div className="container">
         <div className={styles.content}>
-          <div className='row'>
-            <div className='col-xl-6'>
+          <div className="row">
+            <div className="col-xl-6">
               <SectionHeader
                 title={ExecutionSectionConfig.titleText}
                 description={ExecutionSectionConfig.descriptionText}
               />
             </div>
-            <div className='col-xl-6'>
+            <div className="col-xl-6">
               <Button
-                href={TechnologyConfig.href}
+                href={SecureEnclaveConfig.href}
                 className={styles.button}
                 text={ExecutionSectionConfig.buttonText}
-                color='black'
-                type='link'
+                color="black"
+                type="link"
                 hasArrowIcon></Button>
             </div>
           </div>
