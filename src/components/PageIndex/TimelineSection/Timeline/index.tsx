@@ -11,45 +11,63 @@ type Props = {}
 
 const { timeline, doneTitle, doingTitle } = TimelineSectionConfig
 
+const INDEX_ARR = [0, 3, 5, 7, 10]
+const FIRSTINDEX = INDEX_ARR[0]
+const LAST_INDEX = INDEX_ARR[INDEX_ARR.length - 1]
+
 const Timeline: React.FC<Props> = () => {
-  const [slideNumber, setSlideNumber] = useState(3)
+  // const [slideNumber, setSlideNumber] = useState(3)
   const [index, setIndex] = useState(0)
   const [bgColor, setBgColor] = useState<'primary' | 'gray'>('primary')
   const allTimelineData = [...timeline.done, ...timeline.doing]
-  const allTimelineDataLength = allTimelineData.length
-  const maxIndex = allTimelineData.length - slideNumber
+  // const allTimelineDataLength = allTimelineData.length
+  // const maxIndex = allTimelineData.length - slideNumber
   const { breakpoint } = useBreakpoint()
 
-  function isLast () {
-    return index >= maxIndex
+  console.log('*** breakpoint', breakpoint)
+
+  // function isLast() {
+  //   return index >= maxIndex
+  // }
+
+  function lastIndex() {
+    return index === LAST_INDEX
   }
 
-  function lastIndex () {
-    return index === allTimelineDataLength - 2
+  function onRightButtonClick() {
+    if (index === LAST_INDEX) return
+
+    const nextIndex = INDEX_ARR[INDEX_ARR.indexOf(index) + 1]
+
+    setIndex(nextIndex)
+
+    // if (lastIndex()) return
+
+    // if (isLast()) {
+    //   setIndex(index + 1)
+    // } else {
+    //   setIndex(index + slideNumber)
+    // }
   }
 
-  function onRightButtonClick () {
-    if (lastIndex()) return
+  function onLeftButtonClick() {
+    if (index === FIRSTINDEX) return
 
-    if (isLast()) {
-      setIndex(index + 1)
-    } else {
-      setIndex(index + slideNumber)
-    }
-  }
+    const nextIndex = INDEX_ARR[INDEX_ARR.indexOf(index) - 1]
 
-  function onLeftButtonClick () {
-    if (index === 0) return
+    setIndex(nextIndex)
 
-    if (lastIndex()) {
-      setIndex(index - 1)
-    } else {
-      setIndex(index - slideNumber)
-    }
+    // if (index === 0) return
+
+    // if (lastIndex()) {
+    //   setIndex(index - 1)
+    // } else {
+    //   setIndex(index - slideNumber)
+    // }
   }
 
   useEffect(() => {
-    if (lastIndex()) {
+    if (index === LAST_INDEX) {
       setBgColor('gray')
     } else {
       setBgColor('primary')
@@ -69,7 +87,7 @@ const Timeline: React.FC<Props> = () => {
 
   return (
     <div className={classnames([styles.timelineWrap, styles[bgColor]])}>
-      <div className='container'>
+      <div className="container">
         <div className={styles.header}>
           <SectionHeader title={lastIndex() ? doingTitle : doneTitle} />
 
