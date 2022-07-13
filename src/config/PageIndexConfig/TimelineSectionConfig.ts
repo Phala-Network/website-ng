@@ -108,24 +108,22 @@ export const TimelineSectionConfig = {
           ],
           zh: ['民主化治理', '发布元宇宙路线图', '发布 Fat Contract 产品概念']
         }
-      }
-    ],
-    doing: [
+      },
       {
         year: 2022,
         quarter: 1,
         content: {
           en: [
-            'Phala Network launch on Polkadot / Kusama',
-            'Fat contract V1, support Parity ink! and Javascript SDK',
-            'Tokenomics upgrade',
-            'Phala World NFT'
+            'Tokenomics Upgraded',
+            'Released Fat Contract V1, which supports Parity ink! and Javascript SDK',
+            'Launched PhalaWorld V1 Website',
+            'Completed the Setting of PhalaWorld Story and NFT'
           ],
           zh: [
-            '在 Polkadot 或 Kusama 上线 Phala 主网',
+            '发起新经济模型提案',
             'Fat Contract V1 版本发布，支持 ink! 语言和 Javascript SDK',
-            '经济模型升级',
-            '发布 Phala World NFT'
+            '上线 PhalaWorld V1 版本网站',
+            '完成 PhalaWorld 故事设定和 NFT 设计'
           ]
         }
       },
@@ -134,16 +132,40 @@ export const TimelineSectionConfig = {
         quarter: 2,
         content: {
           en: [
-            'Fat Contract V2, support async task & HTTP request',
-            'Web3 Cloud System upgrade, support SGX DCAP',
-            'Render service of 3D NFT',
-            'Kusama new slot auction'
+            'Merged Phala and Khala Network Incentives',
+            'Phala Network went live as it won one of Polkadot slots',
+            'Khala secured a new slot Lease',
+            'Launched SubBridge Website',
+            'PhalaWorld V2 Website launched and Soulbound system opened',
+            '3D Rendering Service POC'
           ],
           zh: [
+            '合并 Phala 与 Khala 网络激励',
+            '赢得 Polkadot 卡槽，Phala 网络上线',
+            'Khala 获得新一年卡槽租期',
+            'SubBridge 网站上线',
+            '上线 PhalaWorld V2 版本网站，开放Soulbound 系统',
+            '3D 渲染服务概念验证'
+          ]
+        }
+      }
+    ],
+    doing: [
+      {
+        year: 2022,
+        quarter: 3,
+        content: {
+          en: [
+            'Phala democracy governance goes live',
+            'Enable PHA transfer between Ethereum and Phala in SubBridge',
+            'Release Fat Contract V2, supporting asynchronous calls and HTTP requests',
+            'Release PhalaWorld Shell NFT'
+          ],
+          zh: [
+            '上线 Phala 民主治理',
+            'SubBridge 上线 Phala - 以太坊双向桥',
             '发布 Fat Contract V2，支持异步调用和 HTTP 请求',
-            'Web3 云计算系统升级，支持 SGX DCAP',
-            '3D 渲染服务上线',
-            'Khala 获得新的一年卡槽租期'
+            '发布 PhalaWorld Shell NFT'
           ]
         }
       },
@@ -152,17 +174,23 @@ export const TimelineSectionConfig = {
         quarter: 4,
         content: {
           en: [
-            'Web3 Cloud Infrastructure, included QoS & Map-reduce & Web3 data storage intergration',
-            'AMD SEV intergration',
-            'Fat Contract V3',
-            'Phala World Game (Beta)'
+            'Web3 Cloud system upgrade with SGX DCAP support',
+            'Fat Contract V3 launch',
+            'PhalaWorld Game Beta release'
           ],
           zh: [
-            'Web3 云架构完整上线: QoS、MapReduce、消息队列、去中心化存储整合...',
-            '支持 AMD SEV',
+            'Web3 云计算系统升级，支持 SGX DCAP',
             'Fat Contract V3 上线',
-            '发布 Phala World 游戏 Beta 版'
+            '发布 PhalaWorld 游戏 Beta 版'
           ]
+        }
+      },
+      {
+        year: 2023,
+        quarter: 1,
+        content: {
+          en: ['Support AMD SEV', '3D Rendering Service beta release '],
+          zh: ['支持 AMD SEV', '3D 渲染服务测试版本上线']
         }
       }
     ]
