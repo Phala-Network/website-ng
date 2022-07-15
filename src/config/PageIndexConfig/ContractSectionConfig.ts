@@ -1,6 +1,6 @@
 export const ContractSectionConfig = {
   button: {
-    en: 'Know More',
+    en: 'Learn More',
     zh: '了解详情'
   },
 
@@ -11,14 +11,14 @@ export const ContractSectionConfig = {
 
   description: {
     en: 'Secure off-chain computing model with Fat Contract',
-    zh: 'Phala Network 基于 Fat Contract 在实现链下计算模型'
+    zh: 'Phala Network 基于 Fat Contract 实现链下计算模型'
   },
 
   list: [
     {
       image: '/images/indexPage/contractSection/icon-credible.svg',
       name: {
-        en: 'Support Computation-Intensive Tasks',
+        en: 'Support Compute-Intensive Tasks',
         zh: '支持计算密集型任务'
       },
       description: {
