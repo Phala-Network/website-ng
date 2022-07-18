@@ -1,65 +1,62 @@
 export const ContractSectionConfig = {
   button: {
-    en: 'Check our Github',
-    zh: '来看看我们的 Github'
+    en: 'Learn More',
+    zh: '了解详情'
   },
 
   title: {
-    en: ['Privacy-preserving', 'Smart Contract'],
-    zh: ['隐私保护智能合约']
+    en: ['Fat/Phat Contract'],
+    zh: ['Fat/Phat Contract']
   },
 
   description: {
-    en: 'Built on TEE-Blockchain Hybrid Architecture',
-    zh: 'Phala Network 基于TEE-区块链混合架构实现保密合约'
+    en: 'Secure off-chain computing model with Fat Contract',
+    zh: 'Phala Network 基于 Fat Contract 实现链下计算模型'
   },
 
   list: [
     {
       image: '/images/indexPage/contractSection/icon-credible.svg',
       name: {
-        en: 'Credible',
-        zh: '无需信任的保秘'
+        en: 'Support Compute-Intensive Tasks',
+        zh: '支持计算密集型任务'
       },
       description: {
-        en:
-          'Remote attestation guarantees the contract runs right inside a trustless and confidential environment.',
-        zh: '远程认证保证了智能合约的可靠执行，同时可以秘密地使用数据'
+        en: 'Even just a single contract can fully utilize the computing power of all workers, no need to worry about blocking the entire blockchain.',
+        zh: '单个合约也可以充分利用 Worker 的计算能力，无需担心阻塞整个区块链。'
       }
     },
     {
       image: '/images/indexPage/contractSection/icon-verifieable.svg',
       name: {
-        en: 'Verifiable',
-        zh: '非验证则不可信'
+        en: 'Low Latency',
+        zh: '低延迟'
       },
       description: {
-        en: 'All the code and execution are verifiable on-chain.',
-        zh: 'Phala上的合约执行均可追溯到TEE证书，在区块链上可供用户验证'
+        en: 'Support off-chain Query, achieving millisecond-level read and write responses, making it a perfect choice to deploy Metaverse and game services.',
+        zh: '不涉及链上状态改变的请求，可实现毫秒级响应，是游戏和元宇宙最佳选择。'
       }
     },
     {
       image: '/images/indexPage/contractSection/icon-interoperatable.svg',
       name: {
-        en: 'Interoperable',
-        zh: '可组合与互操作'
+        en: 'Internet Services Access',
+        zh: '访问互联网服务'
       },
       description: {
-        en:
-          'Smart contract is 90% less useful without composability. Phala is the only confidential contract protocol that keeps interoperability and composability.',
-        zh: '失去可组合与互操作性，智能合约便毫无意义。Phala 保留了它们，并赋予了保密性。'
+        en: 'Off-chain secure workers can safely execute asynchronous network access in Fat Contract.',
+        zh: '链下 Secure Worker 可以安全地执行 Fat Contract 中的异步网络请求。'
       }
     },
     {
       image: '/images/indexPage/contractSection/icon-cross-chain.svg',
       name: {
-        en: 'Cross-chain',
+        en: 'Cross-chain Computing',
         zh: '跨链计算'
       },
       description: {
-        en:
-          'As a Substrate-based blockchain, Phala aim to serve any blockchain through Polkadot XCMP.',
-        zh: '基于Substrate开发，通过Polkadot的XCMP为其他区块链提供保密合约服务'
+        en: 'As a Substrate-based blockchain, Phala aims to serve any blockchain through Polkadot XCMP.',
+        zh: '基于 Substrate 开发，通过 Polkadot 的 XCMP 为其他区块链提供保密合约服务'
       }
     }
   ]
