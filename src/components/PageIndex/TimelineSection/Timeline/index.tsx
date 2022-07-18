@@ -1,5 +1,5 @@
 import { TimelineSectionConfig } from '../../../../config/PageIndexConfig/TimelineSectionConfig'
-import { useBreakpoint } from '../../../../hooks/useBreakpoint'
+// import { useBreakpoint } from '../../../../hooks/useBreakpoint'
 import Buttons from '../Buttons'
 import Item from '../Item'
 import React, { useEffect, useState } from 'react'
@@ -22,9 +22,7 @@ const Timeline: React.FC<Props> = () => {
   const allTimelineData = [...timeline.done, ...timeline.doing]
   // const allTimelineDataLength = allTimelineData.length
   // const maxIndex = allTimelineData.length - slideNumber
-  const { breakpoint } = useBreakpoint()
-
-  console.log('*** breakpoint', breakpoint)
+  // const { breakpoint } = useBreakpoint()
 
   // function isLast() {
   //   return index >= maxIndex
