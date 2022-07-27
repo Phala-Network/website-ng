@@ -10,7 +10,7 @@ export const config = [
       zh: '首席科学家'
     },
     description: {
-      en: 'Ph.D. Candidate in System Software and Security Laboratory, Fudan University, lead author of **An Ever-evolving Game: Evaluation of Real-world Attacks and Defenses in Ethereum Ecosystem**, USENIX Security 20. Co-author of other papers in top-tier security conferences. ',
+      en: 'Ph.D. in System Software and Security Laboratory, Fudan University, lead author of An Ever-evolving Game: Evaluation of Real-world Attacks and Defenses in Ethereum Ecosystem, USENIX Security 20. Co-author of other papers in top-tier security conferences. ',
       zh: 'Phala Network 白皮书作者之一。复旦大学系统软件与安全实验室博士，曾在国际顶级安全会议 USENIX Security 上发表对于以太坊生态中攻击交易与防御手段的研究，并协作发表多篇国际顶级安全会议论文。'
     }
   },

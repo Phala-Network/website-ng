@@ -20,7 +20,7 @@ type Props = {}
 const PageAboutUs: React.FC<Props> = () => {
   return (
     <BgLayer backgroundUrl="/images/PageAboutUs/bg.png">
-      <PageTitle zh="核心贡献者" en="CoreBuilders"></PageTitle>
+      <PageTitle zh="核心贡献者" en="Core Builders"></PageTitle>
       <NormalLayout className={styles.pageAboutUs}>
         <div className="container">
           <div className={styles.header}>
