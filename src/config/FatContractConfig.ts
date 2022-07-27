@@ -4,9 +4,7 @@ export const FatContractConfig = {
     zh: 'Fat Contract'
   },
   href: {
-    en:
-      'https://wiki.phala.network/en-us/general/phala-network/01-phala-network/#fat-contract',
-    zh:
-      'https://wiki.phala.network/en-us/general/phala-network/01-phala-network/#fat-contract'
+    en: 'https://wiki.phala.network/en-us/general/phala-network/products/#fat-contract',
+    zh: 'https://wiki.phala.network/en-us/general/phala-network/products/#fat-contract'
   }
 }
