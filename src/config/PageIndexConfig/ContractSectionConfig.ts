@@ -44,8 +44,8 @@ export const ContractSectionConfig = {
         zh: '访问互联网服务'
       },
       description: {
-        en: 'Off-chain secure workers can safely execute asynchronous network access in Fhat Contract.',
-        zh: '链下 Secure Worker 可以安全地执行 Fhat Contract 中的异步网络请求。'
+        en: 'Off-chain secure workers can safely execute asynchronous network access in Phat Contract.',
+        zh: '链下 Secure Worker 可以安全地执行 Phat Contract 中的异步网络请求。'
       }
     },
     {

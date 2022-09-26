@@ -131,7 +131,8 @@ export const TimelineSectionConfig = {
             'Khala secured a new slot Lease',
             'Launched SubBridge Website',
             'Launched <a href="https://phala.world/">PhalaWorld</a> Website',
-            'Completed the Setting of PhalaWorld Story and NFT Soulbound system opened',
+            'Completed the Setting of PhalaWorld Story and NFT',
+            'Soulbound system opened',
             '3D Rendering Service POC'
           ],
           zh: [
@@ -140,7 +141,7 @@ export const TimelineSectionConfig = {
             'Khala 获得新一年卡槽租期',
             'SubBridge 网站上线',
             '<a href="https://phala.world/">PhalaWorld</a> 官网上线',
-            '完成 PhalaWorld 故事设定，开放Soulbound 系统',
+            '完成 PhalaWorld 故事设定，开放 Soulbound 系统',
             '3D 渲染服务概念验证'
           ]
         }
