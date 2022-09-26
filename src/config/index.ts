@@ -1,9 +1,9 @@
 import { BountyConfig } from './BountyConfig'
 import { EconomyWhitepaperConfig } from './EconomyWhitepaperConfig'
-import { FatContractConfig } from './FatContractConfig'
 import { GithubConfig } from './GithubConfig'
 import { JoinUsConfig } from './JoinUsConfig'
 import { MediaKitConfig } from './MediaKitConfig'
+import { PhatContractConfig } from './PhatContractConfig'
 import { SecureEnclaveConfig } from './SecureEnclaveConfig'
 import { WikiConfig } from './WikiConfig'
 
@@ -233,7 +233,7 @@ export const DevelopersConfig = {
         zh: GithubConfig.url
       }
     },
-    FatContractConfig,
+    PhatContractConfig,
     {
       name: {
         en: 'Secure Worker',
@@ -313,7 +313,7 @@ export const ProductConfig = {
     zh: '产品'
   },
   subMenu: [
-    FatContractConfig,
+    PhatContractConfig,
     {
       name: {
         en: 'PhalaWorld',
@@ -428,8 +428,8 @@ export const TechnologyConfig = {
     SecureEnclaveConfig,
     {
       name: {
-        en: 'Fat Contract',
-        zh: 'Fat Contract'
+        en: 'Phat Contract',
+        zh: 'Phat Contract'
       },
       href: {
         en: 'https://wiki.phala.network/en-us/general/development/fat-contract/',

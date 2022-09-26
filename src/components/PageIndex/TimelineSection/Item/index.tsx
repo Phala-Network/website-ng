@@ -39,8 +39,7 @@ const Item: React.FC<Props> = (props) => {
             if (isString(item)) {
               // for normal
               return (
-                <div key={item} className={styles.itemText}>
-                  {item}
+                <div key={item} className={styles.itemText} dangerouslySetInnerHTML={{ __html: item }}>
                 </div>
               )
             } else {

@@ -71,20 +71,5 @@ export const config = [
     }
   },
   ...ContributorConfig,
-  ...CouncilConfig,
-  {
-    avatar: 'peopleRhee',
-    name: {
-      en: 'Sang Hyun Rhee',
-      zh: 'Sang Hyun Rhee'
-    },
-    position: {
-      en: 'Community Lead',
-      zh: '运营主管'
-    },
-    description: {
-      en: 'Polkadot Head Ambassador of East Asia.',
-      zh: '波卡亚太区高级大使。'
-    }
-  }
+  ...CouncilConfig
 ]

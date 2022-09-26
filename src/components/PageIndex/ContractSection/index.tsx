@@ -1,5 +1,5 @@
 import { ContractSectionConfig } from '../../../config/PageIndexConfig/ContractSectionConfig'
-import { FatContractConfig } from '../../../config/FatContractConfig'
+import { PhatContractConfig } from '../../../config/PhatContractConfig'
 import Button from '../../Button'
 import List from './List'
 import React from 'react'
@@ -28,7 +28,7 @@ const ContractSection: React.FC<Props> = () => {
                 className={styles.button}
                 text={ContractSectionConfig.button}
                 type="link"
-                href={FatContractConfig.href}
+                href={PhatContractConfig.href}
                 hasArrowIcon></Button>
             </div>
           </div>

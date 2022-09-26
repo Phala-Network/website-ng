@@ -5,13 +5,13 @@ export const ContractSectionConfig = {
   },
 
   title: {
-    en: ['Fat/Phat Contract'],
-    zh: ['Fat/Phat Contract']
+    en: ['Phat Contract'],
+    zh: ['Phat Contract']
   },
 
   description: {
-    en: 'Secure off-chain computing model with Fat Contract',
-    zh: 'Phala Network 基于 Fat Contract 实现链下计算模型'
+    en: 'Secure off-chain computing model with Phat Contract',
+    zh: 'Phala Network 基于 Phat Contract 实现链下计算模型'
   },
 
   list: [
@@ -44,8 +44,8 @@ export const ContractSectionConfig = {
         zh: '访问互联网服务'
       },
       description: {
-        en: 'Off-chain secure workers can safely execute asynchronous network access in Fat Contract.',
-        zh: '链下 Secure Worker 可以安全地执行 Fat Contract 中的异步网络请求。'
+        en: 'Off-chain secure workers can safely execute asynchronous network access in Fhat Contract.',
+        zh: '链下 Secure Worker 可以安全地执行 Fhat Contract 中的异步网络请求。'
       }
     },
     {

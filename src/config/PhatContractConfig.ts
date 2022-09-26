@@ -1,7 +1,7 @@
-export const FatContractConfig = {
+export const PhatContractConfig = {
   name: {
-    en: 'Fat Contract',
-    zh: 'Fat Contract'
+    en: 'Phat Contract',
+    zh: 'Phat Contract'
   },
   href: {
     en: 'https://wiki.phala.network/en-us/general/phala-network/products/#fat-contract',
