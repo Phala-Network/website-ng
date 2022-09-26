@@ -104,9 +104,9 @@ export const TimelineSectionConfig = {
           en: [
             'Council and Decentralized governance',
             'Roadmap to Metaverse',
-            'Fat Contract POC'
+            'Phat Contract POC'
           ],
-          zh: ['民主化治理', '发布元宇宙路线图', '发布 Fat Contract 产品概念']
+          zh: ['民主化治理', '发布元宇宙路线图', '发布 Phat Contract 产品概念']
         }
       },
       {
@@ -114,16 +114,10 @@ export const TimelineSectionConfig = {
         quarter: 1,
         content: {
           en: [
-            'Tokenomics Upgraded',
-            'Released Fat Contract V1, which supports Parity ink! and Javascript SDK',
-            'Launched PhalaWorld V1 Website',
-            'Completed the Setting of PhalaWorld Story and NFT'
+            'Tokenomics Upgraded'
           ],
           zh: [
-            '发起新经济模型提案',
-            'Fat Contract V1 版本发布，支持 ink! 语言和 Javascript SDK',
-            '上线 PhalaWorld V1 版本网站',
-            '完成 PhalaWorld 故事设定和 NFT 设计'
+            '发起新经济模型提案'
           ]
         }
       },
@@ -136,7 +130,9 @@ export const TimelineSectionConfig = {
             'Phala Network went live as it won one of Polkadot slots',
             'Khala secured a new slot Lease',
             'Launched SubBridge Website',
-            'PhalaWorld V2 Website launched and Soulbound system opened',
+            'Launched <a href="https://phala.world/">PhalaWorld</a> Website',
+            'Completed the Setting of PhalaWorld Story and NFT',
+            'Soulbound system opened',
             '3D Rendering Service POC'
           ],
           zh: [
@@ -144,7 +140,8 @@ export const TimelineSectionConfig = {
             '赢得 Polkadot 卡槽，Phala 网络上线',
             'Khala 获得新一年卡槽租期',
             'SubBridge 网站上线',
-            '上线 PhalaWorld V2 版本网站，开放Soulbound 系统',
+            '<a href="https://phala.world/">PhalaWorld</a> 官网上线',
+            '完成 PhalaWorld 故事设定，开放 Soulbound 系统',
             '3D 渲染服务概念验证'
           ]
         }
@@ -158,14 +155,12 @@ export const TimelineSectionConfig = {
           en: [
             'Phala democracy governance goes live',
             'Enable PHA transfer between Ethereum and Phala in SubBridge',
-            'Release Fat Contract V2, supporting asynchronous calls and HTTP requests',
-            'Release PhalaWorld Shell NFT'
+            'Release Phat Contract Beta version'
           ],
           zh: [
             '上线 Phala 民主治理',
             'SubBridge 上线 Phala - 以太坊双向桥',
-            '发布 Fat Contract V2，支持异步调用和 HTTP 请求',
-            '发布 PhalaWorld Shell NFT'
+            'Phat Contract 发布 Beta 版本'
           ]
         }
       },
@@ -175,13 +170,13 @@ export const TimelineSectionConfig = {
         content: {
           en: [
             'Web3 Cloud system upgrade with SGX DCAP support',
-            'Fat Contract V3 launch',
-            'PhalaWorld Game Beta release'
+            'Launch Phat Contract officially',
+            'Release PhalaWorld Shell NFT'
           ],
           zh: [
             'Web3 云计算系统升级，支持 SGX DCAP',
-            'Fat Contract V3 上线',
-            '发布 PhalaWorld 游戏 Beta 版'
+            'Phat Contract 正式版本上线',
+            '发布 PhalaWorld Shell NFT'
           ]
         }
       },

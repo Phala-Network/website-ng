@@ -30,7 +30,7 @@ export const config = [
   // { index: '29', name: '海河', from: 'Chinese Community' }
   { index: '30', name: 'Cappex', from: 'Italy Community' },
   { index: '31', name: 'Jaime Flores', from: 'Spanish Community' },
-  // { index: '32', name: 'RHEE', from: 'Korean Community' },
+  { index: '32', name: 'RHEE', from: 'Korean Community' },
   { index: '33', name: 'Kyle', from: 'Korean Community' },
   { index: '34', name: 'Tioneb', from: 'French Community' },
   { index: '35', name: 'Salih', from: 'German Community' },

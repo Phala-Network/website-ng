@@ -15,6 +15,23 @@ export const config = [
     }
   },
   {
+    avatar: 'people15',
+    name: {
+      en: 'Zoé Meckbach',
+      zh: 'Zoé Meckbach'
+    },
+    position: {
+      en: 'Growth VP & Partner',
+      zh: '全球增长业务负责人&合伙人'
+    },
+    description: {
+      en:
+        'M.Sc. in Information & Cybersecurity. Polkadot Global Head Ambassador of Events. Blockchain technology and Cybersecurity advocate. She is the COO of MH-IT & Service GmbH, an IT security company. Zoé worked for several star-ups in Silicon Valley as well as an applications analyst for Google.',
+      zh:
+        '信息和网络安全理学硕士。Polkadot 高级大使，研究者和 Web3 和网络安全的倡导者。她目前是 MH-IT & Service GmbH 的 COO，在加入 MH-IT 之前曾担任谷歌的应用分析职位。'
+    }
+  },
+  {
     avatar: 'people11',
     name: {
       en: 'Sandro Gorduladze',
