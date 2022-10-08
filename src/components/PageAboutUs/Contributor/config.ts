@@ -26,9 +26,9 @@ export const config = [
     },
     description: {
       en:
-        'M.Sc. in Information & Cybersecurity. Polkadot Global Head Ambassador of Events. Blockchain technology and Cybersecurity advocate. She is the COO of MH-IT & Service GmbH, an IT security company. Zoé worked for several star-ups in Silicon Valley as well as an applications analyst for Google.',
+        'M.Sc. in Information & Cybersecurity. Zoé is VP, Partner and council member at Phala Network and leads European and North American growth and business development for the protocol. She is the Polkadot Global Head Ambassador of Events. Zoé worked for several blockchain start-ups in Silicon Valley as well as for big tech giants like Google. She also holds a B.A. in Chinese Society from Fudan University Shanghai.',
       zh:
-        '信息和网络安全理学硕士。Polkadot 高级大使，研究者和 Web3 和网络安全的倡导者。她目前是 MH-IT & Service GmbH 的 COO，在加入 MH-IT 之前曾担任谷歌的应用分析职位。'
+        '信息与网络安全学硕士，复旦大学中国社会学学士。作为Phala Network的VP、合伙人和理事会成员，Zoé主要负责Phala在欧洲和北美地区的业务增长与拓展。她也是Polkadot全球首席活动大使，曾供职于谷歌，参与过几家硅谷区块链初创公司建设。'
     }
   },
   {
