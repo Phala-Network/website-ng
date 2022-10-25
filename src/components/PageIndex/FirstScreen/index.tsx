@@ -62,7 +62,7 @@ const PWSellCountdown = () => {
       rel="noreferrer"
     >
       <div className={styles.banner}>
-        <img src="/images/indexPage/pw-event.jpg" />
+        <img src="/images/indexPage/pw-event-1.jpg" />
         <div className={styles.countdown}>
           <CountdownPart number={remainsTime[0]} unit="days" />
           <CountdownPart number={remainsTime[1]} unit="hours" />
