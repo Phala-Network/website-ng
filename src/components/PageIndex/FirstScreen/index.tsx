@@ -55,7 +55,12 @@ const PWSellCountdown = () => {
     return null
   }
   return (
-    <div className={styles.bannerContainer}>
+    <a
+      className={styles.bannerContainer}
+      href="https://phala.world/?utm_source=phala.network"
+      target="_blank"
+      rel="noreferrer"
+    >
       <div className={styles.banner}>
         <img src="/images/indexPage/pw-event.jpg" />
         <div className={styles.countdown}>
@@ -65,7 +70,7 @@ const PWSellCountdown = () => {
           <CountdownPart number={remainsTime[3]} unit="seconds" />
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 
