@@ -59,11 +59,6 @@ export const PartnersSectionConfig = {
       logo: '/images/indexPage/partnersSection/partner-SNZ.png'
     },
     {
-      name: 'Alameda',
-      link: 'https://www.alameda-research.com/',
-      logo: '/images/indexPage/partnersSection/partner-Alameda.png'
-    },
-    {
       name: 'PAKA',
       link: 'https://www.paka.fund/1',
       logo: '/images/indexPage/partnersSection/partner-PAKA.png'
