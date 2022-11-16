@@ -202,6 +202,11 @@ export const PartnersSectionConfig = {
       name: 'Dwellir',
       link: 'https://dwellir.com/',
       logo: '/images/indexPage/partnersSection/Dwellir.png'
+    },
+    {
+      name: 'OnFinality',
+      link: 'https://onfinality.io/',
+      logo: '/images/indexPage/partnersSection/oninality.png'
     }
   ]
 }
