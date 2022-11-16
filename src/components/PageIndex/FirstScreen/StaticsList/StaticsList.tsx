@@ -8,13 +8,26 @@ export const StaticsList: FC = () => {
 
   const getData = useCallback(
     async function () {
-      const response = await fetch(
-        'https://app-analytics-data.netlify.app/latest/daily.json'
-      )
-      const data = await response.json()
+      try {
+        const workerRes = await fetch(
+          'https://mb.phala.network/api/public/card/9a646ed7-573a-4980-a5a8-8847bbbc8a4e/query'
+        )
+        const { data: workerData } = await workerRes.json()
+        const worker = workerData.rows[0][0]
 
-      setCpu(data.vCPU)
-      setWorkers(data.workers)
+        const vcpuRes = await fetch(
+          'https://mb.phala.network/api/public/card/be760709-8708-4c2b-a79f-0365b9b9382e/query'
+        )
+        const { data: vcpuData } = await vcpuRes.json()
+        const vCPU = vcpuData.rows[0][0]
+
+        setCpu(vCPU)
+        setWorkers(worker)
+      } catch (err) {
+        console.error(err)
+        setCpu(123326)
+        setWorkers(30625)
+      }
     },
     [setCpu, setWorkers]
   )
@@ -32,9 +45,9 @@ export const StaticsList: FC = () => {
     <div className={styles.StaticsList}>
       {workers > 0 && (
         <>
-          <Statics name="Worker" value={workers}></Statics>
-          <Statics name="vCPU" value={cpu}></Statics>
-          <Statics name="City" value={50} addPlus></Statics>
+          <Statics name="Workers" value={workers}></Statics>
+          <Statics name="vCPUs" value={cpu}></Statics>
+          <Statics name="Cities" value={50} addPlus></Statics>
         </>
       )}
     </div>

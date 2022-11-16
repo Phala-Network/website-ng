@@ -37,8 +37,8 @@ export const cardData = [
   },
   {
     link: {
-      en: 'https://wiki.phala.network/en-us/docs/poc2/run-a-gatekeeper/',
-      zh: 'https://wiki.phala.network/zh-cn/docs/poc2/run-a-gatekeeper/'
+      en: 'https://wiki.phala.network/en-us/maintain/gatekeeper/gatekeeper/',
+      zh: 'https://wiki.phala.network/en-us/maintain/gatekeeper/gatekeeper/'
     },
     title: {
       en: (

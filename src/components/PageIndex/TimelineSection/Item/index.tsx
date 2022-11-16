@@ -38,7 +38,10 @@ const Item: React.FC<Props> = (props) => {
           {content[locale].map((item) => {
             if (isString(item)) {
               // for normal
-              return <div key={item} className={styles.itemText}>{item}</div>
+              return (
+                <div key={item} className={styles.itemText} dangerouslySetInnerHTML={{ __html: item }}>
+                </div>
+              )
             } else {
               // for the newest (2021)
               return (
@@ -46,7 +49,11 @@ const Item: React.FC<Props> = (props) => {
                   <div className={styles.title}>{item.title}</div>
                   <div className={styles.newestContent}>
                     {item.text.map((t) => {
-                      return <div key={t} className={styles.itemText}>{t}</div>
+                      return (
+                        <div key={t} className={styles.itemText}>
+                          {t}
+                        </div>
+                      )
                     })}
                   </div>
                 </div>

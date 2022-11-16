@@ -1,11 +1,11 @@
-import React from 'react'
-import { MaintainMenuConfig, ResourcesMenuConfig } from '../../config'
-import ListMenu from '../ListMenu'
+import { DevelopersConfig, FooterAboutUsConfig } from '../../config'
 import Copyright from './Copyright'
 import EmailInput from './EmailInput'
-import * as styles from './index.module.scss'
+import ListMenu from '../ListMenu'
 import MediaList from './MediaList'
+import React from 'react'
 import Subscribe from './Subscribe'
+import * as styles from './index.module.scss'
 
 type Props = {}
 
@@ -28,10 +28,10 @@ const Footer: React.FC<Props> = () => {
               <div className={styles.right}>
                 <div className="row">
                   <div className="col-sm-3">
-                    <ListMenu no={0} data={MaintainMenuConfig}></ListMenu>
+                    <ListMenu no={0} data={DevelopersConfig}></ListMenu>
                   </div>
                   <div className="col-sm-9">
-                    <ListMenu no={1} data={ResourcesMenuConfig}></ListMenu>
+                    <ListMenu no={1} data={FooterAboutUsConfig}></ListMenu>
                   </div>
                 </div>
 

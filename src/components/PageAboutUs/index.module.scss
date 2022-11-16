@@ -3,9 +3,15 @@
 
 .pageAboutUs {
   @extend .detailPage;
+  padding-top: 200px;
+
+  .content {
+    padding-top: 90px;
+    position: relative;
+  }
 
   .header {
-    margin-bottom: 220px;
+    margin-bottom: 50px;
 
     @media (max-width: $md) {
       margin-bottom: 100px;

@@ -62,20 +62,20 @@ const Rewards: React.FC<Props> = (props) => {
   }
 
   return (
-    <Card type='vertical' cardContentClassName={styles.cardContent} {...props}>
+    <Card type="vertical" cardContentClassName={styles.cardContent} {...props}>
       <div className={classnames([styles.textAndImage, 'row'])}>
         <div className={classnames([styles.description, 'col-md-5'])}>
           <I18nRender {...content}></I18nRender>
         </div>
         <div className={classnames([styles.pieImage, 'col-md-7'])}>
-          <img src={'/images/PagePHA/line.svg'} alt='pie' />
+          <img src={'/images/PagePHA/line.svg'} alt="pie" />
         </div>
       </div>
 
       <div className={styles.text}>
         <I18n
-          en='Phala has two kinds of reward for miners: online rewards and computation rewards.'
-          zh='Phala 为矿工设计了两种奖励：在线奖励和计算奖励。'></I18n>
+          en="Phala has two kinds of reward for miners: online rewards and computation rewards."
+          zh="Phala 为矿工设计了两种奖励：在线奖励和计算奖励。"></I18n>
       </div>
 
       <CardList imgPath={imgPath} config={config}></CardList>
@@ -88,7 +88,7 @@ const Rewards: React.FC<Props> = (props) => {
               please refer to the{' '}
               <TagA
                 className={styles.link}
-                href='https://wiki.phala.network/en-us/'>
+                href="https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/">
                 Miner Guide
               </TagA>
               .
@@ -99,7 +99,7 @@ const Rewards: React.FC<Props> = (props) => {
               更多细则，如衰减规则、算法，请查阅
               <TagA
                 className={styles.link}
-                href='https://www.yuque.com/phala/mining'>
+                href="https://wiki.phala.network/en-us/mine/khala-mining/khala-pre-mainnet-mining-guide/">
                 矿工手册
               </TagA>
               。

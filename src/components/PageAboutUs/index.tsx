@@ -1,8 +1,9 @@
-import { JoinUsConfig, PageAboutUsConfig } from '../../config/PageAboutUs'
+import { JoinUsConfig } from '../../config/JoinUsConfig'
+import { PageAboutUsConfig } from '../../config/PageAboutUs'
 import BgLayer from '../BgLayer'
 import CommunityBuilder from './CommunityBuilder'
-import Contributor from './Contributor'
-import Council from './Council'
+// import Contributor from './Contributor'
+// import Council from './Council'
 import DetailPageButton from '../DetailPageButton'
 import DetailPageHeader from '../DetailPageHeader'
 import DetailPageHeaderButtons from '../DetailPageHeaderButtons'
@@ -18,28 +19,25 @@ type Props = {}
 
 const PageAboutUs: React.FC<Props> = () => {
   return (
-    <BgLayer backgroundUrl='/images/PageAboutUs/bg.png'>
-      <PageTitle zh='关于我们' en='AboutUs'></PageTitle>
+    <BgLayer backgroundUrl="/images/PageAboutUs/bg.png">
+      <PageTitle zh="核心贡献者" en="Core Builders"></PageTitle>
       <NormalLayout className={styles.pageAboutUs}>
-        <div className='container'>
+        <div className="container">
           <div className={styles.header}>
             <DetailPageHeader {...PageAboutUsConfig}></DetailPageHeader>
 
             <DetailPageHeaderButtons>
-              <DetailPageButton
-                className={styles.btn}
-                {...JoinUsConfig}
-              />
+              <DetailPageButton className={styles.btn} {...JoinUsConfig} />
             </DetailPageHeaderButtons>
           </div>
 
-          <div id='content' className={styles.content}>
+          <div id="content" className={styles.content}>
             {PageAboutUsConfig.content.map((item, index) => {
               const Component =
                 {
                   PhalaCore,
-                  Contributor,
-                  Council,
+                  // Contributor,
+                  // Council,
                   CommunityBuilder,
                   Partners
                 }[item.id] ?? PhalaCore

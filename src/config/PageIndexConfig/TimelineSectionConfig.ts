@@ -11,121 +11,181 @@ export const TimelineSectionConfig = {
         quarter: 4,
         content: {
           en: ['Phala Team was founded'],
-          zh: ['Phala团队成立，确定项目方向']
-        }
-      },
-      {
-        year: 2019,
-        quarter: 2,
-        content: {
-          en: ['Built a strong community in China'],
-          zh: ['在中国开始建立社区']
+          zh: ['Phala 团队成立']
         }
       },
       {
         year: 2019,
         quarter: 3,
         content: {
-          en: ['Whitepaper released', 'pLibra ( Now is pDiem ) won the Web3 Foundation Grant'],
+          en: [
+            'Whitepaper released',
+            'pLibra (Now pDiem) won the Web3 Foundation Grant'
+          ],
           zh: [
-            '发布技术白皮书',
-            'Phala 旗下首个产品 pLibra（现更名为pDiem） 获得 Web3 基金会 Grant 奖金'
+            '发布 Phala Network 技术白皮书',
+            '首个 Web3 基金会 Grant: pLibra'
           ]
-        }
-      },
-      {
-        year: 2019,
-        quarter: 4,
-        content: {
-          en: ['Hang was entitled with', 'China Polkadot Ambassador'],
-          zh: ['尹航成为波卡中国大使']
         }
       },
       {
         year: 2020,
         quarter: 1,
         content: {
-          en: ['Token Economics', 'W3A won the Web3 Foundation Grant'],
-          zh: ['发布经济白皮书', '通过Web3 Analytics再次获得获得Grant资助']
+          en: [
+            'Token Economics paper released',
+            'W3A won another Web3 Foundation Grant'
+          ],
+          zh: ['发布经济白皮书', '第二个 Web3 基金会 Grant: Web3 Analytics']
         }
       },
       {
         year: 2020,
         quarter: 2,
         content: {
-          en: ['Testnet PoC-1', 'KSM x PHA Stakedrop'],
-          zh: ['Phala POC-1 测试网上线', '完成“抵押空投”活动']
+          en: [
+            'Testnet POC-1 launched, and Phala team raised $1m from strategy round',
+            'KSM x PHA stakedrop with 2.1% allocation'
+          ],
+          zh: [
+            '测试网 POC-1 上线，获得融资',
+            '通过 Stakedrop 活动空投了 2.1% 的代币给 Kusama 社区'
+          ]
         }
       },
       {
         year: 2020,
         quarter: 4,
         content: {
-          en: ['Testnet Vendetta', 'Completed the planned stress-testing of the computing task module for the PoC3 stage'],
+          en: [
+            'Initial ERC20 PHA',
+            'Testnet POC-3 , run a cross-chain demo with Acala on Rococo'
+          ],
           zh: [
-            '上线 Phala POC-3 “Vendetta测试网”',
-            '完成 POC-3 阶段计算任务模块的相关测试'
+            'ERC20 代币发行',
+            '上线 POC-3 测试网，并在 Rococo 测试网实现了与 Acala 测试网的跨链交易'
           ]
         }
       },
       {
         year: 2021,
+        quarter: 2,
+        content: {
+          en: [
+            'PHA got listed on Binance, Kucoin, OKX, Huobi..',
+            'Win the first round  Kusama slot auction with 2.5% allocation',
+            'Launch Khala Network on Kusama'
+          ],
+          zh: [
+            'PHA 代币上线了币安、Kucoin、Okex、Huobi 多家交易所',
+            '赢得 Kusama 首批卡槽，奖励池为 2.5% 代币',
+            '上线平行链 Khala Network'
+          ]
+        }
+      },
+      {
+        year: 2021,
+        quarter: 3,
+        content: {
+          en: [
+            'Ethereum-Khala Bridge',
+            'Launch Secure Worker Mining system, support PHA delegating to earn'
+          ],
+          zh: [
+            '开通 以太坊-Khala 桥',
+            '上线 Secure Worker Mining 系统，支持 PHA 抵押'
+          ]
+        }
+      },
+      {
+        year: 2021,
+        quarter: 4,
+        content: {
+          en: [
+            'Council and Decentralized governance',
+            'Roadmap to Metaverse',
+            'Phat Contract POC'
+          ],
+          zh: ['民主化治理', '发布元宇宙路线图', '发布 Phat Contract 产品概念']
+        }
+      },
+      {
+        year: 2022,
         quarter: 1,
         content: {
-          en: ['PHA got listed on Binance、OKEx、KuCoin'],
+          en: [
+            'Tokenomics Upgraded'
+          ],
           zh: [
-            'PHA 上线币安、OKEx、KuCoin'
+            '发起新经济模型提案'
+          ]
+        }
+      },
+      {
+        year: 2022,
+        quarter: 2,
+        content: {
+          en: [
+            'Merged Phala and Khala Network Incentives',
+            'Phala Network went live as it won one of Polkadot slots',
+            'Khala secured a new slot Lease',
+            'Launched SubBridge Website',
+            'Launched <a href="https://phala.world/">PhalaWorld</a> Website',
+            'Completed the Setting of PhalaWorld Story and NFT',
+            'Soulbound system opened',
+            '3D Rendering Service POC'
+          ],
+          zh: [
+            '合并 Phala 与 Khala 网络激励',
+            '赢得 Polkadot 卡槽，Phala 网络上线',
+            'Khala 获得新一年卡槽租期',
+            'SubBridge 网站上线',
+            '<a href="https://phala.world/">PhalaWorld</a> 官网上线',
+            '完成 PhalaWorld 故事设定，开放 Soulbound 系统',
+            '3D 渲染服务概念验证'
           ]
         }
       }
     ],
     doing: [
       {
-        year: 2021,
-        quarter: 2,
-        content: {
-          en: [
-            'Become a parachain on Kusama, launch pre-mainnet and K-PHA',
-            'TEE Mining system and Staking PHA for TEE begin to work',
-            'Invisible Wallet for all Polkadot cross-chain assets',
-            'Phala Governance and council begin to work'
-          ],
-          zh: [
-            '成为 Kusama 平行链，上线预备主网',
-            '开启 TEE 挖矿和 PHA 抵押',
-            '上线暗钱包，可以服务于所有波卡跨链资产',
-            '开启民主治理和议会选举'
-          ]
-        }
-      },
-      {
-        year: 2021,
+        year: 2022,
         quarter: 3,
         content: {
           en: [
-            'Private DEFI and NFT apps',
-            'Private Bridges, like pDiem, pBTC, pBTG…',
-            'Phala become Polkadot parachain after winning Polkadot slot'
+            'Phala democracy governance goes live',
+            'Enable PHA transfer between Ethereum and Phala in SubBridge',
+            'Release Phat Contract Beta version'
           ],
           zh: [
-            '上线隐私DEFI和NFT',
-            '上线隐私桥，例如 pDiem、pBTC、pBTG…',
-            'Phala 主网成为 Polkadot 平行链'
+            '上线 Phala 民主治理',
+            'SubBridge 上线 Phala - 以太坊双向桥',
+            'Phat Contract 发布 Beta 版本'
           ]
         }
       },
       {
-        year: 2021,
+        year: 2022,
         quarter: 4,
         content: {
           en: [
-            'Privacy Cloud begins to serve nodes and developers',
-            'Confidential smart contract ready to use'
+            'Web3 Cloud system upgrade with SGX DCAP support',
+            'Launch Phat Contract officially',
+            'Release PhalaWorld Shell NFT'
           ],
           zh: [
-            '开启隐私云服务，节点服务商、开发者可以通过 Phala 隐私云部署程序',
-            '上线隐私智能合约'
+            'Web3 云计算系统升级，支持 SGX DCAP',
+            'Phat Contract 正式版本上线',
+            '发布 PhalaWorld Shell NFT'
           ]
+        }
+      },
+      {
+        year: 2023,
+        quarter: 1,
+        content: {
+          en: ['Support AMD SEV', '3D Rendering Service beta release '],
+          zh: ['支持 AMD SEV', '3D 渲染服务测试版本上线']
         }
       }
     ]

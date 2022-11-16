@@ -4,10 +4,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 30px;
 
   @media (max-width: $md) {
     justify-content: flex-start;
-    margin-bottom: 30px;
 
     &.last {
       margin-bottom: 0;

@@ -1,12 +1,11 @@
 import { isClient } from '../../utils/isClient'
 import BackTop from '../BackTop'
+import FirstScreen from './FirstScreen'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
 import React from 'react'
-
-import ContributeSection from './ContributeSection'
-import FirstScreen from './FirstScreen'
-import ParticipateSection from './ParticipateSection'
+// import ContributeSection from './ContributeSection'
+// import ParticipateSection from './ParticipateSection'
 
 interface Props {}
 
@@ -21,10 +20,10 @@ const PageKhala = (x: Props) => {
 
   return (
     <NormalLayout>
-      <PageTitle zh='Khala' en='Khala'></PageTitle>
+      <PageTitle zh="Khala" en="Khala"></PageTitle>
       <FirstScreen />
-      <ContributeSection />
-      <ParticipateSection />
+      {/* <ContributeSection />
+      <ParticipateSection /> */}
 
       <>{isClient() && <BackTop></BackTop>}</>
     </NormalLayout>
