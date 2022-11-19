@@ -3,8 +3,18 @@
 .partnerRow {
   display: flex;
   flex-wrap: wrap;
+  // justify-content: space-between;
   justify-content: center;
 
   @media (max-width: $sm) {
+  }
+
+  @media (min-width: $sm) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (min-width: $xl) {
+    justify-content: space-between;
   }
 }

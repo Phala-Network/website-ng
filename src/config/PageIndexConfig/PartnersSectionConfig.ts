@@ -207,6 +207,11 @@ export const PartnersSectionConfig = {
       name: 'OnFinality',
       link: 'https://onfinality.io/',
       logo: '/images/indexPage/partnersSection/oninality.png'
+    },
+    {
+      name: 'Astar',
+      link: 'https://astar.network/',
+      logo: '/images/indexPage/partnersSection/Astar.png'
     }
   ]
 }

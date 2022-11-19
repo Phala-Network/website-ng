@@ -24,7 +24,7 @@ const Partners: React.FC<CardProps> = (props) => {
             ))}
           </div>
           <div>
-            {[30, 35].map((item) => (
+            {[30, 35, 40].map((item) => (
               <PartnerRow key={item} from={item} to={item + 4}></PartnerRow>
             ))}
           </div>
@@ -58,7 +58,7 @@ const Partners: React.FC<CardProps> = (props) => {
             ))}
           </div>
           <div>
-            {[28, 30, 32, 34, 36, 38].map((item) => (
+            {[28, 30, 32, 34, 36, 38, 40].map((item) => (
               <PartnerRow key={item} from={item} to={item + 1}></PartnerRow>
             ))}
           </div>
