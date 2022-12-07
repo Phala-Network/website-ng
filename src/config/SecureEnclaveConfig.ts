@@ -5,8 +5,8 @@ export const SecureEnclaveConfig = {
   },
   href: {
     en:
-      'https://wiki.phala.network/en-us/learn/phala-blockchain/blockchain-detail/',
+      'https://wiki.phala.network/en-us/build/infrastructure/blockchain-detail/',
     zh:
-      'https://wiki.phala.network/en-us/learn/phala-blockchain/blockchain-detail/'
+      'https://wiki.phala.network/en-us/build/infrastructure/blockchain-detail/'
   }
 }
