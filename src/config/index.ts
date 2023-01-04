@@ -336,8 +336,8 @@ export const ProductConfig = {
     },
     {
       name: {
-        en: 'Phala App',
-        zh: 'Phala App'
+        en: 'Phala App 2.0',
+        zh: 'Phala App 2.0'
       },
       href: {
         en: 'https://app.phala.network/',
