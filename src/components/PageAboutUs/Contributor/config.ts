@@ -32,21 +32,6 @@ export const config = [
     }
   },
   {
-    avatar: 'people11',
-    name: {
-      en: 'Sandro Gorduladze',
-      zh: 'Sandro Gorduladze'
-    },
-    position: {
-      en: 'Advisor',
-      zh: '顾问'
-    },
-    description: {
-      en: 'Sandro Gorduladze is the CIO at Gagra Ventures, an early-stage investment firm. Prior to launching the fund, Sandro ran Research at HASH CIB, a digital asset financial services company that made a name for itself with in-depth research reports. Prior to joining Hash Sandro worked at PwC Russia, advising TMT sector companies on tax.',
-      zh: '早期投资机构 Gagra Ventures CIO，此前在数字资产金融服务公司 HASH CIB 负责研究工作，曾任职于普华永道（俄罗斯），负责TMT 行业税务咨询。'
-    }
-  },
-  {
     avatar: 'people9',
     name: {
       en: 'Krhougs',
