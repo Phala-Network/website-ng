@@ -13,7 +13,7 @@ const localInfo = {
   },
   en: {
     description:
-      'Phala Network is a privacy-preserving cloud computing service in the Web 3.0 ecosystem based on Substrate'
+      'Phala Network is a decentralized cloud that offers secure and scalable computing for Web3'
   }
 } as const
 
