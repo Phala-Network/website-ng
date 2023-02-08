@@ -7,7 +7,7 @@ import { PhatContractConfig } from './PhatContractConfig'
 import { SecureEnclaveConfig } from './SecureEnclaveConfig'
 import { WikiConfig } from './WikiConfig'
 
-const WIKI_PREFIX = process.env.WIKI_PREFIX || 'https://wiki.phala.network'
+const WIKI_PREFIX = process.env.GATSBY_WIKI_PREFIX || 'https://wiki.phala.network'
 
 export const TechWhitepaperConfig = {
   name: {
