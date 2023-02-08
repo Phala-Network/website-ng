@@ -325,7 +325,8 @@ export const CommunityConfig = {
         en: 'https://github.com/Phala-Network/growth-program',
         zh: 'https://github.com/Phala-Network/growth-program'
       }
-    }
+    },
+    BountyConfig
   ]
 }
 
@@ -468,7 +469,6 @@ export const TechnologyConfig = {
         zh: GithubConfig.url
       }
     },
-    BountyConfig,
     {
       name: {
         en: 'Technical Paper',
