@@ -8,71 +8,7 @@ import React, { FC, useEffect, useState } from 'react'
 import classnames from 'classnames'
 import * as styles from './index.module.scss'
 
-//  Monday, October 31, 2022 12:00:00 PM GMT
-//  Monday, October 31, 2022 20:00:00 PM GMT +08:00
-const SALE_BEGIN_TIME_TS = 1667217600
-
-const useRemainsTime = () => {
-  const [remainsTime, setRemainsTime] = useState<number[]>([])
-  useEffect(() => {
-    const timer = setInterval(() => {
-      const now = Math.floor(Date.now() / 1000)
-      if (now > SALE_BEGIN_TIME_TS) {
-        setRemainsTime([])
-        clearTimeout(timer)
-      } else {
-        const remains = SALE_BEGIN_TIME_TS - now
-        const days = Math.floor(remains / 86400)
-        const hours = Math.floor((remains % 86400) / 3600)
-        const minutes = Math.floor((remains % 3600) / 60)
-        const seconds = remains % 60
-        setRemainsTime([days, hours, minutes, seconds])
-      }
-    }, 1000)
-    return () => clearInterval(timer)
-  }, [setRemainsTime])
-  return remainsTime
-}
-
-const CountdownPart: FC<{ number: number, unit: string }> = ({ number, unit }) => {
-  if (number === null || number === undefined || number < 0) {
-    return null
-  }
-  const numberStr = number.toString().padStart(2, '0')
-  return (
-    <div
-      // tw="flex flex-col gap-1.5 items-center text-white"
-    >
-      <div>{numberStr}</div>
-      <div>{unit}</div>
-    </div>
-  )
-}
-
-const PWSellCountdown = () => {
-  const remainsTime = useRemainsTime()
-  if (remainsTime.length === 0) {
-    return null
-  }
-  return (
-    <a
-      className={styles.bannerContainer}
-      href="https://phala.world/?utm_source=phala.network"
-      target="_blank"
-      rel="noreferrer"
-    >
-      <div className={styles.banner}>
-        <img src="/images/indexPage/pw-event-1.jpg" />
-        <div className={styles.countdown}>
-          <CountdownPart number={remainsTime[0]} unit="days" />
-          <CountdownPart number={remainsTime[1]} unit="hours" />
-          <CountdownPart number={remainsTime[2]} unit="minutes" />
-          <CountdownPart number={remainsTime[3]} unit="seconds" />
-        </div>
-      </div>
-    </a>
-  )
-}
+const WIKI_PREFIX = process.env.GATSBY_WIKI_PREFIX || 'https://wiki.phala.network'
 
 const FirstScreen: FC = () => {
   const title = {
@@ -83,7 +19,23 @@ const FirstScreen: FC = () => {
   return (
     <section className={classnames([styles.firstScreen])}>
       <div className={styles.bg}></div>
-      <PWSellCountdown />
+
+      <div className={styles.bannerWrapper}>
+        <div className={styles.banner}>
+          <img src="/images/logo-builders-program.png" alt="Builders Program" />
+          <section className={styles.bannerContainer}>
+            <div className={styles.bannerBody}>
+              <header className={styles.bannerHeader}>
+                <h3 className={styles.bannerSubtitle}>We are thrilled to announce the launch of</h3>
+                <h2 className={styles.bannerTitle}>the Phala Builders Program!</h2>
+              </header>
+              <div className={styles.bannerText}>This program provides funding, technical guidance, and marketing support to innovative projects seeking to build on Phala’s decentralized, trustless compute cloud using <span className={styles.tag}>#Phat Contract</span>.</div>
+              <div><a href={`${WIKI_PREFIX}/en-us/build/general/builders-program/`} className={styles.bannerLink}>To learn more about the program and apply, click here</a></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <div className={classnames(['container', styles.content])}>
         <div className={styles.title}>
           <I18n
