@@ -27,10 +27,10 @@ const Footer: React.FC<Props> = () => {
             <div className="col-lg-6">
               <div className={styles.right}>
                 <div className="row">
-                  <div className="col-sm-3">
+                  <div className="col-sm-4">
                     <ListMenu no={0} data={DevelopersConfig}></ListMenu>
                   </div>
-                  <div className="col-sm-9">
+                  <div className="col-sm-8">
                     <ListMenu no={1} data={FooterAboutUsConfig}></ListMenu>
                   </div>
                 </div>
