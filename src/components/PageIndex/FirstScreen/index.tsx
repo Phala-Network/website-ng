@@ -30,7 +30,7 @@ const FirstScreen: FC = () => {
                 <h2 className={styles.bannerTitle}>the Phala Builders Program!</h2>
               </header>
               <div className={styles.bannerText}>This program provides funding, technical guidance, and marketing support to innovative projects seeking to build on Phala’s decentralized, trustless compute cloud using <span className={styles.tag}>#PhatContract</span>.</div>
-              <div><a href={`${WIKI_PREFIX}/en-us/build/general/builders-program/`} className={styles.bannerLink}>To learn more about the program and apply, click here</a></div>
+              <div><a href={`${WIKI_PREFIX}/en-us/build/general/builders-program/`} className={styles.bannerLink} target="_blank" rel="noopener">To learn more about the program and apply, click here</a></div>
             </div>
           </section>
         </div>
