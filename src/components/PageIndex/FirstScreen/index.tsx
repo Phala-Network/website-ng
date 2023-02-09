@@ -22,7 +22,7 @@ const FirstScreen: FC = () => {
 
       <div className={styles.bannerWrapper}>
         <div className={styles.banner}>
-          <img src="/images/logo-builders-program.jpg" alt="Builders Program" />
+          <img src="/images/logo-builders-program.png" alt="Builders Program" />
           <section className={styles.bannerContainer}>
             <div className={styles.bannerBody}>
               <header className={styles.bannerHeader}>
