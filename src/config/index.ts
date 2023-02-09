@@ -7,6 +7,8 @@ import { PhatContractConfig } from './PhatContractConfig'
 import { SecureEnclaveConfig } from './SecureEnclaveConfig'
 import { WikiConfig } from './WikiConfig'
 
+const WIKI_PREFIX = process.env.GATSBY_WIKI_PREFIX || 'https://wiki.phala.network'
+
 export const TechWhitepaperConfig = {
   name: {
     en: 'Technical Whitepaper',
@@ -233,6 +235,16 @@ export const DevelopersConfig = {
         zh: GithubConfig.url
       }
     },
+    {
+      name: {
+        en: 'Builders Program',
+        zh: 'Builders Program'
+      },
+      href: {
+        en: `${WIKI_PREFIX}/en-us/build/general/builders-program/`,
+        zh: `${WIKI_PREFIX}/en-us/build/general/builders-program/`
+      }
+    },
     PhatContractConfig,
     {
       name: {
@@ -254,6 +266,16 @@ export const CommunityConfig = {
     zh: '社区'
   },
   subMenu: [
+    {
+      name: {
+        en: 'Builders Program',
+        zh: 'Builders Program'
+      },
+      href: {
+        en: `${WIKI_PREFIX}/en-us/build/general/builders-program/`,
+        zh: `${WIKI_PREFIX}/en-us/build/general/builders-program/`
+      }
+    },
     {
       name: {
         en: 'Governance',
@@ -303,7 +325,8 @@ export const CommunityConfig = {
         en: 'https://github.com/Phala-Network/growth-program',
         zh: 'https://github.com/Phala-Network/growth-program'
       }
-    }
+    },
+    BountyConfig
   ]
 }
 
@@ -446,7 +469,6 @@ export const TechnologyConfig = {
         zh: GithubConfig.url
       }
     },
-    BountyConfig,
     {
       name: {
         en: 'Technical Paper',
