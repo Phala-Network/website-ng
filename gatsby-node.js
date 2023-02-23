@@ -53,7 +53,7 @@ exports.createPages = async ({ actions }) => {
     }
   })
 
-  resultData.forEach(r => {
+  resultData.forEach((r) => {
     actions.createPage({
       path: `/blog${r.url}`,
       component: path.resolve('./src/components/Blog/index.tsx'),
