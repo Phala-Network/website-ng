@@ -1,4 +1,5 @@
 import React from 'react'
+import { Text } from '../NotionBlock/Text'
 
 export default function BlogList({ pageContext }: any) {
   const data = pageContext.data
@@ -6,7 +7,13 @@ export default function BlogList({ pageContext }: any) {
   return (
     <div>
       {data.map((d: any) => {
-        return <div key={d.id}>{d.title[0].plain_text}</div>
+        return (
+          <div key={d.id}>
+            <a href={`/blog${d.url}`}>
+              <Text text={d.title} />
+            </a>
+          </div>
+        )
       })}
     </div>
   )
