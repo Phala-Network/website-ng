@@ -41,8 +41,10 @@ const path = require('path')
 //   actions.replaceWebpackConfig(config)
 // }
 
+const notionPostListEndpoint = process.env.NOTION_POST_LIST_ENDPOINT
+
 exports.createPages = async ({ actions }) => {
-  const result = await fetch('http://localhost:3000/api/posts/list')
+  const result = await fetch(notionPostListEndpoint)
   const resultData = await result.json()
 
   actions.createPage({

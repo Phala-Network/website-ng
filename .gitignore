@@ -10,3 +10,7 @@ public
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+.env
+.env.development
+.env.production
