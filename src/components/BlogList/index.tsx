@@ -1,7 +1,7 @@
-import React from 'react'
 import { Text } from '../NotionBlock/Text'
+import React from 'react'
 
-export default function BlogList({ pageContext }: any) {
+export default function BlogList ({ pageContext }: any) {
   const data = pageContext.data
 
   return (

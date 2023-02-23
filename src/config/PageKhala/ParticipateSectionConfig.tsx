@@ -1,5 +1,5 @@
-import * as React from 'react'
 import TagA from '../../components/TagA'
+import * as React from 'react'
 
 export const ParticipateSectionConfig = [
   {

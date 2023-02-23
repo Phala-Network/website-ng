@@ -1,10 +1,10 @@
-import React from 'react'
-import { TechWhitepaperConfig } from '../../../config'
 import { EconomyWhitepaperConfig } from '../../../config/EconomyWhitepaperConfig'
+import { TechWhitepaperConfig } from '../../../config'
 import Button from '../../Button'
+import PlayerContent from './PlayerContent'
+import React from 'react'
 import SectionHeader from '../../SectionHeader'
 import * as styles from './index.module.scss'
-import PlayerContent from './PlayerContent'
 
 const CloudSection: React.FC = () => {
   const descriptionText = {

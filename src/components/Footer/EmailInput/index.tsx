@@ -1,10 +1,10 @@
-import classnames from 'classnames'
-import React, { useEffect, useState } from 'react'
 import { useLocale } from '../../../hooks/useLocale'
-import isEmail from '../../../utils/isEmail'
 import I18n from '../../I18n'
 import IconArrow from '../../IconArrow'
 import IconSuccessCircle from '../../IconSuccessCircle'
+import React, { useEffect, useState } from 'react'
+import classnames from 'classnames'
+import isEmail from '../../../utils/isEmail'
 import useHobspot from '../useHobspot'
 import * as styles from './index.module.scss'
 
@@ -48,11 +48,11 @@ const EmailInput: React.FC<Props> = (props) => {
     }
   }, [props.status])
 
-  function onChange(e) {
+  function onChange (e) {
     setTextValue(e.target.value)
   }
 
-  function checkEmail() {
+  function checkEmail () {
     const isOk = isEmail(textValue)
     setStatus(STATUS.default)
 
@@ -63,13 +63,13 @@ const EmailInput: React.FC<Props> = (props) => {
     return isOk
   }
 
-  function onKeyPress(e) {
+  function onKeyPress (e) {
     if (e.key === 'Enter') {
       sendEmail()
     }
   }
 
-  async function sendEmail() {
+  async function sendEmail () {
     if (checkEmail()) {
       try {
         handleSubmit()

@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react'
-import { renderBlock } from '../NotionBlock/block'
 import { Text } from '../NotionBlock/Text'
+import { renderBlock } from '../NotionBlock/block'
+import React, { Fragment } from 'react'
 
-export default function Blog({ pageContext }: any) {
+export default function Blog ({ pageContext }: any) {
   const blog = pageContext.data
 
   return (

@@ -1,5 +1,5 @@
-import * as styles from './block.scss'
 import React from 'react'
+import * as styles from './block.scss'
 
 export const Text = ({ text }: { text: any }) => {
   if (!text) {

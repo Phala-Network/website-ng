@@ -1,6 +1,6 @@
+import { Svg } from './Svg'
 import React, { FC, memo, useEffect } from 'react'
 import * as styles from './index.module.scss'
-import { Svg } from './Svg'
 
 const C: FC = () => {
   useEffect(() => {

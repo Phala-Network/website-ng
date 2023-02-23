@@ -1,6 +1,6 @@
 import { Text } from './Text'
-import styles from './block.scss'
 import React, { Fragment } from 'react'
+import styles from './block.scss'
 
 export const renderBlock = (block: any) => {
   const { type, id } = block
@@ -71,17 +71,22 @@ export const renderBlock = (block: any) => {
         />
       )
     case 'image':
-      const src =
-        value.type === 'external' ? value.external.url : value.file.url
-      const caption = value.caption ? value.caption[0]?.plain_text : ''
       return (
         <figure>
           <img
-            src={src}
-            alt={caption}
+            src={
+              value.type === 'external' ? value.external.url : value.file.url
+            }
+            alt={value.caption ? value.caption[0]?.plain_text : ''}
             style={{ maxWidth: '100%', verticalAlign: 'middle' }}
           />
-          {caption && <figcaption>{caption}</figcaption>}
+          {value.caption
+            ? (
+            <figcaption>
+              {value.caption ? value.caption[0]?.plain_text : ''}
+            </figcaption>
+              )
+            : null}
         </figure>
       )
     case 'divider':
@@ -98,29 +103,20 @@ export const renderBlock = (block: any) => {
       )
     case 'link_preview':
       return (
-        <a href={block.link_preview.url} target="_blank" rel="noopener">
+        <a
+          href={block.link_preview.url}
+          target="_blank"
+          rel="noopener noreferrer">
           {block.link_preview.url}
         </a>
       )
     case 'file':
-      const src_file =
-        value.type === 'external' ? value.external.url : value.file.url
-      const splitSourceArray = src_file.split('/')
-      const lastElementInArray = splitSourceArray[splitSourceArray.length - 1]
-      const caption_file = value.caption ? value.caption[0]?.plain_text : ''
-      return (
-        <figure>
-          <div className={styles.file}>
-            📎 <a href={src_file}>{lastElementInArray.split('?')[0]}</a>
-          </div>
-          {caption_file && <figcaption>{caption_file}</figcaption>}
-        </figure>
-      )
+      return renderFile(value)
+
     case 'bookmark':
-      const href = value.url
       return (
-        <a href={href} target="_brank" className={styles.bookmark}>
-          {href}
+        <a href={value.url} target="_brank" className={styles.bookmark}>
+          {value.url}
         </a>
       )
     default:
@@ -143,4 +139,20 @@ const renderNestedList = (block: any) => {
     return <ol>{value.children.map((block: any) => renderBlock(block))}</ol>
   }
   return <ul>{value.children.map((block: any) => renderBlock(block))}</ul>
+}
+
+function renderFile (value: any) {
+  const srcFile =
+    value.type === 'external' ? value.external.url : value.file.url
+  const splitSourceArray = srcFile.split('/')
+  const lastElementInArray = splitSourceArray[splitSourceArray.length - 1]
+  const captionFile = value.caption ? value.caption[0]?.plain_text : ''
+  return (
+    <figure>
+      <div className={styles.file}>
+        📎 <a href={srcFile}>{lastElementInArray.split('?')[0]}</a>
+      </div>
+      {captionFile && <figcaption>{captionFile}</figcaption>}
+    </figure>
+  )
 }

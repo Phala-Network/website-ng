@@ -1,5 +1,5 @@
-import Web3AnalyticsImage from './Web3AnalyticsImage'
 import PLibraImage from './PLibraImage'
+import Web3AnalyticsImage from './Web3AnalyticsImage'
 
 export const config = {
   Web3Analytics: {
@@ -96,5 +96,5 @@ export const config = {
   Ok(())
 }`)
     }
-  },
+  }
 }

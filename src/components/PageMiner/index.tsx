@@ -1,16 +1,16 @@
-import React from 'react'
 import { PageMinerConfig } from '../../config/PageMiner'
 import BgLayer from '../BgLayer'
 import DetailPageHeader from '../DetailPageHeader'
+import Environment from './Environment'
 import FloatMenu from '../FloatMenu'
+import HeaderButtons from './HeaderButtons'
+import LoanAgreement from './LoanAgreement'
 import NormalLayout from '../NormalLayout'
 import PageTitle from '../PageTitle'
-import Environment from './Environment'
-import HeaderButtons from './HeaderButtons'
-import * as styles from './index.module.scss'
-import LoanAgreement from './LoanAgreement'
+import React from 'react'
 import Rewards from './Rewards'
 import WhyNeed from './WhyNeed'
+import * as styles from './index.module.scss'
 
 type Props = {}
 
