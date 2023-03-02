@@ -1,4 +1,4 @@
-import * as styles from './index.module.scss'
+import './index.module.scss'
 import React from 'react'
 import EnRoadMap from './EnRoadMap'
 import CnRoadMap from './CnRoadMap'
@@ -8,7 +8,9 @@ export default function PageRoadMap() {
   const locale = useLocale()
   
   return (
-    <div className={styles.container}>
+    <div className="container roadmap_FDSFS" style={{
+      paddingTop: '60px'
+    }}>
       {locale === 'en' ? <EnRoadMap /> : <CnRoadMap />}
     </div>
   )
