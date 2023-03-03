@@ -230,7 +230,7 @@ export default function CnRoadMap() {
         <header>
           <h2 className={styles.sectionTitle}>超级秘密产品</h2>
           <p className={styles.sectionSubTitle}>
-            利用 Phat Contracts 和跨链能力的 DeFi 引擎。
+            利用 Phat Contract 和跨链能力的 DeFi 引擎。
           </p>
         </header>
 

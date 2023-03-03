@@ -7,13 +7,10 @@ export default function EnRoadMap() {
       <h1 className={styles.pageTitle}>Phat Contract RoadMap 2023</h1>
 
       <section className={styles.pageSection}>
-        <header>
-          <h2 className={styles.sectionTitle}>TLDR</h2>
-          <p className={styles.sectionSubTitle}>
-            In 2022, Phala Network took major strides in 4 key areas,
-            decentralisation, innovation, utility and community:
-          </p>
-        </header>
+        <p className={styles.sectionSubTitle}>
+          In 2022, Phala Network took major strides in 4 key areas,
+          decentralisation, innovation, utility and community:
+        </p>
         <ul className={styles.summaryStats}>
           <li>
             18k+ servers, providing 142k+ vCPUs, running in over 50 cities.
@@ -65,7 +62,7 @@ export default function EnRoadMap() {
               "Phat Bricks"<code className={styles.Q1}>Expected Q1</code>
             </h4>
             <p className={styles.liContent}>
-              A no code experience to configure reusable Phat Contracts for
+              A no code experience to configure reusable Phat Contract for
               specific use cases like Oracles.
             </p>
           </div>
@@ -248,7 +245,7 @@ export default function EnRoadMap() {
         <header>
           <h2 className={styles.sectionTitle}>Super Secret Product</h2>
           <p className={styles.sectionSubTitle}>
-            A DeFi engine leveraging Phat Contracts cross-chain capability.
+            A DeFi engine leveraging Phat Contract cross-chain capability.
           </p>
         </header>
 
