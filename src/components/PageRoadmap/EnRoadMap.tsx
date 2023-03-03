@@ -194,7 +194,7 @@ export default function EnRoadMap() {
             Build out our NFT Marketplace experience
           </h3>
           <div className={styles.liItem}>
-            <h4 className={styles.liTitle}>1.0</h4>
+            <h4 className={styles.liTitle}>1.0<code /></h4>
             <p className={styles.liContent}>
               Supporting the trade &amp; transfer of Shell NFT and StakePoolV2 NFT
             </p>
