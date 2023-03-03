@@ -7,13 +7,10 @@ export default function CnRoadMap() {
       <h1 className={styles.pageTitle}>Phat Contract RoadMap 2023</h1>
 
       <section className={styles.pageSection}>
-        <header>
-          <h2 className={styles.sectionTitle}>TLDR</h2>
-          <p className={styles.sectionSubTitle}>
-            2022年，Phala
-            Network 在四个关键领域取得了重大进展，包括去中心化、创新、实用性和社区：
-          </p>
-        </header>
+        <p className={styles.sectionSubTitle}>
+          2022年，Phala
+          Network 在四个关键领域取得了重大进展，包括去中心化、创新、实用性和社区：
+        </p>
         <ul className={styles.summaryStats}>
           <li>
             超过 18,000 个服务器在 50 多个城市提供 142,000 多个虚拟 CPU。
