@@ -1,10 +1,113 @@
-.roadmap_FDSFS .code,
-code {
-  background: rgba(135, 131, 120, 0.15);
-  border-radius: 3px;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-size: 85%;
-  tab-size: 2;
-  color: #eb5757;
+.title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 150%;
+  color: #000000;
+  margin: 66px auto 44px;
+}
+
+.sectionTitle {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0 auto 4px;
+}
+
+.sectionSubTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0 auto 20px;
+
+  color: #505050;
+}
+
+.sectionHr {
+  margin: 20px auto 20px 0;
+  width: 107px;
+  height: 4px;
+  background: #cdfa50;
+}
+
+.ulTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0 auto 20px;
+}
+
+.liItem {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 12px;
+}
+
+.liLeft {
+  margin-right: 20px;
+  code {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 111px;
+    height: 26px;
+    font-size: 12px;
+
+    border-radius: 4px;
+  }
+}
+
+.liRight {
+  .liTitle {
+    height: 24px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #000000;
+  }
+
+  .liContent {
+    height: 24px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    color: #505050;
+  }
+}
+
+.hr {
+  height: 1px;
+  background: #d9d9d9;
+  margin: 30px 0;
+}
+
+.Q1 {
+  background: #cdfa50;
+}
+
+.Q2 {
+  background: #72b5f3;
+}
+
+.Q3 {
+  background: #fab650;
+}
+
+.expected2024 {
+  background: #fa6450;
+}
+
+.yearRound {
+  background: #fa8d50;
 }
