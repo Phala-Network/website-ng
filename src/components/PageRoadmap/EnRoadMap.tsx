@@ -7,11 +7,13 @@ export default function EnRoadMap() {
       <h1 className={styles.pageTitle}>Phat Contract RoadMap 2023</h1>
 
       <section className={styles.pageSection}>
-        <h2 className={styles.sectionTitle}>TLDR</h2>
-        <p className={styles.sectionSubTitle}>
-          In 2022, Phala Network took major strides in 4 key areas,
-          decentralisation, innovation, utility and community:
-        </p>
+        <header>
+          <h2 className={styles.sectionTitle}>TLDR</h2>
+          <p className={styles.sectionSubTitle}>
+            In 2022, Phala Network took major strides in 4 key areas,
+            decentralisation, innovation, utility and community:
+          </p>
+        </header>
         <ul className={styles.summaryStats}>
           <li>
             18k+ servers, providing 142k+ vCPUs, running in over 50 cities.
@@ -55,7 +57,7 @@ export default function EnRoadMap() {
               <code className={styles.Q1}>Expected Q1</code>
             </h4>
             <p className={styles.liContent}>
-              Revolutionary "Stake to Compute" model, say goodbye to gas fees
+              Revolutionary "Stake to Compute" model, say goodbye to gas fees.
             </p>
           </div>
           <div className={styles.liItem}>
@@ -73,7 +75,7 @@ export default function EnRoadMap() {
               <code className={styles.Q2}>Expected Q2</code>
             </h4>
             <p className={styles.liContent}>
-              Ever wider multi-chain and use case support
+              Ever wider multi-chain and use case support.
             </p>
           </div>
           <div className={styles.liItem}>
@@ -93,7 +95,7 @@ export default function EnRoadMap() {
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              One-click Phat Contract development environment
+              One-click Phat Contract development environment.
               <code className={styles.Q2}>Expected Q2</code>
             </h4>
           </div>
@@ -103,12 +105,12 @@ export default function EnRoadMap() {
               <code className={styles.Q2}>Expected Q2</code>
             </h4>
             <p className={styles.liContent}>
-              Free compute for every new user
+              Free compute for every new user.
             </p>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Phat Contract Academy<code className={styles.Q3}>Expected Q3</code>
+              Phat Contract Academy.<code className={styles.Q3}>Expected Q3</code>
             </h4>
           </div>
         </div>
@@ -120,7 +122,7 @@ export default function EnRoadMap() {
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               Showcase the best of Phat Legos and community innovation online and
-              offline<code className={styles.yearRound}>Year Round</code>
+              offline. <code className={styles.yearRound}>Year Round</code>
             </h4>
           </div>
         </div>
@@ -138,41 +140,41 @@ export default function EnRoadMap() {
         </header>
 
         <div className={styles.sectionContentGroup}>
-          <h3 className={styles.ulTitle}>Next-generation Phala Compute</h3>
+          <h3 className={styles.ulTitle}>Next-generation Phala Compute.</h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               2nd Gen - Lay the foundation for Phat Contract 1.0 and the first
-              "Public Good" cluster
+              "Public Good" cluster.
               <code className={styles.Q1}>Expected Q1</code>
             </h4>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               3rd Gen - Implement full Layer 1 tokenomics to allow anyone to run a
-              Phat Contract capable cluster
+              Phat Contract capable cluster.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               4th Gen - "SideVM" release enabling long-running Phat Contract
-              processes <code className={styles.expected2024}>Expected 2024</code>
+              processes. <code className={styles.expected2024}>Expected 2024</code>
             </h4>
           </div>
         </div>
 
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>
-            Expand supported secure worker technologies
+            Expand supported secure worker technologies.
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              SGX 2.0<code className={styles.Q3}>Expected Q3/Q4</code>
+              SGX 2.0.<code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Add a second hardware implementation
+              Add a second hardware implementation.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>
@@ -185,42 +187,42 @@ export default function EnRoadMap() {
         <header>
           <h2 className={styles.sectionTitle}>PhalaWorld</h2>
           <p className={styles.sectionSubTitle}>
-            A digital representation of your progression on the Phala Network
+            A digital representation of your progression on the Phala Network.
           </p>
         </header>
 
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>
-            Build out our NFT Marketplace experience
+            Build out our NFT Marketplace experience.
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>1.0<code /></h4>
             <p className={styles.liContent}>
-              Supporting the trade &amp; transfer of Shell NFT and StakePoolV2 NFT
+              Supporting the trade &amp; transfer of Shell NFT and StakePoolV2 NFT.
             </p>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               2.0 <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
-            <p className={styles.liContent}>Shell Equipment NFT Trading</p>
+            <p className={styles.liContent}>Shell Equipment NFT Trading.</p>
           </div>
         </div>
 
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>
-            Continue to innovate and open the experience to even more players
+            Continue to innovate and open the experience to even more players.
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               "Visualise all your Phala NFT's"
               <code className={styles.Q2}>Expected Q2</code>
             </h4>
-            <p className={styles.liContent}>A unique experimental feature</p>
+            <p className={styles.liContent}>A unique experimental feature.</p>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Release PhalaWorld's first game feature
+              Release PhalaWorld's first game feature.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
             <p className={styles.liContent}>Challenge other players!</p>
@@ -229,7 +231,7 @@ export default function EnRoadMap() {
 
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>
-            Work with RMRK to bring CypherMOD to market
+            Work with RMRK to bring CypherMOD to market.
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
@@ -246,14 +248,14 @@ export default function EnRoadMap() {
         <header>
           <h2 className={styles.sectionTitle}>Super Secret Product</h2>
           <p className={styles.sectionSubTitle}>
-            A DeFi engine leveraging Phat Contracts cross-chain capability
+            A DeFi engine leveraging Phat Contracts cross-chain capability.
           </p>
         </header>
 
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>
             Show the true power and functionality of Phat Contract in a
-            industry-defining product offering
+            industry-defining product offering.
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
@@ -270,15 +272,15 @@ export default function EnRoadMap() {
           <h2 className={styles.sectionTitle}>Overall</h2>
           <p className={styles.sectionSubTitle}>
             Past our 4 core products, there are several key areas we want to
-            continue pushing forward
+            continue pushing forward.
           </p>
         </header>
 
         <div className={styles.sectionContentGroup}>
-          <h3 className={styles.ulTitle}>Elevate our Presence and Message</h3>
+          <h3 className={styles.ulTitle}>Elevate our Presence and Message.</h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Release Phala Rebrand and all new phala.network
+              Release Phala Rebrand and all new phala.network.
               <code className={styles.Q2}>Expected Q2</code>
             </h4>
           </div>
@@ -286,29 +288,21 @@ export default function EnRoadMap() {
 
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>
-            Ever deeper investment in Research and Development
+            Ever deeper investment in Research and Development.
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Refreshed Technical Whitepaper
+              Refreshed Technical Whitepaper.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>
 
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Tokenomics Whitepaper vNext
+              Tokenomics Whitepaper vNext.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>
-        </div>
-      </section>
-
-      <hr className={styles.hr} />
-
-      <section className={styles.pageSection}>
-        <div>
-          <p>Challenge other players!</p>
         </div>
       </section>
     </article>
