@@ -5,34 +5,34 @@ export default function CnRoadMap() {
   return (
     <div>
       <h2 className={styles.title}>Phat Contract RoadMap 2023</h2>
-      {/* <h1 className="">TLDR</h1>
-      <p className="">
-       2022年，Phala
+      <h2 className={styles.sectionTitle}>TLDR</h2>
+      <p className={styles.sectionSubTitle}>
+        2022年，Phala
         Network在四个关键领域取得了重大进展，包括去中心化、创新、实用性和社区：
       </p>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
           超过18,000个服务器在50多个城市提供142,000多个虚拟CPU。
-        </li>
-      </ul>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
-         在所有代码仓库中进行了1,434次提交和408个PR。
-        </li>
-      </ul>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
+        </div>
+      </div>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
+          在所有代码仓库中进行了1,434次提交和408个PR。
+        </div>
+      </div>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
           我们的旗舰革命性产品Phat Contract已经完成功能，并处于封闭测试阶段。
-        </li>
-      </ul>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
+        </div>
+      </div>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
           在全球14个国家和18个城市举办了141个活动，触及超过230,000人。
-        </li>
-      </ul>
-      <p className="">
-         2023年，Phala将在所有这些基础上继续发展，并开始革新最小化信任的计算。
-      </p> */}
+        </div>
+      </div>
+      <p className={styles.sectionSubTitle}>
+        2023年，Phala将在所有这些基础上继续发展，并开始革新最小化信任的计算。
+      </p>
 
       <h2 className={styles.sectionTitle}>Phat Contract</h2>
       <p className={styles.sectionSubTitle}>

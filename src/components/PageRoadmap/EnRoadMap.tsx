@@ -5,37 +5,38 @@ export default function EnRoadMap() {
   return (
     <div>
       <h2 className={styles.title}>Phat Contract RoadMap 2023</h2>
-      {/* <h1 className="">TLDR</h1>
-      <p className="">
+
+      <h2 className={styles.sectionTitle}>TLDR</h2>
+      <p className={styles.sectionSubTitle}>
         In 2022, Phala Network took major strides in 4 key areas,
         decentralisation, innovation, utility and community
       </p>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
           18k+ servers, providing 142k+ vCPUs, running in over 50 cities.
-        </li>
-      </ul>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
+        </div>
+      </div>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
           1,434 commits and 408 PR's across all our repos
-        </li>
-      </ul>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
+        </div>
+      </div>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
           Phat Contract, our flagship revolutionary product, is feature complete
           and in closed beta.
-        </li>
-      </ul>
-      <ul >
-        <li style={{ listStyleType: 'none' }}>
+        </div>
+      </div>
+      <div className={styles.liItem}>
+        <div className={styles.liContent}>
           141 events held in 14 countries and 18 cities worldwide, reaching over
           230,000 people.
-        </li>
-      </ul>
-      <p className="">
+        </div>
+      </div>
+      <p className={styles.sectionSubTitle}>
         In 2023, Phala is going to build on all of this, and begin to change
         trustless computation.
-      </p> */}
+      </p>
 
       <h2 className={styles.sectionTitle}>Phat Contract</h2>
       <p className={styles.sectionSubTitle}>
