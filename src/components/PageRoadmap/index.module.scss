@@ -42,48 +42,42 @@
 }
 
 .liItem {
-  display: flex;
-  justify-content: left;
   margin-bottom: 12px;
 }
 
-.liLeft {
-  margin-right: 20px;
-  code {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 111px;
-    height: 26px;
-    font-size: 12px;
+code {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 111px;
+  height: 26px;
+  font-size: 12px;
+  margin-left: 20px;
 
-    border-radius: 4px;
-  }
+  border-radius: 4px;
 }
 
-.liRight {
-  .liTitle {
-    height: 24px;
+.liTitle {
+  height: 24px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
 
-    color: #000000;
-  }
+  color: #000000;
+}
 
-  .liContent {
-    height: 24px;
+.liContent {
+  height: 24px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    /* identical to box height, or 24px */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
 
-    color: #505050;
-  }
+  color: #505050;
 }
 
 .hr {
