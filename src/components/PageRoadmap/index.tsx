@@ -6,11 +6,13 @@ import { useLocale } from '../../hooks/useLocale'
 
 export default function PageRoadMap() {
   const locale = useLocale()
-  
+
   return (
-    <div className="container roadmap_FDSFS" style={{
-      paddingTop: '60px'
-    }}>
+    <div
+      className="container roadmap_FDSFS"
+      style={{
+        padding: '32px 24px'
+      }}>
       {locale === 'en' ? <EnRoadMap /> : <CnRoadMap />}
     </div>
   )

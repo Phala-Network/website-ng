@@ -42,7 +42,9 @@
 }
 
 .liItem {
-  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
 }
 
 code {
@@ -60,7 +62,7 @@ code {
 }
 
 .liTitle {
-  height: 24px;
+  min-height: 24px;
 
   font-style: normal;
   font-weight: 700;
@@ -71,7 +73,7 @@ code {
 }
 
 .liContent {
-  height: 24px;
+  min-height: 24px;
 
   font-style: normal;
   font-weight: 400;

@@ -8,7 +8,12 @@ export default function RoadMap() {
     <NormalLayout>
       <PageTitle zh="Khala" en="Khala"></PageTitle>
 
-      <PageRoadMap />
+      <div
+        style={{
+          background: '#efefef'
+        }}>
+        <PageRoadMap />
+      </div>
     </NormalLayout>
   )
 }
