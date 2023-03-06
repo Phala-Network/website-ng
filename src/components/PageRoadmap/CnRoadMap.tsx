@@ -202,7 +202,7 @@ export default function CnRoadMap() {
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              发布 PhalaWorld 的第一个特色游戏化体验。
+              发布 PhalaWorld 的第一个特色游戏化体验。<code className={styles.Q3}>预计 Q3/Q4</code>
             </h4>
             <p className={styles.liContent}>挑战其他玩家！</p>
           </div>
