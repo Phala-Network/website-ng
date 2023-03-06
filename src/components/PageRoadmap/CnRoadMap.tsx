@@ -8,25 +8,22 @@ export default function CnRoadMap() {
 
       <section className={styles.pageSection}>
         <p className={styles.sectionSubTitle}>
-          2022年，Phala
-          Network 在四个关键领域取得了重大进展，包括去中心化、创新、实用性和社区：
+          2022年，Phala Network
+          在四个关键领域取得了重大进展，包括去中心化、创新、实用性和社区：
         </p>
         <ul className={styles.summaryStats}>
+          <li>超过 18,000 个服务器在 50 多个城市提供 142,000 多个虚拟 CPU。</li>
+          <li>在所有代码仓库中进行了 1,434 次提交和 408 个 PR。</li>
           <li>
-            超过 18,000 个服务器在 50 多个城市提供 142,000 多个虚拟 CPU。
-          </li>
-          <li>
-            在所有代码仓库中进行了 1,434 次提交和 408 个 PR。
-          </li>
-          <li>
-            我们的旗舰革命性产品 Phat Contract 已经完成功能，并处于封闭测试阶段。
+            我们的旗舰革命性产品 Phat Contract
+            已经完成功能，并处于封闭测试阶段。
           </li>
           <li>
             在全球 14 个国家和 18 个城市举办了 141 个活动，触及超过 230,000 人。
           </li>
         </ul>
         <p className={styles.sectionSubTitle}>
-          2023 年，Phala 将在所有这些基础上继续发展，并开始革新最小化信任的计算。
+          2023年，Phala将继续前行，开启“最小化信任”计算的革新之路。
         </p>
       </section>
 
@@ -49,7 +46,7 @@ export default function CnRoadMap() {
               <code className={styles.Q1}>预计 Q1</code>
             </h4>
             <p className={styles.liContent}>
-              革命性的“抵押计算”模型，让你告别云服务账单，你的用户摆脱 Gas 费。
+              革命性的“抵押计算”模型，让企业和用户告别云服务账单、摆脱Gas费。
             </p>
           </div>
           <div className={styles.liItem}>
@@ -57,8 +54,8 @@ export default function CnRoadMap() {
               “Phat Bricks” 组件。<code className={styles.Q1}>预计 Q1</code>
             </h4>
             <p className={styles.liContent}>
-              低代码体验，极大降低 Phat
-              Contracts 的开发门槛，并针对特定用例如 Oracles 实现组件化。
+              低代码体验，极大降低 Phat Contracts 的开发门槛，并针对特定用例如
+              Oracles 实现组件化。
             </p>
           </div>
           <div className={styles.liItem}>
@@ -107,7 +104,7 @@ export default function CnRoadMap() {
           <h3 className={styles.ulTitle}>成为行业先驱。</h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              线上和线下运营 Phat Bricks 和社区创新的最佳方式。
+              全渠道展示Phat Bricks和社区创新的最佳用例。
               <code className={styles.yearRound}>全年</code>
             </h4>
           </div>
@@ -178,7 +175,10 @@ export default function CnRoadMap() {
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>Phala的NFT交易市场体验。</h3>
           <div className={styles.liItem}>
-            <h4 className={styles.liTitle}>1.0<code /></h4>
+            <h4 className={styles.liTitle}>
+              1.0
+              <code>预计 Q1</code>
+            </h4>
             <p className={styles.liContent}>
               支持 Shell NFT 和 StakePoolV2 NFT 的交易和转移。
             </p>
@@ -192,9 +192,7 @@ export default function CnRoadMap() {
         </div>
 
         <div className={styles.sectionContentGroup}>
-          <h3 className={styles.ulTitle}>
-            继续创新并向更多玩家开放体验。
-          </h3>
+          <h3 className={styles.ulTitle}>继续创新并向更多玩家开放体验。</h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               “可视化您的所有 Phala NFT”。
@@ -227,13 +225,13 @@ export default function CnRoadMap() {
         <header>
           <h2 className={styles.sectionTitle}>超级秘密产品</h2>
           <p className={styles.sectionSubTitle}>
-            利用 Phat Contract 和跨链能力的 DeFi 引擎。
+            利用Phat Contract跨链能力的DeFi引擎。
           </p>
         </header>
 
         <div className={styles.sectionContentGroup}>
           <h3 className={styles.ulTitle}>
-            展示 Phat Contract 在行业定义的产品中提供的价值。
+            在一个行业级产品中展示Phat Contract的强大功能。
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>

@@ -15,16 +15,14 @@ export default function EnRoadMap() {
           <li>
             18k+ servers, providing 142k+ vCPUs, running in over 50 cities.
           </li>
+          <li>1,434 commits and 408 PR's across all our repos.</li>
           <li>
-            1,434 commits and 408 PR's across all our repos.
+            Phat Contract, our flagship revolutionary product, is feature
+            complete and in closed beta.
           </li>
           <li>
-            Phat Contract, our flagship revolutionary product, is feature complete
-            and in closed beta.
-          </li>
-          <li>
-            141 events held in 14 countries and 18 cities worldwide, reaching over
-            230,000 people.
+            141 events held in 14 countries and 18 cities worldwide, reaching
+            over 230,000 people.
           </li>
         </ul>
         <p className={styles.sectionSubTitle}>
@@ -77,7 +75,8 @@ export default function EnRoadMap() {
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Phat Contract 2.0 <code className={styles.Q3}>Expected Q3/Q4</code>
+              Phat Contract 2.0{' '}
+              <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
             <p className={styles.liContent}>
               Asynchronous Phat Bricks. Opening up a whole new world of
@@ -101,13 +100,12 @@ export default function EnRoadMap() {
               Phala Builders Program "Free Staking"
               <code className={styles.Q2}>Expected Q2</code>
             </h4>
-            <p className={styles.liContent}>
-              Free compute for every new user.
-            </p>
+            <p className={styles.liContent}>Free compute for every new user.</p>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Phat Contract Academy.<code className={styles.Q3}>Expected Q3</code>
+              Phat Contract Academy.
+              <code className={styles.Q3}>Expected Q3</code>
             </h4>
           </div>
         </div>
@@ -118,8 +116,8 @@ export default function EnRoadMap() {
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Showcase the best of Phat Legos and community innovation online and
-              offline. <code className={styles.yearRound}>Year Round</code>
+              Showcase the best of Phat Legos and community innovation online
+              and offline. <code className={styles.yearRound}>Year Round</code>
             </h4>
           </div>
         </div>
@@ -131,8 +129,8 @@ export default function EnRoadMap() {
         <header>
           <h2 className={styles.sectionTitle}>Compute</h2>
           <p className={styles.sectionSubTitle}>
-            Securely scaling your off-chain compute needs, a decentralized cloud of
-            secure workers.
+            Securely scaling your off-chain compute needs, a decentralized cloud
+            of secure workers.
           </p>
         </header>
 
@@ -147,15 +145,16 @@ export default function EnRoadMap() {
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              3rd Gen - Implement full Layer 1 tokenomics to allow anyone to run a
-              Phat Contract capable cluster.
+              3rd Gen - Implement full Layer 1 tokenomics to allow anyone to run
+              a Phat Contract capable cluster.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               4th Gen - "SideVM" release enabling long-running Phat Contract
-              processes. <code className={styles.expected2024}>Expected 2024</code>
+              processes.{' '}
+              <code className={styles.expected2024}>Expected 2024</code>
             </h4>
           </div>
         </div>
@@ -193,9 +192,12 @@ export default function EnRoadMap() {
             Build out our NFT Marketplace experience.
           </h3>
           <div className={styles.liItem}>
-            <h4 className={styles.liTitle}>1.0<code /></h4>
+            <h4 className={styles.liTitle}>
+              1.0<code className={styles.Q1}>Expected Q1</code>
+            </h4>
             <p className={styles.liContent}>
-              Supporting the trade &amp; transfer of Shell NFT and StakePoolV2 NFT.
+              Supporting the trade &amp; transfer of Shell NFT and StakePoolV2
+              NFT.
             </p>
           </div>
           <div className={styles.liItem}>
