@@ -8,22 +8,20 @@ export default function CnRoadMap() {
 
       <section className={styles.pageSection}>
         <p className={styles.sectionSubTitle}>
-          2022年，Phala Network
-          在四个关键领域取得了重大进展，包括去中心化、创新、实用性和社区：
+          2022年，Phala Network 在四个关键领域取得了重大进展，包括去中心化、创新、实用性和社区：
         </p>
         <ul className={styles.summaryStats}>
           <li>超过 18,000 个服务器在 50 多个城市提供 142,000 多个虚拟 CPU。</li>
           <li>在所有代码仓库中进行了 1,434 次提交和 408 个 PR。</li>
           <li>
-            我们的旗舰革命性产品 Phat Contract
-            已经完成功能，并处于封闭测试阶段。
+            我们的旗舰革命性产品 Phat Contract 已经完成功能，并处于封闭测试阶段。
           </li>
           <li>
             在全球 14 个国家和 18 个城市举办了 141 个活动，触及超过 230,000 人。
           </li>
         </ul>
         <p className={styles.sectionSubTitle}>
-          2023年，Phala将继续前行，开启“最小化信任”计算的革新之路。
+          2023年，Phala 将继续前行，开启“最小化信任”计算的革新之路。
         </p>
       </section>
 
@@ -46,7 +44,7 @@ export default function CnRoadMap() {
               <code className={styles.Q1}>预计 Q1</code>
             </h4>
             <p className={styles.liContent}>
-              革命性的“抵押计算”模型，让企业和用户告别云服务账单、摆脱Gas费。
+              革命性的“抵押计算”模型，让企业和用户告别云服务账单、摆脱 Gas 费。
             </p>
           </div>
           <div className={styles.liItem}>
@@ -104,7 +102,7 @@ export default function CnRoadMap() {
           <h3 className={styles.ulTitle}>成为行业先驱。</h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              全渠道展示Phat Bricks和社区创新的最佳用例。
+              全渠道展示 Phat Bricks 和社区创新的最佳用例。
               <code className={styles.yearRound}>全年</code>
             </h4>
           </div>
@@ -202,7 +200,8 @@ export default function CnRoadMap() {
           </div>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              发布 PhalaWorld 的第一个特色游戏化体验。<code className={styles.Q3}>预计 Q3/Q4</code>
+              发布 PhalaWorld 的第一个特色游戏化体验。
+              <code className={styles.Q3}>预计 Q3/Q4</code>
             </h4>
             <p className={styles.liContent}>挑战其他玩家！</p>
           </div>
