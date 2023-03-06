@@ -9,11 +9,11 @@ import '../styles/layout.scss'
 
 const localInfo = {
   zh: {
-    description: 'Phala Network 是Web 3.0生态体系中基于 Substrate 的隐私计算云'
+    description: '去中心化、安全和可迅速扩展的计算网络'
   },
   en: {
     description:
-      'Phala Network is a decentralized cloud that offers secure and scalable computing for Web3'
+      'Phala Network is a decentralized cloud that offers secure and scalable computing'
   }
 } as const
 

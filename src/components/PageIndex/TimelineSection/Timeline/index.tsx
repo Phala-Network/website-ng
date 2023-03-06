@@ -11,7 +11,7 @@ type Props = {}
 
 const { timeline, doneTitle, doingTitle } = TimelineSectionConfig
 
-const INDEX_ARR = [0, 3, 5, 7, 10]
+const INDEX_ARR = [0, 3, 5, 7]
 const FIRSTINDEX = INDEX_ARR[0]
 const LAST_INDEX = INDEX_ARR[INDEX_ARR.length - 1]
 
@@ -19,7 +19,7 @@ const Timeline: React.FC<Props> = () => {
   // const [slideNumber, setSlideNumber] = useState(3)
   const [index, setIndex] = useState(0)
   const [bgColor, setBgColor] = useState<'primary' | 'gray'>('primary')
-  const allTimelineData = [...timeline.done, ...timeline.doing]
+  const allTimelineData = [...timeline.done]
   // const allTimelineDataLength = allTimelineData.length
   // const maxIndex = allTimelineData.length - slideNumber
   // const { breakpoint } = useBreakpoint()
@@ -64,13 +64,13 @@ const Timeline: React.FC<Props> = () => {
     // }
   }
 
-  useEffect(() => {
-    if (index === LAST_INDEX) {
-      setBgColor('gray')
-    } else {
-      setBgColor('primary')
-    }
-  }, [index])
+  // useEffect(() => {
+  //   if (index === LAST_INDEX) {
+  //     setBgColor('gray')
+  //   } else {
+  //     setBgColor('primary')
+  //   }
+  // }, [index])
 
   // useEffect(() => {
   //   if (breakpoint === 'mobile') {
@@ -87,7 +87,7 @@ const Timeline: React.FC<Props> = () => {
     <div className={classnames([styles.timelineWrap, styles[bgColor]])}>
       <div className="container">
         <div className={styles.header}>
-          <SectionHeader title={lastIndex() ? doingTitle : doneTitle} />
+          <SectionHeader title={doneTitle} />
 
           <Buttons
             onLeftButtonClick={onLeftButtonClick}

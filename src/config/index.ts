@@ -409,6 +409,16 @@ export const AboutUsConfig = {
         en: 'https://angel.co/company/phala-network',
         zh: 'https://angel.co/company/phala-network'
       }
+    },
+    {
+      name: {
+        en: 'Roadmap',
+        zh: '路线图'
+      },
+      href: {
+        en: '/roadmap',
+        zh: '/roadmap'
+      }
     }
   ]
 }
