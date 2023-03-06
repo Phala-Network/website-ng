@@ -4,7 +4,7 @@ import * as styles from './index.module.scss'
 export default function EnRoadMap() {
   return (
     <article className={styles.pageRoadmap}>
-      <h1 className={styles.pageTitle}>Phat Contract RoadMap 2023</h1>
+      <h1 className={styles.pageTitle}>Phat Network RoadMap 2023</h1>
 
       <section className={styles.pageSection}>
         <p className={styles.sectionSubTitle}>
@@ -37,7 +37,7 @@ export default function EnRoadMap() {
         <header>
           <h2 className={styles.sectionTitle}>Phat Contract</h2>
           <p className={styles.sectionSubTitle}>
-            Taking computation off chain, a serverless SDK you can write almost
+            Taking computation off-chain, a serverless SDK you can write almost
             anything with.
           </p>
         </header>
@@ -60,7 +60,7 @@ export default function EnRoadMap() {
               "Phat Bricks"<code className={styles.Q1}>Expected Q1</code>
             </h4>
             <p className={styles.liContent}>
-              A no code experience to configure reusable Phat Contract for
+              A no-code experience to configure reusable Phat Contract for
               specific use cases like Oracles.
             </p>
           </div>
@@ -116,7 +116,7 @@ export default function EnRoadMap() {
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Showcase the best of Phat Legos and community innovation online
+              Showcase the best of Phat Bricks and community innovation online
               and offline. <code className={styles.yearRound}>Year Round</code>
             </h4>
           </div>
@@ -291,14 +291,14 @@ export default function EnRoadMap() {
           </h3>
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Refreshed Technical Whitepaper.
+              Refreshed technical whitepaper.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>
 
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
-              Tokenomics Whitepaper vNext.
+              Tokenomics whitepaper vNext.
               <code className={styles.Q3}>Expected Q3/Q4</code>
             </h4>
           </div>

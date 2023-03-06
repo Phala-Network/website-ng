@@ -4,7 +4,7 @@ import * as styles from './index.module.scss'
 export default function CnRoadMap() {
   return (
     <article className={styles.pageRoadmap}>
-      <h1 className={styles.pageTitle}>Phat Contract RoadMap 2023</h1>
+      <h1 className={styles.pageTitle}>Phat Network RoadMap 2023</h1>
 
       <section className={styles.pageSection}>
         <p className={styles.sectionSubTitle}>
@@ -54,7 +54,7 @@ export default function CnRoadMap() {
               “Phat Bricks” 组件。<code className={styles.Q1}>预计 Q1</code>
             </h4>
             <p className={styles.liContent}>
-              低代码体验，极大降低 Phat Contracts 的开发门槛，并针对特定用例如
+              低代码体验，极大降低 Phat Contract 的开发门槛，并针对特定用例如
               Oracles 实现组件化。
             </p>
           </div>
@@ -177,7 +177,7 @@ export default function CnRoadMap() {
           <div className={styles.liItem}>
             <h4 className={styles.liTitle}>
               1.0
-              <code>预计 Q1</code>
+              <code className={styles.Q1}>预计 Q1</code>
             </h4>
             <p className={styles.liContent}>
               支持 Shell NFT 和 StakePoolV2 NFT 的交易和转移。
