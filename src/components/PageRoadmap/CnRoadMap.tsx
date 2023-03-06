@@ -4,7 +4,7 @@ import * as styles from './index.module.scss'
 export default function CnRoadMap() {
   return (
     <article className={styles.pageRoadmap}>
-      <h1 className={styles.pageTitle}>Phat Network RoadMap 2023</h1>
+      <h1 className={styles.pageTitle}>Phala Network Roadmap 2023</h1>
 
       <section className={styles.pageSection}>
         <p className={styles.sectionSubTitle}>
