@@ -48,7 +48,7 @@ exports.createPages = async ({ actions }) => {
   const resultData = await result.json()
 
   actions.createPage({
-    path: '/blog/list',
+    path: '/blog',
     component: path.resolve('./src/components/BlogList/index.tsx'),
     context: {
       data: resultData
