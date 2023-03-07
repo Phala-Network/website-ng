@@ -4,6 +4,21 @@ import React, { Fragment } from 'react'
 import * as styles from './index.module.scss'
 import NormalLayout from '../NormalLayout'
 
+function updateCover(s: string) {
+  const prefix = 'https://cdn-images-1.medium.com/'
+  if (s.indexOf(prefix) === -1) {
+    return s
+  }
+  const prefixV2 = 'https://cdn-images-1.medium.com/v2/'
+
+  const isV2 = s.indexOf(prefixV2) > -1
+  const r = s
+    .split('/')
+    .filter((s) => Boolean(s))
+    .pop()
+  return `${isV2 ? prefixV2 : prefix}${r}`
+}
+
 export default function Blog({ pageContext }: any) {
   const blog = pageContext.data
 
@@ -16,7 +31,7 @@ export default function Blog({ pageContext }: any) {
         <div>
           <img
             style={{ verticalAlign: 'middle', width: '100%' }}
-            src={blog.headlineImg}
+            src={updateCover(blog.headlineImg)}
             alt=""
           />
         </div>
