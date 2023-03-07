@@ -45,13 +45,13 @@ const notionPostListEndpoint = process.env.NOTION_POST_LIST_ENDPOINT
 
 exports.createPages = async ({ actions }) => {
   const result = await fetch(notionPostListEndpoint)
-  const resultData = await result.json()
+  const resultData = await result.json();
 
   actions.createPage({
     path: '/blog',
     component: path.resolve('./src/components/BlogList/index.tsx'),
     context: {
-      data: resultData
+      data: resultData.reverse()
     }
   })
 
