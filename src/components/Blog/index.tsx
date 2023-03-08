@@ -23,18 +23,26 @@ export default function Blog ({ pageContext }: any) {
 
   return (
     <NormalLayout>
-      <div className="pt-16 max-w-3xl my-0 mx-auto">
-        <h1>
-          <Text text={blog.title} />
-        </h1>
-        <div>
-          <img
-            style={{ verticalAlign: 'middle', width: '100%' }}
-            src={updateCover(blog.headlineImg)}
-            alt=""
-          />
-        </div>
-        <article style={{ padding: '20px' }}>
+      <div className="pt-14 max-w-3xl my-0 mx-auto bg-gray-50">
+        <header className="flex flex-col gap-4">
+          <a href={`/blog${blog.url}`}>
+            <img
+              style={{ verticalAlign: 'middle', width: '100%' }}
+              src={updateCover(blog.headlineImg)}
+              alt=""
+            />
+          </a>
+          <h1 className='text-3xl font-extrabold tracking-tight px-6'>
+            <a href="/blog" className='block text-sm font-light text-gray-600 hover:underline leading-6'>
+              Blog
+            </a>
+            <a href={`/blog${blog.url}`} className='hover:underline transition-all'>
+              <Text text={blog.title} />
+            </a>
+          </h1>
+          <p className="px-6 font-extralight text-gray-500">{blog.last_edited_time.split('T')[0]}</p>
+        </header>
+        <article className='prose prose-neutral prose-headings:text-2xl prose-headings:mt-6 px-6 pb-20'>
           {blog?.content?.map((block: any) => {
             return <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           }) || null}
