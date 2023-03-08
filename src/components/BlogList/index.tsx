@@ -1,14 +1,13 @@
 import { Text } from '../NotionBlock/Text'
-import React from 'react'
 import NormalLayout from '../NormalLayout'
-import * as styles from './index.module.scss'
+import React from 'react'
 
-export default function BlogList({ pageContext }: any) {
+export default function BlogList ({ pageContext }: any) {
   const data = pageContext.data
 
   return (
     <NormalLayout>
-      <div className={styles.container}>
+      <div className="pt-16 max-w-3xl my-0 mx-auto">
         {data.map((d: any) => {
           return (
             <div key={d.id}>

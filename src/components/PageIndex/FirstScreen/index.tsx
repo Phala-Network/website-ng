@@ -20,6 +20,22 @@ const FirstScreen: FC = () => {
     <section className={classnames([styles.firstScreen])}>
       <div className={styles.bg}></div>
 
+      <div className={styles.bannerWrapper}>
+        <div className={styles.banner}>
+          <img src="/images/logo-builders-program.png" alt="Builders Program" />
+          <section className={styles.bannerContainer}>
+            <div className={styles.bannerBody}>
+              <header className={styles.bannerHeader}>
+                <h3 className={styles.bannerSubtitle}>We are thrilled to announce the launch of</h3>
+                <h2 className={styles.bannerTitle}>the Phala Builders Program!</h2>
+              </header>
+              <div className={styles.bannerText}>This program provides funding, technical guidance, and marketing support to innovative projects seeking to build on Phala’s decentralized, trustless compute cloud using <span className={styles.tag}>#PhatContract</span>.</div>
+              <div><a href={`${WIKI_PREFIX}/en-us/build/general/builders-program/`} className={styles.bannerLink} target="_blank" rel="noopener noreferrer">To learn more about the program and apply, click here</a></div>
+            </div>
+          </section>
+        </div>
+      </div>
+
       <div className={classnames(['container', styles.content])}>
         <div className={styles.title}>
           <I18n

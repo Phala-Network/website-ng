@@ -1,7 +1,7 @@
 import React from 'react'
 import * as styles from './index.module.scss'
 
-export default function CnRoadMap() {
+export default function CnRoadMap () {
   return (
     <article className={styles.pageRoadmap}>
       <h1 className={styles.pageTitle}>Phala Network Roadmap 2023</h1>

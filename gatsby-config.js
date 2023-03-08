@@ -32,6 +32,7 @@ module.exports = {
       options: {
         id: 'GTM-TX3VQZP'
       }
-    }
+    },
+    'gatsby-plugin-postcss'
   ]
 }

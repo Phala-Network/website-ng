@@ -1,10 +1,9 @@
 import { Text } from '../NotionBlock/Text'
 import { renderBlock } from '../NotionBlock/block'
-import React, { Fragment } from 'react'
-import * as styles from './index.module.scss'
 import NormalLayout from '../NormalLayout'
+import React, { Fragment } from 'react'
 
-function updateCover(s: string) {
+function updateCover (s: string) {
   const prefix = 'https://cdn-images-1.medium.com/'
   if (s.indexOf(prefix) === -1) {
     return s
@@ -19,12 +18,12 @@ function updateCover(s: string) {
   return `${isV2 ? prefixV2 : prefix}${r}`
 }
 
-export default function Blog({ pageContext }: any) {
+export default function Blog ({ pageContext }: any) {
   const blog = pageContext.data
 
   return (
     <NormalLayout>
-      <div className={styles.container}>
+      <div className="pt-16 max-w-3xl my-0 mx-auto">
         <h1>
           <Text text={blog.title} />
         </h1>
