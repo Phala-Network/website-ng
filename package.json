@@ -47,6 +47,7 @@
     "use-breakpoint": "^1.1.2"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@types/react-helmet": "^6.1.1",
     "@types/smoothscroll-polyfill": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
