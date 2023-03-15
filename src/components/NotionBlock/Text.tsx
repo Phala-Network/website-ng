@@ -10,6 +10,9 @@ export const Text = ({ text }: { text: any }) => {
       annotations: { bold, code, color, italic, strikethrough, underline },
       text
     } = value
+    if (!text) {
+      return null
+    }
     return (
       <span
         className={[

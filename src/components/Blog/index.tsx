@@ -37,7 +37,7 @@ export default function Blog ({ pageContext }: any) {
               Blog
             </a>
             <a href={`/blog${blog.url}`} className='hover:underline transition-all'>
-              <Text text={blog.title} />
+              {blog.title}
             </a>
           </h1>
           <p className="px-6 font-extralight text-gray-500">{blog.last_edited_time.split('T')[0]}</p>
