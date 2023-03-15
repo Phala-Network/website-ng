@@ -51,11 +51,11 @@ exports.createPages = async ({ actions }) => {
     path: '/blog',
     component: path.resolve('./src/components/BlogList/index.tsx'),
     context: {
-      data: resultData.reverse()
+      data: resultData.filter(i => i.postType.name === 'Post').reverse()
     }
   })
 
-  resultData.forEach((r) => {
+  resultData.filter(i => i.postType.name === 'Post').forEach((r) => {
     actions.createPage({
       path: `/blog${r.url.split('?')[0]}`,
       component: path.resolve('./src/components/Blog/index.tsx'),
