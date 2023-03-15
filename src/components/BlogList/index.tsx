@@ -35,8 +35,8 @@ export default function BlogList ({ pageContext }: any) {
                   />
                 </a>
                 <h2 className='px-4 pt-2 text-lg font-medium hover:underline'>
-                  <a href={`/blog${d.url}`}>
-                    {d.title[0]['plain_text']}
+                  <a href={`/blog${d.url.split('?')[0]}`}>
+                    {d.title}
                   </a>
                 </h2>
                 <p className="px-4 py-2 text-sm font-extralight text-gray-500">{d.last_edited_time.split('T')[0]}</p>
