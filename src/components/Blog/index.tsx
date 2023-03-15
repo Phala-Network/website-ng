@@ -36,7 +36,7 @@ export default function Blog ({ pageContext }: any) {
             <a href="/blog" className='block text-sm font-light text-gray-600 hover:underline leading-6'>
               Blog
             </a>
-            <a href={`/blog${blog.url}`} className='hover:underline transition-all'>
+            <a href={`/blog${blog.url.split('?')[0]}`} className='hover:underline transition-all'>
               {blog.title}
             </a>
           </h1>

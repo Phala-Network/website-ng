@@ -27,7 +27,7 @@ export default function BlogList ({ pageContext }: any) {
           {data.map((d: any) => {
             return (
               <div key={d.id} className='col-span-4 bg-gray-50 rounded overflow-hidden'>
-                <a href={`/blog${d.url}`}>
+                <a href={`/blog${d.url.split('?')[0]}`}>
                   <img
                     className="object-cover h-52 w-full"
                     src={updateCover(d.headlineImg)}
