@@ -29,9 +29,16 @@ function HeroScreen() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-white">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 flex flex-row items-center transition-all ring-1 ring-phat-500/60 hover:ring-phat-500">
+              <span className={cn('text-base text-gray-500')}>
+                Pick Up the Pace, Testers! Phat Contract’s Closed Beta is Ending Soon!
+              </span>
+              <a
+                href="https://medium.com/phala-network/pick-up-the-pace-testers-phat-contracts-closed-beta-is-ending-soon-1c3f169d8687"
+                className="ml-2 font-semibold text-white/60 text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -39,21 +46,32 @@ function HeroScreen() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Data to enrich your online business
+              Trustless. Permissionless. Performance.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              Off-chain infrastructure to deliver Web3 computation resources.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                href="https://phat.phala.network"
+                className={cn(
+                  "bg-phat-400 px-6 py-2.5 text-white rounded-[6px] transition-all",
+                  "text-lg font-semibold",
+                  "hover:bg-phat-600",
+                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
+                )}
+                target="_blank"
+                rel="noopener"
               >
-                Get started
+                Explore Now
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
-                Learn more <span aria-hidden="true">→</span>
+              <a
+                href="https://wiki.phala.network/en-us/build/stateless/create-contract/"
+                className="text-sm font-semibold leading-6 text-white"
+                target="_blank"
+                rel="noopener"
+              >
+                Develop with Phat Contracts <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
@@ -78,54 +96,58 @@ function HeroScreen() {
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Smart Contract Evolution',
     description:
-      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+      'Phat Contract revolutionizes smart contracts, offering enhanced latency, database support, network access, and library availability. Eliminate dependency on centralized cloud solutions and take your Web3 development to the next level.',
     href: '#',
     // icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Privacy & Connectivity',
     description:
-      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+      'Trust in hardware-based encryption and enjoy zero-latency, zero-gas fee interactions with native HTTP request support. Seamlessly connect with Web2 services, build Oracles, or establish cross-chain operations with other blockchains.',
     href: '#',
     // icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Rust Library Freedom',
     description:
-      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+      'Write contracts with Rust-based ink! language and access a comprehensive range of no_std supported libraries. Future updates will widen possibilities by including support for std and any library of your choice.',
     href: '#',
     // icon: ArrowPathIcon,
   },
+  {
+    name: 'Trustless Infrastructure',
+    description:
+      'Harness the power of enforced execution, open-source infrastructure, and easy integration with other blockchains. The open contract ecosystem allows efficient development, and tapping into existing contracts for limitless application possibilities.',
+    href: '#',
+  }
 ]
 
 function FeaturesSection() {
   return (
     <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-400">Deploy faster</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Everything you need to deploy your app
+        <div className="mx-auto max-w-4xl lg:text-center">
+            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Unlock Limitless Web3 Potential with Phat Contracts
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+            Experience the power of Phala Network's decentralized serverless compute cloud, enabling developers to deploy programs on secure hardware workers with ultra-low latency and no transaction fees. Seamlessly connect to any chain or application, all while upholding Web3 principles.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-phat-300">
                   {/* <feature.icon className="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" /> */}
                   {feature.name}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
                   <p className="flex-auto">{feature.description}</p>
                   <p className="mt-6">
-                    <a href={feature.href} className="text-sm font-semibold leading-6 text-indigo-400">
+                    <a href={feature.href} className="text-sm font-semibold leading-6 text-white-400 hover:underline">
                       Learn more <span aria-hidden="true">→</span>
                     </a>
                   </p>
@@ -133,6 +155,21 @@ function FeaturesSection() {
               </div>
             ))}
           </dl>
+        </div>
+        <div className={cn("w-full mt-12 flex flex-row justify-center")}>
+          <a
+            href="https://wiki.phala.network/en-us/build/stateless/create-contract/"
+            className={cn(
+              "bg-phat-400 px-6 py-2.5 text-white rounded-[6px] transition-all",
+              "text-lg font-semibold",
+              "hover:bg-phat-600",
+              "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
+            )}
+            target="_blank"
+            rel="noopener"
+          >
+            Create your first Phat Contract
+          </a>
         </div>
       </div>
     </div>
@@ -155,12 +192,12 @@ const testimonials = [
   [
     [
       {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'tbh, @PhalaNetwork has the most satisfying development experience on the Polkadot ecosystem.',
         author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
+          name: 'Soptq🔰',
+          handle: 'realsoptq',
           imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://pbs.twimg.com/profile_images/1442069884272140300/u0_w5wDD_400x400.jpg',
         },
       },
       // More testimonials...
@@ -235,9 +272,8 @@ function Testimonials() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            We have worked with thousands of amazing people
+            Real journeys, real achievements, fueled by Phat Contract.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
@@ -298,13 +334,30 @@ function Testimonials() {
   )
 }
 
-
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "What benefits does Phat Contract offer over traditional smart contracts?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Phat Contract provides enhanced latency, database support, network access, and a wider variety of libraries, eliminating the need for centralized cloud solutions. It also offers hardware-based encryption for privacy preservation, zero-latency and zero-gas fee interactions, and seamless integration with Web2 services as well as other blockchains.",
+  },
+  {
+    id: 2,
+    question: "How does Phat Contract differ from Web2 serverless services?",
+    answer:
+      "While Phat Contract shares similar functionalities, it boasts unique Web3 features such as enforced execution, a decentralized trustless infrastructure, easy integration with other blockchains, and an open contract ecosystem that promotes efficient development and application possibilities.",
+  },
+  {
+    id: 3,
+    question: "What programming language can I use with Phat Contract, and what libraries are available?",
+    answer:
+      "Phat Contract supports the Rust-based ink! language, allowing you to utilize a wide range of no_std supported libraries. Future updates will include std support, granting access to an even broader selection of libraries for greater flexibility.",
+  },
+  {
+    id: 4,
+    question: "Can I trust Phat Contract with my sensitive data?",
+    answer:
+      "Yes! Phat Contract employs hardware-based encryption throughout its lifecycle to ensure your data is secure and private. Rather than requiring trust in the Phala team, you can rely on the robust code and Secure-Enclave-based hardware for data processing.",
   },
   // More questions...
 ]
@@ -340,19 +393,30 @@ function Faqs() {
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+    title: 'Pick Up the Pace, Testers! Phat Contract’s Closed Beta is Ending Soon!',
+    href: 'https://medium.com/phala-network/pick-up-the-pace-testers-phat-contracts-closed-beta-is-ending-soon-1c3f169d8687',
     imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    author: {
-      name: 'Michael Foster',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
+      'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*eOOABmC3wJZNFgjAWtkP4g.png',
+    date: 'Mar 27, 2023',
+    datetime: '2023-03-27',
+  },
+  {
+    id: 2,
+    title: 'Phala Is Coming To EthDenver! Explore The Future of Trustless Backend With The Phala Team',
+    href: 'https://medium.com/phala-network/phala-is-coming-to-ethdenver-explore-the-future-of-trustless-backend-with-the-phala-team-bff9b5ab63ca',
+    imageUrl:
+      'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DJGUZLS-aHJ5BrAosp6dUg.png',
+    date: 'Feb 16, 2023',
+    datetime: '2023-02-16',
+  },
+  {
+    id: 3,
+    title: 'Phala Network Introduces Phat Contract Into SaaS3 to Build A Highly Scalable Oracle',
+    href: 'https://medium.com/phala-network/phala-network-introduces-phat-contract-into-saas3-to-build-a-highly-scalable-oracle-85ce52a18c7d',
+    imageUrl:
+      'https://miro.medium.com/v2/resize:fit:1400/0*oPHfcYqqYr4uENH7',
+    date: 'Jan 12, 2023',
+    datetime: '2023-01-12',
   },
   // More posts...
 ]
@@ -362,10 +426,7 @@ function RecentPosts() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
-          </p>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What's New</h2>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
@@ -385,10 +446,6 @@ function RecentPosts() {
                   <svg viewBox="0 0 2 2" className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
                     <circle cx={1} cy={1} r={1} />
                   </svg>
-                  <div className="flex gap-x-2.5">
-                    <img src={post.author.imageUrl} alt="" className="h-6 w-6 flex-none rounded-full bg-white/10" />
-                    {post.author.name}
-                  </div>
                 </div>
               </div>
               <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
@@ -400,168 +457,20 @@ function RecentPosts() {
             </article>
           ))}
         </div>
-      </div>
-    </div>
-  )
-}
-
-
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-function ContractUs() {
-  return (
-    <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <svg
-        className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-        aria-hidden="true"
-      >
-        <defs>
-          <pattern
-            id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-            width={200}
-            height={200}
-            x="50%"
-            y={-64}
-            patternUnits="userSpaceOnUse"
+        <div className={cn("w-full mt-12 flex flex-row justify-center")}>
+          <a
+            href="https://medium.com/phala-network"
+            className={cn(
+              "bg-phat-400 px-6 py-2.5 text-white rounded-[6px] transition-all",
+              "text-lg font-semibold",
+              "hover:bg-phat-600",
+              "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
+            )}
+            target="_blank"
+            rel="noopener"
           >
-            <path d="M100 200V.5M.5 .5H200" fill="none" />
-          </pattern>
-        </defs>
-        <svg x="50%" y={-64} className="overflow-visible fill-gray-50">
-          <path
-            d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z"
-            strokeWidth={0}
-          />
-        </svg>
-        <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-      </svg>
-      <div className="mx-auto max-w-xl lg:max-w-4xl">
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your project</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
-          We help companies and individuals build out their brand guidelines.
-        </p>
-        <div className="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-          <form action="#" method="POST" className="lg:flex-auto">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <div>
-                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                  First name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Last name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="budget" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Budget
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    id="budget"
-                    name="budget"
-                    type="text"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="website" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Website
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="url"
-                    name="website"
-                    id="website"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                  Message
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    defaultValue={''}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="mt-10">
-              <button
-                type="submit"
-                className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Let’s talk
-              </button>
-            </div>
-            <p className="mt-4 text-sm leading-6 text-gray-500">
-              By submitting this form, I agree to the{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                privacy&nbsp;policy
-              </a>
-              .
-            </p>
-          </form>
-          <div className="lg:mt-6 lg:w-80 lg:flex-none">
-            <img className="h-12 w-auto" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
-            <figure className="mt-10">
-              <blockquote className="text-lg font-semibold leading-8 text-gray-900">
-                <p>
-                  “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                  molestiae. Numquam corrupti in laborum sed rerum et corporis.”
-                </p>
-              </blockquote>
-              <figcaption className="mt-10 flex gap-x-6">
-                <img
-                  src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80"
-                  alt=""
-                  className="h-12 w-12 flex-none rounded-full bg-gray-50"
-                />
-                <div>
-                  <div className="text-base font-semibold text-gray-900">Brenna Goyette</div>
-                  <div className="text-sm leading-6 text-gray-600">CEO of Workcation</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
+            Read more News about Phat Contracts
+          </a>
         </div>
       </div>
     </div>
@@ -578,7 +487,6 @@ export default function PhatContractsLandingPage() {
       <Testimonials />
       <Faqs />
       <RecentPosts />
-      <ContractUs />
     </NormalLayout>
   )
 }
