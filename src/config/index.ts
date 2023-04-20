@@ -556,6 +556,18 @@ export const MenuConfig: {
   href?: { [key: string]: string }
 }[] = [
   KhalaConfig,
+
+  {
+    name: {
+      en: "Phat Contracts",
+      zh: "Phat Contracts",
+    },
+    href: {
+      en: "/phat-contracts",
+      zh: "/phat-contracts"
+    }
+  },
+
   // PHAConfig,
   TechnologyConfig,
   HackathonConfig,
