@@ -28,11 +28,11 @@ const Timeline: React.FC<Props> = () => {
   //   return index >= maxIndex
   // }
 
-  function lastIndex() {
+  function lastIndex () {
     return index === LAST_INDEX
   }
 
-  function onRightButtonClick() {
+  function onRightButtonClick () {
     if (index === LAST_INDEX) return
 
     const nextIndex = INDEX_ARR[INDEX_ARR.indexOf(index) + 1]
@@ -48,7 +48,7 @@ const Timeline: React.FC<Props> = () => {
     // }
   }
 
-  function onLeftButtonClick() {
+  function onLeftButtonClick () {
     if (index === FIRSTINDEX) return
 
     const nextIndex = INDEX_ARR[INDEX_ARR.indexOf(index) - 1]

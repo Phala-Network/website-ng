@@ -1,8 +1,8 @@
-import classnames from 'classnames'
-import React from 'react'
 import { useLocale } from '../../hooks/useLocale'
 import I18n from '../I18n'
+import React from 'react'
 import TagA from '../TagA'
+import classnames from 'classnames'
 import * as styles from './index.module.scss'
 
 type Props = {

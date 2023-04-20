@@ -1,11 +1,11 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import { useLocale } from '../hooks/useLocale'
 import '../styles/fonts.scss'
 import '../styles/globals.scss'
 import '../styles/hljs.scss'
 import '../styles/latoFonts.scss'
 import '../styles/layout.scss'
+import { Helmet } from 'react-helmet'
+import { useLocale } from '../hooks/useLocale'
+import React from 'react'
 
 const localInfo = {
   zh: {
@@ -17,7 +17,7 @@ const localInfo = {
   }
 } as const
 
-function MyApp({ children }: { children: React.ReactNode }) {
+function MyApp ({ children }: { children: React.ReactNode }) {
   const lang = (useLocale() as 'zh' | 'en') || 'en'
   const { description } = localInfo[lang]
 

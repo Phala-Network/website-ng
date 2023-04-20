@@ -1,10 +1,10 @@
 import './index.module.scss'
-import React from 'react'
-import EnRoadMap from './EnRoadMap'
-import CnRoadMap from './CnRoadMap'
 import { useLocale } from '../../hooks/useLocale'
+import CnRoadMap from './CnRoadMap'
+import EnRoadMap from './EnRoadMap'
+import React from 'react'
 
-export default function PageRoadMap() {
+export default function PageRoadMap () {
   const locale = useLocale()
 
   return (

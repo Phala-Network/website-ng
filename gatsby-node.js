@@ -1,5 +1,7 @@
 // const util = require('util')
 // const fs = require('fs')
+const fetch = require('node-fetch')
+const path = require('path')
 
 // exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
 //   const config = getConfig()
@@ -38,3 +40,30 @@
 
 //   actions.replaceWebpackConfig(config)
 // }
+
+const notionPostListEndpoint = process.env.NOTION_POST_LIST_ENDPOINT
+
+async function createPages ({ actions }) {
+  const result = await fetch(notionPostListEndpoint)
+  const resultData = await result.json();
+
+  actions.createPage({
+    path: '/blog',
+    component: path.resolve('./src/components/BlogList/index.tsx'),
+    context: {
+      data: resultData.filter(i => i.postType.name === 'Post').reverse()
+    }
+  })
+
+  resultData.filter(i => i.postType.name === 'Post').forEach((r) => {
+    actions.createPage({
+      path: `/blog${r.url.split('?')[0]}`,
+      component: path.resolve('./src/components/Blog/index.tsx'),
+      context: {
+        data: r
+      }
+    })
+  })
+}
+
+// exports.createPages = createPages

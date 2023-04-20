@@ -1,5 +1,5 @@
-import React from 'react'
 import { useLocale } from '../../../../../hooks/useLocale'
+import React from 'react'
 import TagA from '../../../../TagA'
 import * as styles from './index.module.scss'
 

@@ -3,7 +3,7 @@ import Card, { CardProps } from '../../Card'
 import React from 'react'
 import * as styles from './index.module.scss'
 
-function getPath(name: string) {
+function getPath (name: string) {
   return `/images/PageAboutUs/builder/${name}.png`
 }
 
