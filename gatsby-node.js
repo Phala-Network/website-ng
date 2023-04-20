@@ -43,7 +43,7 @@ const path = require('path')
 
 const notionPostListEndpoint = process.env.NOTION_POST_LIST_ENDPOINT
 
-exports.createPages = async ({ actions }) => {
+async function createPages ({ actions }) {
   const result = await fetch(notionPostListEndpoint)
   const resultData = await result.json();
 
@@ -65,3 +65,5 @@ exports.createPages = async ({ actions }) => {
     })
   })
 }
+
+// exports.createPages = createPages
