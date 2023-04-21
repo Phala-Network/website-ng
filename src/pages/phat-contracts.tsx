@@ -177,81 +177,68 @@ function FeaturesSection() {
 }
 
 
-const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
-  author: {
-    name: 'Brenna Goyette',
-    handle: 'brennagoyette',
-    imageUrl:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-    logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
-  },
+interface TweetCardProps {
+  avatarUrl: string
+  nickName: string
+  handle: string
+  url: string
+  formattedDate: string
+  children?: React.ReactNode
 }
 
-const testimonials = [
-  [
-    [
-      {
-        body: 'tbh, @PhalaNetwork has the most satisfying development experience on the Polkadot ecosystem.',
-        author: {
-          name: 'Soptq🔰',
-          handle: 'realsoptq',
-          imageUrl:
-            'https://pbs.twimg.com/profile_images/1442069884272140300/u0_w5wDD_400x400.jpg',
-        },
-      },
-      // More testimonials...
-    ],
-    [
-      {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
-        author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
-          imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      // More testimonials...
-    ],
-  ],
-  [
-    [
-      {
-        body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
-        author: {
-          name: 'Tom Cook',
-          handle: 'tomcook',
-          imageUrl:
-            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      // More testimonials...
-    ],
-    [
-      {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
-        author: {
-          name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      // More testimonials...
-    ],
-  ],
-]
+function TweetCard({ avatarUrl, nickName, handle, url, formattedDate, children }: TweetCardProps) {
+  return (
+    <div className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-800 p-4 rounded-xl border max-w-xl shadow-lg">
+      <div className="flex justify-between">
+        <div className="flex items-center">
+          <img className="h-12 w-12 rounded-full" src={avatarUrl} />
+          <div className="ml-2 text-sm leading-tight">
+            <span className="text-black dark:text-white font-bold block">{nickName}</span>
+            <span className="text-gray-500 dark:text-gray-400 font-normal block">@{handle}</span>
+          </div>
+        </div>
+        <a 
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={cn(
+            "rounded-full h-10 w-10 flex flex-row justify-center items-center transition-all",
+            "text-blue-400 dark:text-white hover:text-white hover:bg-blue-400",
+          )}
+        >
+          <svg className="transition-all h-6 w-auto inline-block fill-current" viewBox="0 0 24 24"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
+        </a>
+      </div>
+      <div className="text-black dark:text-white mt-3 text-sl leading-snug flex flex-col gap-2.5">
+        {children}
+      </div>
+      <p className="text-sm mt-3">
+        <a href={url} className={cn("text-gray-500 dark:text-gray-400 hover:underline")}>
+          {formattedDate}
+        </a>
+      </p>
+    </div>
+  )
+}
+
+function InnerLink({ href, children }: { href: string, children: React.ReactNode }) {
+  return (
+    <a href={href} target="_blank" className={cn("text-blue-600 hover:underline")} rel="noopener noreferrer">
+      {children}
+    </a>
+  )
+}
 
 function Testimonials() {
   return (
-    <div className="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+    <div className="relative isolate bg-gray-900 pb-32 pt-24 sm:pt-32">
       <div
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
         aria-hidden="true"
       >
         <div
-          className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+          // className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+          className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-phat-600 to-phat-100"
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -263,7 +250,11 @@ function Testimonials() {
         aria-hidden="true"
       >
         <div
-          className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+          className={cn(
+            "ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg]",
+            // "bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]",
+            "bg-gradient-to-tr from-phat-600 to-phat-100",
+            "xl:ml-0 xl:mr-[calc(50%-12rem)]")}
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -272,11 +263,104 @@ function Testimonials() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-phat-500 sm:text-4xl">
             Real journeys, real achievements, fueled by Phat Contract.
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-row xl:grid-cols-4">
+
+          <figure className="col-span-2 hidden sm:block">
+            <TweetCard
+              avatarUrl="https://pbs.twimg.com/profile_images/1442069884272140300/u0_w5wDD_400x400.jpg"
+              nickName="Soptq🔰"
+              handle="realsoptq"
+              url="https://twitter.com/realsoptq/status/1642849864706052096"
+              formattedDate="7:21 PM · Apr 3, 2023"
+            >
+              <p>
+                tbh, <InnerLink href="https://twitter.com/PhalaNetwork">@PhalaNetwork</InnerLink> has the most satisfying development experience on the Polkadot ecosystem.
+              </p>
+            </TweetCard>
+          </figure>
+
+          <figure className="col-span-2 hidden sm:block">
+            <TweetCard
+              avatarUrl="https://pbs.twimg.com/profile_images/1622635383463747584/cS4o3mjF_400x400.jpg"
+              nickName="Janemake"
+              handle="JanemakeCrypto"
+              url="https://twitter.com/JanemakeCrypto/status/1649126207995117579"
+              formattedDate="3:01 PM · Apr 21, 2023"
+            >
+              <p>
+                Exciting moments learning <InnerLink href="https://twitter.com/hashtag/PhatContract">#PhatContract</InnerLink> implementations during the
+                <InnerLink href="https://twitter.com/hashtag/ClosedBeta">#ClosedBeta</InnerLink>. The Phat Contract is a contract that could run off-chain
+                computations like http requests thanks to <InnerLink href="https://twitter.com/PhalaNetwork">@PhalaNetwork</InnerLink>
+              </p>
+            </TweetCard>
+          </figure>
+
+          <figure className="col-span-2 hidden sm:block">
+            <TweetCard
+              avatarUrl="https://pbs.twimg.com/profile_images/1620172230004178944/95AF7_MG_400x400.jpg"
+              nickName="Rom1.io"
+              handle="RCajina"
+              url="https://twitter.com/RCajina/status/1648972638973227008"
+              formattedDate="4:51 PM · Apr 20, 2023"
+            >
+              <p>
+                Blessed to have had the chance to try out <InnerLink href="https://twitter.com/hashtag/PhatContract">#PhatContract</InnerLink> and grateful to{' '}
+                <InnerLink href="https://twitter.com/PhalaNetwork">@PhalaNetwork</InnerLink> and <InnerLink href="https://twitter.com/phala_fr">@phala_fr</InnerLink>{' '}
+                for making it happen! A mind-blowing experience that has broadened my horizons in the <InnerLink href="https://twitter.com/hashtag/Blockchain">#Blockchain</InnerLink>
+                realm 🚀 <InnerLink href="https://twitter.com/hashtag/innovation">#innovation</InnerLink> <InnerLink href="https://twitter.com/hashtag/crypto">#crypto</InnerLink> 🤖✨
+              </p>
+            </TweetCard>
+          </figure>
+
+          <figure className="col-span-2 hidden sm:block">
+            <TweetCard
+              avatarUrl="https://pbs.twimg.com/profile_images/1502781909289648133/h9g6PbYY_400x400.jpg"
+              nickName="GuiGou"
+              handle="GuiGou12358"
+              url="https://twitter.com/GuiGou12358/status/1649107493266522129"
+              formattedDate="1:47 AM · Apr 21, 2023"
+            >
+              <p>
+                Glad to play with <InnerLink href="https://twitter.com/hashtag/PhatContract">#PhatContract</InnerLink> on{" "}
+                <InnerLink href="https://twitter.com/PhalaNetwork">@PhalaNetwork</InnerLink>{" "}
+                to replace centralized offchain computing by decentralized onchain computing. <InnerLink href="https://twitter.com/phala_fr">@phala_fr</InnerLink>
+              </p>
+            </TweetCard>
+          </figure>
+
+          <figure className="col-span-2 hidden sm:block">
+            <TweetCard
+              avatarUrl="https://pbs.twimg.com/profile_images/1641707673275052033/F4q3Twkd_400x400.jpg"
+              nickName="The Scarlet Thread"
+              handle="TheScarletThr"
+              url="https://twitter.com/TheScarletThr/status/1648603479496073216"
+              formattedDate="4:24 PM · Apr 19, 2023"
+            >
+              <p>
+                By moving some computation offchain, these limitations or boundaries can be pushed. Phat Contract offers many rich benefits, for example supporting computation-intensive tasks in a more cost-effective  and efficient way and serve low-latency real-time computation.
+              </p>
+            </TweetCard>
+          </figure>
+
+          <figure className="col-span-2 hidden sm:block">
+            <TweetCard
+              avatarUrl="https://pbs.twimg.com/profile_images/1610261733532205060/ZmiJZpdN_400x400.jpg"
+              nickName="C H A R L Ξ S ⚛️🔆"
+              handle="charlesace_"
+              url="https://twitter.com/charlesace_/status/1647599601128558593"
+              formattedDate="9:55 PM · Apr 16, 2023"
+            >
+              <p>Enters Phat Contract!</p>
+              <p>This is <InnerLink href="https://twitter.com/hashtag/Phala">#Phala</InnerLink>'s flagship product that is deemed to revolutionize the blockchain space, especially as it relates to smart contracts. It is a novel programming model for Off-chain Computation, popularly called Fat Contract due to its robust features.</p>
+              <p>5/</p>
+            </TweetCard>
+          </figure>
+
+          {/*
           <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
             <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
               <p>{`“${featuredTestimonial.body}”`}</p>
@@ -328,6 +412,7 @@ function Testimonials() {
               ))}
             </div>
           ))}
+          */}
         </div>
       </div>
     </div>
