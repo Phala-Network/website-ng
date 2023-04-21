@@ -27,15 +27,15 @@ function HeroScreen() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 flex flex-row items-center transition-all ring-1 ring-phat-500/60 hover:ring-phat-500">
-              <span className={cn('text-base text-gray-500')}>
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 flex flex-row items-center transition-all ring-1 ring-phat-500/60 hover:ring-phat-500 bg-white/75">
+              <span className={cn('text-base text-black')}>
                 Pick Up the Pace, Testers! Phat Contract’s Closed Beta is Ending Soon!
               </span>
               <a
                 href="https://medium.com/phala-network/pick-up-the-pace-testers-phat-contracts-closed-beta-is-ending-soon-1c3f169d8687"
-                className="ml-2 font-semibold text-white/60 text-sm"
+                className="ml-2 font-semibold text-gray-800 text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -46,10 +46,10 @@ function HeroScreen() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Trustless. Permissionless. Performance.
+              Smart Contracts Supercharged
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Off-chain infrastructure to deliver Web3 computation resources.
+              Embrace the future of Web3 offchain computation. Access the internet, boost performance, fully multichain, and ultimate data security, all with Phat Contract
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -96,31 +96,20 @@ function HeroScreen() {
 
 const features = [
   {
-    name: 'Smart Contract Evolution',
-    description:
-      'Phat Contract revolutionizes smart contracts, offering enhanced latency, database support, network access, and library availability. Eliminate dependency on centralized cloud solutions and take your Web3 development to the next level.',
-    href: '#',
-    // icon: CloudArrowUpIcon,
+    name: 'Internet Access: Bridge the Gap Between Web3 and Web2',
+    description: 'Send HTTP/HTTPS requests directly from your smart contracts, enabling seamless integration with any Web2 APIs and unlocking a world of possibilities for your dApps.',
   },
   {
-    name: 'Privacy & Connectivity',
-    description:
-      'Trust in hardware-based encryption and enjoy zero-latency, zero-gas fee interactions with native HTTP request support. Seamlessly connect with Web2 services, build Oracles, or establish cross-chain operations with other blockchains.',
-    href: '#',
-    // icon: LockClosedIcon,
+    name: 'Multichain: Universal Compatibility Across EVM and Substrate Blockchains',
+    description: "Easily connect Phat Contracts to your EVM or Substrate blockchains without the need for a bridge, expanding your smart contract's capabilities.",
   },
   {
-    name: 'Rust Library Freedom',
-    description:
-      'Write contracts with Rust-based ink! language and access a comprehensive range of no_std supported libraries. Future updates will widen possibilities by including support for std and any library of your choice.',
-    href: '#',
-    // icon: ArrowPathIcon,
+    name: 'Fast & Powerful Computation: Zero Gas and Zero latency',
+    description: "Execute intense off-chain computations in real-time while bypassing transaction fees and network latency, enhancing your dApps' functionality and user experience with minimum cost.",
   },
   {
-    name: 'Trustless Infrastructure',
-    description:
-      'Harness the power of enforced execution, open-source infrastructure, and easy integration with other blockchains. The open contract ecosystem allows efficient development, and tapping into existing contracts for limitless application possibilities.',
-    href: '#',
+    name: 'Decentralized Network: Secure, Robust, and Trustworthy Infrastructure',
+    description: 'Phat Contract runs on Phala Network, a web of 20,000+ secure enclave workers distributed globally, ensuring the confidentiality and security of your applications.',
   }
 ]
 
@@ -133,7 +122,7 @@ function FeaturesSection() {
             Unlock Limitless Web3 Potential with Phat Contracts
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Experience the power of Phala Network's decentralized serverless compute cloud, enabling developers to deploy programs on secure hardware workers with ultra-low latency and no transaction fees. Seamlessly connect to any chain or application, all while upholding Web3 principles.
+            Enhance your smart contracts with limitless possibilities by accessing the internet, integrating with Web2 APIs, and harnessing the power of fast &amp; powerful computation. Experience the ease of use, multichain support, and security in a decentralized network.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -141,16 +130,10 @@ function FeaturesSection() {
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-phat-300">
-                  {/* <feature.icon className="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" /> */}
                   {feature.name}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
                   <p className="flex-auto">{feature.description}</p>
-                  <p className="mt-6">
-                    <a href={feature.href} className="text-sm font-semibold leading-6 text-white-400 hover:underline">
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
                 </dd>
               </div>
             ))}
@@ -170,6 +153,71 @@ function FeaturesSection() {
           >
             Create your first Phat Contract
           </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+
+function ShowCaseNoCode() {
+  return (
+    <div className="bg-gray-900 py-24">
+      <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="relative isolate overflow-hidden bg-phat-800/90 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
+            <div className="lg:row-start-2 lg:max-w-md">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Simplify Your Development Process with Our No-Code Tool
+              </h2>
+              <div className="mt-6 text-base leading-7 text-gray-300 flex flex-col gap-6">
+                <p>
+                  Phat Contract is designed with developers in mind, providing an effortless way to build and deploy off-chain computations without writing a single line of code. Our intuitive no-code developer console enables you to create oracles and other common use cases by leveraging predefined blueprints, allowing you to save time and focus on what truly matters.
+                </p>
+                <p>
+                  Don't miss the chance to revolutionize your development process. Subscribe to our newsletter and be the first to know about the no-code tool's launch.
+                </p>
+              </div>
+            </div>
+            <img
+              src="https://media.discordapp.net/attachments/1054315024052650054/1098713021896986644/Lens_Oracle_Onepager__1.png"
+              alt="Product screenshot"
+              className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
+            />
+            <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
+              <div className="flex flex-row gap-1">
+                <input
+                  placeholder="Enter your email address"
+                  className={cn(
+                    "px-3 py-2 border border-solid border-[#E2E8F0] rounded min-w-[20rem]"
+                  )}
+                />
+                <button
+                  className={cn(
+                    "bg-phat-400 px-4 py-2.5 text-white rounded-[6px] transition-all",
+                    "text-lg font-semibold",
+                    "hover:bg-phat-600",
+                    "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
+                  )}
+                >
+                  Subscribe
+                </button>
+              </div>
+              <p className="mt-2 text-white">Stay informed about our no-code tool launch!</p>
+            </div>
+          </div>
+          <div
+            className="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu"
+            aria-hidden="true"
+          >
+            <div
+              className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-phat-50 to-phat-900 opacity-25"
+              style={{
+                clipPath:
+                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -263,7 +311,7 @@ function Testimonials() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-phat-500 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Real journeys, real achievements, fueled by Phat Contract.
           </p>
         </div>
@@ -449,12 +497,12 @@ const faqs = [
 
 function Faqs() {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-        <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-        <p className="mt-6 max-w-2xl text-base leading-7 text-gray-600">
+        <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
+        <p className="mt-6 max-w-2xl text-base leading-7 text-gray-400">
           Have a different question and can’t find the answer you’re looking for? Reach out to our support team by{' '}
-          <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+          <a href="#" className="font-semibold text-phat-400 hover:text-phat-500">
             sending us an email
           </a>{' '}
           and we’ll get back to you as soon as we can.
@@ -463,8 +511,8 @@ function Faqs() {
           <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
             {faqs.map((faq) => (
               <div key={faq.id}>
-                <dt className="text-base font-semibold leading-7 text-gray-900">{faq.question}</dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">{faq.answer}</dd>
+                <dt className="text-base font-semibold leading-7 text-phat-400">{faq.question}</dt>
+                <dd className="mt-2 text-base leading-7 text-gray-400">{faq.answer}</dd>
               </div>
             ))}
           </dl>
@@ -508,7 +556,7 @@ const posts = [
 
 function RecentPosts() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What's New</h2>
@@ -569,6 +617,7 @@ export default function PhatContractsLandingPage() {
       <div className={cn('w-full h-[60px]')} />
       <HeroScreen />
       <FeaturesSection />
+      <ShowCaseNoCode />
       <Testimonials />
       <Faqs />
       <RecentPosts />
