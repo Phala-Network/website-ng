@@ -7,6 +7,9 @@ import { Helmet } from 'react-helmet'
 import { useLocale } from '../hooks/useLocale'
 import React from 'react'
 
+import '@fontsource/roboto'
+import '@fontsource/montserrat'
+
 const localInfo = {
   zh: {
     description: '去中心化、安全和可迅速扩展的计算网络'
