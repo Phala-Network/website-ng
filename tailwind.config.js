@@ -227,6 +227,9 @@ function buttonComponents({ addComponents, theme }) {
         'willChange': 'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform',
         'transitionTimingFunction': 'cubic-bezier(0.4, 0, 0.2, 1)',
         'transitionDuration': '150ms',
+        display: 'inline-flex',
+        flexDirection: 'row',
+        rowGap: '0.25rem',
       },
     },
     {

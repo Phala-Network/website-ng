@@ -3,18 +3,25 @@ import NormalLayout from '../components/NormalLayout';
 
 import { cn } from '../utils/cnHelper';
 import PageTitle from '../components/PageTitle';
+import IconDiscord from '../components/Footer/icons/IconDiscord';
 
 
 function LatestUpdate() {
   return (
-    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-      <div className="relative rounded-full px-3 py-1 text-sm leading-6 flex flex-row items-center transition-all ring-1 ring-phat-500/60 hover:ring-phat-500 bg-white/75">
+    <div className="hidden sm:mb-8 sm:flex sm:justify-center mx-4">
+      <div
+        className={cn(
+          "relative rounded-xl md:rounded-3xl px-3 py-2 text-sm leading-6",
+          "flex flex-col md:flex-row md:items-center transition-all bg-white/75",
+          "ring-1 ring-phat-500/60 hover:ring-phat-500"
+        )}
+      >
         <span className={cn('text-base text-black')}>
           Pick Up the Pace, Testers! Phat Contract’s Closed Beta is Ending Soon!
         </span>
         <a
           href="https://medium.com/phala-network/pick-up-the-pace-testers-phat-contracts-closed-beta-is-ending-soon-1c3f169d8687"
-          className="ml-2 font-semibold text-gray-800 text-sm"
+          className="md:ml-2 font-semibold text-gray-800 text-sm"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -53,26 +60,51 @@ function HeroScreen() {
             <h1 className="heading-2xl text-white tracking-tight">
               Smart Contracts Supercharged
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <p className="mt-6 px-4 text-lg leading-8 text-gray-300">
               Embrace the future of Web3 offchain computation. Access the internet, boost performance, fully multichain, and ultimate data security, all with Phat Contract
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex flex-col items-center gap-y-6 md:flex-row md:items-start justify-center gap-x-6">
+              <div>
+                <div className="flex flex-row">
+                  <input
+                    placeholder="Enter your email address"
+                    className={cn(
+                      "px-3 py-2 border border-solid border-[#E2E8F0] rounded-l min-w-[20rem]"
+                    )}
+                  />
+                  <button
+                    className={cn('btn btn-phat rounded-l-none')}
+                  >
+                    Subscribe
+                  </button>
+                </div>
+                <p className="mt-2 text-sm text-white">Stay informed about our no-code tool launch!</p>
+              </div>
               <a
-                href="https://phat.phala.network"
-                className={cn("btn btn-brand")}
+                className="btn btn-outline btn-brand items-center gap-1.5"
+                href="https://discord.gg/phala"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
-                Explore Now
+                <IconDiscord className="w-5 h-5 text-brand" />
+                Join Discord
               </a>
-              <a
-                href="https://wiki.phala.network/en-us/build/stateless/create-contract/"
-                className="text-sm font-semibold leading-6 text-white"
-                target="_blank"
-                rel="noopener"
-              >
-                Develop with Phat Contracts <span aria-hidden="true">→</span>
-              </a>
+              {/* <a */}
+              {/*   href="https://phat.phala.network" */}
+              {/*   className={cn("btn btn-brand")} */}
+              {/*   target="_blank" */}
+              {/*   rel="noopener" */}
+              {/* > */}
+              {/*   Explore Now */}
+              {/* </a> */}
+              {/* <a */}
+              {/*   href="https://wiki.phala.network/en-us/build/stateless/create-contract/" */}
+              {/*   className="text-sm font-semibold leading-6 text-white" */}
+              {/*   target="_blank" */}
+              {/*   rel="noopener" */}
+              {/* > */}
+              {/*   Develop with Phat Contracts <span aria-hidden="true">→</span> */}
+              {/* </a> */}
             </div>
           </div>
         </div>
@@ -183,15 +215,15 @@ function ShowCaseNoCode() {
               className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
             />
             <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-              <div className="flex flex-row gap-1">
+              <div className="flex flex-row">
                 <input
                   placeholder="Enter your email address"
                   className={cn(
-                    "px-3 py-2 border border-solid border-[#E2E8F0] rounded min-w-[20rem]"
+                    "px-3 py-2 border border-solid border-[#E2E8F0] rounded-l min-w-[20rem]"
                   )}
                 />
                 <button
-                  className={cn('btn btn-phat')}
+                  className={cn('btn btn-phat rounded-l-none')}
                 >
                   Subscribe
                 </button>
