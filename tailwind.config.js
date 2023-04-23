@@ -258,6 +258,9 @@ function buttonComponents({ addComponents, theme }) {
           color: colors['whiteAlpha']['500'],
           cursor: 'not-allowed',
         },
+        '&:focus-visible': {
+          outline: `2px solid ${colors[color]['400']}`,
+        }
       },
       [`.btn-${color}.btn-solid`]: {
         backgroundColor: colors[color]['400'],
