@@ -230,7 +230,7 @@ interface TweetCardProps {
 
 function TweetCard({ avatarUrl, nickName, handle, url, formattedDate, children }: TweetCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-800 p-4 rounded-xl border max-w-xl shadow-lg">
+    <figure className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-800 p-4 rounded-xl border w-full shadow-lg">
       <div className="flex justify-between">
         <div className="flex items-center">
           <img className="h-12 w-12 rounded-full" src={avatarUrl} />
@@ -259,7 +259,7 @@ function TweetCard({ avatarUrl, nickName, handle, url, formattedDate, children }
           {formattedDate}
         </a>
       </p>
-    </div>
+    </figure>
   )
 }
 
@@ -296,7 +296,8 @@ function Testimonials() {
             "ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg]",
             // "bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]",
             "bg-gradient-to-tr from-phat-600 to-phat-100",
-            "xl:ml-0 xl:mr-[calc(50%-12rem)]")}
+            "xl:ml-0 xl:mr-[calc(50%-12rem)]"
+          )}
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -304,14 +305,19 @@ function Testimonials() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-5w-xl text-center">
+        <div className="mx-auto text-center">
           <h3 className="heading-xl text-white">
             Real journeys, real achievements, fueled by Phat Contract.
           </h3>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-row xl:grid-cols-4">
-
-          <figure className="col-span-2 hidden sm:block">
+        <section
+          className={cn(
+            "mx-auto mt-16 max-w-4xl sm:mt-20 xl:mx-0 xl:max-w-none",
+            // "grid md:grid-cols-2 xl:grid-cols-3 gap-4"
+            'md:columns-2 xl:columns-3 gap-4'
+          )}
+        >
+          <article className="mb-3">
             <TweetCard
               avatarUrl="https://pbs.twimg.com/profile_images/1442069884272140300/u0_w5wDD_400x400.jpg"
               nickName="Soptq🔰"
@@ -323,25 +329,23 @@ function Testimonials() {
                 tbh, <InnerLink href="https://twitter.com/PhalaNetwork">@PhalaNetwork</InnerLink> has the most satisfying development experience on the Polkadot ecosystem.
               </p>
             </TweetCard>
-          </figure>
+          </article>
 
-          <figure className="col-span-2 hidden sm:block">
+          <article className="mb-3">
             <TweetCard
-              avatarUrl="https://pbs.twimg.com/profile_images/1622635383463747584/cS4o3mjF_400x400.jpg"
-              nickName="Janemake"
-              handle="JanemakeCrypto"
-              url="https://twitter.com/JanemakeCrypto/status/1649126207995117579"
-              formattedDate="3:01 PM · Apr 21, 2023"
+              avatarUrl="https://pbs.twimg.com/profile_images/1610261733532205060/ZmiJZpdN_400x400.jpg"
+              nickName="C H A R L Ξ S ⚛️🔆"
+              handle="charlesace_"
+              url="https://twitter.com/charlesace_/status/1647599601128558593"
+              formattedDate="9:55 PM · Apr 16, 2023"
             >
-              <p>
-                Exciting moments learning <InnerLink href="https://twitter.com/hashtag/PhatContract">#PhatContract</InnerLink> implementations during the
-                <InnerLink href="https://twitter.com/hashtag/ClosedBeta">#ClosedBeta</InnerLink>. The Phat Contract is a contract that could run off-chain
-                computations like http requests thanks to <InnerLink href="https://twitter.com/PhalaNetwork">@PhalaNetwork</InnerLink>
-              </p>
+              <p>Enters Phat Contract!</p>
+              <p>This is <InnerLink href="https://twitter.com/hashtag/Phala">#Phala</InnerLink>'s flagship product that is deemed to revolutionize the blockchain space, especially as it relates to smart contracts. It is a novel programming model for Off-chain Computation, popularly called Fat Contract due to its robust features.</p>
+              <p>5/</p>
             </TweetCard>
-          </figure>
+          </article>
 
-          <figure className="col-span-2 hidden sm:block">
+          <article className="mb-3">
             <TweetCard
               avatarUrl="https://pbs.twimg.com/profile_images/1620172230004178944/95AF7_MG_400x400.jpg"
               nickName="Rom1.io"
@@ -356,9 +360,9 @@ function Testimonials() {
                 realm 🚀 <InnerLink href="https://twitter.com/hashtag/innovation">#innovation</InnerLink> <InnerLink href="https://twitter.com/hashtag/crypto">#crypto</InnerLink> 🤖✨
               </p>
             </TweetCard>
-          </figure>
+          </article>
 
-          <figure className="col-span-2 hidden sm:block">
+          <article className="mb-3">
             <TweetCard
               avatarUrl="https://pbs.twimg.com/profile_images/1502781909289648133/h9g6PbYY_400x400.jpg"
               nickName="GuiGou"
@@ -372,9 +376,25 @@ function Testimonials() {
                 to replace centralized offchain computing by decentralized onchain computing. <InnerLink href="https://twitter.com/phala_fr">@phala_fr</InnerLink>
               </p>
             </TweetCard>
-          </figure>
+          </article>
 
-          <figure className="col-span-2 hidden sm:block">
+          <article className="mb-3">
+            <TweetCard
+              avatarUrl="https://pbs.twimg.com/profile_images/1622635383463747584/cS4o3mjF_400x400.jpg"
+              nickName="Janemake"
+              handle="JanemakeCrypto"
+              url="https://twitter.com/JanemakeCrypto/status/1649126207995117579"
+              formattedDate="3:01 PM · Apr 21, 2023"
+            >
+              <p>
+                Exciting moments learning <InnerLink href="https://twitter.com/hashtag/PhatContract">#PhatContract</InnerLink> implementations during the
+                <InnerLink href="https://twitter.com/hashtag/ClosedBeta">#ClosedBeta</InnerLink>. The Phat Contract is a contract that could run off-chain
+                computations like http requests thanks to <InnerLink href="https://twitter.com/PhalaNetwork">@PhalaNetwork</InnerLink>
+              </p>
+            </TweetCard>
+          </article>
+
+          <article className="mb-3">
             <TweetCard
               avatarUrl="https://pbs.twimg.com/profile_images/1641707673275052033/F4q3Twkd_400x400.jpg"
               nickName="The Scarlet Thread"
@@ -386,22 +406,8 @@ function Testimonials() {
                 By moving some computation offchain, these limitations or boundaries can be pushed. Phat Contract offers many rich benefits, for example supporting computation-intensive tasks in a more cost-effective  and efficient way and serve low-latency real-time computation.
               </p>
             </TweetCard>
-          </figure>
-
-          <figure className="col-span-2 hidden sm:block">
-            <TweetCard
-              avatarUrl="https://pbs.twimg.com/profile_images/1610261733532205060/ZmiJZpdN_400x400.jpg"
-              nickName="C H A R L Ξ S ⚛️🔆"
-              handle="charlesace_"
-              url="https://twitter.com/charlesace_/status/1647599601128558593"
-              formattedDate="9:55 PM · Apr 16, 2023"
-            >
-              <p>Enters Phat Contract!</p>
-              <p>This is <InnerLink href="https://twitter.com/hashtag/Phala">#Phala</InnerLink>'s flagship product that is deemed to revolutionize the blockchain space, especially as it relates to smart contracts. It is a novel programming model for Off-chain Computation, popularly called Fat Contract due to its robust features.</p>
-              <p>5/</p>
-            </TweetCard>
-          </figure>
-        </div>
+          </article>
+        </section>
       </div>
     </div>
   )
