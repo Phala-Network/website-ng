@@ -3,7 +3,6 @@ import NormalLayout from '../components/NormalLayout';
 
 import { cn } from '../utils/cnHelper';
 import PageTitle from '../components/PageTitle';
-// import * as styles from '../styles/phat-contracts.scss';
 
 
 function LatestUpdate() {
@@ -279,7 +278,6 @@ function Testimonials() {
         aria-hidden="true"
       >
         <div
-          // className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
           className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-phat-600 to-phat-100"
           style={{
             clipPath:
@@ -294,7 +292,6 @@ function Testimonials() {
         <div
           className={cn(
             "ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg]",
-            // "bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]",
             "bg-gradient-to-tr from-phat-600 to-phat-100",
             "xl:ml-0 xl:mr-[calc(50%-12rem)]"
           )}
@@ -313,7 +310,6 @@ function Testimonials() {
         <section
           className={cn(
             "mx-auto mt-16 max-w-4xl sm:mt-20 xl:mx-0 xl:max-w-none",
-            // "grid md:grid-cols-2 xl:grid-cols-3 gap-4"
             'md:columns-2 xl:columns-3 gap-4'
           )}
         >
