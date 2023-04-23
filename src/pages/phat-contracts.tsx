@@ -511,23 +511,26 @@ function RecentPosts() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+              className="card-elevated relative isolate flex flex-col justify-end overflow-hidden"
             >
-              <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover aspect-video" />
+              <img src={post.imageUrl} alt="" className="inset-0 -z-10 h-full w-full object-cover aspect-video" />
+
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
               <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
-              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-400">
-                <time dateTime={post.datetime} className="mr-8">
-                  {post.date}
-                </time>
+              <div className="absolute w-full left-0 bottom-0 px-4 py-3">
+                <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-400">
+                  <time dateTime={post.datetime} className="mr-8">
+                    {post.date}
+                  </time>
+                </div>
+                <h3 className="heading-md leading-7 text-white">
+                  <a href={post.href}>
+                    <span className="absolute inset-0" />
+                    {post.title}
+                  </a>
+                </h3>
               </div>
-              <h3 className="mt-1 heading-md leading-7 text-white">
-                <a href={post.href}>
-                  <span className="absolute inset-0" />
-                  {post.title}
-                </a>
-              </h3>
             </article>
           ))}
         </div>
