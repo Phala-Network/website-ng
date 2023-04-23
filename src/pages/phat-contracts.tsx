@@ -6,6 +6,27 @@ import PageTitle from '../components/PageTitle';
 // import * as styles from '../styles/phat-contracts.scss';
 
 
+function LatestUpdate() {
+  return (
+    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div className="relative rounded-full px-3 py-1 text-sm leading-6 flex flex-row items-center transition-all ring-1 ring-phat-500/60 hover:ring-phat-500 bg-white/75">
+        <span className={cn('text-base text-black')}>
+          Pick Up the Pace, Testers! Phat Contract’s Closed Beta is Ending Soon!
+        </span>
+        <a
+          href="https://medium.com/phala-network/pick-up-the-pace-testers-phat-contracts-closed-beta-is-ending-soon-1c3f169d8687"
+          className="ml-2 font-semibold text-gray-800 text-sm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="absolute inset-0" aria-hidden="true" />
+          Read more <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  )
+}
+
 function HeroScreen() {
   return (
     <div className="bg-gray-900">
@@ -27,25 +48,10 @@ function HeroScreen() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 flex flex-row items-center transition-all ring-1 ring-phat-500/60 hover:ring-phat-500 bg-white/75">
-              <span className={cn('text-base text-black')}>
-                Pick Up the Pace, Testers! Phat Contract’s Closed Beta is Ending Soon!
-              </span>
-              <a
-                href="https://medium.com/phala-network/pick-up-the-pace-testers-phat-contracts-closed-beta-is-ending-soon-1c3f169d8687"
-                className="ml-2 font-semibold text-gray-800 text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
+        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
+          <LatestUpdate />
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h1 className="heading-2xl text-white tracking-tight">
               Smart Contracts Supercharged
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
@@ -54,12 +60,7 @@ function HeroScreen() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="https://phat.phala.network"
-                className={cn(
-                  "bg-phat-400 px-6 py-2.5 text-white rounded-[6px] transition-all",
-                  "text-lg font-semibold",
-                  "hover:bg-phat-600",
-                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
-                )}
+                className={cn("btn btn-brand")}
                 target="_blank"
                 rel="noopener"
               >
@@ -117,10 +118,10 @@ function FeaturesSection() {
   return (
     <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl lg:text-center">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <div className="mx-auto max-w-5xl lg:text-center">
+          <h3 className="mt-2 heading-xl text-white">
             Unlock Limitless Web3 Potential with Phat Contracts
-          </p>
+          </h3>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Enhance your smart contracts with limitless possibilities by accessing the internet, integrating with Web2 APIs, and harnessing the power of fast &amp; powerful computation. Experience the ease of use, multichain support, and security in a decentralized network.
           </p>
@@ -128,11 +129,14 @@ function FeaturesSection() {
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
             {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-phat-300">
-                  {feature.name}
+              <div key={feature.name} className="flex flex-col gap-4">
+                <dt className="flex flex-col gap-1">
+                  <h4 className="heading-lg text-phat-400">
+                    {feature.name.split(':')[0]}
+                  </h4>
+                  <p className="heading-md text-gray-200">{feature.name.split(':')[1].trim()}</p>
                 </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                <dd className="flex flex-auto flex-col text-base leading-7 text-gray-400">
                   <p className="flex-auto">{feature.description}</p>
                 </dd>
               </div>
@@ -142,12 +146,7 @@ function FeaturesSection() {
         <div className={cn("w-full mt-12 flex flex-row justify-center")}>
           <a
             href="https://wiki.phala.network/en-us/build/stateless/create-contract/"
-            className={cn(
-              "bg-phat-400 px-6 py-2.5 text-white rounded-[6px] transition-all",
-              "text-lg font-semibold",
-              "hover:bg-phat-600",
-              "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
-            )}
+            className={cn('btn btn-phat btn-lg')}
             target="_blank"
             rel="noopener"
           >
@@ -167,7 +166,7 @@ function ShowCaseNoCode() {
         <div className="relative isolate overflow-hidden bg-phat-800/90 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
             <div className="lg:row-start-2 lg:max-w-md">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h2 className="heading-lg text-white">
                 Simplify Your Development Process with Our No-Code Tool
               </h2>
               <div className="mt-6 text-base leading-7 text-gray-300 flex flex-col gap-6">
@@ -193,17 +192,12 @@ function ShowCaseNoCode() {
                   )}
                 />
                 <button
-                  className={cn(
-                    "bg-phat-400 px-4 py-2.5 text-white rounded-[6px] transition-all",
-                    "text-lg font-semibold",
-                    "hover:bg-phat-600",
-                    "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
-                  )}
+                  className={cn('btn btn-phat')}
                 >
                   Subscribe
                 </button>
               </div>
-              <p className="mt-2 text-white">Stay informed about our no-code tool launch!</p>
+              <p className="mt-2 text-sm text-white">Stay informed about our no-code tool launch!</p>
             </div>
           </div>
           <div
@@ -250,14 +244,14 @@ function TweetCard({ avatarUrl, nickName, handle, url, formattedDate, children }
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
-            "rounded-full h-10 w-10 flex flex-row justify-center items-center transition-all",
+            "rounded-full h-10 w-10 flex flex-row justify-center items-center transition-all duration-300",
             "text-blue-400 dark:text-white hover:text-white hover:bg-blue-400",
           )}
         >
           <svg className="transition-all h-6 w-auto inline-block fill-current" viewBox="0 0 24 24"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
         </a>
       </div>
-      <div className="text-black dark:text-white mt-3 text-sl leading-snug flex flex-col gap-2.5">
+      <div className="text-gray-900 dark:text-white mt-3 text-base leading-snug flex flex-col gap-2.5">
         {children}
       </div>
       <p className="text-sm mt-3">
@@ -271,7 +265,7 @@ function TweetCard({ avatarUrl, nickName, handle, url, formattedDate, children }
 
 function InnerLink({ href, children }: { href: string, children: React.ReactNode }) {
   return (
-    <a href={href} target="_blank" className={cn("text-blue-600 hover:underline")} rel="noopener noreferrer">
+    <a href={href} target="_blank" className={cn("text-blue-500 hover:underline")} rel="noopener noreferrer">
       {children}
     </a>
   )
@@ -310,10 +304,10 @@ function Testimonials() {
         />
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-xl text-center">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <div className="mx-auto max-5w-xl text-center">
+          <h3 className="heading-xl text-white">
             Real journeys, real achievements, fueled by Phat Contract.
-          </p>
+          </h3>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-row xl:grid-cols-4">
 
@@ -407,60 +401,6 @@ function Testimonials() {
               <p>5/</p>
             </TweetCard>
           </figure>
-
-          {/*
-          <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
-            <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
-              <p>{`“${featuredTestimonial.body}”`}</p>
-            </blockquote>
-            <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-              <img
-                className="h-10 w-10 flex-none rounded-full bg-gray-50"
-                src={featuredTestimonial.author.imageUrl}
-                alt=""
-              />
-              <div className="flex-auto">
-                <div className="font-semibold">{featuredTestimonial.author.name}</div>
-                <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
-              </div>
-              <img className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
-            </figcaption>
-          </figure>
-          {testimonials.map((columnGroup, columnGroupIdx) => (
-            <div key={columnGroupIdx} className="space-y-8 xl:contents xl:space-y-0">
-              {columnGroup.map((column, columnIdx) => (
-                <div
-                  key={columnIdx}
-                  className={cn(
-                    (columnGroupIdx === 0 && columnIdx === 0) ||
-                      (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1)
-                      ? 'xl:row-span-2'
-                      : 'xl:row-start-1',
-                    'space-y-8'
-                  )}
-                >
-                  {column.map((testimonial) => (
-                    <figure
-                      key={testimonial.author.handle}
-                      className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
-                    >
-                      <blockquote className="text-gray-900">
-                        <p>{`“${testimonial.body}”`}</p>
-                      </blockquote>
-                      <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img className="h-10 w-10 rounded-full bg-gray-50" src={testimonial.author.imageUrl} alt="" />
-                        <div>
-                          <div className="font-semibold">{testimonial.author.name}</div>
-                          <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
-                        </div>
-                      </figcaption>
-                    </figure>
-                  ))}
-                </div>
-              ))}
-            </div>
-          ))}
-          */}
         </div>
       </div>
     </div>
@@ -499,7 +439,7 @@ function Faqs() {
   return (
     <div className="bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-        <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
+        <h2 className="heading-xl text-white">Frequently asked questions</h2>
         <p className="mt-6 max-w-2xl text-base leading-7 text-gray-400">
           Have a different question and can’t find the answer you’re looking for? Reach out to our support team by{' '}
           <a href="#" className="font-semibold text-phat-400 hover:text-phat-500">
@@ -508,11 +448,11 @@ function Faqs() {
           and we’ll get back to you as soon as we can.
         </p>
         <div className="mt-20">
-          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
+          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
             {faqs.map((faq) => (
-              <div key={faq.id}>
-                <dt className="text-base font-semibold leading-7 text-phat-400">{faq.question}</dt>
-                <dd className="mt-2 text-base leading-7 text-gray-400">{faq.answer}</dd>
+              <div key={faq.id} className="flex flex-col gap-2">
+                <dt className="heading-md text-phat-400">{faq.question}</dt>
+                <dd className="text-base leading-7 text-gray-400">{faq.answer}</dd>
               </div>
             ))}
           </dl>
@@ -561,27 +501,22 @@ function RecentPosts() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What's New</h2>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           {posts.map((post) => (
             <article
               key={post.id}
               className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
             >
-              <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+              <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover aspect-video" />
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
               <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
-              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-400">
                 <time dateTime={post.datetime} className="mr-8">
                   {post.date}
                 </time>
-                <div className="-ml-4 flex items-center gap-x-4">
-                  <svg viewBox="0 0 2 2" className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
-                    <circle cx={1} cy={1} r={1} />
-                  </svg>
-                </div>
               </div>
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+              <h3 className="mt-1 heading-md leading-7 text-white">
                 <a href={post.href}>
                   <span className="absolute inset-0" />
                   {post.title}
@@ -593,12 +528,7 @@ function RecentPosts() {
         <div className={cn("w-full mt-12 flex flex-row justify-center")}>
           <a
             href="https://medium.com/phala-network"
-            className={cn(
-              "bg-phat-400 px-6 py-2.5 text-white rounded-[6px] transition-all",
-              "text-lg font-semibold",
-              "hover:bg-phat-600",
-              "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-phat-400",
-            )}
+            className={cn('btn btn-phat btn-lg')}
             target="_blank"
             rel="noopener"
           >
@@ -615,12 +545,14 @@ export default function PhatContractsLandingPage() {
     <NormalLayout newsletter={false}>
       <PageTitle en="Phat Contracts" zh="Phat Contracts" />
       <div className={cn('w-full h-[60px]')} />
-      <HeroScreen />
-      <FeaturesSection />
-      <ShowCaseNoCode />
-      <Testimonials />
-      <Faqs />
-      <RecentPosts />
+      <div className="font-primary">
+        <HeroScreen />
+        <FeaturesSection />
+        <ShowCaseNoCode />
+        <Testimonials />
+        <Faqs />
+        <RecentPosts />
+      </div>
     </NormalLayout>
   )
 }
