@@ -476,24 +476,26 @@ const faqs = [
 function Faqs() {
   return (
     <div className="bg-gray-900">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 flex flex-col gap-20">
         <h2 className="heading-xl text-white">Frequently asked questions</h2>
-        <p className="mt-6 max-w-2xl text-base leading-7 text-gray-400">
-          Have a different question and can’t find the answer you’re looking for? Reach out to our support team by{' '}
-          <a href="#" className="font-semibold text-phat-400 hover:text-phat-500">
-            sending us an email
-          </a>{' '}
-          and we’ll get back to you as soon as we can.
-        </p>
-        <div className="mt-20">
-          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
-            {faqs.map((faq) => (
-              <div key={faq.id} className="flex flex-col gap-2">
-                <dt className="heading-md text-phat-400">{faq.question}</dt>
-                <dd className="text-base leading-7 text-gray-400">{faq.answer}</dd>
-              </div>
-            ))}
-          </dl>
+        <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
+          {faqs.map((faq) => (
+            <div key={faq.id} className="flex flex-col gap-2">
+              <dt className="heading-md text-phat-400">{faq.question}</dt>
+              <dd className="text-base leading-7 text-gray-400">{faq.answer}</dd>
+            </div>
+          ))}
+        </dl>
+        <div className="mx-auto">
+          <a
+            className="btn btn-brand btn-lg items-center gap-1.5"
+            href="https://discord.gg/phala"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconDiscord className="w-6 h-6 text-white" />
+            Ask us on Discord
+          </a>
         </div>
       </div>
     </div>
