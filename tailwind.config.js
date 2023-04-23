@@ -13,6 +13,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1.2em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
@@ -21,6 +22,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1.2em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
@@ -29,6 +31,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1.2em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
@@ -37,6 +40,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1.33em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
@@ -45,6 +49,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1.33em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
@@ -53,6 +58,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1.2em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
@@ -61,6 +67,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
@@ -69,6 +76,7 @@ function headingComponents({ addComponents, theme }) {
         lineHeight: '1em',
         fontWeight: '600',
         fontFamily: theme('fontFamily.heading'),
+        wordSpacing: '0.05em',
       },
     },
     {
