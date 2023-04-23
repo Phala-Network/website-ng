@@ -120,7 +120,7 @@ function headingComponents({ addComponents, theme }) {
 }
 
 function cardComponents({ addComponents, theme }) {
-  addComponents([
+  const cards = [
     {
       '.card-elevated': {
         background: '#fff',
@@ -137,7 +137,16 @@ function cardComponents({ addComponents, theme }) {
         borderRadius: theme('borderRadius.lg'),
       }
     }
-  ])
+  ]
+  const colors = theme('colors', {})
+  for (let color in colors) {
+    cards.push({
+      [`.card-${color}`]: {
+        borderColor: colors[color]['100'],
+      }
+    })
+  }
+  addComponents(cards)
 }
 
 function tagComponents({ addComponents, theme }) {
