@@ -150,7 +150,7 @@ const features = [
   },
   {
     name: 'Multichain: Universal Compatibility Across EVM and Substrate Blockchains',
-    description: "Easily connect Phat Contracts to your EVM or Substrate blockchains without the need for a bridge, expanding your smart contract's capabilities.",
+    description: "Easily connect Phat Contract to your EVM or Substrate blockchains without the need for a bridge, expanding your smart contract's capabilities.",
   },
   {
     name: 'Fast & Powerful Computation: Zero Gas and Zero latency',
@@ -168,7 +168,7 @@ function FeaturesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-5xl lg:text-center">
           <h3 className="mt-2 heading-xl text-white">
-            Unlock Limitless Web3 Potential with Phat Contracts
+            Unlock Limitless Web3 Potential with Phat Contract
           </h3>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Enhance your smart contracts with limitless possibilities by accessing the internet, integrating with Web2 APIs, and harnessing the power of fast &amp; powerful computation. Experience the ease of use, multichain support, and security in a decentralized network.
@@ -575,7 +575,7 @@ function RecentPosts() {
             target="_blank"
             rel="noopener"
           >
-            Read more News about Phat Contracts
+            Read more News about Phat Contract
           </a>
         </div>
       </div>
@@ -586,7 +586,7 @@ function RecentPosts() {
 export default function PhatContractsLandingPage() {
   return (
     <NormalLayout newsletter={false}>
-      <PageTitle en="Phat Contracts" zh="Phat Contracts" />
+      <PageTitle en="Phat Contract" zh="Phat Contract" />
       <div className={cn('w-full h-[60px]')} />
       <div className="font-primary">
         <HeroScreen />
