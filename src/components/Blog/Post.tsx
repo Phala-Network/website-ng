@@ -54,7 +54,7 @@ export default function Post({ pageContext: { post, prev, next, tagInclusivePost
                   {post.title}
                 </a>
               </h1>
-              <ul className="px-6 -ml-1">
+              <ul className="px-6 -ml-1 flex flex-row flex-wrap gap-0.5">
                 {post.tags.map((tag: any, idx: number) => (
                   <li key={idx}>
                     <a href={`/tags/${encodeURIComponent(tag.name)}`} className="tag tag-brand hover:bg-brand-600 hover:text-white transition-all">
