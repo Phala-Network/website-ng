@@ -20,10 +20,10 @@ function LatestUpdate() {
         )}
       >
         <span className={cn('text-base text-black')}>
-          Pick Up the Pace, Testers! Phat Contract’s Closed Beta is Ending Soon!
+          Phala Builders Program Is Accepting Applications Now.
         </span>
         <a
-          href="https://medium.com/phala-network/pick-up-the-pace-testers-phat-contracts-closed-beta-is-ending-soon-1c3f169d8687"
+          href="https://medium.com/phala-network/phala-builders-program-accepting-applications-now-4784a1a2d601"
           className="md:ml-2 font-semibold text-gray-800 text-sm"
           target="_blank"
           rel="noopener noreferrer"
@@ -109,7 +109,7 @@ function HeroScreen() {
               Smart Contracts Supercharged
             </h1>
             <p className="mt-6 px-4 text-lg leading-8 text-gray-300">
-              Embrace the future of Web3 offchain computation. Access the internet, boost performance, fully multichain, and ultimate data security, all with Phat Contract
+              Embrace the future of Web3 off-chain computation. Access the internet, boost performance, fully multichain, and ultimate data security, all with Phat Contract.
             </p>
             <div className="mt-10 flex flex-col items-center gap-y-6 md:flex-row md:items-start justify-center gap-x-6">
               <SubscribeForm />
@@ -170,7 +170,7 @@ function FeaturesSection() {
           <h3 className="mt-2 heading-xl text-white">
             Unlock Limitless Web3 Potential with Phat Contract
           </h3>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 text-xl leading-8 text-gray-300">
             Enhance your smart contracts with limitless possibilities by accessing the internet, integrating with Web2 APIs, and harnessing the power of fast &amp; powerful computation. Experience the ease of use, multichain support, and security in a decentralized network.
           </p>
         </div>
@@ -450,7 +450,7 @@ const faqs = [
     id: 1,
     question: "What benefits does Phat Contract offer over traditional smart contracts?",
     answer:
-      "Phat Contract provides enhanced latency, database support, network access, and a wider variety of libraries, eliminating the need for centralized cloud solutions. It also offers hardware-based encryption for privacy preservation, zero-latency and zero-gas fee interactions, and seamless integration with Web2 services as well as other blockchains.",
+      "Phat Contract provides enhanced latency, database support, network access, and a wider variety of libraries, eliminating the need for centralized cloud solutions. It also offers hardware-based encryption for security promise, zero-latency and zero-gas fee interactions, and seamless integration with Web2 services as well as other blockchains.",
   },
   {
     id: 2,
@@ -468,7 +468,7 @@ const faqs = [
     id: 4,
     question: "Can I trust Phat Contract with my sensitive data?",
     answer:
-      "Yes! Phat Contract employs hardware-based encryption throughout its lifecycle to ensure your data is secure and private. Rather than requiring trust in the Phala team, you can rely on the robust code and Secure-Enclave-based hardware for data processing.",
+      "Yes! Phat Contract employs hardware-based encryption throughout its lifecycle to ensure your data is secure and tamper resistance. Rather than requiring trust in the Phala team, you can rely on the robust code and Secure-Enclave-based hardware for data processing.",
   },
   // More questions...
 ]
