@@ -65,12 +65,38 @@ export default function Post({ pageContext: { post, prev, next, tagInclusivePost
               </ul>
               <p className="px-6 font-extralight text-gray-500">{post.publishedTime.split('T')[0]}</p>
             </header>
-            <article className='prose prose-neutral prose-headings:text-2xl prose-headings:mt-6 px-6 pb-20'>
+            <article className='mt-4 prose prose-neutral prose-lg px-7'>
               {post?.content?.map((block: any) => {
                 return <Fragment key={block.id}>{renderBlock(block)}</Fragment>
               }) || null}
             </article>
-            <footer className="px-6 pt-3 pb-6 flex flex-col gap-3 border-t border-solid border-gray-900">
+            <footer className="mt-12 pb-6 px-7 flex flex-col gap-3">
+              <div className="w-full flex flex-row justify-center gap-4 max-w-[60ch]">
+                <span className="w-1 h-1 bg-phat-600 rounded-full" />
+                <span className="w-1 h-1 bg-phat-600 rounded-full" />
+                <span className="w-1 h-1 bg-phat-600 rounded-full" />
+              </div>
+              <div className="text-gray-700 py-6 w-[calc(100% + 0.5rem)] px-0.5 mb-2 max-w-[60ch]">
+                <h2 className="heading-lg mb-2.5 text-phat-900">About Phala</h2>
+                <p className="mb-3">Phala Network is a decentralized cloud that offers secure and scalable computing for Web3.</p>
+                <p className="mb-3">With Phat Contracts, an innovative programming model enabling trustless off-chain computation, developers can create new Web3 use cases.</p>
+                <p className="mb-1.5">
+                  <a href="https://mailchi.mp/fd48395f09dc/w3a-landing-page" target="_blank" rel="noopener" className="underline hover:text-blue-400">Subscribe</a>
+                  <span className="mx-2 text-gray-400">|</span>
+                  <a href="https://twitter.com/PhalaNetwork" target="_blank" rel="noopener" className="underline hover:text-blue-400">Twitter</a>
+                  <span className="mx-2 text-gray-400">|</span>
+                  <a href="https://www.youtube.com/@PhalaNetwork/" target="_blank" rel="noopener" className="underline hover:text-blue-400">YouTube</a>
+                  <span className="mx-2 text-gray-400">|</span>
+                  <a href="https://github.com/Phala-Network" target="_blank" rel="noopener" className="underline hover:text-blue-400">GitHub</a>
+                </p>
+                <p>
+                  <a href="https://discord.gg/myBmQu5" target="_blank" rel="noopener" className="underline hover:text-blue-400">Discord</a>
+                  <span className="mx-2 text-gray-400">|</span>
+                  <a href="https://forum.phala.network/" target="_blank" rel="noopener" className="underline hover:text-blue-400">Forum</a>
+                  <span className="mx-2 text-gray-400">|</span>
+                  <a href="https://t.me/phalanetwork" target="_blank" rel="noopener" className="underline hover:text-blue-400">Telegram</a>
+                </p>
+              </div>
               {prev ? (
                 <div>
                   <a href={`/posts${prev.url}`} className="text-blue-400 hover:underline" title={prev.title}>

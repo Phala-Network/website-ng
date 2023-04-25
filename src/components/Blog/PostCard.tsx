@@ -18,10 +18,10 @@ export default function PostCard({ title, pubDate, tags, coverImg, url }: PostCa
   const href = '/posts' + url.split('?')[0]
   return (
     <article className="card-elevated overflow-hidden">
-      <div className={cn('aspect-video')}>
-        <img src={coverImg} alt={title} className={cn('bg-contain')} />
+      <div className={cn('aspect-video overflow-hidden')}>
+        <img src={coverImg} alt={title} className={cn('w-full h-full border-b border-solid border-gray-100')} />
       </div>
-      <header className="py-2 px-4 flex flex-col gap-2">
+      <header className="py-3 px-4 flex flex-col gap-2">
         <ul className="-ml-1 flex flex-row gap-1 flex-wrap">
           {tags.map((tag, idx) => (
             <li key={idx}>
@@ -31,7 +31,7 @@ export default function PostCard({ title, pubDate, tags, coverImg, url }: PostCa
             </li>
           ))}
         </ul>
-        <h2 className='heading-md'>
+        <h2 className='heading-md h-[7rem]'>
           <a href={href}>
             {title}
           </a>

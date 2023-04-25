@@ -32,10 +32,10 @@ export default function Portal({ pageContext }: any) {
         <header className="max-w-7xl mx-auto mb-8">
           <h1 className="heading-2xl text-white">Blog</h1>
         </header>
-        <div className='max-w-7xl mx-auto columns-3 gap-4'>
+        <div className='max-w-7xl mx-auto grid grid-cols-3 gap-4'>
           {data.map((d: any) => {
             return (
-              <div key={d.id} className='mb-4'>
+              <div key={d.id} className='col-span-1'>
                 <PostCard
                   title={d.title}
                   pubDate={d.publishedTime.split('T')[0]}
