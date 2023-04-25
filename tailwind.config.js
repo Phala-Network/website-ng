@@ -129,6 +129,7 @@ function cardComponents({ addComponents, theme }) {
       },
       '.card-filled': {
         background: '#edf2f7',
+        border: '1px solid #edf2f7',
         borderRadius: theme('borderRadius.lg'),
         boxShadow: theme('boxShadow.DEFAULT'),
       },
@@ -251,6 +252,23 @@ function buttonComponents({ addComponents, theme }) {
         fontSize: theme('fontSize.lg'), // 18px
         lineHeight: '1.75rem',
         padding: '0.625rem 1.5rem',
+      },
+    },
+    {
+      [`.btn-white.btn-outline`]: {
+        backgroundColor: 'transparent',
+        border: `1px solid #fff`,
+        color: '#fff',
+        '&:hover': {
+          backgroundColor: '#fff',
+          color: colors['brand']['400'],
+        },
+        '&[disabled], &[disabled]:hover': {
+          background: 'transparent',
+          border: `1px solid ${colors['gray']['300']}`,
+          color: colors['whiteAlpha']['500'],
+          cursor: 'not-allowed',
+        },
       },
     },
   ]

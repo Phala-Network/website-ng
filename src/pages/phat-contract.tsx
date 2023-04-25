@@ -44,7 +44,7 @@ function SubscribeForm() {
   return (
     <div>
       <form
-        className="flex flex-row relative"
+        className="flex flex-col md:flex-row gap-y-2 relative w-full"
         onSubmit={ev => {
           ev.preventDefault()
           onSubmit()
@@ -63,12 +63,12 @@ function SubscribeForm() {
         <input
           placeholder="Enter your email address"
           className={cn(
-            "px-3 py-2 border border-solid border-[#E2E8F0] rounded-l min-w-[20rem]"
+            "px-3 py-2 border border-solid border-[#E2E8F0] rounded md:rounded-r-none md:min-w-[20rem]"
           )}
           onChange={ev => setEmail(ev.target.value)}
         />
         <button
-          className={cn('btn btn-phat rounded-l-none gap-1.5 items-center')}
+          className={cn('btn md:btn-lg btn-purple md:rounded-l-none gap-1.5 items-center')}
           type="submit"
           disabled={isLoading || isError}
         >
@@ -76,7 +76,7 @@ function SubscribeForm() {
           Subscribe
         </button>
       </form>
-      <p className="mt-2 text-sm text-white">Stay informed about our no-code tool launch!</p>
+      <p className="px-0.5 mt-2.5 text-sm text-white text-left">Stay informed about our no-code tool launch!</p>
     </div>
   )
 }
@@ -84,58 +84,56 @@ function SubscribeForm() {
 function HeroScreen() {
   return (
     <div className="bg-gray-900">
-      <div className="relative isolate overflow-hidden pt-14">
-        <img
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-        />
+      <div className="relative isolate overflow-hidden bg-phat-400">
         <div
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
-        </div>
-        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
-          <LatestUpdate />
-          <div className="text-center">
-            <h1 className="heading-2xl text-white tracking-tight">
+          className="absolute inset-0 -z-10 h-full w-full opacity-50"
+          style={{
+            backgroundImage: 'radial-gradient(rgba(50, 84, 34, 0.5) 1.5px, rgba(111, 183, 78, 0.5) 1.5px)',
+            backgroundSize: '32px 32px',
+          }}
+        />
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:py-48 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-20">
+          <div className={cn('col-span-1', 'aspect-[340/117] max-w-[50%] md:max-w-[unset]')}>
+            <svg viewBox="0 0 340 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.75">
+              <path d="M113.405 99.4821C112.055 102.971 110.138 105.606 107.795 107.315C105.451 109.024 102.398 109.879 98.9183 109.879C93.5925 109.879 89.2609 108.099 85.9234 104.538C82.5859 100.977 80.8816 96.2776 80.8816 90.5807C80.8816 84.7413 82.5149 79.9702 85.7103 76.4808C88.9058 72.9915 93.2375 71.2112 98.5633 71.2112C102.256 71.2112 105.238 72.0657 107.582 73.7036C109.925 75.3415 111.629 77.9051 112.694 81.252L112.836 81.6793H119.014V65.0158H112.339V68.79C110.848 67.437 109.002 66.3689 106.872 65.5855C104.244 64.5886 101.262 64.0901 98.0662 64.0901C90.8231 64.0901 84.7162 66.6537 79.9585 71.6385C75.2007 76.6233 72.7864 82.9611 72.7864 90.5095C72.7864 98.129 75.2007 104.467 80.0295 109.452C84.8582 114.436 91.1072 116.929 98.5633 116.929C104.173 116.929 109.002 115.433 112.907 112.443C116.742 109.452 119.369 105.179 120.719 99.8381L120.932 99.0548H113.547L113.405 99.4821Z" fill="white"/>
+              <path d="M142.022 82.3201C136.98 82.3201 132.649 83.9579 129.24 87.2336C125.831 90.5094 124.127 94.6396 124.127 99.482C124.127 104.324 125.831 108.455 129.24 111.802C132.649 115.077 136.909 116.786 142.022 116.786C147.135 116.786 151.395 115.148 154.804 111.802C158.212 108.526 159.917 104.396 159.917 99.482C159.917 94.6396 158.212 90.5094 154.804 87.2336C151.466 84.0291 147.135 82.3201 142.022 82.3201ZM152.532 99.5532C152.532 102.829 151.537 105.392 149.549 107.458C147.561 109.523 145.075 110.52 142.022 110.52C139.039 110.52 136.554 109.523 134.566 107.386C132.577 105.321 131.583 102.686 131.583 99.482C131.583 96.3487 132.577 93.7139 134.566 91.5775C136.554 89.5124 139.039 88.4442 142.022 88.4442C145.075 88.4442 147.49 89.4412 149.549 91.5063C151.537 93.6426 152.532 96.3487 152.532 99.5532Z" fill="white"/>
+              <path d="M196.274 93.073C196.274 91.2927 196.132 89.9397 195.848 88.9427C195.564 87.9458 195.138 87.0912 194.57 86.3079C193.647 85.0261 192.369 84.0291 190.877 83.317C189.386 82.6761 187.682 82.3201 185.765 82.3201C183.634 82.3201 181.504 82.7473 179.587 83.6731C178.024 84.3852 176.462 85.4534 174.971 86.8064V83.1746H162.899V89.2276H167.728V110.021H162.899V116.074H179.729V110.021H174.9V94.0699C176.533 92.3608 178.095 91.0791 179.587 90.2245C181.078 89.37 182.64 88.9427 184.131 88.9427C185.907 88.9427 187.185 89.37 187.895 90.2957C188.392 90.9366 189.031 92.5033 189.031 96.4199V109.95H184.202V116.003H200.961V109.95H196.274V93.073Z" fill="white"/>
+              <path d="M213.388 71.4248H206.571V83.1747H200.89V89.2276H206.571V109.594C206.571 112.015 207.139 113.795 208.275 114.792C209.411 115.789 211.257 116.288 214.027 116.288C215.092 116.288 216.015 116.288 216.796 116.217C217.577 116.145 218.359 116.074 218.998 115.932L219.566 115.861V109.594L218.501 109.736C217.009 109.95 216.583 110.021 216.441 110.021C214.595 110.021 214.098 109.665 213.956 109.452C213.814 109.309 213.459 108.597 213.459 105.25V89.2276H219.637V83.1747H213.459V71.4248H213.388Z" fill="white"/>
+              <path d="M245.201 82.3201C244.846 82.3201 244.633 82.3201 244.49 82.3201C241.934 82.3201 239.733 82.8186 237.958 83.8155C236.75 84.5276 235.614 85.4534 234.691 86.7352V83.2458H222.69V89.2988H227.519V110.092H222.69V116.145H239.52V110.092H234.691V98.0577C234.691 95.1381 235.472 93.0017 237.176 91.4351C238.81 89.8685 241.224 89.0851 244.206 89.0851H246.479V82.3201H245.84C245.698 82.3201 245.485 82.3201 245.201 82.3201Z" fill="white"/>
+              <path d="M274.386 86.3079C273.179 85.1685 271.83 84.2428 270.409 83.6019C268.492 82.7473 266.291 82.3201 263.948 82.3201C259.261 82.3201 255.213 84.0291 252.018 87.3049C248.822 90.5806 247.189 94.7108 247.189 99.5532C247.189 104.396 248.822 108.526 252.018 111.802C255.213 115.077 259.261 116.786 264.019 116.786C266.433 116.786 268.705 116.359 270.623 115.504C272.043 114.864 273.321 114.009 274.457 112.87V116.003H286.458V109.95H281.629V89.1563H286.458V83.1034H274.386V86.3079ZM271.901 91.7199C273.818 93.7851 274.812 96.4199 274.812 99.5532C274.812 102.758 273.818 105.392 271.901 107.458C269.983 109.523 267.64 110.52 264.729 110.52C261.817 110.52 259.474 109.523 257.486 107.458C255.568 105.392 254.574 102.758 254.574 99.5532C254.574 96.3487 255.497 93.7139 257.415 91.6487C259.332 89.5836 261.675 88.5867 264.729 88.5867C267.64 88.6579 269.983 89.6548 271.901 91.7199Z" fill="white"/>
+              <path d="M316.211 105.82C314.862 107.458 313.371 108.668 311.738 109.452C310.176 110.235 308.471 110.662 306.625 110.662C303.43 110.662 301.086 109.736 299.311 107.814C297.607 105.891 296.683 103.185 296.683 99.7669C296.683 96.3487 297.536 93.6427 299.169 91.5776C300.802 89.5837 302.861 88.5867 305.56 88.5867C307.619 88.5867 309.394 89.1564 310.886 90.1534C312.377 91.2215 313.513 92.8594 314.365 94.9957L314.507 95.423H319.762V83.2459H313.868V85.4534C312.874 84.5989 311.738 83.8868 310.531 83.3883C308.897 82.7474 306.98 82.3914 304.921 82.3914C300.305 82.3914 296.47 84.0292 293.63 87.2337C290.79 90.4382 289.369 94.6397 289.369 99.7669C289.369 104.894 290.861 109.096 293.772 112.229C296.683 115.362 300.66 116.929 305.631 116.929C308.613 116.929 311.454 116.288 313.939 115.077C316.424 113.867 318.626 112.086 320.401 109.736L320.756 109.309L316.709 105.321L316.211 105.82Z" fill="white"/>
+              <path d="M340 89.2276V83.1747H333.822V71.4248H327.005V83.1747H321.324V89.2276H327.005V109.594C327.005 112.015 327.573 113.795 328.709 114.792C329.846 115.789 331.692 116.288 334.461 116.288C335.526 116.288 336.449 116.288 337.231 116.217C338.012 116.145 338.793 116.074 339.432 115.932L340 115.861V109.594L338.935 109.736C337.444 109.95 337.018 110.021 336.876 110.021C335.029 110.021 334.532 109.665 334.39 109.452C334.248 109.309 333.893 108.597 333.893 105.25V89.2276H340Z" fill="white"/>
+              </g>
+              <path d="M252.728 0.355957H245.271V52.9098H252.728V0.355957Z" fill="white"/>
+              <path d="M237.887 18.1589H230.43V25.6361H237.887V18.1589Z" fill="white"/>
+              <path d="M237.887 45.5039H230.43V52.9811H237.887V45.5039Z" fill="white"/>
+              <path d="M66.2531 58.4644L54.6783 70.0718L7.95321 117L0.142022 109.167L50.5597 58.678L0 7.97565L7.95321 0L54.6783 46.9282L66.2531 58.4644Z" fill="white"/>
+              <path d="M96.3618 0H72.5022V7.69081H77.97V45.7176H72.5022V53.3372H93.4504V45.7176H87.2725V34.1102H96.3618C105.735 34.1102 113.333 26.4906 113.333 17.0907C113.333 7.6196 105.735 0 96.3618 0ZM95.6517 26.3481H87.2725V7.69081H95.6517C100.765 7.69081 104.954 11.8923 104.954 17.0195C104.954 22.1467 100.765 26.3481 95.6517 26.3481Z" fill="white"/>
+              <path d="M148.981 32.8996C148.981 24.4967 142.164 17.5892 133.785 17.5892C131.37 17.5892 129.169 18.1589 127.11 19.1558V0H113.547V7.54839H118.446V45.86H113.547V53.3372H132.08V45.86H127.11V32.8996C127.11 29.2678 130.092 26.2769 133.714 26.2769C137.406 26.2769 140.318 29.2678 140.318 32.8996V45.86H135.347V53.3372H153.881V45.86H148.91V32.8996H148.981Z" fill="white"/>
+              <path d="M210.05 0H201.813V18.5149H181.362V21.6482C178.593 19.6543 175.184 18.5149 171.491 18.5149C161.905 18.5149 154.165 26.2769 154.165 35.8904C154.165 45.504 161.905 53.266 171.491 53.266C175.184 53.266 178.593 52.1266 181.362 50.1327V53.266H194.357V45.7888H189.102V25.9209H201.813V42.5131C201.813 48.4236 206.642 53.266 212.536 53.266H222.974V45.86H213.317C211.542 45.86 210.121 44.4358 210.121 42.6555V25.9209H222.974V18.4437H210.121V0H210.05ZM171.491 45.86C166.024 45.86 161.55 41.3737 161.55 35.8904C161.55 30.4072 166.024 25.9209 171.491 25.9209C176.959 25.9209 181.362 30.4072 181.362 35.8904C181.362 41.3737 176.959 45.86 171.491 45.86Z" fill="white"/>
+            </svg>
+          </div>
+          <div className='col-span-1 md:col-span-2 md:-mt-2 flex flex-col gap-4 md:gap-6'>
+            <h1 className="heading-xl md:heading-2xl text-white tracking-tight md:-ml-1">
               Smart Contracts Supercharged
             </h1>
-            <p className="mt-6 px-4 text-lg leading-8 text-gray-300">
+            <p className="text-base md:text-lg leading-8 text-white">
               Embrace the future of Web3 off-chain computation. Access the internet, boost performance, fully multichain, and ultimate data security, all with Phat Contract.
             </p>
-            <div className="mt-10 flex flex-col items-center gap-y-6 md:flex-row md:items-start justify-center gap-x-6">
+            <div className="mt-4 flex flex-col gap-y-6 xl:flex-row items-start gap-x-6">
               <SubscribeForm />
               <a
-                className="btn btn-outline btn-brand items-center gap-1.5"
+                className="btn btn-lg btn-outline btn-white items-center gap-1.5"
                 href="https://discord.gg/phala"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <IconDiscord className="w-5 h-5 text-brand" />
+                <IconDiscord className="w-5 h-5" />
                 Join Discord
               </a>
             </div>
           </div>
-        </div>
-        <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
-        >
-          <div
-            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-            }}
-          />
         </div>
       </div>
     </div>
@@ -170,14 +168,14 @@ function FeaturesSection() {
           <h3 className="mt-2 heading-xl text-white">
             Unlock Limitless Web3 Potential with Phat Contract
           </h3>
-          <p className="mt-6 text-xl leading-8 text-gray-300">
+          <p className="mt-6 text-lg leading-8 text-gray-300 md:px-5">
             Enhance your smart contracts with limitless possibilities by accessing the internet, integrating with Web2 APIs, and harnessing the power of fast &amp; powerful computation. Experience the ease of use, multichain support, and security in a decentralized network.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto mt-14 max-w-2xl lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-4 gap-y-4 lg:max-w-none lg:grid-cols-2">
             {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col gap-4">
+              <div key={feature.name} className="card-filled bg-gray-800 border-gray-600 px-6 py-9 flex flex-col gap-4">
                 <dt className="flex flex-col gap-1">
                   <h4 className="heading-lg text-phat-400">
                     {feature.name.split(':')[0]}
@@ -211,9 +209,9 @@ function ShowCaseNoCode() {
   return (
     <div className="bg-gray-900 py-24">
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="relative isolate overflow-hidden card-filled bg-phat-800/90 px-6 py-20 sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+        <div className="relative isolate overflow-hidden card-filled bg-phat-800/90 border-transparent px-6 py-20 sm:px-10 sm:py-24 lg:py-24 xl:px-24">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-            <div className="lg:row-start-2 lg:max-w-md">
+            <div className="lg:row-start-2 lg:max-w-md my-20">
               <h2 className="heading-lg text-white">
                 Simplify Your Development Process with Our No-Code Tool
               </h2>
@@ -229,23 +227,11 @@ function ShowCaseNoCode() {
             <img
               src="https://media.discordapp.net/attachments/1054315024052650054/1098713021896986644/Lens_Oracle_Onepager__1.png"
               alt="Product screenshot"
-              className="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
+              className="absolute right-[-50%] top-20 -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
             />
-            <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-              <SubscribeForm />
-            </div>
-          </div>
-          <div
-            className="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu"
-            aria-hidden="true"
-          >
-            <div
-              className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-phat-50 to-phat-900 opacity-25"
-              style={{
-                clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-              }}
-            />
+            {/* <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10"> */}
+            {/*   <SubscribeForm /> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
@@ -309,34 +295,6 @@ function InnerLink({ href, children }: { href: string, children: React.ReactNode
 function Testimonials() {
   return (
     <div className="relative isolate bg-gray-900 pb-32 pt-24 sm:pt-32">
-      <div
-        className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
-        aria-hidden="true"
-      >
-        <div
-          className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-phat-600 to-phat-100"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
-      </div>
-      <div
-        className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
-        aria-hidden="true"
-      >
-        <div
-          className={cn(
-            "ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg]",
-            "bg-gradient-to-tr from-phat-600 to-phat-100",
-            "xl:ml-0 xl:mr-[calc(50%-12rem)]"
-          )}
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
-      </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto text-center">
           <h3 className="heading-xl text-white">
@@ -476,8 +434,8 @@ const faqs = [
 function Faqs() {
   return (
     <div className="bg-gray-900">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 flex flex-col gap-20">
-        <h2 className="heading-xl text-white">Frequently asked questions</h2>
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 flex flex-col gap-16">
+        <h2 className="heading-xl text-white text-center">Frequently asked questions</h2>
         <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
           {faqs.map((faq) => (
             <div key={faq.id} className="flex flex-col gap-2">

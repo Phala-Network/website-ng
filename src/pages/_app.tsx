@@ -8,7 +8,8 @@ import { useLocale } from '../hooks/useLocale'
 import React from 'react'
 
 import '@fontsource/roboto'
-import '@fontsource/montserrat'
+import '@fontsource/montserrat/600.css'
+import '@fontsource/montserrat/700.css'
 
 const localInfo = {
   zh: {
