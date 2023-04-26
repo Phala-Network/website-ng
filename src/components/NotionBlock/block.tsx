@@ -15,21 +15,21 @@ export const renderBlock = (block: any) => {
       )
     case 'heading_1':
       return (
-        <h1>
-          <Text text={value.rich_text} />
-        </h1>
-      )
-    case 'heading_2':
-      return (
-        <h2>
+        <h2 className="heading-lg">
           <Text text={value.rich_text} />
         </h2>
       )
-    case 'heading_3':
+    case 'heading_2':
       return (
-        <h3>
+        <h3 className="heading-md">
           <Text text={value.rich_text} />
         </h3>
+      )
+    case 'heading_3':
+      return (
+        <h4 className="heading-sm">
+          <Text text={value.rich_text} />
+        </h4>
       )
     case 'bulleted_list_item':
     case 'numbered_list_item':

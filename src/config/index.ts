@@ -3,7 +3,6 @@ import { EconomyWhitepaperConfig } from './EconomyWhitepaperConfig'
 import { GithubConfig } from './GithubConfig'
 import { JoinUsConfig } from './JoinUsConfig'
 import { MediaKitConfig } from './MediaKitConfig'
-import { PhatContractConfig } from './PhatContractConfig'
 import { SecureEnclaveConfig } from './SecureEnclaveConfig'
 import { WikiConfig } from './WikiConfig'
 
@@ -245,7 +244,6 @@ export const DevelopersConfig = {
         zh: `${WIKI_PREFIX}/en-us/build/general/builders-program/`
       }
     },
-    PhatContractConfig,
     {
       name: {
         en: 'Secure Worker',
@@ -336,7 +334,6 @@ export const ProductConfig = {
     zh: '产品'
   },
   subMenu: [
-    PhatContractConfig,
     {
       name: {
         en: 'PhalaWorld',
@@ -461,16 +458,6 @@ export const TechnologyConfig = {
     SecureEnclaveConfig,
     {
       name: {
-        en: 'Phat Contract',
-        zh: 'Phat Contract'
-      },
-      href: {
-        en: 'https://wiki.phala.network/en-us/general/development/fat-contract/',
-        zh: 'https://wiki.phala.network/en-us/general/development/fat-contract/'
-      }
-    },
-    {
-      name: {
         en: GithubConfig.name,
         zh: GithubConfig.name
       },
@@ -556,6 +543,18 @@ export const MenuConfig: {
   href?: { [key: string]: string }
 }[] = [
   KhalaConfig,
+
+  {
+    name: {
+      en: "Phat Contract",
+      zh: "Phat Contract",
+    },
+    href: {
+      en: "/phat-contract",
+      zh: "/phat-contract"
+    }
+  },
+
   // PHAConfig,
   TechnologyConfig,
   HackathonConfig,

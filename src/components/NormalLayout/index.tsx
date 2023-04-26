@@ -7,6 +7,7 @@ import React from 'react'
 type Props = {
   className?: string
   newsletter?: boolean
+  children?: React.ReactNode
 }
 
 const NormalLayout: React.FC<Props> = (props) => {
