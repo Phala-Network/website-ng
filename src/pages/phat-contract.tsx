@@ -209,29 +209,33 @@ function ShowCaseNoCode() {
   return (
     <div className="bg-gray-900 py-24">
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="relative isolate overflow-hidden card-filled bg-phat-800/90 border-transparent px-6 py-20 sm:px-10 sm:py-24 lg:py-24 xl:px-24">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-            <div className="lg:row-start-2 lg:max-w-md my-20">
-              <h2 className="heading-lg text-white">
-                Simplify Your Development Process with Our No-Code Tool
-              </h2>
-              <div className="mt-6 text-base leading-7 text-gray-300 flex flex-col gap-6">
-                <p>
-                  Phat Contract is designed with developers in mind, providing an effortless way to build and deploy off-chain computations without writing a single line of code. Our intuitive no-code developer console enables you to create oracles and other common use cases by leveraging predefined blueprints, allowing you to save time and focus on what truly matters.
-                </p>
-                <p>
-                  Don't miss the chance to revolutionize your development process. Subscribe to our newsletter and be the first to know about the no-code tool's launch.
-                </p>
-              </div>
+        <div
+          className={cn(
+            "isolate overflow-hidden card-filled bg-gray-800 border-gray-600 px-16 py-16 gap-x-16 gap-y-0",
+            "flex flex-col lg:flex-row-reverse"
+          )}
+        >
+          <img
+            src="/images/phat-contract-integration.png"
+            alt="Product screenshot"
+            className="w-full lg:w-1/2"
+            style={{
+              height: 'auto',
+              aspectRatio: '558 * 611'
+            }}
+          />
+          <div className="mt-10 lg:my-20">
+            <h2 className="heading-lg text-white">
+              Simplify Your Development Process with Our No-Code Tool
+            </h2>
+            <div className="mt-6 text-base leading-7 text-gray-300 flex flex-col gap-6">
+              <p>
+                Phat Contract is designed with developers in mind, providing an effortless way to build and deploy off-chain computations without writing a single line of code. Our intuitive no-code developer console enables you to create oracles and other common use cases by leveraging predefined blueprints, allowing you to save time and focus on what truly matters.
+              </p>
+              <p>
+                Don't miss the chance to revolutionize your development process. Subscribe to our newsletter and be the first to know about the no-code tool's launch.
+              </p>
             </div>
-            <img
-              src="https://media.discordapp.net/attachments/1054315024052650054/1098713021896986644/Lens_Oracle_Onepager__1.png"
-              alt="Product screenshot"
-              className="absolute right-[-50%] top-20 -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none"
-            />
-            {/* <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10"> */}
-            {/*   <SubscribeForm /> */}
-            {/* </div> */}
           </div>
         </div>
       </div>
