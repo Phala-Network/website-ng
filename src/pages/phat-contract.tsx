@@ -221,7 +221,7 @@ function ShowCaseNoCode() {
             className="w-full lg:w-1/2"
             style={{
               height: 'auto',
-              aspectRatio: '558 * 611'
+              aspectRatio: '558 / 611'
             }}
           />
           <div className="mt-10 lg:my-20">
