@@ -20,13 +20,9 @@ const sendPostFormRequest = async (portalId: string, formId: string, email: stri
     const resp = await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`, {
       method: 'POST',
       headers: {
-        Accept: 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data),
-      // @ts-ignore
-      mode: 'no-cors',
-      cache: 'no-cache'
     });
     if (resp.status === 200) {
       const body = await resp.json();
