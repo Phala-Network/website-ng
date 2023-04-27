@@ -391,8 +391,8 @@ export const AboutUsConfig = {
         zh: '博客'
       },
       href: {
-        en: 'https://medium.com/phala-network',
-        zh: 'https://medium.com/phala-network'
+        en: '/blog/',
+        zh: '/blog/'
       }
     },
     JoinUsConfig,
