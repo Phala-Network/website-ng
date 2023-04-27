@@ -9,33 +9,6 @@ import IconDiscord from '../components/Footer/icons/IconDiscord';
 import { ImSpinner2 } from 'react-icons/im'
 
 
-function LatestUpdate() {
-  return (
-    <div className="hidden sm:mb-8 sm:flex sm:justify-center mx-4">
-      <div
-        className={cn(
-          "relative rounded-xl md:rounded-3xl px-3 py-2 text-sm leading-6",
-          "flex flex-col md:flex-row md:items-center transition-all bg-white/75",
-          "ring-1 ring-phat-500/60 hover:ring-phat-500"
-        )}
-      >
-        <span className={cn('text-base text-black')}>
-          Phala Builders Program Is Accepting Applications Now.
-        </span>
-        <a
-          href="https://medium.com/phala-network/phala-builders-program-accepting-applications-now-4784a1a2d601"
-          className="md:ml-2 font-semibold text-gray-800 text-sm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="absolute inset-0" aria-hidden="true" />
-          Read more <span aria-hidden="true">&rarr;</span>
-        </a>
-      </div>
-    </div>
-  )
-}
-
 function SubscribeForm() {
   const { setEmail, onSubmit, isLoading, message, error, isSucceed, isError } = useSubscribe(
     '20647882',
