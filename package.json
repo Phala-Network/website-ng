@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --verbose",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src"
@@ -30,6 +30,7 @@
     "gatsby-plugin-react-helmet": "^4.4.0",
     "gatsby-plugin-sass": "^4.4.0",
     "gatsby-plugin-sitemap": "^4.0.0",
+    "gatsby-plugin-postcss": "^6.9.0",
     "gsap": "^3.7.0",
     "highlight.js": "^10.4.0",
     "jotai": "^2.0.4",
@@ -49,26 +50,25 @@
     "smoothscroll-polyfill": "^0.4.4",
     "tailwind-merge": "^1.10.0",
     "tailwindcss-animate": "^1.0.5",
-    "use-breakpoint": "^1.1.2"
+    "use-breakpoint": "^1.1.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.13",
+    "dotenv": "^16.0.3",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
     "@types/ramda": "^0.29.0",
     "@types/react-helmet": "^6.1.1",
     "@types/smoothscroll-polyfill": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
-    "autoprefixer": "^10.4.13",
-    "dotenv": "^16.0.3",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.23.2",
-    "gatsby-plugin-postcss": "^6.9.0",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7",
     "typescript": "^4.7.4",
     "typescript-plugin-css-modules": "^3.2.0"
   }

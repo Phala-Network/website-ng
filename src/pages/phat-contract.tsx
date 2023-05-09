@@ -300,7 +300,7 @@ function Testimonials() {
 
           <article className="mb-3">
             <TweetCard
-              avatarUrl="https://pbs.twimg.com/profile_images/1610261733532205060/ZmiJZpdN_400x400.jpg"
+              avatarUrl="https://pbs.twimg.com/profile_images/1652098970510925825/BJ1y_4tS_400x400.jpg"
               nickName="C H A R L Ξ S ⚛️🔆"
               handle="charlesace_"
               url="https://twitter.com/charlesace_/status/1647599601128558593"
@@ -363,7 +363,7 @@ function Testimonials() {
 
           <article className="mb-3">
             <TweetCard
-              avatarUrl="https://pbs.twimg.com/profile_images/1641707673275052033/F4q3Twkd_400x400.jpg"
+              avatarUrl="https://pbs.twimg.com/profile_images/1652405189926592514/WGCLBDUT_400x400.jpg"
               nickName="The Scarlet Thread"
               handle="TheScarletThr"
               url="https://twitter.com/TheScarletThr/status/1648603479496073216"

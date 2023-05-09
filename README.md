@@ -55,5 +55,5 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
 ## Environment Variables
 ```shell
-NOTION_POST_LIST_ENDPOINT="https://api-test.phala.world/api/posts/list"
+NOTION_POST_LIST_ENDPOINT="<THE NOTION LIST ENDPOINT>"
 ```

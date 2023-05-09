@@ -1,5 +1,5 @@
 [build]
-  command = "yarn && yarn build"
+  command = "yarn build"
   publish = "public"
 
 [context.production.environment]
